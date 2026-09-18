@@ -1,37 +1,21 @@
 # BUILD STATUS
 
 Date: 2026-09-19
-Command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1
-Target presentation repo: wezzo72/Barrandodger
-Evidence repos: not modified
+Command: MASTER BUILD COMMAND V1
+Repo: wezzo72/Barrandodger
+Live: https://wezzo72.github.io/Barrandodger/
 
-## Completed this session
-
-- Chose a new presentation repository so original evidence is not overwritten.
-- Created restrained homepage and core navigation stubs.
-- Created LEGAL-CAUTION and BUILD_STATUS.
-- Linked out to existing GitHub Pages archives instead of copying PDFs.
+## Done
+- Phase 1 shell site + GitHub Pages
+- Phase 2 reports index pointing at wezzo72/Backup
+- Phase 3 extra nav pages and evidence links
 
 ## Not done
-
-- Full evidence matrix data
+- Full row-by-row evidence matrix from every PDF
 - Interactive evidence graph
-- In-browser document search index
-- Automatic hash verification UI
-- 35-year financial calculator with sourced figures
-- Complete biography / art / books catalogues from primary files
+- Local search index of all documents
+- Verified hash table for every file
+- Sourced 35-year cost calculator
 
-## Next recommended phase
-
-1. Enable GitHub Pages on this repo.
-2. Inventory document paths on wezzo72/Backup and barran-dodger-archive.
-3. Add a document catalogue that points at original paths.
-4. Fill one evidence-centre module at a time from primary sources only.
-
-## Files created
-
-- README.md
-- spec/BUILD_STATUS.md
-- spec/LEGAL-CAUTION.md
-- index.html and first public pages
-- assets/style.css
+## Next
+Fill one evidence module at a time from primary archive pages only.
