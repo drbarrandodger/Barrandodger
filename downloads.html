@@ -4,45 +4,172 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Download centre — Barran Dodger Archive</title>
+  <meta name="description" content="Phase 18 download centre. Files download from GitHub Backup. A download is not a finding.">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .filters { display: grid; gap: 0.65rem; margin: 1rem 0 1.25rem; max-width: 42rem; }
+    @media (min-width: 640px) { .filters { grid-template-columns: 1fr 1fr; } }
+    .filters label { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.2rem; }
+    .filters select, .filters input {
+      width: 100%; font: inherit; padding: 0.4rem 0.5rem;
+      border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+    }
+    .dl-item {
+      border: 1px solid var(--line); background: var(--panel);
+      padding: 0.75rem 0.9rem; margin-bottom: 0.55rem;
+      display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: baseline; justify-content: space-between;
+    }
+    .dl-item .meta-line { color: var(--muted); font-size: 0.82rem; width: 100%; }
+    .doc-id { font-family: ui-monospace, monospace; font-size: 0.85rem; }
+    .count { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.75rem; }
+    .tag {
+      display: inline-block; font-size: 0.72rem; border: 1px solid var(--line);
+      padding: 0.1rem 0.4rem; margin-right: 0.25rem; text-transform: uppercase;
+    }
+  </style>
 </head>
 <body>
 <header>
   <div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+  <div class="sub">Dr Richard William McLean · artist · author · researcher · advocate</div>
   <nav>
     <a href="index.html">Museum</a>
+    <a href="evidence/index.html">Evidence</a>
     <a href="documents.html">Documents</a>
     <a href="downloads.html">Downloads</a>
-    <a href="viewer.html">Viewer</a>
+    <a href="official.html">Official</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="methodology.html">Method</a>
   </nav>
 </header>
 <main>
   <h1>Download centre</h1>
-  <p>Files download from GitHub, not from Google Drive. No new document is generated here.</p>
-  <div class="caution">Official-looking PDFs are still only documents. Download does not make an allegation true.</div>
+  <p class="lede">Phase 18 hub for downloading catalogue files from public GitHub stores. Nothing is generated here. Files stay in <code>wezzo72/Backup</code> and related public repos.</p>
+
+  <div class="caution">
+    <strong>A download is not a court finding.</strong>
+    Official-looking PDFs are still only documents. Author publications remain Author’s Account.
+    Sensitive titles appear because they were already public on GitHub Backup — this phase does not newly publish private material.
+  </div>
+
   <h2>Whole stores</h2>
   <p>
     <a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">Backup documents folder</a>
     <a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">Government Evidence</a>
     <a class="btn" href="https://github.com/drbarrandodger/barran-dodger-archive">Primary archive repo</a>
+    <a class="btn" href="https://wezzo72.github.io/Backup/">Backup site</a>
   </p>
+
   <h2>Catalogues on this site</h2>
   <p>
+    <a class="btn" href="documents.html">Document database</a>
     <a class="btn" href="official.html">Official records</a>
-    <a class="btn" href="official-catalogue.html">Official catalogue</a>
     <a class="btn" href="writings.html">Writings and gospels</a>
     <a class="btn" href="sensitive.html">Sensitive titles</a>
-    <a class="btn" href="data/statistics.json">Statistics JSON</a>
+    <a class="btn" href="data/documents.json">documents.json</a>
+    <a class="btn" href="data/publications.json">publications.json</a>
     <a class="btn" href="data/INVENTORY.md">Inventory</a>
+    <a class="btn" href="data/statistics.json">Statistics JSON</a>
   </p>
-  <h2>Example raw downloads</h2>
-  <ul class="plain">
-    <li><a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/123_gospels_barran_dodger.pdf">123_gospels_barran_dodger.pdf</a></li>
-    <li><a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/the-certified-record-of-barran-dodger.pdf">the-certified-record-of-barran-dodger.pdf</a></li>
-    <li><a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/paradox-of-persecution-academic-paper.pdf">paradox-of-persecution-academic-paper.pdf</a></li>
-    <li><a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf">2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf</a></li>
-    <li><a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/blockchain_manifest.json">blockchain_manifest.json</a> — repository manifest, not proof of every PDF</li>
-  </ul>
+
+  <h2>Catalogue downloads (seeded DOC rows)</h2>
+  <p class="meta">Filter the Phase 17 document catalogue and open the GitHub raw URL for each row. Full corpus is larger; this is the seeded slice only.</p>
+
+  <div class="filters">
+    <div>
+      <label for="f-cat">Category</label>
+      <select id="f-cat"><option value="">All categories</option></select>
+    </div>
+    <div>
+      <label for="f-q">Search title / path</label>
+      <input type="search" id="f-q" placeholder="Filter…" autocomplete="off">
+    </div>
+  </div>
+  <p class="count" id="count">Loading…</p>
+  <div id="list"></div>
+
+  <h2>Repository manifest</h2>
+  <p>
+    <a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/blockchain_manifest.json">blockchain_manifest.json</a>
+  </p>
+  <p class="meta">That manifest is a repository file. It is <strong>not</strong> treated as cryptographic proof of every document’s contents.</p>
+
+  <p class="meta">
+    Related: <a href="documents.html">Document database</a> ·
+    <a href="viewer.html">Viewer notes</a> ·
+    <a href="ledger.html">Ledger</a> ·
+    <a href="spec/BUILD_STATUS.md">Build status</a>
+  </p>
 </main>
+<footer>
+  © Dr Richard William McLean / Barran Dodger<br>
+  <a href="methodology.html">Method</a> · <a href="master-command.html">Master command</a> · <a href="spec/BUILD_STATUS.md">Build status</a>
+</footer>
+<script>
+(async function () {
+  const res = await fetch('data/documents.json');
+  const data = await res.json();
+  const docs = (data.documents || []).slice();
+
+  const cats = [...new Set(docs.map(d => d.category).filter(Boolean))].sort();
+  const catEl = document.getElementById('f-cat');
+  cats.forEach(c => {
+    const o = document.createElement('option');
+    o.value = c; o.textContent = c;
+    catEl.appendChild(o);
+  });
+
+  function rawUrl(path) {
+    return 'https://github.com/wezzo72/Backup/raw/main/' + encodeURI(path);
+  }
+
+  const list = document.getElementById('list');
+  const count = document.getElementById('count');
+
+  function render() {
+    const cat = catEl.value;
+    const q = (document.getElementById('f-q').value || '').toLowerCase().trim();
+    const filtered = docs.filter(d => {
+      if (cat && d.category !== cat) return false;
+      if (q) {
+        const hay = ((d.title || '') + ' ' + (d.original_path || '') + ' ' + (d.id || '')).toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+
+    count.textContent = filtered.length + ' of ' + docs.length + ' catalogue rows ready to download (Backup header ~' +
+      (data.pdf_count_header || '?') + ' PDFs total)';
+
+    if (!filtered.length) {
+      list.innerHTML = '<p class="meta">No rows match.</p>';
+      return;
+    }
+
+    list.innerHTML = filtered.map(d => {
+      const path = d.original_path || '';
+      const href = path ? rawUrl(path) : '#';
+      const fname = path.split('/').pop() || d.id;
+      return (
+        '<article class="dl-item">' +
+          '<div>' +
+            '<span class="doc-id">' + d.id + '</span> <span class="tag">' + (d.category || '') + '</span><br>' +
+            '<strong>' + (d.title || '') + '</strong>' +
+            '<div class="meta-line">' + (d.evidence_classification || '') + ' · ' + (d.privacy_classification || '') + '</div>' +
+            '<div class="meta-line">' + fname + '</div>' +
+          '</div>' +
+          (path
+            ? '<a class="btn" href="' + href + '" rel="noopener">Download</a>'
+            : '<span class="meta">No path</span>') +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  catEl.addEventListener('change', render);
+  document.getElementById('f-q').addEventListener('input', render);
+  render();
+})();
+</script>
 </body>
 </html>
