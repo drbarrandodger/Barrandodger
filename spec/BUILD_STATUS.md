@@ -2,19 +2,18 @@
 
 Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 
-## Phases 1–9 — complete for those sessions
+## Phases 1–10 — complete for those sessions
 
-## Phase 10 — Institutions and decision-makers — complete for this session
+## Phase 11 — Fraud analysis — complete for this session
 
-Updated evidence/institutions.html and data/institutions.json.
-Organisations listed from Backup filenames only.
-No organisation labelled corrupt.
-Individual officers not added from hearsay; names inside filenames stay filename mentions.
-Did not extract full reason-for-decision text from each PDF.
+Updated evidence/fraud.html and data/fraud.json.
+Event ledger empty.
+No conduct classified as criminal fraud.
+Author files with corruption/fraud in the title labelled AUTHOR'S ACCOUNT.
 Did not alter original evidence files.
 
 ## Not started
-Phases 11–24.
+Phases 12–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 11 only.
+CONTINUE FROM BUILD STATUS. Execute Phase 12 only.
