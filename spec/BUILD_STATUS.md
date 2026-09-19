@@ -1,21 +1,16 @@
-# BUILD STATUS
+# Build status — 19 September 2026
 
-Date: 2026-09-19
-Command: MASTER BUILD COMMAND V1
-Repo: wezzo72/Barrandodger
-Live: https://wezzo72.github.io/Barrandodger/
+Recreated the public architecture from the master website command.
 
-## Done
-- Phase 1 shell site + GitHub Pages
-- Phase 2 reports index pointing at wezzo72/Backup
-- Phase 3 extra nav pages and evidence links
+Done:
+- Museum home and room index
+- Library, writings, official-record and evidence rooms
+- Fact / allegation caution on the public pages
+- Links into wezzo72/Backup (531 public PDFs) and other existing archives
 
-## Not done
-- Full row-by-row evidence matrix from every PDF
-- Interactive evidence graph
-- Local search index of all documents
-- Verified hash table for every file
-- Sourced 35-year cost calculator
-
-## Next
-Fill one evidence module at a time from primary archive pages only.
+Not done:
+- Copying every Drive binary into this repo
+- Full-text search
+- SHA-256 / blockchain verification layer
+- Paid bookstore checkout
+- Independent verification of each allegation
