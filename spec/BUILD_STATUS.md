@@ -4,29 +4,25 @@ Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 
 ## Phase 1 — Architecture — complete enough to stop
 ## Phase 2 — Archive inventory — complete for that session
+## Phase 3 — Data model — complete for that session
 
-## Phase 3 — Data model — complete for this session
+## Phase 4 — Document library — complete for this session
 
 Created/updated:
-- spec/DATA-MODEL.md
-- data/schema.json
-- data/people.json (subject only)
-- data/organisations.json (filename-named agencies only)
-- data/publications.json (author works already on GitHub)
-- data/claims.json (empty on purpose)
-- data/events.json (filename dates only)
-- data/laws.json (reference list only)
-- data/costs.json (no figure treated as documented spend)
-- data/relationships.json
-- data/sources-ledger.json
+- documents.html (library hub)
+- downloads.html
+- viewer.html
+- data/library.json
 
-Did not invent judicial findings.
-Did not seed alleged crimes as established CLM- rows.
-Did not alter primary evidence files.
-Did not rebuild Phases 1–2 pages.
+Library points at existing GitHub folders. Original PDFs were not copied, renamed or overwritten.
+In-browser PDF preview on iPhone is limited by GitHub; Open/Download is the working path.
+
+Did not build full-text search (Phase 5).
+Did not build timeline or evidence graph.
+Did not calculate content hashes.
 
 ## Not started
-Phases 4–24.
+Phases 5–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 4 only.
+CONTINUE FROM BUILD STATUS. Execute Phase 5 only.

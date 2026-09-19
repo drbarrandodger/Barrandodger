@@ -1,0 +1,12 @@
+{
+  "phase": 4,
+  "generated": "2026-09-19",
+  "note": "Library collections point at existing GitHub paths. No file was copied or renamed.",
+  "collections": [
+    {"id": "LIB-0001", "name": "All Backup documents", "count": 545, "path": "client/public/documents", "repo": "wezzo72/Backup"},
+    {"id": "LIB-0002", "name": "Government Evidence", "count": 141, "path": "client/public/documents/government-evidence/Government Evidence", "repo": "wezzo72/Backup", "default_status": "OFFICIAL RECORD"},
+    {"id": "LIB-0003", "name": "Forensic analyses", "count": 63, "path": "client/public/documents/forensic-analyses", "repo": "wezzo72/Backup", "default_status": "AUTHOR'S ACCOUNT"},
+    {"id": "LIB-0004", "name": "Video analyses", "count": 8, "path": "client/public/documents/video-analyses", "repo": "wezzo72/Backup", "default_status": "AUTHOR'S ACCOUNT"},
+    {"id": "LIB-0005", "name": "Author publications listed on this site", "count": 9, "page": "writings.html", "default_status": "AUTHOR'S ACCOUNT"}
+  ]
+}
