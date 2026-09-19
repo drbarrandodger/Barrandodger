@@ -14,29 +14,41 @@ No refugee determination added from the IDP paper.
 
 ## Phase 14 — Master Evidence Ledger — COMPLETE
 
+- DATA-MODEL.md + schema.json Phase 14
+- ledger.html viewer
+- Linked from Evidence Centre
+- No invented offences
+
+## Phase 15 — Evidence Graph — COMPLETE
+
 Completed this session:
 
-- Upgraded `spec/DATA-MODEL.md` to Phase 14 relational schema (CLM-, DOC-, PER-, ORG-, EVT-, LAW-, RSP-, OUT-, CST-, PUB-, SRC-).
-- Upgraded `data/schema.json` to phase 14 (entities, prefixes, enums, relationship types, rules).
-- Added `ledger.html` — human-readable Master Evidence Ledger viewer (loads existing JSON; claims remain empty of invented offences).
-- Linked ledger from `evidence/index.html`.
-- Preserved existing people, organisations, events, relationships, sources without fabricating findings.
-- No new alleged offences seeded.
-- Original evidence files untouched.
+- Rebuilt `evidence-graph.html` as interactive Follow interface:
+  - Select Person / Publication / Organisation / Event / Law / Source / Cost / Document / Claim
+  - List nodes of that type from graph.json
+  - Show connected records (in/out edges) with relationship type and status
+  - Click-through to connected nodes
+  - Every path links back to underlying JSON / pages
+- Expanded `data/graph.json` to Phase 15:
+  - Nodes from existing people, publications, organisations, events, laws, sources, cost
+  - Edges: authored_by, subject_of, filename_concerns_subject, appears_on_filename, reference_only, filename_names_organisation, filename_related_law
+  - CLAIM ledger remains empty
+  - No verdict edges; no fabricated findings
+- Linked graph from Evidence Centre
+- Original evidence files untouched
 
 Files created/modified:
-- `spec/DATA-MODEL.md`
-- `data/schema.json`
-- `ledger.html` (new)
+- `evidence-graph.html`
+- `data/graph.json`
 - `evidence/index.html`
 - `spec/BUILD_STATUS.md`
 
 Unresolved errors: none for this phase.
 
 ## Not started
-Phases 15–24.
+Phases 16–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 15 only (when instructed).
+CONTINUE FROM BUILD STATUS. Execute Phase 16 only (when instructed).
 
-STOP after Phase 14.
+STOP after Phase 15.

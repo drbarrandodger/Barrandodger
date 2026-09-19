@@ -4,72 +4,195 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Evidence graph — Barran Dodger Archive</title>
+  <meta name="description" content="Interactive catalogue evidence graph. Edges are relationships in the ledger, not findings of guilt.">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .follow-bar { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 1rem 0 1.25rem; }
+    .follow-bar button {
+      font: inherit; cursor: pointer;
+      border: 1px solid var(--line); background: var(--panel);
+      padding: 0.4rem 0.7rem; color: var(--ink);
+    }
+    .follow-bar button.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+    .node-list { list-style: none; padding: 0; margin: 0; }
+    .node-list li {
+      border: 1px solid var(--line); background: var(--panel);
+      padding: 0.65rem 0.8rem; margin-bottom: 0.45rem;
+    }
+    .node-list button {
+      font: inherit; cursor: pointer; background: none; border: none;
+      color: var(--accent); padding: 0; text-align: left;
+    }
+    .id { font-family: ui-monospace, monospace; font-size: 0.85rem; }
+    .edge-row { font-size: 0.92rem; margin: 0.35rem 0; }
+    .status { color: var(--muted); font-size: 0.82rem; }
+    #detail { margin-top: 1.5rem; }
+    .type-tag {
+      display: inline-block; font-size: 0.72rem; text-transform: uppercase;
+      letter-spacing: 0.04em; border: 1px solid var(--line);
+      padding: 0.1rem 0.4rem; margin-right: 0.35rem;
+    }
+  </style>
 </head>
 <body>
 <header>
   <div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+  <div class="sub">Dr Richard William McLean · artist · author · researcher · advocate</div>
   <nav>
     <a href="index.html">Museum</a>
     <a href="evidence/index.html">Evidence</a>
+    <a href="ledger.html">Ledger</a>
     <a href="evidence-graph.html">Graph</a>
     <a href="timeline.html">Timeline</a>
-    <a href="documents.html">Documents</a>
+    <a href="testimony.html">Testimony</a>
+    <a href="methodology.html">Method</a>
   </nav>
 </header>
 <main>
   <h1>Evidence graph</h1>
-  <p class="lede">Follow records that already exist in the ledgers. A line on this graph is not a finding of guilt.</p>
-  <div class="caution">CLAIM nodes are empty on purpose. No offence was seeded as established in Phase 3.</div>
+  <p class="lede">Select a record type, then a node, to see catalogue connections. A line on this graph is not a finding of guilt.</p>
+
+  <div class="caution">
+    Edges are relationships already present in the Master Evidence Ledger (Phase 14/15).
+    CLAIM nodes are empty on purpose — no offence was seeded as established.
+    Organisation and event links often come from <strong>filenames only</strong>. Inspect primary documents before drawing conclusions.
+  </div>
+
   <h2>Follow</h2>
+  <div class="follow-bar" id="follow-bar" role="group" aria-label="Record type">
+    <button type="button" data-type="person">Person</button>
+    <button type="button" data-type="publication">Publication</button>
+    <button type="button" data-type="organisation">Organisation</button>
+    <button type="button" data-type="event">Event</button>
+    <button type="button" data-type="law">Law</button>
+    <button type="button" data-type="source">Source</button>
+    <button type="button" data-type="cost">Cost</button>
+    <button type="button" data-type="document">Document</button>
+    <button type="button" data-type="claim">Claim</button>
+  </div>
+
+  <div id="node-panel">
+    <p class="meta">Choose a type above.</p>
+  </div>
+
+  <div id="detail" hidden>
+    <h2 id="detail-title">Selected</h2>
+    <div id="detail-body"></div>
+  </div>
+
+  <h2>How to read the graph</h2>
+  <ul class="plain">
+    <li><strong>Person → Publication</strong> — authored_by (Author’s Account)</li>
+    <li><strong>Person → Source</strong> — subject of the public archives</li>
+    <li><strong>Event → Person / Organisation</strong> — filename concerns subject or names an agency (FILENAME DATE ONLY)</li>
+    <li><strong>Law → Source</strong> — reference only; not a finding of breach</li>
+    <li><strong>Claim</strong> — ledger empty; follow documents instead of verdicts</li>
+  </ul>
+
   <p>
-    <a class="btn" href="#person">Person</a>
-    <a class="btn" href="#publication">Publication</a>
-    <a class="btn" href="#organisation">Organisation</a>
-    <a class="btn" href="#event">Event</a>
-    <a class="btn" href="#law">Law</a>
-    <a class="btn" href="#document">Document</a>
-    <a class="btn" href="#claim">Claim</a>
+    <a class="btn" href="ledger.html">Master Evidence Ledger</a>
+    <a class="btn" href="data/graph.json">graph.json</a>
+    <a class="btn" href="data/relationships.json">relationships.json</a>
+    <a class="btn" href="spec/DATA-MODEL.md">Data model</a>
   </p>
-  <svg viewBox="0 0 320 220" width="100%" height="220" role="img" aria-label="Subject at centre connected to publications, sources, organisations and dated files">
-    <line x1="160" y1="110" x2="160" y2="30" stroke="#3f5d4a" />
-    <line x1="160" y1="110" x2="40" y2="110" stroke="#3f5d4a" />
-    <line x1="160" y1="110" x2="280" y2="110" stroke="#3f5d4a" />
-    <line x1="160" y1="110" x2="70" y2="190" stroke="#3f5d4a" />
-    <line x1="160" y1="110" x2="250" y2="190" stroke="#3f5d4a" />
-    <circle cx="160" cy="110" r="28" fill="#1c1915" />
-    <text x="160" y="114" text-anchor="middle" fill="#f4efe6" font-size="9">PER-0001</text>
-    <text x="160" y="22" text-anchor="middle" font-size="10">PUB works</text>
-    <text x="40" y="104" text-anchor="middle" font-size="10">Sources</text>
-    <text x="280" y="104" text-anchor="middle" font-size="10">Orgs</text>
-    <text x="70" y="208" text-anchor="middle" font-size="10">Dated files</text>
-    <text x="250" y="208" text-anchor="middle" font-size="10">Laws (ref)</text>
-  </svg>
-  <h2 id="person">Person</h2>
-  <p><strong>PER-0001</strong> Dr Richard William McLean / Barran Dodger — subject of the archive.</p>
-  <p>Connects to: publications (authored_by), GitHub sources (subject_of), cost model (concerns, estimate only).</p>
-  <p><a class="btn" href="about.html">About</a> <a class="btn" href="data/people.json">people.json</a></p>
-  <h2 id="publication">Publication</h2>
-  <p>PUB-0001 to PUB-0009. Status: AUTHOR’S ACCOUNT.</p>
-  <p><a class="btn" href="writings.html">Writings</a> <a class="btn" href="data/publications.json">publications.json</a></p>
-  <h2 id="organisation">Organisation</h2>
-  <p>ORG-0001 to ORG-0020. Linked only because the name appears on a public filename. Not a corruption list.</p>
-  <p><a class="btn" href="data/organisations.json">organisations.json</a> <a class="btn" href="official.html">Official records</a></p>
-  <h2 id="event">Event</h2>
-  <p>EVT-0001 to EVT-0005 and the Phase 6 timeline. Status: FILENAME DATE ONLY.</p>
-  <p><a class="btn" href="timeline.html">Timeline</a> <a class="btn" href="data/events.json">events.json</a></p>
-  <h2 id="law">Law</h2>
-  <p>LAW-0001 to LAW-0005. Status: REFERENCE ONLY. No row says a law was breached.</p>
-  <p><a class="btn" href="data/laws.json">laws.json</a> <a class="btn" href="evidence/ethics.html">Ethics module</a></p>
-  <h2 id="document">Document</h2>
-  <p>Document nodes live in wezzo72/Backup and the drbarrandodger archive. This graph does not duplicate the 531 PDFs.</p>
-  <p><a class="btn" href="documents.html">Library</a></p>
-  <h2 id="claim">Claim</h2>
-  <p>CLM- ledger is empty. Follow a document instead of a verdict.</p>
-  <p><a class="btn" href="data/claims.json">claims.json</a> <a class="btn" href="evidence/alleged-wrongs.html">Alleged wrongs index</a></p>
 </main>
 <footer>
-  <a href="data/graph.json">graph.json</a> · <a href="spec/FORENSIC-METHODOLOGY.md">Forensic method</a>
+  © Dr Richard William McLean / Barran Dodger<br>
+  <a href="methodology.html">Method</a> · <a href="spec/LEGAL-CAUTION.md">Legal caution</a> · <a href="spec/BUILD_STATUS.md">Build status</a>
 </footer>
+<script>
+(async function () {
+  const res = await fetch('data/graph.json');
+  const graph = await res.json();
+  const nodes = graph.nodes || [];
+  const edges = graph.edges || [];
+  const byId = Object.fromEntries(nodes.map(n => [n.id, n]));
+
+  const bar = document.getElementById('follow-bar');
+  const panel = document.getElementById('node-panel');
+  const detail = document.getElementById('detail');
+  const detailTitle = document.getElementById('detail-title');
+  const detailBody = document.getElementById('detail-body');
+
+  function connected(id) {
+    const out = [];
+    for (const e of edges) {
+      if (e.from === id) out.push({ dir: 'out', edge: e, other: byId[e.to] || { id: e.to, type: '?', label: e.to } });
+      if (e.to === id) out.push({ dir: 'in', edge: e, other: byId[e.from] || { id: e.from, type: '?', label: e.from } });
+    }
+    return out;
+  }
+
+  function showDetail(node) {
+    detail.hidden = false;
+    detailTitle.textContent = (node.label || node.id) + ' (' + node.id + ')';
+    const links = connected(node.id);
+    let html = '<p><span class="type-tag">' + node.type + '</span> <span class="id">' + node.id + '</span></p>';
+    if (!links.length) {
+      html += '<p class="meta">No catalogue edges for this node yet.</p>';
+    } else {
+      html += '<h3>Connected records</h3>';
+      for (const L of links) {
+        const arrow = L.dir === 'out' ? '→' : '←';
+        html += '<div class="edge-row">';
+        html += '<span class="id">' + node.id + '</span> ' + arrow + ' ';
+        html += '<button type="button" data-select="' + L.other.id + '"><span class="id">' + L.other.id + '</span> ' + (L.other.label || '') + '</button>';
+        html += ' <span class="status">[' + (L.edge.type || '') + (L.edge.status ? ' · ' + L.edge.status : '') + ']</span>';
+        html += '</div>';
+      }
+    }
+    html += '<p class="meta">Underlying data: <a href="data/graph.json">graph.json</a> · <a href="ledger.html">Ledger</a>';
+    if (node.type === 'person') html += ' · <a href="data/people.json">people.json</a> · <a href="about.html">About</a>';
+    if (node.type === 'publication') html += ' · <a href="data/publications.json">publications.json</a> · <a href="writings.html">Writings</a>';
+    if (node.type === 'organisation') html += ' · <a href="data/organisations.json">organisations.json</a> · <a href="evidence/institutions.html">Institutions</a>';
+    if (node.type === 'event') html += ' · <a href="data/events.json">events.json</a> · <a href="timeline.html">Timeline</a>';
+    if (node.type === 'law') html += ' · <a href="data/laws.json">laws.json</a> · <a href="evidence/ethics.html">Ethics</a>';
+    html += '</p>';
+    detailBody.innerHTML = html;
+    detailBody.querySelectorAll('[data-select]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const n = byId[btn.getAttribute('data-select')];
+        if (n) showDetail(n);
+      });
+    });
+  }
+
+  function listType(type) {
+    bar.querySelectorAll('button').forEach(b => b.classList.toggle('active', b.dataset.type === type));
+    if (type === 'claim') {
+      panel.innerHTML = '<p class="meta"><strong>CLM-</strong> ledger is empty. No offence was seeded as established. Follow a document or person instead of a verdict. <a href="data/claims.json">claims.json</a> · <a href="evidence/alleged-wrongs.html">Alleged wrongs index</a></p>';
+      detail.hidden = true;
+      return;
+    }
+    if (type === 'document') {
+      panel.innerHTML = '<p class="meta">Document nodes live in the evidence mirrors (<a href="https://wezzo72.github.io/Backup/">wezzo72/Backup</a>, <a href="https://drbarrandodger.github.io/barran-dodger-archive/">drbarrandodger archive</a>). This graph does not duplicate the PDF corpus. <a href="documents.html">Documents page</a> · <a href="data/documents.json">documents.json</a></p>';
+      detail.hidden = true;
+      return;
+    }
+    const list = nodes.filter(n => n.type === type);
+    if (!list.length) {
+      panel.innerHTML = '<p class="meta">No nodes of this type in graph.json yet.</p>';
+      detail.hidden = true;
+      return;
+    }
+    let html = '<ul class="node-list">';
+    for (const n of list) {
+      html += '<li><button type="button" data-id="' + n.id + '"><span class="id">' + n.id + '</span> — ' + (n.label || n.type) + '</button></li>';
+    }
+    html += '</ul>';
+    panel.innerHTML = html;
+    panel.querySelectorAll('[data-id]').forEach(btn => {
+      btn.addEventListener('click', () => showDetail(byId[btn.getAttribute('data-id')]));
+    });
+  }
+
+  bar.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => listType(btn.dataset.type));
+  });
+
+  // Default: person
+  listType('person');
+})();
+</script>
 </body>
 </html>
