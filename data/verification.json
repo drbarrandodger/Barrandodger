@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "17.0.0",
+  "phase": 17,
+  "inspectedAt": "2026-09-19",
+  "commit": "834959528619cbce355adcda1940ae00c23b198d",
+  "result": {
+    "manifestFilesListed": 256,
+    "presentAsCompleteBinary": 10,
+    "presentAsPointerOrStub": 134,
+    "notInInspectedTree": 112,
+    "sizeMatch": 0,
+    "sizeMismatch": 10,
+    "sha256Matches": 0,
+    "conclusion": "No listed manifest file is demonstrated to match the current git object. Ten overlapping names fail on size. 134 are pointer/stub objects. 112 names are not in this tree. Bitcoin block 897241 is not treated as authentication."
+  }
+}

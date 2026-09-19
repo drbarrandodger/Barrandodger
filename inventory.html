@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Archive inventory — Barran Dodger Archive</title>
+  <meta name="description" content="GitHub-tree inventory of the primary archive. Pointer files, complete PDFs, duplicates, blockchain-manifest coverage. Not a court.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+  <div class="sub">Richard William McLean / Barran Dodger · research presentation</div>
+  <nav>
+    <a href="index.html">Museum</a>
+    <a href="inventory.html">Inventory</a>
+    <a href="verification.html">Verification</a>
+    <a href="evidence/index.html">Evidence</a>
+    <a href="documents.html">Documents</a>
+    <a href="methodology.html">Method</a>
+  </nav>
+</header>
+<main>
+  <h1>What is actually in the primary GitHub tree</h1>
+  <p class="lede">Inspected commit 834959528619cbce355adcda1940ae00c23b198d of drbarrandodger/barran-dodger-archive. Original files were not renamed, deleted or overwritten. A filename is a label, not a judicial finding.</p>
+  <div class="caution">This presentation site does not replace the evidence stores. Look. Read. Search. Verify.</div>
+  <h2>Inspection counts</h2>
+  <div class="grid three">
+    <article class="card"><h3>3,539</h3><p>Blobs excluding node_modules</p></article>
+    <article class="card"><h3>63</h3><p>Complete PDF git objects</p></article>
+    <article class="card"><h3>1,268</h3><p>PDF paths that are ~131-byte stubs</p></article>
+    <article class="card"><h3>256</h3><p>Names listed in blockchain_manifest.json</p></article>
+    <article class="card"><h3>10</h3><p>Manifest names present as complete PDFs</p></article>
+    <article class="card"><h3>134</h3><p>Manifest names present as stubs only</p></article>
+    <article class="card"><h3>112</h3><p>Manifest names not in this tree</p></article>
+    <article class="card"><h3>0</h3><p>Manifest size matches</p></article>
+    <article class="card"><h3>0</h3><p>SHA-256 matches demonstrated</p></article>
+  </div>
+  <h2>Documented fact, not a verdict</h2>
+  <p>All 10 complete git objects that share a manifest filename are smaller than the manifest size field. They cannot be the same bytes as the files that manifest hashed. This page records the mismatch. It does not choose why. SHA-256 of pointer text was not computed.</p>
+  <p>
+    <a class="btn" href="verification.html">Verification</a>
+    <a class="btn" href="data/verification.json">verification.json</a>
+    <a class="btn" href="data/inventory.summary.json">inventory.summary.json</a>
+    <a class="btn" href="https://github.com/drbarrandodger/barran-dodger-archive">Evidence repository</a>
+    <a class="btn" href="https://drbarrandodger.github.io/barran-dodger-archive/">Primary Pages archive</a>
+  </p>
+</main>
+<footer>
+  © Richard William McLean / Barran Dodger · not a court<br>
+  <a href="methodology.html">Method</a> · <a href="verification.html">Verification</a>
+</footer>
+</body>
+</html>
