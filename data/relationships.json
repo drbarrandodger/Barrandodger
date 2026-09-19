@@ -1,0 +1,9 @@
+{
+  "note": "Only relationships that do not require inventing a verdict.",
+  "relationships": [
+    {"from": "PER-0001", "to": "SRC-0001", "type": "subject_of"},
+    {"from": "PER-0001", "to": "SRC-0002", "type": "subject_of"},
+    {"from": "PUB-0001", "to": "PER-0001", "type": "authored_by"},
+    {"from": "CST-0001", "to": "PER-0001", "type": "concerns", "status": "model only"}
+  ]
+}

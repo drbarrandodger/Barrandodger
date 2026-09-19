@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {"id": "SRC-0001", "label": "GITHUB ARCHIVE", "repo": "wezzo72/Barrandodger", "url": "https://wezzo72.github.io/Barrandodger/"},
+    {"id": "SRC-0002", "label": "GITHUB ARCHIVE", "repo": "wezzo72/Backup", "url": "https://wezzo72.github.io/Backup/"},
+    {"id": "SRC-0003", "label": "GITHUB ARCHIVE", "repo": "drbarrandodger/barran-dodger-archive", "url": "https://drbarrandodger.github.io/barran-dodger-archive/"},
+    {"id": "SRC-0004", "label": "EXTERNAL ARCHIVE", "url": "https://mclean-digital-vault.base44.app", "verified_this_phase": false},
+    {"id": "SRC-0005", "label": "LIVE APPLICATION / MIRROR", "url": "https://barrandodger.com", "verified_this_phase": false}
+  ]
+}

@@ -3,36 +3,30 @@
 Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 
 ## Phase 1 — Architecture — complete enough to stop
-Spec pack in `/spec`. Static site live. Evidence not rewritten.
+## Phase 2 — Archive inventory — complete for that session
 
-## Phase 2 — Archive inventory — complete for this session
+## Phase 3 — Data model — complete for this session
 
-Inspected:
-- wezzo72/Barrandodger (presentation routes listed in data/sources.json)
-- wezzo72/Backup `client/public/documents/` — 545 blobs, 531 PDFs
-- Confirmed drbarrandodger/barran-dodger-archive exists; full tree not scanned
+Created/updated:
+- spec/DATA-MODEL.md
+- data/schema.json
+- data/people.json (subject only)
+- data/organisations.json (filename-named agencies only)
+- data/publications.json (author works already on GitHub)
+- data/claims.json (empty on purpose)
+- data/events.json (filename dates only)
+- data/laws.json (reference list only)
+- data/costs.json (no figure treated as documented spend)
+- data/relationships.json
+- data/sources-ledger.json
 
-Created:
-- data/INVENTORY.md
-- data/statistics.json
-- data/sources.json
-- data/duplicates.json
-- data/documents.json (header)
-- data/documents.csv (one row per Backup documents file)
-
-Did not delete, rename or overwrite primary evidence.
-Did not rebuild Phase 1 pages.
-Did not calculate PDF content SHA-256.
-Did not copy Google Drive binaries.
-
-Unresolved:
-- Primary archive file-by-file count still unverified
-- External URL live-check
-- Drive complete listing
-- Content-hash verification
+Did not invent judicial findings.
+Did not seed alleged crimes as established CLM- rows.
+Did not alter primary evidence files.
+Did not rebuild Phases 1–2 pages.
 
 ## Not started
-Phases 3–24.
+Phases 4–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 3 only.
+CONTINUE FROM BUILD STATUS. Execute Phase 4 only.

@@ -1,0 +1,10 @@
+{
+  "note": "Reference list only. Presence here does not mean a violation was found.",
+  "laws": [
+    {"id": "LAW-0001", "name": "Public Interest Disclosure Act 2013 (Cth)", "jurisdiction": "Australia", "status": "REFERENCE ONLY"},
+    {"id": "LAW-0002", "name": "Freedom of Information Act 1982 (Cth)", "jurisdiction": "Australia", "status": "REFERENCE ONLY"},
+    {"id": "LAW-0003", "name": "National Disability Insurance Scheme Act 2013 (Cth)", "jurisdiction": "Australia", "status": "REFERENCE ONLY"},
+    {"id": "LAW-0004", "name": "Safety, Rehabilitation and Compensation Act 1988 (Cth)", "jurisdiction": "Australia", "status": "REFERENCE ONLY"},
+    {"id": "LAW-0005", "name": "Guardianship Act 1987 (NSW)", "jurisdiction": "NSW", "status": "REFERENCE ONLY"}
+  ]
+}

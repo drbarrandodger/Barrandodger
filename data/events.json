@@ -1,0 +1,10 @@
+{
+  "note": "Dates below are taken from filenames only. A filename date is not a verified event date.",
+  "events": [
+    {"id": "EVT-0001", "label": "Filename: Federal Court PID assessment", "date_from_filename": "2023-03-27", "linked_filename": "2023-03-27_Federal_Court_PID_Assessment.pdf", "status": "FILENAME DATE ONLY"},
+    {"id": "EVT-0002", "label": "Filename: letter to PM Albanese / OPMC", "date_from_filename": "2022-05-31", "linked_filename": "31-05-2022-letter-to-pm-albanese-opmc.pdf", "status": "FILENAME DATE ONLY"},
+    {"id": "EVT-0003", "label": "Filename: NDIS plan approval", "date_from_filename": "2025-11-20", "linked_filename": "2025-11-20_NDIS_Plan_Approval_366406.pdf", "status": "FILENAME DATE ONLY"},
+    {"id": "EVT-0004", "label": "Filename: NCAT guardianship evidence", "date_from_filename": "2026-01-20", "linked_filename": "2026-01-20_NCAT_Guardianship_Evidence.pdf", "status": "FILENAME DATE ONLY"},
+    {"id": "EVT-0005", "label": "Filename: LECC out of jurisdiction", "date_from_filename": "2025-11-19", "linked_filename": "2025-11-19_LECC_Out_Of_Jurisdiction.pdf", "status": "FILENAME DATE ONLY"}
+  ]
+}

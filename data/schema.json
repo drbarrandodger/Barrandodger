@@ -1,0 +1,42 @@
+{
+  "phase": 3,
+  "generated": "2026-09-19",
+  "entities": ["claim", "document", "person", "organisation", "event", "law", "cost", "publication", "source"],
+  "id_prefixes": {
+    "claim": "CLM-",
+    "document": "DOC-",
+    "person": "PER-",
+    "organisation": "ORG-",
+    "event": "EVT-",
+    "law": "LAW-",
+    "cost": "CST-",
+    "publication": "PUB-",
+    "source": "SRC-"
+  },
+  "evidence_status_enum": [
+    "JUDICIALLY ESTABLISHED",
+    "OFFICIALLY DETERMINED",
+    "DOCUMENTED FACT",
+    "PRIMARY SOURCE",
+    "OFFICIAL RECORD",
+    "CORROBORATED",
+    "AUTHOR'S ACCOUNT",
+    "ALLEGATION",
+    "INFERENCE",
+    "INTERPRETATION",
+    "POSSIBLE LEGAL CHARACTERISATION",
+    "UNVERIFIED",
+    "DISPUTED",
+    "RESEARCH QUESTION",
+    "UNKNOWN"
+  ],
+  "privacy_enum": [
+    "PUBLIC",
+    "PUBLIC WITH REDACTION",
+    "RESEARCH USE",
+    "RESTRICTED",
+    "PRIVATE",
+    "DO NOT PUBLISH",
+    "PUBLIC ON GITHUB — SENSITIVE TITLE"
+  ]
+}

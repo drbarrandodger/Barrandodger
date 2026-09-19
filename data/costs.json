@@ -1,0 +1,12 @@
+{
+  "note": "No dollar figure is seeded as documented taxpayer expenditure. File taxpayer-cost-estimation-35-years.pdf exists in Backup and remains an estimate unless a later phase shows a primary account.",
+  "costs": [
+    {
+      "id": "CST-0001",
+      "category": "35-year financial impact model",
+      "figure": null,
+      "status": "ESTIMATED / HYPOTHETICAL until source figures are extracted",
+      "linked_filename": "taxpayer-cost-estimation-35-years.pdf"
+    }
+  ]
+}

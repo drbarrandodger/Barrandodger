@@ -1,0 +1,25 @@
+{
+  "note": "Organisations listed because their names appear on public filenames in wezzo72/Backup. Listing is not a finding about those bodies.",
+  "organisations": [
+    {"id": "ORG-0001", "name": "National Disability Insurance Agency / NDIS", "type": "agency", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0002", "name": "NDIS Quality and Safeguards Commission", "type": "regulator", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0003", "name": "Commonwealth Ombudsman", "type": "ombudsman", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0004", "name": "Office of the Australian Information Commissioner", "type": "regulator", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0005", "name": "Department of Social Services", "type": "department", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0006", "name": "Office of the Prime Minister and Cabinet", "type": "department", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0007", "name": "Australian Federal Police", "type": "police", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0008", "name": "Federal Court of Australia", "type": "court", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0009", "name": "Administrative Appeals Tribunal", "type": "tribunal", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0010", "name": "Comcare", "type": "agency", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0011", "name": "WorkSafe", "type": "regulator", "jurisdiction": "Australia / Victoria (filename only)", "status": "named on file titles"},
+    {"id": "ORG-0012", "name": "IBAC", "type": "integrity body", "jurisdiction": "Victoria", "status": "named on file titles"},
+    {"id": "ORG-0013", "name": "LECC", "type": "integrity body", "jurisdiction": "NSW", "status": "named on file titles"},
+    {"id": "ORG-0014", "name": "Australian Human Rights Commission", "type": "commission", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0015", "name": "AFCA", "type": "external dispute body", "jurisdiction": "Australia", "status": "named on file titles"},
+    {"id": "ORG-0016", "name": "NSW Civil and Administrative Tribunal", "type": "tribunal", "jurisdiction": "NSW", "status": "named on file titles"},
+    {"id": "ORG-0017", "name": "NSW Trustee and Guardian", "type": "agency", "jurisdiction": "NSW", "status": "named on file titles"},
+    {"id": "ORG-0018", "name": "Legal Aid NSW", "type": "legal service", "jurisdiction": "NSW", "status": "named on file titles"},
+    {"id": "ORG-0019", "name": "OVIC", "type": "regulator", "jurisdiction": "Victoria", "status": "named on file titles"},
+    {"id": "ORG-0020", "name": "Australian Human Rights / CDDA-AFSA pathway", "type": "scheme", "jurisdiction": "Australia", "status": "named on file titles; scheme identity not fully normalised this phase"}
+  ]
+}

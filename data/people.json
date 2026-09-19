@@ -1,0 +1,13 @@
+{
+  "note": "Seeded from the archive subject identity used across the public repos. Third parties named only in filenames are not added as confirmed actors this phase.",
+  "people": [
+    {
+      "id": "PER-0001",
+      "name": "Dr Richard William McLean",
+      "also_known_as": ["Barran Dodger"],
+      "role_in_archive": "subject / author",
+      "status": "DOCUMENTED FACT that this is the name used by the archive",
+      "linked_sources": ["SRC-0001", "SRC-0002", "SRC-0003"]
+    }
+  ]
+}

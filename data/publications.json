@@ -1,0 +1,14 @@
+{
+  "note": "Author publications already public on GitHub Backup. These are AUTHOR'S ACCOUNT / publication records, not official determinations.",
+  "publications": [
+    {"id": "PUB-0001", "title": "123 Gospels of Barran Dodger", "author": "PER-0001", "path": "client/public/documents/123_gospels_barran_dodger.pdf", "status": "AUTHOR'S ACCOUNT"},
+    {"id": "PUB-0002", "title": "Canonical Gospel of Barran Dodger", "author": "PER-0001", "path": "client/public/documents/canonical_gospel_barran_dodger.pdf", "status": "AUTHOR'S ACCOUNT"},
+    {"id": "PUB-0003", "title": "The Certified Record of Barran Dodger", "author": "PER-0001", "path": "client/public/documents/the-certified-record-of-barran-dodger.pdf", "status": "AUTHOR'S ACCOUNT"},
+    {"id": "PUB-0004", "title": "The Paradox of Persecution", "author": "PER-0001", "path": "client/public/documents/paradox-of-persecution-academic-paper.pdf", "status": "AUTHOR'S ACCOUNT"},
+    {"id": "PUB-0005", "title": "Digital Oppression essay", "author": "PER-0001", "path": "client/public/documents/digital-oppression-100000-word-essay.pdf", "status": "AUTHOR'S ACCOUNT"},
+    {"id": "PUB-0006", "title": "1000 Years of Peace", "author": "PER-0001", "path": "client/public/documents/1000_years_of_peace.pdf", "status": "AUTHOR'S ACCOUNT"},
+    {"id": "PUB-0007", "title": "My Boaz Is Coming", "author": "PER-0001", "path": "client/public/documents/My_Boaz_Is_Coming.pdf", "status": "AUTHOR'S ACCOUNT"},
+    {"id": "PUB-0008", "title": "Apotheosis", "author": "PER-0001", "path": "client/public/documents/apotheosis.pdf", "status": "AUTHOR'S ACCOUNT"},
+    {"id": "PUB-0009", "title": "A Certain Beauty in UN Resolution — art catalogue", "author": "PER-0001", "path": "client/public/documents/a-certain-beauty-in-un-resolution-art-catalogue.pdf", "status": "AUTHOR'S ACCOUNT"}
+  ]
+}
