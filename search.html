@@ -4,107 +4,207 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Search — Barran Dodger Archive</title>
+  <meta name="description" content="Phase 21 unified title and metadata search across document, media, timeline and publication catalogues. Not a full-text PDF engine.">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .filters { display: grid; gap: 0.65rem; margin: 1rem 0 1rem; max-width: 42rem; }
+    @media (min-width: 640px) { .filters { grid-template-columns: 1fr 1fr; } }
+    .filters label { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.2rem; }
+    .filters select, .filters input {
+      width: 100%; font: inherit; padding: 0.4rem 0.5rem;
+      border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+    }
+    .hit {
+      border: 1px solid var(--line); background: var(--panel);
+      padding: 0.7rem 0.9rem; margin-bottom: 0.5rem;
+    }
+    .hit .tag {
+      display: inline-block; font-size: 0.72rem; border: 1px solid var(--line);
+      padding: 0.1rem 0.4rem; margin-right: 0.25rem; text-transform: uppercase;
+    }
+    .hit .meta { color: var(--muted); font-size: 0.82rem; margin-top: 0.2rem; }
+    .count { font-size: 0.9rem; color: var(--muted); }
+  </style>
 </head>
 <body>
 <header>
   <div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+  <div class="sub">Dr Richard William McLean · artist · author · researcher · advocate</div>
   <nav>
     <a href="index.html">Museum</a>
+    <a href="evidence/index.html">Evidence</a>
     <a href="documents.html">Documents</a>
+    <a href="media.html">Media</a>
+    <a href="timeline.html">Timeline</a>
     <a href="search.html">Search</a>
-    <a href="downloads.html">Downloads</a>
+    <a href="verification.html">Verification</a>
+    <a href="methodology.html">Method</a>
   </nav>
 </header>
 <main>
   <h1>Search</h1>
-  <p class="lede">This searches <strong>titles and metadata</strong>. It does not read the text inside every PDF.</p>
-  <div class="caution">Results show an evidence status for the listing. Status is not a court finding.</div>
-  <form id="f" action="https://github.com/search" method="get">
-    <p>
-      <label for="q">Find a title</label><br>
-      <input id="q" name="q" type="search" autocomplete="off" style="width:100%;max-width:28rem;padding:0.5rem;font-size:1rem;">
-    </p>
-    <p>
-      <button class="btn" type="button" id="local">Search this catalogue</button>
-      <button class="btn" type="submit">Search on GitHub Backup</button>
-    </p>
-    <input type="hidden" name="type" value="code">
-  </form>
-  <p class="meta" id="hint">Filters: official, gospel, ndis, ombudsman, foi, ncat, comcare.</p>
+  <p class="lede">Phase 21 unified search over <strong>titles and metadata</strong> in the live catalogues on this site. It does <strong>not</strong> read the text inside every PDF.</p>
+
+  <div class="caution">
+    Results show the evidence-status label from the catalogue row. Status is not a court finding.
+    For the full Backup documents folder, use GitHub code search.
+  </div>
+
+  <div class="filters">
+    <div style="grid-column: 1 / -1;">
+      <label for="q">Find a title, agency, path or ID</label>
+      <input id="q" type="search" autocomplete="off" placeholder="e.g. NDIS, Federal Court, DOC-0001, gospel…">
+    </div>
+    <div>
+      <label for="f-kind">Catalogue</label>
+      <select id="f-kind">
+        <option value="">All catalogues</option>
+        <option value="document">Documents</option>
+        <option value="media">Media</option>
+        <option value="timeline">Timeline</option>
+        <option value="publication">Publications</option>
+      </select>
+    </div>
+    <div style="align-self: end;">
+      <button class="btn" type="button" id="run">Search catalogues</button>
+      <button class="btn" type="button" id="gh">Search on GitHub Backup</button>
+    </div>
+  </div>
+
+  <p class="count" id="status">Loading catalogues…</p>
   <div id="out"></div>
-  <h2>Also search</h2>
+
+  <h2>Also open</h2>
   <p>
-    <a class="btn" href="https://wezzo72.github.io/Backup/">Backup site</a>
-    <a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">Documents folder</a>
-    <a class="btn" href="official.html">Official list</a>
-    <a class="btn" href="writings.html">Writings</a>
+    <a class="btn" href="documents.html">Document database</a>
+    <a class="btn" href="media.html">Media archive</a>
+    <a class="btn" href="timeline.html">Timeline</a>
+    <a class="btn" href="downloads.html">Downloads</a>
+    <a class="btn" href="verification.html">Verification</a>
+    <a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">Backup documents folder</a>
   </p>
+
+  <p class="meta">Machine notes: <a href="data/search-notes.json">search-notes.json</a></p>
 </main>
+<footer>
+  © Dr Richard William McLean / Barran Dodger<br>
+  <a href="methodology.html">Method</a> · <a href="master-command.html">Master command</a> · <a href="spec/BUILD_STATUS.md">Build status</a>
+</footer>
 <script>
-const CATALOGUE = [
-  ["123 Gospels of Barran Dodger", "AUTHOR'S ACCOUNT", "writings.html", "publication"],
-  ["Canonical Gospel of Barran Dodger", "AUTHOR'S ACCOUNT", "writings.html", "publication"],
-  ["The Certified Record of Barran Dodger", "AUTHOR'S ACCOUNT", "writings.html", "publication"],
-  ["The Paradox of Persecution", "AUTHOR'S ACCOUNT", "writings.html", "publication"],
-  ["Digital Oppression essay", "AUTHOR'S ACCOUNT", "writings.html", "publication"],
-  ["1000 Years of Peace", "AUTHOR'S ACCOUNT", "writings.html", "publication"],
-  ["My Boaz Is Coming", "AUTHOR'S ACCOUNT", "writings.html", "publication"],
-  ["Apotheosis", "AUTHOR'S ACCOUNT", "writings.html", "publication"],
-  ["A Certain Beauty in UN Resolution", "AUTHOR'S ACCOUNT", "writings.html", "publication"],
-  ["Federal Court PID assessment 27 Mar 2023", "OFFICIAL RECORD", "official.html", "official"],
-  ["Letter to PM Albanese / OPMC 31 May 2022", "OFFICIAL RECORD", "official.html", "official"],
-  ["NDIS plan approval 20 Nov 2025", "OFFICIAL RECORD", "official.html", "official"],
-  ["NCAT guardianship evidence 20 Jan 2026", "OFFICIAL RECORD", "sensitive.html", "official"],
-  ["LECC out of jurisdiction 19 Nov 2025", "OFFICIAL RECORD", "official.html", "official"],
-  ["OAIC Micron21 privacy CP2102752", "OFFICIAL RECORD", "official.html", "official"],
-  ["IBAC PID rejection 18 Nov 2021", "OFFICIAL RECORD", "official.html", "official"],
-  ["Commonwealth Ombudsman service restriction 8 Aug 2025", "OFFICIAL RECORD", "official.html", "official"],
-  ["AAT and WorkCover McLean and Comcare 20217478", "OFFICIAL RECORD", "official.html", "official"],
-  ["NDIS FOI decision letter", "OFFICIAL RECORD", "official.html", "official"],
-  ["WorkSafe impairment benefit liability decision", "OFFICIAL RECORD", "official.html", "official"],
-  ["Legal Aid NSW advice letter guardianship", "OFFICIAL RECORD", "sensitive.html", "official"],
-  ["IPU discharge summary", "OFFICIAL RECORD", "sensitive.html", "sensitive"],
-  ["Interim behaviour support plan 2024", "OFFICIAL RECORD", "sensitive.html", "sensitive"],
-  ["NSW Trustee and Guardian s122", "OFFICIAL RECORD", "sensitive.html", "sensitive"],
-  ["AHRC email exchange 4 Jul 2023", "OFFICIAL RECORD", "official.html", "official"],
-  ["AFCA letter 21 May 2021", "OFFICIAL RECORD", "official.html", "official"],
-  ["CDDA AFP compensation claim 21 Oct 2021", "OFFICIAL RECORD", "official.html", "official"],
-  ["blockchain_manifest.json", "REPOSITORY RECORD", "https://github.com/wezzo72/Backup/raw/main/client/public/documents/blockchain_manifest.json", "manifest"],
-  ["Dr Richard William McLean / Barran Dodger", "DOCUMENTED FACT that this is the archive subject", "about.html", "person"],
-  ["NDIS / NDIA", "named on file titles", "data/organisations.json", "organisation"],
-  ["Commonwealth Ombudsman", "named on file titles", "data/organisations.json", "organisation"],
-  ["Federal Court of Australia", "named on file titles", "data/organisations.json", "organisation"],
-  ["NCAT", "named on file titles", "data/organisations.json", "organisation"],
-  ["Public Interest Disclosure Act 2013", "REFERENCE ONLY", "data/laws.json", "law"]
-];
-const input = document.getElementById('q');
-const out = document.getElementById('out');
-const form = document.getElementById('f');
-form.addEventListener('submit', function (e) {
-  const q = input.value.trim();
-  if (!q) { e.preventDefault(); return; }
-  e.preventDefault();
-  const url = 'https://github.com/search?q=' + encodeURIComponent('repo:wezzo72/Backup path:client/public/documents ' + q) + '&type=code';
-  window.location.href = url;
-});
-document.getElementById('local').addEventListener('click', run);
-input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); run(); } });
-function run() {
-  const q = input.value.trim().toLowerCase();
-  if (!q) { out.innerHTML = '<p class="meta">Type a word first.</p>'; return; }
-  const hits = CATALOGUE.filter(function (row) {
-    return row[0].toLowerCase().indexOf(q) !== -1 || row[1].toLowerCase().indexOf(q) !== -1 || row[3].toLowerCase().indexOf(q) !== -1;
-  });
-  if (!hits.length) {
-    const gh = 'https://github.com/search?q=' + encodeURIComponent('repo:wezzo72/Backup path:client/public/documents ' + q) + '&type=code';
-    out.innerHTML = '<p>No title match in this short catalogue.</p><p><a class="btn" href="' + gh + '">Search all 531 PDFs on GitHub</a></p>';
-    return;
+(async function () {
+  const status = document.getElementById('status');
+  const out = document.getElementById('out');
+  const index = [];
+
+  function push(kind, id, title, statusLabel, href, extra) {
+    index.push({
+      kind: kind,
+      id: id || '',
+      title: title || '',
+      status: statusLabel || '',
+      href: href || '#',
+      extra: extra || '',
+      hay: ((id || '') + ' ' + (title || '') + ' ' + (statusLabel || '') + ' ' + (extra || '')).toLowerCase()
+    });
   }
-  out.innerHTML = '<p class="meta">' + hits.length + ' metadata matches</p><ul class="plain">' + hits.map(function (row) {
-    return '<li><a href="' + row[2] + '">' + row[0] + '</a> — ' + row[1] + '</li>';
-  }).join('') + '</ul>';
-}
+
+  try {
+    const [docs, media, timeline, pubs] = await Promise.all([
+      fetch('data/documents.json').then(r => r.json()),
+      fetch('data/media.json').then(r => r.json()),
+      fetch('data/timeline.json').then(r => r.json()),
+      fetch('data/publications.json').then(r => r.json())
+    ]);
+
+    (docs.documents || []).forEach(d => {
+      const path = d.original_path || '';
+      const href = path
+        ? 'https://github.com/wezzo72/Backup/raw/main/' + encodeURI(path)
+        : 'documents.html';
+      push(
+        'document',
+        d.id,
+        d.title,
+        d.evidence_classification || d.status,
+        href,
+        [d.category, path, (d.agency || []).join(' ')].filter(Boolean).join(' ')
+      );
+    });
+
+    (media.media || []).forEach(m => {
+      const path = m.original_path || '';
+      const href = path
+        ? 'https://github.com/wezzo72/Backup/raw/main/' + encodeURI(path)
+        : 'media.html';
+      push('media', m.id, m.title, m.evidence_classification || m.status, href, [m.type, path].filter(Boolean).join(' '));
+    });
+
+    (timeline.entries || []).forEach(t => {
+      push(
+        'timeline',
+        t.id,
+        t.label,
+        t.evidence_category || t.status,
+        t.document_link || 'timeline.html',
+        [t.date, (t.agency || []).join(' '), t.event_type, (t.legal_issue || []).join(' ')].filter(Boolean).join(' ')
+      );
+    });
+
+    (pubs.publications || []).forEach(p => {
+      const path = p.path || '';
+      const href = path
+        ? 'https://github.com/wezzo72/Backup/raw/main/' + encodeURI(path)
+        : 'writings.html';
+      push('publication', p.id, p.title, p.status || "AUTHOR'S ACCOUNT", href, path);
+    });
+
+    status.textContent = index.length + ' catalogue rows loaded (title/metadata only). Type a query.';
+  } catch (e) {
+    status.textContent = 'Failed to load one or more catalogues: ' + e;
+  }
+
+  function render() {
+    const q = (document.getElementById('q').value || '').toLowerCase().trim();
+    const kind = document.getElementById('f-kind').value;
+    if (!q) {
+      out.innerHTML = '<p class="meta">Enter a search term.</p>';
+      status.textContent = index.length + ' catalogue rows loaded.';
+      return;
+    }
+    const hits = index.filter(row => {
+      if (kind && row.kind !== kind) return false;
+      return row.hay.indexOf(q) !== -1;
+    });
+    status.textContent = hits.length + ' match' + (hits.length === 1 ? '' : 'es') + ' in loaded catalogues.';
+    if (!hits.length) {
+      const gh = 'https://github.com/search?q=' + encodeURIComponent('repo:wezzo72/Backup path:client/public/documents ' + q) + '&type=code';
+      out.innerHTML = '<p>No title/metadata match in the seeded catalogues.</p><p><a class="btn" href="' + gh + '">Search Backup documents on GitHub</a></p>';
+      return;
+    }
+    out.innerHTML = hits.map(row => {
+      return (
+        '<article class="hit">' +
+          '<div><span class="tag">' + row.kind + '</span> <span class="meta">' + row.id + '</span></div>' +
+          '<div><a href="' + row.href + '">' + row.title + '</a></div>' +
+          '<div class="meta">' + row.status + (row.extra ? ' · ' + row.extra : '') + '</div>' +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  document.getElementById('run').addEventListener('click', render);
+  document.getElementById('q').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { e.preventDefault(); render(); }
+  });
+  document.getElementById('f-kind').addEventListener('change', function () {
+    if ((document.getElementById('q').value || '').trim()) render();
+  });
+  document.getElementById('gh').addEventListener('click', function () {
+    const q = (document.getElementById('q').value || '').trim() || 'pdf';
+    const url = 'https://github.com/search?q=' + encodeURIComponent('repo:wezzo72/Backup path:client/public/documents ' + q) + '&type=code';
+    window.location.href = url;
+  });
+})();
 </script>
 </body>
 </html>

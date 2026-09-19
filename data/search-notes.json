@@ -1,9 +1,15 @@
 {
-  "phase": 5,
+  "phase": 21,
   "generated": "2026-09-19",
-  "mode": "filename and metadata search",
+  "mode": "unified title and metadata search",
   "full_text_of_pdf_bodies": false,
-  "local_catalogue": "search.html embedded titles",
+  "local_catalogues": [
+    "data/documents.json",
+    "data/media.json",
+    "data/timeline.json",
+    "data/publications.json"
+  ],
+  "ui": "search.html",
   "corpus_search": "GitHub code search on wezzo72/Backup path:client/public/documents",
-  "note": "Do not describe this as a verified full-text engine over every page of every PDF."
+  "note": "Do not describe this as a verified full-text engine over every page of every PDF. Search matches catalogue titles, IDs, agencies, paths and status labels only."
 }

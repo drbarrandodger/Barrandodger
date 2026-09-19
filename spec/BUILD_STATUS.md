@@ -16,36 +16,35 @@ Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 ## Phase 17 — Document Database — COMPLETE
 ## Phase 18 — Download Centre — COMPLETE
 ## Phase 19 — Media Archive — COMPLETE
-
 ## Phase 20 — Public Verification Portal — COMPLETE
+
+## Phase 21 — Unified Site Search — COMPLETE
 
 Completed this session:
 
-- Rebuilt `verification.html` as Public Verification Portal:
-  - what readers can verify (path, commits, catalogue IDs, status labels, external listings)
-  - explicit non-claims (no invented hashes, no blockchain-as-proof, no verdict from download)
-  - links to Backup / primary / presentation commit history
-  - machine catalogues (DOC-, MED-, timeline, publications, graph, schema)
-  - blockchain_manifest.json with non-proof disclaimer
-  - evidence-status vocabulary + links to DATA-MODEL / EVIDENCE-STANDARDS / LEGAL-CAUTION
-  - step-by-step check of one catalogue row
-  - search limitations restated
+- Rebuilt `search.html` as unified title/metadata search over live JSON:
+  - `data/documents.json`
+  - `data/media.json`
+  - `data/timeline.json`
+  - `data/publications.json`
+- Filter by catalogue kind; optional GitHub Backup code search
+- **Not** a full-text engine over PDF page bodies
+- Updated `data/search-notes.json` (phase 21)
 - Linked from Evidence Centre
-- **No invented verification records**
-- **No PDF content hashes calculated this phase**
-- Original evidence files untouched
+- No invented catalogue rows; original evidence files untouched
 
 Files created/modified:
-- `verification.html`
+- `search.html`
+- `data/search-notes.json`
 - `evidence/index.html`
 - `spec/BUILD_STATUS.md`
 
 Unresolved errors: none for this phase.
 
 ## Not started
-Phases 21–24.
+Phases 22–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 21 only (when instructed).
+CONTINUE FROM BUILD STATUS. Execute Phase 22 only (when instructed).
 
-STOP after Phase 20.
+STOP after Phase 21.
