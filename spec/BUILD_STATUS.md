@@ -1,16 +1,26 @@
-# Build status — 19 September 2026
+# BUILD_STATUS — 19 September 2026
 
-Recreated the public architecture from the master website command.
+Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 
-Done:
-- Museum home and room index
-- Library, writings, official-record and evidence rooms
-- Fact / allegation caution on the public pages
-- Links into wezzo72/Backup (531 public PDFs) and other existing archives
+## Phase 1 — Architecture — in progress / first pack complete
 
-Not done:
-- Copying every Drive binary into this repo
-- Full-text search
-- SHA-256 / blockchain verification layer
-- Paid bookstore checkout
-- Independent verification of each allegation
+Inspected presentation repo `wezzo72/Barrandodger` (static HTML, GitHub Pages, `.nojekyll`).
+Did not delete or rewrite primary evidence in `wezzo72/Backup` or `drbarrandodger/barran-dodger-archive`.
+
+Created/updated spec files:
+MASTER.md, ARCHITECTURE.md, DATA-MODEL.md, EVIDENCE-STANDARDS.md, RESEARCH-METHODOLOGY.md, LEGAL-CAUTION.md, FORENSIC-METHODOLOGY.md, IMPORT-PROTOCOL.md, ARCHIVE-PROTOCOL.md, SEO.md, ACCESSIBILITY.md, PRIVACY.md, DESIGN-SYSTEM.md, BUILD_STATUS.md.
+
+Existing public shell already has home, about, books, writings, official records, evidence rooms, methodology, search placeholder, GitHub Pages live at https://wezzo72.github.io/Barrandodger/
+
+## Not started
+Phase 2 — machine-readable inventory of the whole evidence corpus.
+Phases 3–24.
+
+## Unresolved
+- Full link verification of every related URL in the command.
+- Drive binaries not copied into this repo.
+- Search is a page shell, not a full-text engine.
+- Blockchain/hash verification only where a stored hash actually exists.
+
+## Next
+CONTINUE FROM BUILD STATUS. Execute Phase 2 only.
