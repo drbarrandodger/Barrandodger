@@ -2,22 +2,19 @@
 
 Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 
-## Phases 1–8 — complete for those sessions
+## Phases 1–9 — complete for those sessions
 
-## Phase 9 — Legal / human rights / ethics — complete for this session
+## Phase 10 — Institutions and decision-makers — complete for this session
 
-Updated:
-- evidence/ethics.html
-- data/laws.json (LAW-0001 to LAW-0008)
-
-Every instrument is REFERENCE ONLY.
-Determination status: NONE DECLARED HERE.
-Did not extract provision-level analysis from each PDF.
-Did not declare a treaty or statute breached.
+Updated evidence/institutions.html and data/institutions.json.
+Organisations listed from Backup filenames only.
+No organisation labelled corrupt.
+Individual officers not added from hearsay; names inside filenames stay filename mentions.
+Did not extract full reason-for-decision text from each PDF.
 Did not alter original evidence files.
 
 ## Not started
-Phases 10–24.
+Phases 11–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 10 only.
+CONTINUE FROM BUILD STATUS. Execute Phase 11 only.

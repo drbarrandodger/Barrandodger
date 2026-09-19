@@ -1,0 +1,9 @@
+{
+  "phase": 10,
+  "generated": "2026-09-19",
+  "note": "Each row is an organisation named on a public filename. possible_integrity_issue is not asserted.",
+  "research_status": "inspect primary file",
+  "possible_integrity_issue": "NOT ASSERTED ON THIS PAGE",
+  "source_folder": "wezzo72/Backup client/public/documents/government-evidence",
+  "see_also": ["data/organisations.json", "evidence/institutions.html", "official.html"]
+}
