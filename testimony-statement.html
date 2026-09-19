@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Full statement of testimony — Author’s Account | Barran Dodger Archive</title>
-<meta name="description" content="First-person testimony of Dr Richard William McLean / Barran Dodger. Labelled Author’s Account. Not a judicial finding.">
+<title>Full statement of testimony — Author’s Account</title>
 <link rel="stylesheet" href="assets/style.css"></head>
 <body>
 <p style="font-family:Georgia,serif;padding:1rem">Loading full statement…</p>
 <script>
-Promise.all([0,1,2,3].map(i => fetch('data/testimony-c'+i+'.txt').then(r=>{if(!r.ok)throw new Error(i+':'+r.status);return r.text()})))
-.then(parts=>{document.open();document.write(parts.join(''));document.close();})
-.catch(e=>{document.body.innerHTML='<p style="padding:1rem;font-family:Georgia,serif">Failed to load statement. '+e+'</p><p style="padding:1rem"><a href="testimony.html">Back to Testimony</a></p>';});
+Promise.all([
+  fetch('data/testimony-half-0.html').then(r=>{if(!r.ok)throw new Error('0:'+r.status);return r.text()}),
+  fetch('data/testimony-half-1.html').then(r=>{if(!r.ok)throw new Error('1:'+r.status);return r.text()})
+]).then(parts=>{document.open();document.write(parts.join(''));document.close();})
+.catch(e=>{document.body.innerHTML='<p style="padding:1rem;font-family:Georgia,serif">Failed to load. '+e+'</p><p style="padding:1rem"><a href="testimony.html">Back</a></p>';});
 </script>
 </body></html>
