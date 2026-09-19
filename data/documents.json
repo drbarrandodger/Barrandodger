@@ -1,0 +1,9 @@
+{
+  "generated": "2026-09-19",
+  "source": "wezzo72/Backup client/public/documents",
+  "count": 545,
+  "pdf_count": 531,
+  "row_file": "data/documents.csv",
+  "download_url_pattern": "https://github.com/wezzo72/Backup/raw/main/{original_path}",
+  "note": "Full path list is in data/documents.csv. This file is the machine-readable header."
+}

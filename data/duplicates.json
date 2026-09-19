@@ -1,0 +1,10 @@
+{
+  "note": "Possible duplicates by filename or size. Not deleted. Not confirmed as identical content.",
+  "filename_duplicates": {
+    "retrospective_statement_of_treatment.pdf": [
+      "client/public/documents/RETROSPECTIVE_STATEMENT_OF_TREATMENT.pdf",
+      "client/public/documents/retrospective_statement_of_treatment.pdf"
+    ]
+  },
+  "same_size_group_count": 17
+}

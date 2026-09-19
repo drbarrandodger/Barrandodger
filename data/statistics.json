@@ -1,0 +1,24 @@
+{
+  "label": "Archive count reported by the project; subject to ongoing cataloguing and verification.",
+  "inventory_date": "2026-09-19",
+  "phase": 2,
+  "presentation_repo": "wezzo72/Barrandodger",
+  "evidence_repo": "wezzo72/Backup",
+  "documents_folder_blobs": 545,
+  "pdf_count": 531,
+  "extensions": {"pdf": 531, "txt": 5, "json": 1, "mp3": 2, "png": 3, "html": 1, "py": 1, "jpeg": 1},
+  "folder_counts": {
+    "client/public/documents": 333,
+    "client/public/documents/forensic-analyses": 63,
+    "client/public/documents/government-evidence/Government Evidence": 141,
+    "client/public/documents/video-analyses": 8
+  },
+  "official_looking_titles": 169,
+  "author_publication_titles": 41,
+  "sensitive_titles": 18,
+  "filename_duplicate_groups": 1,
+  "same_size_groups": 17,
+  "blockchain_manifest_present": true,
+  "sha256_of_file_contents_calculated_this_phase": false,
+  "named_primary_archive_description_count": "drbarrandodger/barran-dodger-archive description claims 2,077+ documents; not independently counted this phase"
+}

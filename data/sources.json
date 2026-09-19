@@ -1,0 +1,24 @@
+{
+  "presentation": {
+    "repo": "wezzo72/Barrandodger",
+    "pages_url": "https://wezzo72.github.io/Barrandodger/",
+    "architecture": "static HTML, GitHub Pages, main/root, .nojekyll"
+  },
+  "evidence_mirror": {
+    "repo": "wezzo72/Backup",
+    "pages_url": "https://wezzo72.github.io/Backup/",
+    "documents_path": "client/public/documents/"
+  },
+  "named_primary": {
+    "repo": "drbarrandodger/barran-dodger-archive",
+    "pages_url": "https://drbarrandodger.github.io/barran-dodger-archive/",
+    "note": "Full file tree not scanned this phase. Do not treat the 2,077+ figure as verified here."
+  },
+  "external_urls_not_verified_this_phase": [
+    "https://barrandodger.com",
+    "https://economicjusticeengine.com",
+    "https://economic-justice-engine.replit.app",
+    "https://mclean-digital-vault.base44.app"
+  ],
+  "google_drive": "Connected store. Not a complete inventory this phase."
+}
