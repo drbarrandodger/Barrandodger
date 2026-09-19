@@ -3,33 +3,197 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Document library — Barran Dodger Archive</title>
+  <title>Document database — Barran Dodger Archive</title>
+  <meta name="description" content="Phase 17 searchable document catalogue. Files remain in wezzo72/Backup. A filename is not a court finding.">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .filters {
+      display: grid; gap: 0.65rem; margin: 1rem 0 1.5rem; max-width: 42rem;
+    }
+    @media (min-width: 640px) {
+      .filters { grid-template-columns: 1fr 1fr; }
+    }
+    .filters label { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.2rem; }
+    .filters select, .filters input {
+      width: 100%; font: inherit; padding: 0.4rem 0.5rem;
+      border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+    }
+    .doc-item {
+      border: 1px solid var(--line); background: var(--panel);
+      padding: 0.75rem 0.9rem; margin-bottom: 0.55rem;
+    }
+    .doc-id { font-family: ui-monospace, monospace; font-size: 0.85rem; }
+    .doc-meta { color: var(--muted); font-size: 0.82rem; margin-top: 0.25rem; }
+    .count { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.75rem; }
+    .tag {
+      display: inline-block; font-size: 0.72rem; border: 1px solid var(--line);
+      padding: 0.1rem 0.4rem; margin-right: 0.25rem; text-transform: uppercase;
+    }
+  </style>
 </head>
 <body>
 <header>
   <div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+  <div class="sub">Dr Richard William McLean · artist · author · researcher · advocate</div>
   <nav>
     <a href="index.html">Museum</a>
-    <a href="documents.html">Documents</a>
-    <a href="downloads.html">Downloads</a>
+    <a href="evidence/index.html">Evidence</a>
+    <a href="ledger.html">Ledger</a>
+    <a href="evidence-graph.html">Graph</a>
     <a href="timeline.html">Timeline</a>
+    <a href="documents.html">Documents</a>
     <a href="official.html">Official</a>
-    <a href="writings.html">Writings</a>
+    <a href="methodology.html">Method</a>
   </nav>
 </header>
 <main>
-  <h1>Document library</h1>
-  <p class="lede">Files stay in the existing public GitHub repos. This site does not keep a second copy.</p>
-  <div class="caution">A filename is not a court finding.</div>
-  <h2>wezzo72/Backup</h2>
-  <p><a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">Documents folder</a> <a class="btn" href="https://wezzo72.github.io/Backup/">Backup site</a> <a class="btn" href="official.html">Official list</a></p>
-  <h2>drbarrandodger/barran-dodger-archive</h2>
-  <p><a class="btn" href="https://drbarrandodger.github.io/barran-dodger-archive/">Live site</a> <a class="btn" href="https://github.com/drbarrandodger/barran-dodger-archive/tree/main/attached_assets">attached_assets</a></p>
-  <h2>Bolt-host front</h2>
-  <p>Significant analysis titles from that site are listed here. Sample-data cards were not imported as finished reports.</p>
-  <p><a class="btn" href="sources/bolt-archive.html">Bolt reports index</a> <a class="btn" href="https://barran-dodger-archiv-hz9k.bolt.host/#/">Open Bolt site</a></p>
+  <h1>Document database</h1>
+  <p class="lede">Phase 17 catalogue of documents already public in the evidence mirrors. Search and filter catalogue rows. Files are not copied into this presentation repo.</p>
+
+  <div class="caution">
+    <strong>A filename is not a court finding.</strong>
+    Catalogue rows describe paths and titles already published on GitHub Backup or this site.
+    Sensitive titles (NDIS, health, guardianship) are flagged because they appear in the public mirror — not because this phase published them anew.
+    Full corpus: approximately 545 files / 531 PDFs in <code>wezzo72/Backup</code> (inventory header; not re-verified byte-by-byte this phase).
+  </div>
+
+  <p>
+    <a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">Open full documents folder on GitHub</a>
+    <a class="btn" href="https://wezzo72.github.io/Backup/">Backup site</a>
+    <a class="btn" href="official.html">Official records list</a>
+    <a class="btn" href="data/documents.json">documents.json</a>
+  </p>
+
+  <div class="filters" id="filters">
+    <div>
+      <label for="f-cat">Category</label>
+      <select id="f-cat"><option value="">All categories</option></select>
+    </div>
+    <div>
+      <label for="f-year">Year</label>
+      <select id="f-year"><option value="">All years</option></select>
+    </div>
+    <div>
+      <label for="f-agency">Agency</label>
+      <select id="f-agency"><option value="">All agencies</option></select>
+    </div>
+    <div>
+      <label for="f-privacy">Privacy flag</label>
+      <select id="f-privacy"><option value="">All</option></select>
+    </div>
+    <div style="grid-column: 1 / -1;">
+      <label for="f-q">Search title / path</label>
+      <input type="search" id="f-q" placeholder="Filter by words in title or path…" autocomplete="off">
+    </div>
+  </div>
+
+  <p class="count" id="count">Loading…</p>
+  <div id="list"></div>
+
+  <p class="meta">
+    Machine data: <a href="data/documents.json">documents.json</a> ·
+    <a href="data/publications.json">publications.json</a> ·
+    <a href="ledger.html">Ledger</a> ·
+    <a href="timeline.html">Timeline</a> ·
+    <a href="spec/DATA-MODEL.md">Data model</a>
+  </p>
+  <p class="meta">This database is a seeded slice of the public catalogue. It does not claim to list every file in Backup. Expand only from verified paths.</p>
 </main>
-<footer><a href="timeline.html">Timeline</a></footer>
+<footer>
+  © Dr Richard William McLean / Barran Dodger<br>
+  <a href="methodology.html">Method</a> · <a href="master-command.html">Master command</a> · <a href="spec/BUILD_STATUS.md">Build status</a>
+</footer>
+<script>
+(async function () {
+  const res = await fetch('data/documents.json');
+  const data = await res.json();
+  const docs = (data.documents || []).slice();
+
+  function uniq(arr) {
+    return [...new Set(arr.filter(v => v !== null && v !== undefined && v !== ''))].sort((a,b) => String(a).localeCompare(String(b)));
+  }
+
+  const cats = uniq(docs.map(d => d.category));
+  const years = uniq(docs.map(d => d.year));
+  const agencies = uniq(docs.flatMap(d => d.agency || []));
+  const privacies = uniq(docs.map(d => d.privacy_classification));
+
+  function fill(id, values) {
+    const el = document.getElementById(id);
+    values.forEach(v => {
+      const o = document.createElement('option');
+      o.value = String(v); o.textContent = String(v);
+      el.appendChild(o);
+    });
+  }
+  fill('f-cat', cats);
+  fill('f-year', years);
+  fill('f-agency', agencies);
+  fill('f-privacy', privacies);
+
+  const list = document.getElementById('list');
+  const count = document.getElementById('count');
+
+  function downloadUrl(path) {
+    return 'https://github.com/wezzo72/Backup/raw/main/' + encodeURI(path);
+  }
+
+  function render() {
+    const cat = document.getElementById('f-cat').value;
+    const year = document.getElementById('f-year').value;
+    const agency = document.getElementById('f-agency').value;
+    const privacy = document.getElementById('f-privacy').value;
+    const q = (document.getElementById('f-q').value || '').toLowerCase().trim();
+
+    const filtered = docs.filter(d => {
+      if (cat && d.category !== cat) return false;
+      if (year && String(d.year) !== year) return false;
+      if (agency && !(d.agency || []).includes(agency)) return false;
+      if (privacy && d.privacy_classification !== privacy) return false;
+      if (q) {
+        const hay = ((d.title || '') + ' ' + (d.original_path || '') + ' ' + (d.id || '')).toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+
+    count.textContent = filtered.length + ' of ' + docs.length + ' catalogue rows (seeded slice; Backup header count ' + (data.pdf_count_header || data.pdf_count || '?') + ' PDFs)';
+
+    if (!filtered.length) {
+      list.innerHTML = '<p class="meta">No rows match these filters.</p>';
+      return;
+    }
+
+    list.innerHTML = filtered.map(d => {
+      const agencies = (d.agency || []).join(', ') || '—';
+      const yearStr = d.year != null ? d.year : '—';
+      const path = d.original_path || '';
+      const link = path
+        ? '<a href="' + downloadUrl(path) + '" rel="noopener">Open on GitHub</a>'
+        : '<span class="meta">No path</span>';
+      const links = [];
+      if (d.linked_timeline) links.push('<a href="timeline.html">' + d.linked_timeline + '</a>');
+      if (d.linked_evt) links.push(d.linked_evt);
+      if (d.linked_pub) links.push(d.linked_pub);
+      return (
+        '<article class="doc-item">' +
+          '<div><span class="doc-id">' + d.id + '</span> · <span class="tag">' + (d.category || '') + '</span></div>' +
+          '<div><strong>' + (d.title || '') + '</strong></div>' +
+          '<div class="doc-meta">Year: ' + yearStr + ' · Agency: ' + agencies + '</div>' +
+          '<div class="doc-meta">' + (d.evidence_classification || '') + ' · ' + (d.privacy_classification || '') + '</div>' +
+          '<div class="doc-meta">Status: ' + (d.status || '') + (links.length ? ' · ' + links.join(' · ') : '') + '</div>' +
+          '<div class="doc-meta">' + link + '</div>' +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  ['f-cat','f-year','f-agency','f-privacy','f-q'].forEach(id => {
+    document.getElementById(id).addEventListener('input', render);
+    document.getElementById(id).addEventListener('change', render);
+  });
+  render();
+})();
+</script>
 </body>
 </html>

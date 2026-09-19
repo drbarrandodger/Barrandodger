@@ -9,33 +9,39 @@ Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 
 ## Phase 14 — Master Evidence Ledger — COMPLETE
 ## Phase 15 — Evidence Graph — COMPLETE
-
 ## Phase 16 — Timeline — COMPLETE
+
+## Phase 17 — Document Database — COMPLETE
 
 Completed this session:
 
-- Built interactive `timeline.html` with filters:
-  - year, decade, agency, event type, legal issue, evidence category, text search
-  - person is the archive subject on all current rows (PER-0001)
-- Created `data/timeline.json` from catalogue rows already listed on the prior static timeline (filename / folder dates only)
-- Each entry links to underlying Backup path or file where previously published
-- Expanded `data/events.json` with timeline_id cross-references
-- Status remains **FILENAME DATE ONLY** throughout
-- Not a complete 35-year chronology; no invented events
+- Expanded `data/documents.json` to Phase 17 with **DOC-0001–DOC-0025** catalogue rows drawn from:
+  - files already listed on `official.html`
+  - `publications.json`
+  - timeline-linked Backup paths
+  - public Backup filenames already in the mirror
+- Rebuilt `documents.html` as an interactive document database:
+  - filters: category, year, agency, privacy flag, text search (title/path)
+  - each row links to GitHub Backup raw path
+  - DOC- ids, evidence classification, privacy classification visible
+- Linked Document Database from Evidence Centre
+- **No PDF copies** into this repo
+- **No invented documents**
+- Sensitive titles (NDIS / guardianship) flagged as already public on Backup
 - Original evidence files untouched
 
 Files created/modified:
-- `timeline.html`
-- `data/timeline.json` (new)
-- `data/events.json`
+- `data/documents.json`
+- `documents.html`
+- `evidence/index.html`
 - `spec/BUILD_STATUS.md`
 
 Unresolved errors: none for this phase.
 
 ## Not started
-Phases 17–24.
+Phases 18–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 17 only (when instructed).
+CONTINUE FROM BUILD STATUS. Execute Phase 18 only (when instructed).
 
-STOP after Phase 16.
+STOP after Phase 17.
