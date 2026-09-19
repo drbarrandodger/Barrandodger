@@ -1,10 +1,14 @@
 {
-  "note": "Reference list only. Presence here does not mean a violation was found.",
+  "note": "Reference catalogue. Presence here does not mean a violation was found.",
+  "phase": 9,
   "laws": [
-    {"id": "LAW-0001", "name": "Public Interest Disclosure Act 2013 (Cth)", "jurisdiction": "Australia", "status": "REFERENCE ONLY"},
-    {"id": "LAW-0002", "name": "Freedom of Information Act 1982 (Cth)", "jurisdiction": "Australia", "status": "REFERENCE ONLY"},
-    {"id": "LAW-0003", "name": "National Disability Insurance Scheme Act 2013 (Cth)", "jurisdiction": "Australia", "status": "REFERENCE ONLY"},
-    {"id": "LAW-0004", "name": "Safety, Rehabilitation and Compensation Act 1988 (Cth)", "jurisdiction": "Australia", "status": "REFERENCE ONLY"},
-    {"id": "LAW-0005", "name": "Guardianship Act 1987 (NSW)", "jurisdiction": "NSW", "status": "REFERENCE ONLY"}
+    {"id": "LAW-0001", "name": "Public Interest Disclosure Act 2013 (Cth)", "jurisdiction": "Australia", "year": 2013, "source": "https://www.legislation.gov.au/C2013A00133", "principle": "public interest disclosures and reprisal protection", "evidence_on_file": "PID-titled letters in Backup Government Evidence", "potential_inconsistency": "RESEARCH QUESTION — not determined on this page", "official_response": "PID allocation and non-allocation letters exist as OFFICIAL RECORD; read the file", "determination_status": "NONE DECLARED HERE", "status": "REFERENCE ONLY"},
+    {"id": "LAW-0002", "name": "Freedom of Information Act 1982 (Cth)", "jurisdiction": "Australia", "year": 1982, "source": "https://www.legislation.gov.au/C2004A02562", "principle": "access to government documents", "evidence_on_file": "FOI decision letters in Backup", "determination_status": "NONE DECLARED HERE", "status": "REFERENCE ONLY"},
+    {"id": "LAW-0003", "name": "National Disability Insurance Scheme Act 2013 (Cth)", "jurisdiction": "Australia", "year": 2013, "source": "https://www.legislation.gov.au/C2013A00020", "principle": "NDIS participant plans and provider regulation", "evidence_on_file": "NDIS plan and Commission letters in Backup", "determination_status": "NONE DECLARED HERE", "status": "REFERENCE ONLY"},
+    {"id": "LAW-0004", "name": "Safety, Rehabilitation and Compensation Act 1988 (Cth)", "jurisdiction": "Australia", "year": 1988, "source": "https://www.legislation.gov.au/C2004A03646", "principle": "Comcare workers compensation", "evidence_on_file": "AAT / Comcare / WorkSafe titled files", "determination_status": "NONE DECLARED HERE", "status": "REFERENCE ONLY"},
+    {"id": "LAW-0005", "name": "Guardianship Act 1987 (NSW)", "jurisdiction": "NSW", "year": 1987, "source": "https://legislation.nsw.gov.au/view/html/inforce/current/act-1987-257", "principle": "guardianship and financial management orders", "evidence_on_file": "NCAT / NSW Trustee and Guardian titled files", "determination_status": "NONE DECLARED HERE", "status": "REFERENCE ONLY"},
+    {"id": "LAW-0006", "name": "Privacy Act 1988 (Cth)", "jurisdiction": "Australia", "year": 1988, "source": "https://www.legislation.gov.au/C2004A03712", "principle": "personal information handling", "evidence_on_file": "OAIC-titled files in Backup", "determination_status": "NONE DECLARED HERE", "status": "REFERENCE ONLY"},
+    {"id": "LAW-0007", "name": "Disability Discrimination Act 1992 (Cth)", "jurisdiction": "Australia", "year": 1992, "source": "https://www.legislation.gov.au/C2004A04426", "principle": "disability discrimination", "evidence_on_file": "DDA / AHRC titled files may exist; not extracted provision-by-provision this phase", "determination_status": "NONE DECLARED HERE", "status": "REFERENCE ONLY"},
+    {"id": "LAW-0008", "name": "Convention on the Rights of Persons with Disabilities", "jurisdiction": "international", "year": 2006, "source": "https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-persons-disabilities", "principle": "dignity, equality, access", "evidence_on_file": "author analyses exist; not a CRPD committee finding on this page", "determination_status": "NONE DECLARED HERE", "status": "REFERENCE ONLY"}
   ]
 }

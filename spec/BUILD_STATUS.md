@@ -2,22 +2,22 @@
 
 Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 
-## Phases 1–7 — complete for those sessions
+## Phases 1–8 — complete for those sessions
 
-## Phase 8 — Forensic Evidence Centre — complete for this session
+## Phase 9 — Legal / human rights / ethics — complete for this session
 
-Updated six modules under /evidence/ plus the hub.
-Each module states method and limits.
-No person or organisation labelled criminal, corrupt or fraudulent.
-CLM- ledger still empty.
-Cost figures still estimates.
-No refugee determination declared.
+Updated:
+- evidence/ethics.html
+- data/laws.json (LAW-0001 to LAW-0008)
 
-Did not execute the full Phase 9–13 matrices.
+Every instrument is REFERENCE ONLY.
+Determination status: NONE DECLARED HERE.
+Did not extract provision-level analysis from each PDF.
+Did not declare a treaty or statute breached.
 Did not alter original evidence files.
 
 ## Not started
-Phases 9–24.
+Phases 10–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 9 only.
+CONTINUE FROM BUILD STATUS. Execute Phase 10 only.
