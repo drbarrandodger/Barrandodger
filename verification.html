@@ -3,20 +3,118 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Verification — Barran Dodger Archive</title>
+  <title>Public verification portal — Barran Dodger Archive</title>
+  <meta name="description" content="Phase 20 public verification portal. How to inspect sources independently. A GitHub file is not by itself a court finding or blockchain proof.">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header>
-    <div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
-    <nav><a href="index.html">Home</a> <a href="verification.html">Verification</a></nav>
-  </header>
-  <main>
-    <h1>Verification</h1>
-    <p>A file on GitHub is not, by itself, a blockchain proof. Only hashes, timestamps and commit history that can be shown should be displayed.</p>
-    <p>Use GitHub commit history and any stored SHA values in the original archives. This rebuild has not invented verification records.</p>
-    <p><a class="btn" href="https://github.com/wezzo72/Backup">Inspect Backup commits</a>
-    <a class="btn" href="https://github.com/drbarrandodger/barran-dodger-archive">Inspect primary commits</a></p>
-  </main>
+<header>
+  <div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+  <div class="sub">Dr Richard William McLean · artist · author · researcher · advocate</div>
+  <nav>
+    <a href="index.html">Museum</a>
+    <a href="evidence/index.html">Evidence</a>
+    <a href="documents.html">Documents</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="media.html">Media</a>
+    <a href="verification.html">Verification</a>
+    <a href="methodology.html">Method</a>
+  </nav>
+</header>
+<main>
+  <h1>Public verification portal</h1>
+  <p class="lede">Phase 20. This page explains how a reader can independently check what this presentation site claims to list. It does not invent hashes, timestamps, or judicial findings.</p>
+
+  <div class="caution">
+    <strong>A file on GitHub is not, by itself, a blockchain proof or a court verdict.</strong>
+    Only commit history, public paths, and any SHA values that can actually be shown should be treated as inspectable.
+    This rebuild has <strong>not</strong> calculated PDF content hashes and has <strong>not</strong> invented verification records.
+  </div>
+
+  <h2 id="what-you-can-verify">What you can verify</h2>
+  <ol>
+    <li><strong>Public path</strong> — open the raw or tree URL on GitHub and confirm the file exists under that path.</li>
+    <li><strong>Commit history</strong> — inspect when a path was added or changed in the source repository.</li>
+    <li><strong>Catalogue ID</strong> — match <code>DOC-</code>, <code>MED-</code>, <code>EVT-</code>, <code>PUB-</code> rows on this site to the linked path.</li>
+    <li><strong>Evidence-status label</strong> — read whether a row is labelled Official record (document title), Author’s Account, Allegation, Filename date only, etc.</li>
+    <li><strong>External listings</strong> — for books or profiles, open the publisher or platform page cited (e.g. Apple Books, The Conversation) and compare titles.</li>
+  </ol>
+
+  <h2 id="what-this-site-does-not-claim">What this site does not claim</h2>
+  <ul class="plain">
+    <li>That every allegation in a filename or testimony is established.</li>
+    <li>That a download proves wrongdoing.</li>
+    <li>That <code>blockchain_manifest.json</code> proves the contents of every PDF.</li>
+    <li>That this presentation layer has independently re-hashed every binary.</li>
+    <li>That inclusion of a person or organisation establishes liability.</li>
+  </ul>
+
+  <h2 id="inspect-source-repos">Inspect source repositories</h2>
+  <p>
+    <a class="btn" href="https://github.com/wezzo72/Backup">wezzo72/Backup (commits)</a>
+    <a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">Backup documents tree</a>
+    <a class="btn" href="https://github.com/drbarrandodger/barran-dodger-archive">Primary archive repo</a>
+    <a class="btn" href="https://github.com/wezzo72/Barrandodger">This presentation repo</a>
+    <a class="btn" href="https://github.com/wezzo72/Barrandodger/commits/main">Presentation commit history</a>
+  </p>
+
+  <h2 id="machine-catalogues">Machine catalogues on this site</h2>
+  <p>Use these to cross-check IDs against paths:</p>
+  <p>
+    <a class="btn" href="data/documents.json">documents.json (DOC-)</a>
+    <a class="btn" href="data/media.json">media.json (MED-)</a>
+    <a class="btn" href="data/timeline.json">timeline.json</a>
+    <a class="btn" href="data/publications.json">publications.json (PUB-)</a>
+    <a class="btn" href="data/graph.json">graph.json</a>
+    <a class="btn" href="data/schema.json">schema.json</a>
+    <a class="btn" href="data/INVENTORY.md">Inventory notes</a>
+  </p>
+
+  <h2 id="manifest">Repository manifest</h2>
+  <p>
+    <a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/blockchain_manifest.json">blockchain_manifest.json</a>
+  </p>
+  <p class="meta">That file is a repository artifact. It is <strong>not</strong> treated here as cryptographic proof of every document’s bytes or as a substitute for reading the underlying PDFs and commit history.</p>
+
+  <h2 id="evidence-status">Evidence-status vocabulary</h2>
+  <p>Status labels used across the archive include (among others):</p>
+  <ul class="plain">
+    <li>JUDICIALLY ESTABLISHED / OFFICIALLY DETERMINED — only when an authoritative determination is cited</li>
+    <li>OFFICIAL RECORD / PRIMARY SOURCE — often from document title or folder listing</li>
+    <li>AUTHOR&rsquo;S ACCOUNT / ALLEGATION / INTERPRETATION</li>
+    <li>FILENAME DATE ONLY / FILENAME / PUBLIC PATH</li>
+    <li>UNVERIFIED / DISPUTED / RESEARCH QUESTION / UNKNOWN</li>
+  </ul>
+  <p>Full enums: <a href="spec/DATA-MODEL.md">DATA-MODEL.md</a> · <a href="spec/EVIDENCE-STANDARDS.md">EVIDENCE-STANDARDS.md</a> · <a href="spec/LEGAL-CAUTION.md">LEGAL-CAUTION.md</a></p>
+
+  <h2 id="how-to-check-a-row">How to check one catalogue row</h2>
+  <ol>
+    <li>Open <a href="documents.html">Document database</a> or <a href="media.html">Media archive</a>.</li>
+    <li>Note the ID (e.g. DOC-0001) and <code>original_path</code>.</li>
+    <li>Click Open / Download to the GitHub raw URL, or browse the tree path.</li>
+    <li>Optionally open the repository&rsquo;s History for that file on GitHub.</li>
+    <li>Read the evidence-status and privacy flags on the catalogue row; do not upgrade them without independent authority.</li>
+  </ol>
+
+  <h2 id="search">Search</h2>
+  <p>Title/metadata search on this site does <strong>not</strong> full-text every PDF page.</p>
+  <p>
+    <a class="btn" href="search.html">Search (catalogue titles)</a>
+    <a class="btn" href="https://github.com/search?q=repo%3Awezzo72%2FBackup+path%3Aclient%2Fpublic%2Fdocuments&amp;type=code">GitHub code search on Backup documents</a>
+  </p>
+
+  <h2 id="build-transparency">Build transparency</h2>
+  <p>
+    <a class="btn" href="master-command.html">Master Build Command (genesis)</a>
+    <a class="btn" href="spec/BUILD_STATUS.md">BUILD_STATUS.md</a>
+    <a class="btn" href="methodology.html">Methodology</a>
+  </p>
+
+  <p class="meta">Phase 20 stops here. No verification records were fabricated. Original evidence files were not altered.</p>
+</main>
+<footer>
+  © Dr Richard William McLean / Barran Dodger<br>
+  <a href="methodology.html">Method</a> · <a href="master-command.html">Master command</a> · <a href="spec/BUILD_STATUS.md">Build status</a>
+</footer>
 </body>
 </html>
