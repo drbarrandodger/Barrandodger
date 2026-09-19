@@ -2,21 +2,21 @@
 
 Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 
-## Phases 1–4 — complete for those sessions
+## Phases 1–5 — complete for those sessions
 
-## Phase 5 — Search — complete for this session
+Linked drbarrandodger/barran-dodger-archive into documents.html and data/library.json.
+PDFs in that repo were not copied (many are Git LFS).
 
-Created/updated:
-- search.html — title/metadata search plus GitHub Backup filename search
-- data/search-notes.json
+## Phase 6 — Timeline — complete for this session
 
-This is not full-text of PDF page contents.
-Evidence status is shown on local hits.
-Did not build timeline (Phase 6) or evidence graph (Phase 7).
+Created/updated timeline.html.
+Dates are FILENAME DATE ONLY from wezzo72/Backup.
+Did not treat April 2026 author emails as judicial events.
+Did not build evidence graph (Phase 7).
 Did not alter original evidence files.
 
 ## Not started
-Phases 6–24.
+Phases 7–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 6 only.
+CONTINUE FROM BUILD STATUS. Execute Phase 7 only.

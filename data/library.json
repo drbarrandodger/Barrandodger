@@ -1,12 +1,10 @@
 {
   "phase": 4,
-  "generated": "2026-09-19",
-  "note": "Library collections point at existing GitHub paths. No file was copied or renamed.",
+  "updated": "2026-09-19",
   "collections": [
-    {"id": "LIB-0001", "name": "All Backup documents", "count": 545, "path": "client/public/documents", "repo": "wezzo72/Backup"},
-    {"id": "LIB-0002", "name": "Government Evidence", "count": 141, "path": "client/public/documents/government-evidence/Government Evidence", "repo": "wezzo72/Backup", "default_status": "OFFICIAL RECORD"},
-    {"id": "LIB-0003", "name": "Forensic analyses", "count": 63, "path": "client/public/documents/forensic-analyses", "repo": "wezzo72/Backup", "default_status": "AUTHOR'S ACCOUNT"},
-    {"id": "LIB-0004", "name": "Video analyses", "count": 8, "path": "client/public/documents/video-analyses", "repo": "wezzo72/Backup", "default_status": "AUTHOR'S ACCOUNT"},
-    {"id": "LIB-0005", "name": "Author publications listed on this site", "count": 9, "page": "writings.html", "default_status": "AUTHOR'S ACCOUNT"}
+    {"id": "LIB-0001", "name": "wezzo72/Backup documents", "url": "https://github.com/wezzo72/Backup/tree/main/client/public/documents"},
+    {"id": "LIB-0006", "name": "drbarrandodger/barran-dodger-archive site", "url": "https://drbarrandodger.github.io/barran-dodger-archive/", "label": "GITHUB ARCHIVE"},
+    {"id": "LIB-0007", "name": "drbarrandodger documents folder", "url": "https://github.com/drbarrandodger/barran-dodger-archive/tree/main/client/public/documents"},
+    {"id": "LIB-0008", "name": "drbarrandodger attached_assets", "url": "https://github.com/drbarrandodger/barran-dodger-archive/tree/main/attached_assets", "note": "Git LFS / extra uploads; not copied into Barrandodger"}
   ]
 }
