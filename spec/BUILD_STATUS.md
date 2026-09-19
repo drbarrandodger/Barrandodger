@@ -2,15 +2,15 @@
 
 Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 
-## Phases 1–12 plus allegation matrix 1–150 — complete for those sessions
+## Phases 1–13 plus allegation matrix — complete for those sessions
 
-## Phase 13 — Protection / asylum / displacement — complete for this session
-
-Updated evidence/protection.html and data/protection.json.
-No refugee, asylum or IDP status declared.
-Author analysis labelled AUTHOR'S ACCOUNT.
-Housing/NCAT/NDIS titles treated as process records, not a Convention determination.
-Did not alter original evidence files.
+## Extra before Phase 14 — Bolt-host reports linked
+Added sources/bolt-archive.html.
+Inspected https://barran-dodger-archiv-hz9k.bolt.host/#/
+Did not copy PDFs.
+Did not import SAMPLE DATA cards as finished publications.
+Hypothesis/allegation analyses kept at those labels.
+No refugee determination added from the IDP paper.
 
 ## Not started
 Phases 14–24.
