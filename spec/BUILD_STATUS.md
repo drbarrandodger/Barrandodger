@@ -2,17 +2,20 @@
 
 Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 
-## Phases 1–11 — complete for those sessions
+## Phases 1–11 plus allegation matrix 1–150 — complete for those sessions
 
-## Extra before Phase 12 — allegation matrix 1–150
-Added evidence/allegation-matrix.html and part pages.
-Every row is an allegation or investigative proposition.
-Not published as “150 crimes.”
-H rows not treated as established.
-Document-to-page mapping not completed.
+## Phase 12 — Financial analysis — complete for this session
+
+Updated evidence/financial-impact.html and data/costs.json.
+No invented dollar figure.
+No taxpayer total treated as audited spend.
+Horizon and scenario cells left UNKNOWN.
+Linked estimate PDF remains ESTIMATED / HYPOTHETICAL.
+Did not extract line items from bank statements this phase.
+Did not alter original evidence files.
 
 ## Not started
-Phases 12–24.
+Phases 13–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 12 only.
+CONTINUE FROM BUILD STATUS. Execute Phase 13 only.
