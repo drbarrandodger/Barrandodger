@@ -1,0 +1,12 @@
+{
+  "phase": 13,
+  "subject": "PER-0001",
+  "refugee_status_declared_here": false,
+  "asylum_grant_declared_here": false,
+  "idp_status_declared_here": false,
+  "legal_determination": "NONE DECLARED HERE",
+  "author_analysis": {
+    "file": "client/public/documents/asylum-refugee-eligibility-analysis.pdf",
+    "status": "AUTHOR'S ACCOUNT"
+  }
+}

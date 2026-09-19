@@ -2,20 +2,18 @@
 
 Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 
-## Phases 1–11 plus allegation matrix 1–150 — complete for those sessions
+## Phases 1–12 plus allegation matrix 1–150 — complete for those sessions
 
-## Phase 12 — Financial analysis — complete for this session
+## Phase 13 — Protection / asylum / displacement — complete for this session
 
-Updated evidence/financial-impact.html and data/costs.json.
-No invented dollar figure.
-No taxpayer total treated as audited spend.
-Horizon and scenario cells left UNKNOWN.
-Linked estimate PDF remains ESTIMATED / HYPOTHETICAL.
-Did not extract line items from bank statements this phase.
+Updated evidence/protection.html and data/protection.json.
+No refugee, asylum or IDP status declared.
+Author analysis labelled AUTHOR'S ACCOUNT.
+Housing/NCAT/NDIS titles treated as process records, not a Convention determination.
 Did not alter original evidence files.
 
 ## Not started
-Phases 13–24.
+Phases 14–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 13 only.
+CONTINUE FROM BUILD STATUS. Execute Phase 14 only.
