@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media archive — Barran Dodger Archive</title>
+  <meta name="description" content="Phase 19 media archive. Catalogue of public images, audio and video paths on GitHub Backup. A filename is not a court finding.">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .filters { display: grid; gap: 0.65rem; margin: 1rem 0 1.25rem; max-width: 42rem; }
+    @media (min-width: 640px) { .filters { grid-template-columns: 1fr 1fr; } }
+    .filters label { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.2rem; }
+    .filters select, .filters input {
+      width: 100%; font: inherit; padding: 0.4rem 0.5rem;
+      border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+    }
+    .med-item {
+      border: 1px solid var(--line); background: var(--panel);
+      padding: 0.75rem 0.9rem; margin-bottom: 0.55rem;
+    }
+    .doc-id { font-family: ui-monospace, monospace; font-size: 0.85rem; }
+    .med-meta { color: var(--muted); font-size: 0.82rem; margin-top: 0.25rem; }
+    .count { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.75rem; }
+    .tag {
+      display: inline-block; font-size: 0.72rem; border: 1px solid var(--line);
+      padding: 0.1rem 0.4rem; margin-right: 0.25rem; text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+  <div class="sub">Dr Richard William McLean · artist · author · researcher · advocate</div>
+  <nav>
+    <a href="index.html">Museum</a>
+    <a href="evidence/index.html">Evidence</a>
+    <a href="documents.html">Documents</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="media.html">Media</a>
+    <a href="writings.html">Writings</a>
+    <a href="methodology.html">Method</a>
+  </nav>
+</header>
+<main>
+  <h1>Media archive</h1>
+  <p class="lede">Phase 19 catalogue of images, audio and video already public in the evidence mirrors. Files are not copied into this presentation repo.</p>
+
+  <div class="caution">
+    <strong>A filename is not a court finding.</strong>
+    Media paths with allegation-related titles remain <em>Author’s Account / Allegation</em>.
+    This page does not transcribe audio, does not verify what a recording contains, and does not adopt title claims as facts.
+    Sensitive titles appear because they were already public on GitHub Backup.
+  </div>
+
+  <p>
+    <a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public">Open Backup client/public</a>
+    <a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/audio">Audio folder</a>
+    <a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/video">Video folder</a>
+    <a class="btn" href="data/media.json">media.json</a>
+    <a class="btn" href="downloads.html">Download centre</a>
+  </p>
+
+  <div class="filters">
+    <div>
+      <label for="f-type">Type</label>
+      <select id="f-type"><option value="">All types</option></select>
+    </div>
+    <div>
+      <label for="f-q">Search title / path</label>
+      <input type="search" id="f-q" placeholder="Filter…" autocomplete="off">
+    </div>
+  </div>
+  <p class="count" id="count">Loading…</p>
+  <div id="list"></div>
+
+  <p class="meta">
+    Seeded slice only. Backup contains additional images under <code>client/public</code> and <code>attached_assets</code>.
+    Expand only from verified public paths.
+  </p>
+  <p class="meta">
+    Related: <a href="documents.html">Document database</a> ·
+    <a href="downloads.html">Downloads</a> ·
+    <a href="testimony-statement.html">Statement on The Architecture of Erasure</a> ·
+    <a href="spec/BUILD_STATUS.md">Build status</a>
+  </p>
+</main>
+<footer>
+  © Dr Richard William McLean / Barran Dodger<br>
+  <a href="methodology.html">Method</a> · <a href="master-command.html">Master command</a> · <a href="spec/BUILD_STATUS.md">Build status</a>
+</footer>
+<script>
+(async function () {
+  const res = await fetch('data/media.json');
+  const data = await res.json();
+  const items = (data.media || []).slice();
+
+  const types = [...new Set(items.map(m => m.type).filter(Boolean))].sort();
+  const typeEl = document.getElementById('f-type');
+  types.forEach(t => {
+    const o = document.createElement('option');
+    o.value = t; o.textContent = t;
+    typeEl.appendChild(o);
+  });
+
+  function rawUrl(path) {
+    return 'https://github.com/wezzo72/Backup/raw/main/' + encodeURI(path);
+  }
+
+  const list = document.getElementById('list');
+  const count = document.getElementById('count');
+
+  function render() {
+    const type = typeEl.value;
+    const q = (document.getElementById('f-q').value || '').toLowerCase().trim();
+    const filtered = items.filter(m => {
+      if (type && m.type !== type) return false;
+      if (q) {
+        const hay = ((m.title || '') + ' ' + (m.original_path || '') + ' ' + (m.id || '')).toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+
+    count.textContent = filtered.length + ' of ' + items.length + ' media catalogue rows (seeded slice)';
+
+    if (!filtered.length) {
+      list.innerHTML = '<p class="meta">No rows match.</p>';
+      return;
+    }
+
+    list.innerHTML = filtered.map(m => {
+      const path = m.original_path || '';
+      const link = path
+        ? '<a class="btn" href="' + rawUrl(path) + '" rel="noopener">Open / download</a>'
+        : '<span class="meta">No path</span>';
+      return (
+        '<article class="med-item">' +
+          '<div><span class="doc-id">' + m.id + '</span> <span class="tag">' + (m.type || '') + '</span></div>' +
+          '<div><strong>' + (m.title || '') + '</strong></div>' +
+          '<div class="med-meta">' + (m.evidence_classification || '') + ' · ' + (m.privacy_classification || '') + '</div>' +
+          '<div class="med-meta">Status: ' + (m.status || '') + '</div>' +
+          '<div class="med-meta">' + link + '</div>' +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  typeEl.addEventListener('change', render);
+  document.getElementById('f-q').addEventListener('input', render);
+  render();
+})();
+</script>
+</body>
+</html>

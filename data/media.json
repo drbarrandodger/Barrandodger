@@ -1,0 +1,136 @@
+{
+  "phase": 19,
+  "generated": "2026-09-19",
+  "source": "wezzo72/Backup (client/public and related public paths)",
+  "note": "Catalogue of media paths already public on GitHub Backup. A filename is not a court finding. Allegation-titled audio remains AUTHOR'S ACCOUNT / ALLEGATION. This presentation does not store a second copy of media binaries.",
+  "download_url_pattern": "https://github.com/wezzo72/Backup/raw/main/{original_path}",
+  "media": [
+    {
+      "id": "MED-0001",
+      "title": "Barran Dodger archive hero video",
+      "type": "video",
+      "original_path": "client/public/barran-dodger-archive-hero.mp4",
+      "evidence_classification": "SITE / ARCHIVE MEDIA",
+      "privacy_classification": "PUBLIC",
+      "status": "FILENAME / PUBLIC PATH"
+    },
+    {
+      "id": "MED-0002",
+      "title": "Holy Reckoning NDIS (video filename)",
+      "type": "video",
+      "original_path": "client/public/video/holy-reckoning-ndis.mp4",
+      "evidence_classification": "AUTHOR'S ACCOUNT / MEDIA (filename)",
+      "privacy_classification": "PUBLIC",
+      "status": "FILENAME / PUBLIC PATH"
+    },
+    {
+      "id": "MED-0003",
+      "title": "Rich McLean NDIS portrait",
+      "type": "image",
+      "original_path": "client/public/evidence-images/rich_mclean_ndis_portrait.jpg",
+      "evidence_classification": "IMAGE ON PUBLIC PATH",
+      "privacy_classification": "PUBLIC ON GITHUB — SENSITIVE TITLE",
+      "status": "FILENAME / PUBLIC PATH"
+    },
+    {
+      "id": "MED-0004",
+      "title": "Church of Barran cover",
+      "type": "image",
+      "original_path": "client/public/church-of-barran-cover.png",
+      "evidence_classification": "COVER ART / AUTHOR MEDIA",
+      "privacy_classification": "PUBLIC",
+      "status": "FILENAME / PUBLIC PATH"
+    },
+    {
+      "id": "MED-0005",
+      "title": "Forensic economic valuation cover",
+      "type": "image",
+      "original_path": "client/public/covers/forensic-economic-valuation-cover.png",
+      "evidence_classification": "COVER ART / AUTHOR MEDIA",
+      "privacy_classification": "PUBLIC",
+      "status": "FILENAME / PUBLIC PATH"
+    },
+    {
+      "id": "MED-0006",
+      "title": "When receipts are real cover",
+      "type": "image",
+      "original_path": "client/public/covers/when-receipts-are-real-cover.png",
+      "evidence_classification": "COVER ART / AUTHOR MEDIA",
+      "privacy_classification": "PUBLIC",
+      "status": "FILENAME / PUBLIC PATH"
+    },
+    {
+      "id": "MED-0007",
+      "title": "CAL royalties year-on-year chart",
+      "type": "image",
+      "original_path": "client/public/cal-royalties-year-on-year.png",
+      "evidence_classification": "CHART / AUTHOR MEDIA (filename)",
+      "privacy_classification": "PUBLIC",
+      "status": "FILENAME / PUBLIC PATH"
+    },
+    {
+      "id": "MED-0008",
+      "title": "IMG_1573 (public path)",
+      "type": "image",
+      "original_path": "client/public/IMG_1573_1777515765176.png",
+      "evidence_classification": "IMAGE ON PUBLIC PATH",
+      "privacy_classification": "PUBLIC",
+      "status": "FILENAME / PUBLIC PATH"
+    },
+    {
+      "id": "MED-0009",
+      "title": "IMG_3529 (public path)",
+      "type": "image",
+      "original_path": "client/public/IMG_3529_1777515705930.jpeg",
+      "evidence_classification": "IMAGE ON PUBLIC PATH",
+      "privacy_classification": "PUBLIC",
+      "status": "FILENAME / PUBLIC PATH"
+    },
+    {
+      "id": "MED-0010",
+      "title": "Cass Able Care — death threat evidence (audio filename)",
+      "type": "audio",
+      "original_path": "client/public/audio/cass-able-care-death-threat-evidence.mp3",
+      "evidence_classification": "AUTHOR'S ACCOUNT / ALLEGATION (filename)",
+      "privacy_classification": "PUBLIC ON GITHUB — SENSITIVE TITLE",
+      "status": "FILENAME / PUBLIC PATH — NOT A FINDING"
+    },
+    {
+      "id": "MED-0011",
+      "title": "Cass — evidence of investigators (audio filename)",
+      "type": "audio",
+      "original_path": "client/public/audio/cass-evidence-of-investigators-120826.mp3",
+      "evidence_classification": "AUTHOR'S ACCOUNT / ALLEGATION (filename)",
+      "privacy_classification": "PUBLIC ON GITHUB — SENSITIVE TITLE",
+      "status": "FILENAME / PUBLIC PATH — NOT A FINDING"
+    },
+    {
+      "id": "MED-0012",
+      "title": "Cass — murder declaration testimony (audio filename)",
+      "type": "audio",
+      "original_path": "client/public/audio/cass-murder-declaration-testimony-070826.mp3",
+      "evidence_classification": "AUTHOR'S ACCOUNT / ALLEGATION (filename)",
+      "privacy_classification": "PUBLIC ON GITHUB — SENSITIVE TITLE",
+      "status": "FILENAME / PUBLIC PATH — NOT A FINDING"
+    },
+    {
+      "id": "MED-0013",
+      "title": "QLife — no one will help you (audio filename)",
+      "type": "audio",
+      "original_path": "client/public/audio/qlife-no-one-will-help-you.m4a",
+      "evidence_classification": "AUTHOR'S ACCOUNT / MEDIA (filename)",
+      "privacy_classification": "PUBLIC ON GITHUB — SENSITIVE TITLE",
+      "status": "FILENAME / PUBLIC PATH — NOT A FINDING"
+    },
+    {
+      "id": "MED-0014",
+      "title": "A Certain Beauty in UN Resolution — art catalogue (PDF linked as publication media)",
+      "type": "document-media",
+      "original_path": "client/public/documents/a-certain-beauty-in-un-resolution-art-catalogue.pdf",
+      "evidence_classification": "AUTHOR'S ACCOUNT / ART PUBLICATION",
+      "privacy_classification": "PUBLIC",
+      "status": "AUTHOR PUBLICATION",
+      "linked_pub": "PUB-0009"
+    }
+  ]
+}

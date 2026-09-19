@@ -11,35 +11,39 @@ Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 ## Phase 15 — Evidence Graph — COMPLETE
 ## Phase 16 — Timeline — COMPLETE
 ## Phase 17 — Document Database — COMPLETE
-
 ## Phase 18 — Download Centre — COMPLETE
+
+## Phase 19 — Media Archive — COMPLETE
 
 Completed this session:
 
-- Rebuilt `downloads.html` as interactive Download Centre:
-  - loads Phase 17 `data/documents.json`
-  - category filter + text search
-  - each row: DOC- id, classification, privacy flag, GitHub **raw** download link
-  - whole-store links (Backup documents, Government Evidence, primary archive repo)
-  - machine catalogue links (documents.json, publications.json, inventory, statistics)
-  - blockchain_manifest.json linked with explicit non-proof disclaimer
+- Created `data/media.json` with **MED-0001–MED-0014** from already-public Backup paths:
+  - video (hero, holy-reckoning-ndis)
+  - images (portrait, covers, charts, public IMG_*)
+  - audio (cass / qlife filenames under client/public/audio)
+  - art catalogue PDF linked as document-media
+- Built interactive `media.html`:
+  - filters by type and text search
+  - each row links to GitHub Backup raw path
+  - allegation-titled audio labelled **AUTHOR'S ACCOUNT / ALLEGATION (filename)** and **NOT A FINDING**
 - Linked from Evidence Centre
-- **No new PDFs** generated or copied into this presentation repo
-- **No invented files**
-- Download does not convert allegation into finding
+- **No media binaries** copied into this presentation repo
+- **No transcription** of audio; no verification of recording contents
+- **No invented media**
 - Original evidence files untouched
 
 Files created/modified:
-- `downloads.html`
+- `data/media.json`
+- `media.html`
 - `evidence/index.html`
 - `spec/BUILD_STATUS.md`
 
 Unresolved errors: none for this phase.
 
 ## Not started
-Phases 19–24.
+Phases 20–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 19 only (when instructed).
+CONTINUE FROM BUILD STATUS. Execute Phase 20 only (when instructed).
 
-STOP after Phase 18.
+STOP after Phase 19.
