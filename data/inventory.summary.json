@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "2.0.0",
+  "inspectedAt": "2026-09-19",
+  "commit": "834959528619cbce355adcda1940ae00c23b198d",
+  "repository": {
+    "owner": "drbarrandodger",
+    "name": "barran-dodger-archive",
+    "htmlUrl": "https://github.com/drbarrandodger/barran-dodger-archive",
+    "pagesUrl": "https://drbarrandodger.github.io/barran-dodger-archive/"
+  },
+  "statistics": {
+    "blobsExcludingNodeModules": 3539,
+    "pdfGitObjectsBinary": 63,
+    "pdfPointerOrStub": 1268,
+    "manifestDocumentsListed": 256,
+    "manifestPresentAsCompleteBinary": 10,
+    "manifestPresentAsPointerOrStub": 134,
+    "manifestNotInInspectedTree": 112,
+    "manifestSizeMatch": 0,
+    "sha256MatchesDemonstrated": 0,
+    "basenameDuplicateGroups": 324
+  },
+  "note": "Psychiatric and confidential paths are classified DO_NOT_PUBLISH and are not listed in this public summary. Original evidence was not altered."
+}
