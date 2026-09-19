@@ -4,70 +4,188 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Timeline — Barran Dodger Archive</title>
+  <meta name="description" content="Searchable chronological timeline from filename-dated catalogue entries. FILENAME DATE ONLY. Not a complete 35-year chronology.">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .filters {
+      display: grid;
+      gap: 0.65rem;
+      margin: 1rem 0 1.5rem;
+      max-width: 42rem;
+    }
+    @media (min-width: 640px) {
+      .filters { grid-template-columns: 1fr 1fr; }
+    }
+    .filters label { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.2rem; }
+    .filters select, .filters input {
+      width: 100%; font: inherit; padding: 0.4rem 0.5rem;
+      border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+    }
+    .tl-item {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 0.75rem 0.9rem;
+      margin-bottom: 0.55rem;
+    }
+    .tl-date { font-family: ui-monospace, monospace; font-size: 0.9rem; }
+    .tl-meta { color: var(--muted); font-size: 0.82rem; margin-top: 0.25rem; }
+    .count { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.75rem; }
+  </style>
 </head>
 <body>
 <header>
   <div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+  <div class="sub">Dr Richard William McLean · artist · author · researcher · advocate</div>
   <nav>
     <a href="index.html">Museum</a>
-    <a href="documents.html">Documents</a>
+    <a href="evidence/index.html">Evidence</a>
+    <a href="ledger.html">Ledger</a>
+    <a href="evidence-graph.html">Graph</a>
     <a href="timeline.html">Timeline</a>
     <a href="official.html">Official</a>
-    <a href="search.html">Search</a>
+    <a href="methodology.html">Method</a>
   </nav>
 </header>
 <main>
   <h1>Timeline</h1>
-  <p class="lede">Dates below come from filenames in wezzo72/Backup. A filename date is not a verified event date.</p>
-  <div class="caution">FILENAME DATE ONLY. This is not a complete 35-year chronology.</div>
-  <p>
-    <a class="btn" href="#y2021">2021</a>
-    <a class="btn" href="#y2022">2022</a>
-    <a class="btn" href="#y2023">2023</a>
-    <a class="btn" href="#y2024">2024</a>
-    <a class="btn" href="#y2025">2025</a>
-    <a class="btn" href="#y2026">2026</a>
+  <p class="lede">Searchable chronological catalogue. Dates come from filenames or prior listing on this site. A filename date is not a verified event date.</p>
+
+  <div class="caution">
+    <strong>FILENAME DATE ONLY.</strong> This is not a complete 35-year chronology.
+    Rows are catalogue entries already published on this presentation site. Inclusion is not a finding that any allegation is true.
+  </div>
+
+  <div class="filters" id="filters">
+    <div>
+      <label for="f-year">Year</label>
+      <select id="f-year"><option value="">All years</option></select>
+    </div>
+    <div>
+      <label for="f-decade">Decade</label>
+      <select id="f-decade"><option value="">All decades</option></select>
+    </div>
+    <div>
+      <label for="f-agency">Agency</label>
+      <select id="f-agency"><option value="">All agencies</option></select>
+    </div>
+    <div>
+      <label for="f-type">Event type</label>
+      <select id="f-type"><option value="">All types</option></select>
+    </div>
+    <div>
+      <label for="f-legal">Legal issue</label>
+      <select id="f-legal"><option value="">All</option></select>
+    </div>
+    <div>
+      <label for="f-cat">Evidence category</label>
+      <select id="f-cat"><option value="">All categories</option></select>
+    </div>
+    <div style="grid-column: 1 / -1;">
+      <label for="f-q">Search label / text</label>
+      <input type="search" id="f-q" placeholder="Filter by words in the label…" autocomplete="off">
+    </div>
+  </div>
+
+  <p class="count" id="count">Loading…</p>
+  <div id="list"></div>
+
+  <p class="meta">
+    Machine data: <a href="data/timeline.json">timeline.json</a> ·
+    <a href="data/events.json">events.json</a> ·
+    <a href="evidence-graph.html">Evidence graph</a> ·
+    <a href="ledger.html">Ledger</a>
   </p>
-  <h2 id="y2021">2021</h2>
-  <ul class="plain">
-    <li>2021-05-05 — <a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/ndia-provider-registration-2021-05-05.pdf">NDIA provider registration</a></li>
-    <li>2021-09-03 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">AFP crime-report rejection (Government Evidence folder)</a></li>
-    <li>2021-10-21 — <a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/2021-10-21-cdda-afp-compensation-claim.pdf">CDDA / AFP compensation claim</a></li>
-    <li>2021-11-15 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">Commonwealth Ombudsman complaint 2021103546</a></li>
-    <li>2021-11-18 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">IBAC PID rejection 400008R</a></li>
-  </ul>
-  <h2 id="y2022">2022</h2>
-  <ul class="plain">
-    <li>2022-05-31 — <a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/31-05-2022-letter-to-pm-albanese-opmc.pdf">Letter to PM Albanese / OPMC</a></li>
-    <li>2022-06-14 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">Vic Ombudsman FOI s29A rejection</a></li>
-    <li>2022-10-05 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">VOCAT / Ombudsman complaint rejection</a></li>
-  </ul>
-  <h2 id="y2023">2023</h2>
-  <ul class="plain">
-    <li>2023-03-27 — <a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf">Federal Court final assessment / PID assessment</a></li>
-    <li>2023-06-01 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">NDIA SIL decline decision</a></li>
-    <li>2023-07-01 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">DSS PID rejection</a></li>
-    <li>2023-07-04 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">AHRC email exchange</a></li>
-  </ul>
-  <h2 id="y2024">2024</h2>
-  <ul class="plain">
-    <li>2024-03-15 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">Interim behaviour support plan</a></li>
-    <li>2024-10-16 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">NSW Trustee and Guardian s122</a></li>
-  </ul>
-  <h2 id="y2025">2025</h2>
-  <ul class="plain">
-    <li>2025-08-08 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">Commonwealth Ombudsman service restriction</a></li>
-    <li>2025-11-14 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">FOI 2022/045IC revised decision</a></li>
-    <li>2025-11-19 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">LECC out of jurisdiction</a></li>
-    <li>2025-11-20 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">NDIS plan approval 366406</a></li>
-  </ul>
-  <h2 id="y2026">2026</h2>
-  <ul class="plain">
-    <li>2026-01-14 — <a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/20260114-legal-aid-nsw-advice-letter-guardianship.pdf">Legal Aid NSW guardianship advice letter</a></li>
-    <li>2026-01-20 — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">NCAT guardianship evidence</a></li>
-  </ul>
-  <p class="meta">46 Backup filenames contained a parseable date. Only official-looking rows are listed here. Author emails from April–May 2026 remain AUTHOR’S ACCOUNT and are not treated as findings.</p>
+  <p class="meta">Person filter is fixed to the archive subject (PER-0001) for all current rows. Author emails from 2026 that are AUTHOR&rsquo;S ACCOUNT only are not listed as official timeline findings.</p>
 </main>
+<footer>
+  © Dr Richard William McLean / Barran Dodger<br>
+  <a href="methodology.html">Method</a> · <a href="master-command.html">Master command</a> · <a href="spec/BUILD_STATUS.md">Build status</a>
+</footer>
+<script>
+(async function () {
+  const res = await fetch('data/timeline.json');
+  const data = await res.json();
+  const entries = (data.entries || []).slice().sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+
+  function uniq(arr) {
+    return [...new Set(arr.filter(Boolean))].sort();
+  }
+
+  const years = uniq(entries.map(e => String(e.year)));
+  const decades = uniq(entries.map(e => e.decade));
+  const agencies = uniq(entries.flatMap(e => e.agency || []));
+  const types = uniq(entries.map(e => e.event_type));
+  const legals = uniq(entries.flatMap(e => e.legal_issue || []));
+  const cats = uniq(entries.map(e => e.evidence_category));
+
+  function fill(sel, values) {
+    const el = document.getElementById(sel);
+    values.forEach(v => {
+      const o = document.createElement('option');
+      o.value = v; o.textContent = v;
+      el.appendChild(o);
+    });
+  }
+  fill('f-year', years);
+  fill('f-decade', decades);
+  fill('f-agency', agencies);
+  fill('f-type', types);
+  fill('f-legal', legals);
+  fill('f-cat', cats);
+
+  const list = document.getElementById('list');
+  const count = document.getElementById('count');
+
+  function render() {
+    const y = document.getElementById('f-year').value;
+    const d = document.getElementById('f-decade').value;
+    const a = document.getElementById('f-agency').value;
+    const t = document.getElementById('f-type').value;
+    const l = document.getElementById('f-legal').value;
+    const c = document.getElementById('f-cat').value;
+    const q = (document.getElementById('f-q').value || '').toLowerCase().trim();
+
+    const filtered = entries.filter(e => {
+      if (y && String(e.year) !== y) return false;
+      if (d && e.decade !== d) return false;
+      if (a && !(e.agency || []).includes(a)) return false;
+      if (t && e.event_type !== t) return false;
+      if (l && !(e.legal_issue || []).includes(l)) return false;
+      if (c && e.evidence_category !== c) return false;
+      if (q && !(e.label || '').toLowerCase().includes(q)) return false;
+      return true;
+    });
+
+    count.textContent = filtered.length + ' of ' + entries.length + ' catalogue entries';
+    if (!filtered.length) {
+      list.innerHTML = '<p class="meta">No entries match these filters.</p>';
+      return;
+    }
+    list.innerHTML = filtered.map(e => {
+      const agencies = (e.agency || []).join(', ');
+      const legal = (e.legal_issue || []).length ? (e.legal_issue || []).join(', ') : '—';
+      const link = e.document_link
+        ? '<a href="' + e.document_link + '" rel="noopener">Open underlying path / file</a>'
+        : '<span class="meta">No direct file link on this row</span>';
+      const evt = e.evt_id ? ' · <span class="tl-date">' + e.evt_id + '</span>' : '';
+      return (
+        '<article class="tl-item" data-id="' + e.id + '">' +
+          '<div><span class="tl-date">' + e.date + '</span> · <strong>' + e.id + '</strong>' + evt + '</div>' +
+          '<div>' + (e.label || '') + '</div>' +
+          '<div class="tl-meta">Agency: ' + agencies + ' · Type: ' + (e.event_type || '') + ' · Legal: ' + legal + '</div>' +
+          '<div class="tl-meta">' + (e.evidence_category || '') + ' · Status: ' + (e.status || '') + '</div>' +
+          '<div class="tl-meta">' + link + '</div>' +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  ['f-year','f-decade','f-agency','f-type','f-legal','f-cat','f-q'].forEach(id => {
+    document.getElementById(id).addEventListener('input', render);
+    document.getElementById(id).addEventListener('change', render);
+  });
+  render();
+})();
+</script>
 </body>
 </html>

@@ -5,50 +5,37 @@ Active command: GITHUB FORENSIC ARCHIVE — MASTER BUILD COMMAND V1.
 ## Phases 1–13 plus allegation matrix — complete
 
 ## Extra before Phase 14 — Bolt-host reports linked
-Added sources/bolt-archive.html.
-Inspected https://barran-dodger-archiv-hz9k.bolt.host/#/
-Did not copy PDFs.
-Did not import SAMPLE DATA cards as finished publications.
-Hypothesis/allegation analyses kept at those labels.
-No refugee determination added from the IDP paper.
+(see prior entries)
 
 ## Phase 14 — Master Evidence Ledger — COMPLETE
-
-- DATA-MODEL.md + schema.json Phase 14
-- ledger.html viewer
-- Linked from Evidence Centre
-- No invented offences
-
 ## Phase 15 — Evidence Graph — COMPLETE
+
+## Phase 16 — Timeline — COMPLETE
 
 Completed this session:
 
-- Rebuilt `evidence-graph.html` as interactive Follow interface:
-  - Select Person / Publication / Organisation / Event / Law / Source / Cost / Document / Claim
-  - List nodes of that type from graph.json
-  - Show connected records (in/out edges) with relationship type and status
-  - Click-through to connected nodes
-  - Every path links back to underlying JSON / pages
-- Expanded `data/graph.json` to Phase 15:
-  - Nodes from existing people, publications, organisations, events, laws, sources, cost
-  - Edges: authored_by, subject_of, filename_concerns_subject, appears_on_filename, reference_only, filename_names_organisation, filename_related_law
-  - CLAIM ledger remains empty
-  - No verdict edges; no fabricated findings
-- Linked graph from Evidence Centre
+- Built interactive `timeline.html` with filters:
+  - year, decade, agency, event type, legal issue, evidence category, text search
+  - person is the archive subject on all current rows (PER-0001)
+- Created `data/timeline.json` from catalogue rows already listed on the prior static timeline (filename / folder dates only)
+- Each entry links to underlying Backup path or file where previously published
+- Expanded `data/events.json` with timeline_id cross-references
+- Status remains **FILENAME DATE ONLY** throughout
+- Not a complete 35-year chronology; no invented events
 - Original evidence files untouched
 
 Files created/modified:
-- `evidence-graph.html`
-- `data/graph.json`
-- `evidence/index.html`
+- `timeline.html`
+- `data/timeline.json` (new)
+- `data/events.json`
 - `spec/BUILD_STATUS.md`
 
 Unresolved errors: none for this phase.
 
 ## Not started
-Phases 16–24.
+Phases 17–24.
 
 ## Next
-CONTINUE FROM BUILD STATUS. Execute Phase 16 only (when instructed).
+CONTINUE FROM BUILD STATUS. Execute Phase 17 only (when instructed).
 
-STOP after Phase 15.
+STOP after Phase 16.
