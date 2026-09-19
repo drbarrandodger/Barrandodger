@@ -1,7 +1,20 @@
 {
-  "phase": 3,
+  "phase": 14,
+  "title": "Master Evidence Ledger",
   "generated": "2026-09-19",
-  "entities": ["claim", "document", "person", "organisation", "event", "law", "cost", "publication", "source"],
+  "entities": [
+    "claim",
+    "document",
+    "person",
+    "organisation",
+    "event",
+    "law",
+    "response",
+    "outcome",
+    "cost",
+    "publication",
+    "source"
+  ],
   "id_prefixes": {
     "claim": "CLM-",
     "document": "DOC-",
@@ -9,6 +22,8 @@
     "organisation": "ORG-",
     "event": "EVT-",
     "law": "LAW-",
+    "response": "RSP-",
+    "outcome": "OUT-",
     "cost": "CST-",
     "publication": "PUB-",
     "source": "SRC-"
@@ -38,5 +53,27 @@
     "PRIVATE",
     "DO NOT PUBLISH",
     "PUBLIC ON GITHUB — SENSITIVE TITLE"
+  ],
+  "relationship_types": [
+    "subject_of",
+    "authored_by",
+    "concerns",
+    "appears_on_filename",
+    "filename_concerns_subject",
+    "reference_only",
+    "linked_document",
+    "linked_claim",
+    "linked_event",
+    "linked_organisation",
+    "linked_person",
+    "response_to",
+    "outcome_of"
+  ],
+  "rules": [
+    "A ledger row is a catalogue record, not a finding.",
+    "No CLM- row may state an offence is established without an authoritative determination.",
+    "No relationship without a cited document id, path, or source id.",
+    "Filename dates are FILENAME DATE ONLY unless separately verified.",
+    "High-consequence claims remain ALLEGATION or higher only when justified by primary material."
   ]
 }

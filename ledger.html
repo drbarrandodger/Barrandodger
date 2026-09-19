@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Master Evidence Ledger | Barran Dodger Archive</title>
+  <meta name="description" content="Phase 14 Master Evidence Ledger — stable IDs and relationships. Catalogue only; not a court.">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .ledger-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 1rem 0 2rem; }
+    .ledger-table th, .ledger-table td { border: 1px solid var(--line); padding: 0.45rem 0.55rem; text-align: left; vertical-align: top; }
+    .ledger-table th { background: var(--panel); }
+    .id { font-family: ui-monospace, monospace; font-size: 0.85rem; }
+    .status { font-size: 0.8rem; color: var(--muted); }
+    section { margin-bottom: 2.5rem; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+  <div class="sub">Dr Richard William McLean · artist · author · researcher · advocate</div>
+  <nav>
+    <a href="index.html">Museum</a>
+    <a href="evidence/index.html">Evidence</a>
+    <a href="ledger.html">Ledger</a>
+    <a href="evidence-graph.html">Graph</a>
+    <a href="testimony.html">Testimony</a>
+    <a href="methodology.html">Method</a>
+  </nav>
+</header>
+<main>
+  <h1>Master Evidence Ledger</h1>
+  <p class="lede">Phase 14 relational catalogue. Stable IDs only. A row is a catalogue record, not a finding.</p>
+
+  <div class="caution">
+    This ledger does not establish wrongdoing. Claims remain empty of invented offences. Organisations and people are listed because they appear in the public documentary record or filenames. Examine primary sources before drawing conclusions.
+  </div>
+
+  <p>
+    <a class="btn" href="spec/DATA-MODEL.md">Data model (Phase 14)</a>
+    <a class="btn" href="data/schema.json">schema.json</a>
+    <a class="btn" href="data/relationships.json">relationships.json</a>
+    <a class="btn" href="evidence/index.html">Evidence Centre</a>
+  </p>
+
+  <section id="people">
+    <h2>People (PER-)</h2>
+    <div id="people-list" class="meta">Loading…</div>
+  </section>
+
+  <section id="organisations">
+    <h2>Organisations (ORG-)</h2>
+    <div id="org-list" class="meta">Loading…</div>
+  </section>
+
+  <section id="events">
+    <h2>Events (EVT-)</h2>
+    <p class="meta">Dates taken from filenames only unless otherwise verified.</p>
+    <div id="event-list" class="meta">Loading…</div>
+  </section>
+
+  <section id="claims">
+    <h2>Claims (CLM-)</h2>
+    <p class="meta">No invented offences. Seeded claims will appear here only when linked to a specific document and an explicit evidence_status.</p>
+    <div id="claim-list" class="meta">Loading…</div>
+  </section>
+
+  <section id="relationships">
+    <h2>Relationships</h2>
+    <div id="rel-list" class="meta">Loading…</div>
+  </section>
+
+  <section id="sources">
+    <h2>Source stores (SRC-)</h2>
+    <div id="source-list" class="meta">Loading…</div>
+  </section>
+
+  <p class="meta">Machine-readable files live under <code>/data/</code>. Full document inventory is referenced from <code>data/documents.json</code> (header) and the Backup repository.</p>
+</main>
+<footer>
+  © Dr Richard William McLean / Barran Dodger<br>
+  <a href="methodology.html">Method</a> · <a href="spec/LEGAL-CAUTION.md">Legal caution</a> · <a href="spec/BUILD_STATUS.md">Build status</a>
+</footer>
+<script>
+async function loadJSON(path) {
+  try {
+    const r = await fetch(path);
+    if (!r.ok) throw new Error(r.statusText);
+    return await r.json();
+  } catch (e) {
+    return { error: String(e) };
+  }
+}
+
+function table(headers, rows) {
+  if (!rows || !rows.length) return '<p class="meta">None seeded.</p>';
+  let h = '<table class="ledger-table"><thead><tr>' + headers.map(x => '<th>' + x + '</th>').join('') + '</tr></thead><tbody>';
+  for (const row of rows) {
+    h += '<tr>' + row.map(c => '<td>' + c + '</td>').join('') + '</tr>';
+  }
+  return h + '</tbody></table>';
+}
+
+(async () => {
+  const people = await loadJSON('data/people.json');
+  const orgs = await loadJSON('data/organisations.json');
+  const events = await loadJSON('data/events.json');
+  const claims = await loadJSON('data/claims.json');
+  const rels = await loadJSON('data/relationships.json');
+  const sources = await loadJSON('data/sources.json');
+
+  const p = people.people || [];
+  document.getElementById('people-list').innerHTML = table(
+    ['ID', 'Name', 'Role', 'Status'],
+    p.map(x => [
+      '<span class="id">' + x.id + '</span>',
+      (x.name || '') + (x.also_known_as ? ' <span class="status">(' + x.also_known_as.join(', ') + ')</span>' : ''),
+      x.role_in_archive || '',
+      '<span class="status">' + (x.status || '') + '</span>'
+    ])
+  );
+
+  const o = orgs.organisations || [];
+  document.getElementById('org-list').innerHTML = table(
+    ['ID', 'Name', 'Type', 'Jurisdiction', 'Status'],
+    o.map(x => [
+      '<span class="id">' + x.id + '</span>',
+      x.name || '',
+      x.type || '',
+      x.jurisdiction || '',
+      '<span class="status">' + (x.status || '') + '</span>'
+    ])
+  );
+
+  const e = events.events || [];
+  document.getElementById('event-list').innerHTML = table(
+    ['ID', 'Label', 'Date (filename)', 'Status'],
+    e.map(x => [
+      '<span class="id">' + x.id + '</span>',
+      x.label || '',
+      x.date_from_filename || '',
+      '<span class="status">' + (x.status || '') + '</span>'
+    ])
+  );
+
+  const c = claims.claims || [];
+  document.getElementById('claim-list').innerHTML = c.length
+    ? table(['ID', 'Text', 'Status'], c.map(x => ['<span class="id">' + x.id + '</span>', x.text || '', '<span class="status">' + (x.evidence_status || '') + '</span>']))
+    : '<p class="meta">No CLM- rows seeded. Claims are added only when a specific document and evidence_status are cited.</p>';
+
+  const r = rels.relationships || [];
+  document.getElementById('rel-list').innerHTML = table(
+    ['From', 'To', 'Type', 'Note'],
+    r.map(x => [
+      '<span class="id">' + x.from + '</span>',
+      '<span class="id">' + x.to + '</span>',
+      x.type || '',
+      '<span class="status">' + (x.status || '') + '</span>'
+    ])
+  );
+
+  // Sources are nested objects, not an array
+  let srcHtml = '<ul class="plain">';
+  if (sources.presentation) srcHtml += '<li><strong>Presentation</strong>: ' + (sources.presentation.pages_url || sources.presentation.repo) + '</li>';
+  if (sources.evidence_mirror) srcHtml += '<li><strong>Evidence mirror</strong>: ' + (sources.evidence_mirror.pages_url || sources.evidence_mirror.repo) + '</li>';
+  if (sources.named_primary) srcHtml += '<li><strong>Named primary</strong>: ' + (sources.named_primary.pages_url || sources.named_primary.repo) + ' <span class="status">(' + (sources.named_primary.note || '') + ')</span></li>';
+  srcHtml += '</ul>';
+  document.getElementById('source-list').innerHTML = srcHtml;
+})();
+</script>
+</body>
+</html>
