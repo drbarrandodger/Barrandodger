@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidence graph — Barran Dodger Archive</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+  <nav>
+    <a href="index.html">Museum</a>
+    <a href="evidence/index.html">Evidence</a>
+    <a href="evidence-graph.html">Graph</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="documents.html">Documents</a>
+  </nav>
+</header>
+<main>
+  <h1>Evidence graph</h1>
+  <p class="lede">Follow records that already exist in the ledgers. A line on this graph is not a finding of guilt.</p>
+  <div class="caution">CLAIM nodes are empty on purpose. No offence was seeded as established in Phase 3.</div>
+  <h2>Follow</h2>
+  <p>
+    <a class="btn" href="#person">Person</a>
+    <a class="btn" href="#publication">Publication</a>
+    <a class="btn" href="#organisation">Organisation</a>
+    <a class="btn" href="#event">Event</a>
+    <a class="btn" href="#law">Law</a>
+    <a class="btn" href="#document">Document</a>
+    <a class="btn" href="#claim">Claim</a>
+  </p>
+  <svg viewBox="0 0 320 220" width="100%" height="220" role="img" aria-label="Subject at centre connected to publications, sources, organisations and dated files">
+    <line x1="160" y1="110" x2="160" y2="30" stroke="#3f5d4a" />
+    <line x1="160" y1="110" x2="40" y2="110" stroke="#3f5d4a" />
+    <line x1="160" y1="110" x2="280" y2="110" stroke="#3f5d4a" />
+    <line x1="160" y1="110" x2="70" y2="190" stroke="#3f5d4a" />
+    <line x1="160" y1="110" x2="250" y2="190" stroke="#3f5d4a" />
+    <circle cx="160" cy="110" r="28" fill="#1c1915" />
+    <text x="160" y="114" text-anchor="middle" fill="#f4efe6" font-size="9">PER-0001</text>
+    <text x="160" y="22" text-anchor="middle" font-size="10">PUB works</text>
+    <text x="40" y="104" text-anchor="middle" font-size="10">Sources</text>
+    <text x="280" y="104" text-anchor="middle" font-size="10">Orgs</text>
+    <text x="70" y="208" text-anchor="middle" font-size="10">Dated files</text>
+    <text x="250" y="208" text-anchor="middle" font-size="10">Laws (ref)</text>
+  </svg>
+  <h2 id="person">Person</h2>
+  <p><strong>PER-0001</strong> Dr Richard William McLean / Barran Dodger — subject of the archive.</p>
+  <p>Connects to: publications (authored_by), GitHub sources (subject_of), cost model (concerns, estimate only).</p>
+  <p><a class="btn" href="about.html">About</a> <a class="btn" href="data/people.json">people.json</a></p>
+  <h2 id="publication">Publication</h2>
+  <p>PUB-0001 to PUB-0009. Status: AUTHOR’S ACCOUNT.</p>
+  <p><a class="btn" href="writings.html">Writings</a> <a class="btn" href="data/publications.json">publications.json</a></p>
+  <h2 id="organisation">Organisation</h2>
+  <p>ORG-0001 to ORG-0020. Linked only because the name appears on a public filename. Not a corruption list.</p>
+  <p><a class="btn" href="data/organisations.json">organisations.json</a> <a class="btn" href="official.html">Official records</a></p>
+  <h2 id="event">Event</h2>
+  <p>EVT-0001 to EVT-0005 and the Phase 6 timeline. Status: FILENAME DATE ONLY.</p>
+  <p><a class="btn" href="timeline.html">Timeline</a> <a class="btn" href="data/events.json">events.json</a></p>
+  <h2 id="law">Law</h2>
+  <p>LAW-0001 to LAW-0005. Status: REFERENCE ONLY. No row says a law was breached.</p>
+  <p><a class="btn" href="data/laws.json">laws.json</a> <a class="btn" href="evidence/ethics.html">Ethics module</a></p>
+  <h2 id="document">Document</h2>
+  <p>Document nodes live in wezzo72/Backup and the drbarrandodger archive. This graph does not duplicate the 531 PDFs.</p>
+  <p><a class="btn" href="documents.html">Library</a></p>
+  <h2 id="claim">Claim</h2>
+  <p>CLM- ledger is empty. Follow a document instead of a verdict.</p>
+  <p><a class="btn" href="data/claims.json">claims.json</a> <a class="btn" href="evidence/alleged-wrongs.html">Alleged wrongs index</a></p>
+</main>
+<footer>
+  <a href="data/graph.json">graph.json</a> · <a href="spec/FORENSIC-METHODOLOGY.md">Forensic method</a>
+</footer>
+</body>
+</html>

@@ -1,9 +1,15 @@
 {
-  "note": "Only relationships that do not require inventing a verdict.",
+  "note": "Phase 7 expanded catalogue edges only. No verdict edges.",
   "relationships": [
     {"from": "PER-0001", "to": "SRC-0001", "type": "subject_of"},
     {"from": "PER-0001", "to": "SRC-0002", "type": "subject_of"},
+    {"from": "PER-0001", "to": "SRC-0003", "type": "subject_of"},
     {"from": "PUB-0001", "to": "PER-0001", "type": "authored_by"},
-    {"from": "CST-0001", "to": "PER-0001", "type": "concerns", "status": "model only"}
+    {"from": "PUB-0002", "to": "PER-0001", "type": "authored_by"},
+    {"from": "PUB-0003", "to": "PER-0001", "type": "authored_by"},
+    {"from": "CST-0001", "to": "PER-0001", "type": "concerns", "status": "model only"},
+    {"from": "ORG-0001", "to": "SRC-0002", "type": "appears_on_filename"},
+    {"from": "EVT-0001", "to": "PER-0001", "type": "filename_concerns_subject"},
+    {"from": "LAW-0001", "to": "SRC-0002", "type": "reference_only"}
   ]
 }

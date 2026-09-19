@@ -1,0 +1,31 @@
+{
+  "phase": 7,
+  "generated": "2026-09-19",
+  "note": "Edges are catalogue links. They are not findings.",
+  "nodes": [
+    {"id": "PER-0001", "type": "person"},
+    {"id": "PUB-0001", "type": "publication"},
+    {"id": "PUB-0002", "type": "publication"},
+    {"id": "PUB-0003", "type": "publication"},
+    {"id": "SRC-0001", "type": "source"},
+    {"id": "SRC-0002", "type": "source"},
+    {"id": "SRC-0003", "type": "source"},
+    {"id": "ORG-0001", "type": "organisation"},
+    {"id": "EVT-0001", "type": "event"},
+    {"id": "LAW-0001", "type": "law"},
+    {"id": "CST-0001", "type": "cost"}
+  ],
+  "edges": [
+    {"from": "PER-0001", "to": "PUB-0001", "type": "authored_by", "status": "AUTHOR'S ACCOUNT"},
+    {"from": "PER-0001", "to": "PUB-0002", "type": "authored_by", "status": "AUTHOR'S ACCOUNT"},
+    {"from": "PER-0001", "to": "PUB-0003", "type": "authored_by", "status": "AUTHOR'S ACCOUNT"},
+    {"from": "PER-0001", "to": "SRC-0001", "type": "subject_of", "status": "DOCUMENTED FACT that this is the archive subject"},
+    {"from": "PER-0001", "to": "SRC-0002", "type": "subject_of"},
+    {"from": "PER-0001", "to": "SRC-0003", "type": "subject_of"},
+    {"from": "PER-0001", "to": "CST-0001", "type": "concerns", "status": "ESTIMATED / HYPOTHETICAL"},
+    {"from": "EVT-0001", "to": "PER-0001", "type": "filename_concerns_subject", "status": "FILENAME DATE ONLY"},
+    {"from": "ORG-0001", "to": "SRC-0002", "type": "appears_on_filename", "status": "named on file titles"},
+    {"from": "LAW-0001", "to": "SRC-0002", "type": "reference_only", "status": "REFERENCE ONLY"}
+  ],
+  "empty_ledgers": ["CLM"]
+}
