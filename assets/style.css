@@ -79,6 +79,57 @@ footer .footer-actions {
   letter-spacing: 0.02em;
 }
 .btn-donate:hover { filter: brightness(1.08); }
-.site-link {
-  font-weight: 600;
+.site-link { font-weight: 600; }
+
+/* Social share bar */
+.share-bar {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 0.85rem 1rem;
+  margin: 1.25rem 0;
 }
+.share-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 0.45rem;
+}
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+.share-btn {
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--line);
+  background: #f8f4ec;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-family: system-ui, sans-serif;
+  cursor: pointer;
+}
+.share-btn:hover { background: #ebe4d6; }
+.share-x { border-color: #1a1a1a; }
+.share-fb { border-color: #1877f2; }
+.share-li { border-color: #0a66c2; }
+.share-rd { border-color: #ff4500; }
+.share-wa { border-color: #25d366; }
+.share-tg { border-color: #2aabee; }
+.share-bsky { border-color: #1185fe; }
+.share-tags {
+  margin: 0.35rem 0 0.2rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  word-break: break-word;
+}
+.share-link-meta {
+  margin: 0.2rem 0 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+  word-break: break-all;
+}
+.share-link-meta a { color: var(--muted); }
