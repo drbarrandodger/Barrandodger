@@ -1,10 +1,24 @@
 {
   "phase": 19,
-  "generated": "2026-09-19",
-  "source": "wezzo72/Backup (client/public and related public paths)",
-  "note": "Catalogue of media paths already public on GitHub Backup. A filename is not a court finding. Allegation-titled audio remains AUTHOR'S ACCOUNT / ALLEGATION. This presentation does not store a second copy of media binaries.",
+  "generated": "2026-09-20",
+  "source": "wezzo72/Backup (client/public and related public paths) plus third-party YouTube confirmation entries",
+  "note": "Catalogue of media paths already public on GitHub Backup, plus external YouTube links. A filename or video title is not a court finding. Allegation-titled audio remains AUTHOR'S ACCOUNT / ALLEGATION. Third-party YouTube is PUBLIC THIRD-PARTY LINK — NOT A FINDING.",
   "download_url_pattern": "https://github.com/wezzo72/Backup/raw/main/{original_path}",
   "media": [
+    {
+      "id": "MED-0015",
+      "title": "THEY CRACKED AND SPILLED IT ALL... THE ENTIRE PLOT AGAINST YOU (YouTube title as published)",
+      "type": "youtube",
+      "url": "https://youtu.be/6V4IkBgV9V0",
+      "embed": "https://www.youtube.com/embed/6V4IkBgV9V0",
+      "video_id": "6V4IkBgV9V0",
+      "channel": "The Anointed Calling",
+      "archive_entry_date": "2026-09-20",
+      "evidence_classification": "THIRD-PARTY YOUTUBE / PUBLIC LINK",
+      "privacy_classification": "PUBLIC ON YOUTUBE",
+      "status": "PUBLIC THIRD-PARTY LINK — NOT A FINDING",
+      "confirmation_page": "youtube-confirmation.html"
+    },
     {
       "id": "MED-0001",
       "title": "Barran Dodger archive hero video",
