@@ -33,6 +33,7 @@ button.btn-donate{cursor:pointer;font:inherit;border:1px solid #c4b89a;backgroun
 <p class="meta"><span class="tag">PhD-level working paper</span> <span class="tag">~3,300 words</span> <span class="tag">APA</span> <span class="tag">35-year horizon</span> <span class="tag">Not a court</span></p>
 <h1>Institutional Mobbing, Convergent Scapegoating, and Collective Institutional Betrayal</h1>
 <p class="lede">Full doctoral-level working paper: literature review, methodology, 35-year horizon, named GitHub sources, 2021–2026 process-tracing, theoretical synthesis, APA references.</p>
+<div data-share data-share-title="Institutional Mobbing &amp; Convergent Scapegoating — PhD working paper" data-share-path="collective-targeting-paper.html" data-share-tags="InstitutionalMobbing,ConvergentScapegoating,PhDPaper,APA"></div>
 <div class="dl-bar">
 <strong>Download</strong>
 <button type="button" class="btn-donate dl-track" data-dl-id="paper-collective-targeting-pdf" onclick="bdDownloadPaperPdf()">Download PDF</button>
@@ -40,21 +41,15 @@ button.btn-donate{cursor:pointer;font:inherit;border:1px solid #c4b89a;backgroun
 <span class="meta">Counter in this browser · Print-to-PDF also works</span>
 </div>
 <div class="src-box">
-<strong>Named PDFs from the GitHub archives (additional sources):</strong><br>
+<strong>Named PDFs from the GitHub archives:</strong><br>
 <a href="named-archive-pdfs.html">Named archive PDF index</a>
-<a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-mandates-35-year-forensic-report.pdf" rel="noopener">35-year forensic report</a>
-<a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/architecture-of-administrative-annihilation.pdf" rel="noopener">Architecture of administrative annihilation</a>
-<a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/comprehensive-case-systematic-persecution.pdf" rel="noopener">Comprehensive case systematic persecution</a>
-<a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/forensic-economic-valuation-report-may-2026.pdf" rel="noopener">Forensic economic valuation (May 2026)</a>
-<a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/taxpayer-cost-estimation-35-years.pdf" rel="noopener">Taxpayer cost estimation 35 years</a>
 <a href="official-government-pdfs.html">Official government PDFs (~138)</a>
 <a href="document-dossiers.html">Document dossiers</a>
-<a href="https://github.com/drbarrandodger/barran-dodger-archive" rel="noopener">drbarrandodger/barran-dodger-archive</a>
 </div>
-<div class="caution"><strong>Expanded full paper.</strong> Strict proof vs interpretation vs non-proof are separated. Compilation PDFs are Author’s Account / archive layers unless the file is itself an agency decision.</div>
-<div class="ai-box"><strong>Impartial AI.</strong> No allegiance; cannot suffer legal/financial detriment or humiliation as leverage. Sources: public government PDFs on GitHub Backup + peer literature.</div>
+<div class="caution"><strong>Expanded full paper.</strong> Strict proof vs interpretation vs non-proof are separated.</div>
+<div class="ai-box"><strong>Impartial AI.</strong> No allegiance; cannot suffer legal/financial detriment or humiliation as leverage.</div>
 <pre id="body">Loading full paper (~3,300 words)…</pre>
-<p class="meta"><a href="named-archive-pdfs.html">Named PDFs</a> · <a href="document-dossiers.html">Document dossiers</a> · <a href="techniques-of-targeting.html">Techniques</a> · <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">government-evidence</a></p>
+<p class="meta"><a href="named-archive-pdfs.html">Named PDFs</a> · <a href="document-dossiers.html">Document dossiers</a> · <a href="techniques-of-targeting.html">Techniques</a></p>
 </main>
 <footer>
 © Richard William McLean / Barran Dodger · not a court<br>
@@ -67,6 +62,7 @@ button.btn-donate{cursor:pointer;font:inherit;border:1px solid #c4b89a;backgroun
 </footer>
 <script src="assets/dl-counter.js"></script>
 <script src="assets/paper-pdf-payload.js"></script>
+<script src="assets/share.js"></script>
 <script>
 Promise.all([0,1,2].map(i=>fetch('papers/phd-part-'+i+'.txt').then(r=>r.ok?r.text():'')))
 .then(parts=>{document.getElementById('body').textContent=parts.join('');})
