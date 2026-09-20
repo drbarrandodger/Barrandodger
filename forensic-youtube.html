@@ -15,6 +15,7 @@
 .yt-wrap{position:relative;width:100%;aspect-ratio:16/9;background:#111;margin:.5rem 0}
 .yt-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .section-h{margin-top:1.75rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.sig{font-size:.88rem;color:var(--muted);margin:.4rem 0}
 </style>
 </head>
 <body>
@@ -42,9 +43,22 @@
 </p>
 
 <h2 class="section-h">Confirmed video embeds</h2>
-<p class="meta">IDs recovered from public Backup scripts/pages. Send more URLs to expand embeds toward 70+.</p>
+<p class="meta">IDs recovered from public Backup scripts/pages and user-supplied confirmation URLs. Send more URLs to expand embeds toward 70+.</p>
 <div class="yt-grid">
-<div class="yt-card"><p><strong>YouTube confirmation — 20 Sep 2026</strong></p><p class="meta">6V4IkBgV9V0</p><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/6V4IkBgV9V0" title="yt" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div><a class="btn" href="https://youtu.be/6V4IkBgV9V0" rel="noopener" target="_blank">Open</a></div>
+<div class="yt-card">
+<p><strong>YouTube confirmation — 20 Sep 2026</strong></p>
+<p class="meta">4I0uzvzIeO4 · The Divine Purpose</p>
+<p class="sig">Theme listed: bystander silence / “no one stood up.” Parallel noted to archive questions on non-engagement — not a finding of identity or fact.</p>
+<div class="yt-wrap"><iframe src="https://www.youtube.com/embed/4I0uzvzIeO4" title="yt" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+<a class="btn" href="https://youtu.be/4I0uzvzIeO4" rel="noopener" target="_blank">Open</a>
+<a class="btn" href="youtube-confirmation.html">Confirmation page</a>
+</div>
+<div class="yt-card">
+<p><strong>YouTube confirmation — 20 Sep 2026</strong></p>
+<p class="meta">6V4IkBgV9V0 · The Anointed Calling</p>
+<div class="yt-wrap"><iframe src="https://www.youtube.com/embed/6V4IkBgV9V0" title="yt" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+<a class="btn" href="https://youtu.be/6V4IkBgV9V0" rel="noopener" target="_blank">Open</a>
+</div>
 <div class="yt-card"><p><strong>Analysis source</strong></p><p class="meta">82oI-GbHTf8</p><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/82oI-GbHTf8" title="yt" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div><a class="btn" href="https://www.youtube.com/watch?v=82oI-GbHTf8" rel="noopener" target="_blank">Open</a></div>
 <div class="yt-card"><p><strong>Analysis source</strong></p><p class="meta">AtsMleCPB7g</p><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/AtsMleCPB7g" title="yt" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div><a class="btn" href="https://youtu.be/AtsMleCPB7g" rel="noopener" target="_blank">Open</a></div>
 <div class="yt-card"><p><strong>ForensicVideoAnalysis source</strong></p><p class="meta">pQpFiDiTUGM</p><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/pQpFiDiTUGM" title="yt" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div><a class="btn" href="https://www.youtube.com/watch?v=pQpFiDiTUGM" rel="noopener" target="_blank">Open</a></div>
@@ -79,7 +93,7 @@
     box.innerHTML=pdfs.map((f,i)=>{
       const id='fa-'+String(i+1).padStart(3,'0');
       const title=f.name.replace(/\.pdf$/i,'').replace(/^forensic-analysis-/,'');
-      return '<div class="doc-row"><div><span class="tag">FA</span> '+title.replace(/</g,'<')+' <span class="dl-count" data-dl-id="'+id+'"></span></div><a class="btn dl-track" data-dl-id="'+id+'" href="'+base+encodeURIComponent(f.name)+'" rel="noopener">Download PDF</a></div>';
+      return '<div class="doc-row"><div><span class="tag">FA</span> '+title.replace(/</g,'&lt;')+' <span class="dl-count" data-dl-id="'+id+'"></span></div><a class="btn dl-track" data-dl-id="'+id+'" href="'+base+encodeURIComponent(f.name)+'" rel="noopener">Download PDF</a></div>';
     }).join('')||'<p class="meta">No files returned.</p>';
     if(window.BD_DL) BD_DL.render();
   }catch(e){
