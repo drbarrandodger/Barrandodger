@@ -24,3 +24,10 @@ Enable GitHub Pages:
 ## Rule
 
 ORIGINAL EVIDENCE MUST REMAIN PRESERVED. Website presentation may change. Underlying records must not be altered.
+
+
+## Official Drive binaries (20 September 2026)
+
+Forty-eight government / agency PDFs downloaded from Google Drive by file ID (plus unique Gmail agency-letter attachments) are stored in [`docs/official-drive/`](docs/official-drive/). Catalogue: [`data/official-drive-binaries-2026-09-20.json`](data/official-drive-binaries-2026-09-20.json). Listing: [drive-official-binaries.html](https://wezzo72.github.io/Barrandodger/drive-official-binaries.html).
+
+These are the party's copies. They are not court findings.
