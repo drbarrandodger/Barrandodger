@@ -81,7 +81,7 @@ footer .footer-actions {
 .btn-donate:hover { filter: brightness(1.08); }
 .site-link { font-weight: 600; }
 
-/* Social share bar */
+/* Social share bar (page-level) */
 .share-bar {
   border: 1px solid var(--line);
   background: var(--panel);
@@ -133,3 +133,34 @@ footer .footer-actions {
   word-break: break-all;
 }
 .share-link-meta a { color: var(--muted); }
+
+/* Compact per-PDF share row */
+.pdf-share {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.35rem;
+  width: 100%;
+  font-size: 0.78rem;
+}
+.pdf-share-label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-right: 0.15rem;
+}
+.pdf-share .share-btn {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.72rem;
+}
+.pdf-share-tags {
+  color: var(--accent);
+  font-size: 0.7rem;
+  word-break: break-word;
+  margin-left: 0.25rem;
+}
+.doc-row .pdf-share {
+  margin-top: 0.4rem;
+}

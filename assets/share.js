@@ -1,4 +1,6 @@
-/** Barran Dodger Archive — share bar with pre-filled URL + hashtags (platform limits respected) */
+/** Barran Dodger Archive — share bar with pre-filled URL + hashtags (platform limits respected)
+ *  Supports page-level [data-share] and per-PDF [data-pdf-share] bars.
+ */
 (function () {
   var BASE = 'https://wezzo72.github.io/Barrandodger/';
   var DEFAULT_TAGS = [
@@ -95,10 +97,41 @@
       '<a class="share-btn share-tg" href="' + urls.telegram + '" target="_blank" rel="noopener noreferrer">Telegram</a>' +
       '<a class="share-btn share-bsky" href="' + urls.bluesky + '" target="_blank" rel="noopener noreferrer">Bluesky</a>' +
       '<a class="share-btn share-em" href="' + urls.email + '">Email</a>' +
-      '<button type="button" class="share-btn share-copy" data-copy-url="' + url.replace(/"/g, '"') + '">Copy link</button>' +
+      '<button type="button" class="share-btn share-copy" data-copy-url="' + url.replace(/"/g, '&quot;') + '">Copy link</button>' +
       '</div>' +
       '<p class="share-tags" title="Pre-loaded hashtags (within platform limits)">' + hashDisplay + '</p>' +
       '<p class="share-link-meta"><a href="' + url + '">' + url + '</a></p>';
+
+    var copyBtn = el.querySelector('.share-copy');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function () {
+        copyLink(copyBtn.getAttribute('data-copy-url') || url, copyBtn);
+      });
+    }
+  }
+
+  /** Compact full-platform share for individual PDFs / files */
+  function renderPdfShare(el) {
+    var url = el.getAttribute('data-pdf-url') || '';
+    if (!url) return;
+    var title = el.getAttribute('data-pdf-title') || 'Barran Dodger PDF';
+    var tags = buildTags(el.getAttribute('data-pdf-tags') || '');
+    var urls = shareUrls(title, url, tags);
+    var hashDisplay = hashString(tags, 120);
+
+    el.className = (el.className ? el.className + ' ' : '') + 'pdf-share';
+    el.innerHTML =
+      '<span class="pdf-share-label">Share PDF:</span> ' +
+      '<a class="share-btn share-x" href="' + urls.x + '" target="_blank" rel="noopener noreferrer" title="Share on X">X</a>' +
+      '<a class="share-btn share-fb" href="' + urls.facebook + '" target="_blank" rel="noopener noreferrer" title="Share on Facebook">FB</a>' +
+      '<a class="share-btn share-li" href="' + urls.linkedin + '" target="_blank" rel="noopener noreferrer" title="Share on LinkedIn">LI</a>' +
+      '<a class="share-btn share-rd" href="' + urls.reddit + '" target="_blank" rel="noopener noreferrer" title="Share on Reddit">Reddit</a>' +
+      '<a class="share-btn share-wa" href="' + urls.whatsapp + '" target="_blank" rel="noopener noreferrer" title="Share on WhatsApp">WA</a>' +
+      '<a class="share-btn share-tg" href="' + urls.telegram + '" target="_blank" rel="noopener noreferrer" title="Share on Telegram">TG</a>' +
+      '<a class="share-btn share-bsky" href="' + urls.bluesky + '" target="_blank" rel="noopener noreferrer" title="Share on Bluesky">Bsky</a>' +
+      '<a class="share-btn share-em" href="' + urls.email + '" title="Email">Email</a>' +
+      '<button type="button" class="share-btn share-copy" data-copy-url="' + url.replace(/"/g, '&quot;') + '" title="Copy PDF link">Copy</button>' +
+      '<span class="pdf-share-tags" title="Pre-loaded hashtags">' + hashDisplay + '</span>';
 
     var copyBtn = el.querySelector('.share-copy');
     if (copyBtn) {
@@ -136,6 +169,8 @@
     autoInject();
     var nodes = document.querySelectorAll('[data-share]');
     for (var i = 0; i < nodes.length; i++) renderBar(nodes[i]);
+    var pdfs = document.querySelectorAll('[data-pdf-share]');
+    for (var j = 0; j < pdfs.length; j++) renderPdfShare(pdfs[j]);
   }
 
   if (document.readyState === 'loading') {
@@ -144,5 +179,11 @@
     init();
   }
 
-  window.BDShare = { init: init, renderBar: renderBar };
+  window.BDShare = {
+    init: init,
+    renderBar: renderBar,
+    renderPdfShare: renderPdfShare,
+    shareUrls: shareUrls,
+    buildTags: buildTags
+  };
 })();
