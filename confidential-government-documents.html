@@ -3,22 +3,102 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Confidential Government Documents — full public index | Barran Dodger Archive</title>
-<meta name="description" content="531 PDFs on GitHub Backup: PID, PM letters, Ombudsman, FOI, NDIS, police, declarations.">
+<title>Confidential Government Documents | Barran Dodger Archive</title>
+<meta name="description" content="531 PDFs on GitHub Backup: PID, PM letters, Ombudsman, FOI, NDIS, police, declarations. Free.">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+.hero-box{border:2px solid var(--accent);background:var(--panel);padding:1.1rem;margin:1rem 0}
+.stats{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0}
+.stat{border:1px solid var(--line);padding:.5rem .8rem;text-align:center}
+.stat strong{display:block;font-size:1.2rem}
+.doc-row{border:1px solid var(--line);background:var(--panel);padding:.4rem .65rem;margin-bottom:.28rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.4rem}
+.tag{font-size:.7rem;border:1px solid var(--line);padding:.05rem .3rem;text-transform:uppercase}
+.statement{border-left:3px solid var(--accent);padding-left:.85rem;margin:1rem 0;max-width:42rem}
+</style>
 </head>
 <body>
-<div id="root"><p class="meta" style="padding:1rem">Loading government documents index…</p></div>
-<script>
-(async function(){
-  try{
-    const a=await fetch("data/gov-docs-c0.html").then(r=>r.text());
-    const b=await fetch("data/gov-docs-c1.html").then(r=>r.text());
-    document.open(); document.write(a+b); document.close();
-  }catch(e){
-    document.getElementById("root").innerHTML='<p>Open <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">GitHub documents folder</a> (531 PDFs).</p>';
-  }
-})();
-</script>
+<header>
+<div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+<nav>
+<a href="index.html">Museum</a>
+<a href="confidential-government-documents.html">Gov documents</a>
+<a href="official.html">Official</a>
+<a href="documents.html">Database</a>
+<a href="downloads.html">Downloads</a>
+<a href="evidence/index.html">Evidence</a>
+<a href="testimony-statement.html">Statement</a>
+</nav>
+</header>
+<main>
+<div class="hero-box">
+<p class="meta"><span class="tag">531 PDFs</span> <span class="tag">Free</span> <span class="tag">GitHub Backup</span></p>
+<h1>Confidential Government Documents</h1>
+<p class="lede">Public index of official and related PDFs already on <strong>wezzo72/Backup</strong>. PID filings, letters to the Prime Minister and parliamentarians, Ombudsman, FOI, NDIS, police, Comcare, author declarations. Free — no Google login for the public mirror.</p>
+<div class="stats">
+<div class="stat"><strong>531</strong>documents PDFs</div>
+<div class="stat"><strong>138</strong>gov-evidence</div>
+<div class="stat"><strong>19</strong>PID</div>
+<div class="stat"><strong>10</strong>PM / Parliament</div>
+<div class="stat"><strong>14</strong>declarations</div>
+</div>
+<p>
+<a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">All 531 documents on GitHub</a>
+<a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">Government Evidence folder</a>
+<a class="btn" href="downloads.html">Download centre</a>
+<a class="btn" href="official.html">Shorter official list</a>
+</p>
+</div>
+<div class="caution"><strong>A letter or agency PDF is a document — not a court verdict.</strong> This indexes paths already public on GitHub.</div>
+<h2>Impartial AI · Statement of significance</h2>
+<p><span class="tag">Interpretation</span> <span class="tag">Research question</span></p>
+<div class="statement">
+<p>This index points to more than five hundred PDFs already published on public GitHub. Many filenames describe agency instruments. Agency-authored texts, where genuine, are those institutions’ own words. Author letters to the PM and declarations remain Author’s Account unless the file is an agency reply. Pattern questions across agencies are for readers of the primary PDFs — not verdicts declared here.</p>
+<p class="meta"><a href="testimony-statement.html">Architecture of Erasure</a> · <a href="verification.html">Verification</a></p>
+</div>
+<h2 id="pm">Letters to PM, Attorney-General, Parliament</h2>
+<div class="doc-row"><div>31-05-2022 letter to PM Albanese / OPMC</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/31-05-2022-letter-to-pm-albanese-opmc.pdf">Open PDF</a></div>
+<div class="doc-row"><div>01-07-2023 letter to Attorney-General and Prime Minister</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/01-07-2023-letter-to-attorney-general-prime-minister.pdf">Open PDF</a></div>
+<div class="doc-row"><div>04-06-2023 letter to parliamentarians</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/04-06-2023-letter-to-parliamentarians.pdf">Open PDF</a></div>
+<div class="doc-row"><div>letter-to-parliamentarians.pdf</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/letter-to-parliamentarians.pdf">Open PDF</a></div>
+<div class="doc-row"><div>letter-prime-minister-character-assassination.pdf</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/letter-prime-minister-character-assassination.pdf">Open PDF</a></div>
+<div class="doc-row"><div>formal-notice-minister-mcallister-ndis-substitution.pdf</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/formal-notice-minister-mcallister-ndis-substitution.pdf">Open PDF</a></div>
+<div class="doc-row"><div>Governor general response evidence</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/10_Governor%20general%20response%20evidence.pdf">Open PDF</a></div>
+<div class="doc-row"><div>OPMC FOI rejection 2022-045</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/EVIDENCE%20OPMC%20FOI%20REJECTION%20-2022-045%20-%20Decision.pdf">Open PDF</a></div>
+<h2 id="pid">Public Interest Disclosure (PID)</h2>
+<div class="doc-row"><div>Federal Court PID assessment 2023</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/federal-court-pid-assessment-2023.pdf">Open PDF</a></div>
+<div class="doc-row"><div>Federal Court PID final assessment Dr Rich McLean</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf">Open PDF</a></div>
+<div class="doc-row"><div>PID Form 1 — Mr McLean 19 May 2023</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/PID%20-%20Form%201%20-%20Mr%20Mclean%20-%2019%20May%202023%202.pdf">Open PDF</a></div>
+<div class="doc-row"><div>PID 2023 Krypton allocation decision</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/PID%202023%20Krypton%20-%20Allocation%20decision.pdf">Open PDF</a></div>
+<div class="doc-row"><div>PID 2023 Krypton preliminary</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/15_2023_PID_Krypton_Preliminary.pdf">Open PDF</a></div>
+<div class="doc-row"><div>IBAC PID rejection 400008R</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/06_2021-11-18_IBAC_PID_Rejection_400008R.pdf">Open PDF</a></div>
+<div class="doc-row"><div>PID Ombudsman rejected acknowledgement 2021</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/05_2021_PID_Ombudsman_Rejected_Acknowledgement.pdf">Open PDF</a></div>
+<div class="doc-row"><div>DSS PID rejection</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/08_2023-07-01_DSS_PIDRejection_DesperateAppealHelp.pdf">Open PDF</a></div>
+<div class="doc-row"><div>222RE PID SEC=OFFICIAL:Sensitive</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/04_222RE%20PID%20SECOFFICIALSensitive.pdf">Open PDF</a></div>
+<div class="doc-row"><div>NDIS PID official response</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/ndis-pid-official-response.pdf">Open PDF</a></div>
+<div class="doc-row"><div>NDIS / DSS allegations PID</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/14_NDIS%20DSS%20allegations%20PID.pdf">Open PDF</a></div>
+<div class="doc-row"><div>Sia Lagos Federal Court PID March 2023</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/sia-lagos-federal-court-pid-march-2023.pdf">Open PDF</a></div>
+<h2 id="declarations">Author declarations</h2>
+<div class="doc-row"><div>Declaration of Sovereignty</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/declaration_of_sovereignty.pdf">Open PDF</a></div>
+<div class="doc-row"><div>Declaration of Integrity</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/declaration-of-integrity.pdf">Open PDF</a></div>
+<div class="doc-row"><div>Declaration sovereign vindication</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/declaration-sovereign-vindication.pdf">Open PDF</a></div>
+<div class="doc-row"><div>Sacred declaration master record</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/sacred_declaration_master_record.pdf">Open PDF</a></div>
+<h2>Ombudsman · FOI · NDIS · Police · Comcare (open on GitHub)</h2>
+<div class="doc-row"><div>Commonwealth Ombudsman Service Restriction 8 Aug 2025</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/Commonwealth%20Ombudsman%20-%20Service%20Restriction%20-%20%20Dr%20Richard%20McLean%208%20August%202025.pdf">Open PDF</a></div>
+<div class="doc-row"><div>FOI 2022/045IC revised decision</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/2025-11-14_FOI_2022_045IC_Revised_Decision_4.pdf">Open PDF</a></div>
+<div class="doc-row"><div>Vic Ombudsman FOI s29A</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/2022-06-14_Vic_Ombudsman_Rejects_FOI_s29A.pdf">Open PDF</a></div>
+<div class="doc-row"><div>NDIS plan approval 366406</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/2025-11-20_NDIS_Plan_Approval_366406.pdf">Open PDF</a></div>
+<div class="doc-row"><div>LECC out of jurisdiction</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/2025-11-19_LECC_Out_Of_Jurisdiction.pdf">Open PDF</a></div>
+<div class="doc-row"><div>CDDA / AFP compensation claim</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/2021-10-21-cdda-afp-compensation-claim.pdf">Open PDF</a></div>
+<div class="doc-row"><div>AAT / Comcare 20217478</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/12_06.07.2023%20AAT%20and%20Work%20Cover%20Subsection%2041_2_%20of%20act%20-%20McLean%20and%20Comcare%2020217478.pdf">Open PDF</a></div>
+<div class="doc-row"><div>NCAT guardianship evidence</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-evidence/Government%20Evidence/2026-01-20_NCAT_Guardianship_Evidence.pdf">Open PDF</a></div>
+<div class="doc-row"><div>Legal Aid NSW guardianship advice</div><a class="btn" href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/20260114-legal-aid-nsw-advice-letter-guardianship.pdf">Open PDF</a></div>
+<h2>Full archive — 531 PDFs already on GitHub</h2>
+<p>Above the “500+” threshold. Sorted groups live in the documents tree. Drive was scanned; duplicates were not re-uploaded as binaries.</p>
+<p>
+<a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">Browse all 531 documents</a>
+<a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">138 government-evidence PDFs</a>
+</p>
+</main>
+<footer>© Richard William McLean / Barran Dodger · not a court</footer>
 </body>
 </html>
