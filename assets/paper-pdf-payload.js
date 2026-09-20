@@ -1,7 +1,10 @@
 window.BD_PAPER_PDF_NAME="institutional-mobbing-convergent-scapegoating-phd-working-paper.pdf";
 function bdDownloadPaperPdf(){
-  fetch("papers/phd-working-paper.pdf.b64").then(function(r){return r.text();}).then(function(b64){
-    b64=b64.replace(/\s+/g,"");
+  Promise.all([
+    fetch("papers/pdf-b64-0.txt").then(function(r){return r.text();}),
+    fetch("papers/pdf-b64-1.txt").then(function(r){return r.text();})
+  ]).then(function(parts){
+    var b64=(parts[0]+parts[1]).replace(/\s+/g,"");
     var bin=atob(b64);
     var arr=new Uint8Array(bin.length);
     for(var i=0;i<bin.length;i++) arr[i]=bin.charCodeAt(i);
@@ -11,5 +14,9 @@ function bdDownloadPaperPdf(){
     a.download=window.BD_PAPER_PDF_NAME;
     document.body.appendChild(a); a.click(); a.remove();
     if(window.BD_DL&&BD_DL.bump) BD_DL.bump("paper-collective-targeting-pdf");
-  }).catch(function(){ window.print(); if(window.BD_DL&&BD_DL.bump) BD_DL.bump("paper-collective-targeting-pdf"); });
+  }).catch(function(e){
+    console.error(e);
+    window.print();
+    if(window.BD_DL&&BD_DL.bump) BD_DL.bump("paper-collective-targeting-pdf");
+  });
 }
