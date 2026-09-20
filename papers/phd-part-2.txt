@@ -1,0 +1,78 @@
+8. Process-tracing: administrative sequence
+
+8.1 Public interest disclosure pathways
+
+Across 2021–2023, multiple written instruments decline to progress or allocate disclosures under the Public Interest Disclosure Act 2013. Documented grounds include the public-official eligibility requirement in s 26(1)(a), authorised internal recipient limits under s 34, assessments of reasonable grounds and disclosable conduct under sections 26 and 29, and explanations that the Commonwealth PID scheme does not cover alleged state-agency or private-entity conduct as described in Ombudsman correspondence. DSS authorised-officer correspondence in the July 2023 series states that information does not meet PID requirements and will not be allocated for investigation, notes serious safety concerns with encouragement to contact police, and points to Ombudsman complaint avenues. Commonwealth Ombudsman materials in the corpus document non-progression and review outcomes that uphold non-qualification under the scheme. The pattern is multi-door closure within one statutory family: not a single letter, but a sequence of formal endpoints.
+
+8.2 Freedom of information pathways
+
+The Department of the Prime Minister and Cabinet decision FOI-2022-045 refuses a broad request under s 24A(1)(b) of the FOI Act 1982 on the basis that after department-wide searches the documents cannot be found or do not exist, while clarifying that PM&C does not hold other agencies’ records. The Victorian Ombudsman’s FOI decision of 14 June 2022 invokes s 29A of the Ombudsman Act 1973 (Vic), excluding complaint and investigation-related information from FOI. NDIS-related FOI summary material records mixed outcomes: some access outside FOI, refusals under s 47E(d), no-document findings under s 24A, and transfers between the Commission and the NDIA. Victoria Police FOI rejection correspondence is present in the same public folder. The aggregate signature is distributed refusal and fragmentation rather than a single omnibus answer.
+
+8.3 Status, contact, and later oversight instruments
+
+A NSW Trustee and Guardian notice pursuant to s 122(2) of the NSW Trustee and Guardian Act 2009, dated 16 October 2024, certifies management status and states the certificate’s evidentiary function, with reference to NCAT publication constraints. Centrelink/Services Australia contact-restriction correspondence is archived under the Centrelink Sa ban filename. The public folder also contains later instruments including a Commonwealth Ombudsman service-restriction letter dated 8 August 2025, a NSW Police complaint response letter dated 24 August 2024, an LECC out-of-jurisdiction letter dated 19 November 2025, and NCAT guardianship-related evidence dated 20 January 2026. These documents extend the process signature and show continued formal entanglement with status and complaint systems beyond the 2021–2023 PID/FOI cluster.
+
+8.4 Technique mapping as hypothesis
+
+Relative to the archive’s eighty-five-item list, the high-confidence administrative sequence most directly supplies candidate mappings for legal-access obstruction, procedural obstruction, institutional fragmentation, institutional silence, administrative delay, referral without resolution, institutional compartmentalisation, bureaucracy as attrition, failure to investigate as experienced where allocation is refused, loss of autonomy and institutional dependency in the guardianship-certificate context, and cumulative or compounding harm as aggregate interpretations. These mappings are research hypotheses, not judicial findings.
+
+9. Theoretical synthesis: the term of art
+
+The composite term advanced by this paper is institutional mobbing with convergent scapegoating under conditions of collective institutional betrayal. Institutional mobbing supplies criteria of multi-source, long-duration, helplessness-producing process. Convergent scapegoating supplies the multi-actor orientation to a shared target without requiring proven unity of command—the disciplined translation of “common enemy.” Collective institutional betrayal supplies dependence plus institutional omission or commission in systems the person cannot freely exit. Together they answer RQ1.
+
+Why such convergence occurs, on theoretical grounds: risk displacement across offices; stigma and credibility scripts that convert evidence questions into speaker questions; statutory fragmentation across PID, FOI, police complaint, guardianship, and benefits regimes; in-group defence of staff and organisational reputation; and attrition through time, poverty, and repetition. How it occurs in this corpus: through repeated written instruments that end pathways without merits adjudication of the author’s widest allegations, while compilation PDFs interpret a multi-decade narrative arc. Each instrument may be facially lawful; the research object is the aggregate process form.
+
+10. Discussion
+
+The archive’s prophetic register reads routine non-allocation as future-legible abandonment. This paper constrains prophecy to pattern recognition in advance of institutional admission, and insists that pattern be named with pre-existing scholarly tools. Limits must be stated with equal force. An FOI finding that documents cannot be found does not prove that underlying events never occurred. A PID non-allocation does not prove that underlying allegations are false. Multi-actor administrative structure does not prove criminal conspiracy. Economic figures in valuation reports remain valuation layers until independently audited. Contested claims in other archive materials, including electronic-harassment review PDFs, lie outside the strict administrative process-trace that anchors this paper’s high-confidence core.
+
+11. Conclusive statement
+
+What the public evidence proves in the strict sense is that, at least across 2021–2026, multiple Australian public bodies issued written instruments declining to allocate or progress PID pathways, refusing or excluding FOI access on stated statutory grounds, restricting contact channels, and—on 16 October 2024—certifying NSW Trustee and Guardian management under s 122(2), as archived in named public GitHub files. Those outcomes are on the face of the documents.
+
+What the evidence supports as coherent research interpretation is that the multi-year, multi-agency process signature is appropriately theorised as institutional mobbing with convergent scapegoating under collective institutional betrayal: many institutional actions oriented toward one dependent person as problem locus. The author-stated thirty-five-year horizon remains an Author’s Account frame anchored by public thirty-five-year-titled compilations and by densest standalone administrative documentation in the 2020s.
+
+What the evidence does not prove is a single coordinated criminal conspiracy, the truth of every allegation in the wider archive, bad faith by every individual officer, or an audited quantum of economic loss. Accordingly, the official paper trail is sufficient to confirm the significance of the multi-actor structure and to justify the academic term advanced here as a research conclusion about process form. Time made the pattern legible; the government’s own letters supplied the ink.
+
+References
+
+Allport, G. W. (1954). The nature of prejudice. Addison-Wesley.
+
+Barran Dodger Archive. (2026). Document dossiers; Techniques of targeting; Official government PDFs; Collective targeting paper. https://wezzo72.github.io/Barrandodger/
+
+Cohen, S. (2011). Folk devils and moral panics (3rd ed.). Routledge. (Original work published 1972)
+
+Commonwealth Ombudsman. (2021–2025). PID assessment, non-allocation, and service-restriction correspondence. Archived in wezzo72/Backup government-evidence.
+
+Dannefer, D. (2003). Cumulative advantage/disadvantage and the life course. The Journals of Gerontology: Series B, 58(6), S327–S337.
+
+Department of Social Services. (2023). Notification of decision not to allocate a disclosure. Archived in wezzo72/Backup government-evidence.
+
+Department of the Prime Minister and Cabinet. (2022). FOI decision FOI-2022-045. Archived in wezzo72/Backup government-evidence.
+
+Freyd, J. J., & Birrell, P. J. (2013). Blind to betrayal. Wiley.
+
+Fricker, M. (2007). Epistemic injustice: Power and the ethics of knowing. Oxford University Press.
+
+Girard, R. (1986). The scapegoat (Y. Freccero, Trans.). Johns Hopkins University Press.
+
+Goffman, E. (1963). Stigma: Notes on the management of spoiled identity. Prentice-Hall.
+
+Leymann, H. (1990). Mobbing and psychological terror at workplaces. Violence and Victims, 5(2), 119–126.
+
+Leymann, H. (1996). The content and development of mobbing at work. European Journal of Work and Organizational Psychology, 5(2), 165–184.
+
+NSW Trustee and Guardian. (2024, October 16). Notice pursuant to s 122(2) NSW Trustee and Guardian Act 2009. Archived in wezzo72/Backup government-evidence.
+
+Patterson, O. (1982). Slavery and social death: A comparative study. Harvard University Press.
+
+Smith, C. P., & Freyd, J. J. (2014). Institutional betrayal. American Psychologist, 69(6), 575–587.
+
+Tajfel, H., & Turner, J. C. (1979). An integrative theory of intergroup conflict. In W. G. Austin & S. Worchel (Eds.), The social psychology of intergroup relations (pp. 33–47). Brooks/Cole.
+
+Victorian Ombudsman. (2022, June 14). FOI decision citing Ombudsman Act 1973 (Vic) s 29A. Archived in wezzo72/Backup government-evidence.
+
+wezzo72/Backup. (n.d.). Public corpus: government-evidence (~138 PDFs); architecture-of-administrative-annihilation.pdf; comprehensive-case-systematic-persecution.pdf; government-mandates-35-year-forensic-report.pdf; taxpayer-cost-estimation-35-years.pdf; forensic-economic-valuation-report-may-2026.pdf. https://github.com/wezzo72/Backup
+
+© Richard William McLean / Barran Dodger Archive · Not a court · Truth should be free
+https://wezzo72.github.io/Barrandodger/collective-targeting-paper.html · https://barrandodger.com
