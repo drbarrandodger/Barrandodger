@@ -95,7 +95,7 @@
       '<a class="share-btn share-tg" href="' + urls.telegram + '" target="_blank" rel="noopener noreferrer">Telegram</a>' +
       '<a class="share-btn share-bsky" href="' + urls.bluesky + '" target="_blank" rel="noopener noreferrer">Bluesky</a>' +
       '<a class="share-btn share-em" href="' + urls.email + '">Email</a>' +
-      '<button type="button" class="share-btn share-copy" data-copy-url="' + url.replace(/"/g, '&quot;') + '">Copy link</button>' +
+      '<button type="button" class="share-btn share-copy" data-copy-url="' + url.replace(/"/g, '"') + '">Copy link</button>' +
       '</div>' +
       '<p class="share-tags" title="Pre-loaded hashtags (within platform limits)">' + hashDisplay + '</p>' +
       '<p class="share-link-meta"><a href="' + url + '">' + url + '</a></p>';
@@ -108,7 +108,32 @@
     }
   }
 
+  function autoInject() {
+    if (document.querySelector('[data-share]')) return;
+    var body = document.body;
+    if (!body) return;
+    var title = body.getAttribute('data-share-title') || document.title || 'Barran Dodger Archive';
+    var tags = body.getAttribute('data-share-tags') || '';
+    var path = body.getAttribute('data-share-path') || '';
+    var main = document.querySelector('main');
+    if (!main) return;
+    var el = document.createElement('div');
+    el.setAttribute('data-share', '');
+    el.setAttribute('data-share-title', title);
+    if (path) el.setAttribute('data-share-path', path);
+    if (tags) el.setAttribute('data-share-tags', tags);
+    var caution = main.querySelector('.caution');
+    if (caution && caution.nextSibling) {
+      caution.parentNode.insertBefore(el, caution.nextSibling);
+    } else if (main.firstChild) {
+      main.insertBefore(el, main.firstChild.nextSibling);
+    } else {
+      main.appendChild(el);
+    }
+  }
+
   function init() {
+    autoInject();
     var nodes = document.querySelectorAll('[data-share]');
     for (var i = 0; i < nodes.length; i++) renderBar(nodes[i]);
   }
