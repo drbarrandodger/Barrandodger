@@ -1,0 +1,21 @@
+Source: Gmail message_id 1a0b991ddc5a5224
+Date: Sat, 19 Sep 2026 12:08:30 +0000
+From: Legal Aid NSW Case Management <casemanagement@legalaid.nsw.gov.au>
+To: richarddrawsstuff@gmail.com
+Subject: IMPORTANT: Your attachment to CCMS case has failed
+
+Dear richarddrawsstuff,
+
+Your email to casemanagement@legalaid.nsw.gov.au attempting to attach to a CCMS Service has failed
+
+This usually occurs for one of the following reasons:
+1. NO SERVICE, MATTER OR CLIENT ID IN THE SUBJECT LINE
+2. THE ID NOT CORRECTLY FORMATTED EXACTLY AS IT APPEARS IN CCMS (e.g. two letters-number)
+3. THE SERVICE, MATTER OR CLIENT ID YOU ADDED TO THE SUBJECT LINE DOES NOT EXIST
+
+Your email has been returned to you to try again. Please send it again using the correct service ID in the subject line.
+
+Thank you
+CCMS Team
+
+Attachment on Gmail: Original-email.eml (large) — not re-hosted as binary in this text export.

@@ -1,0 +1,29 @@
+Source: Gmail message_id 1a0b988c355db394
+Date: Sat, 19 Sep 2026 21:59:00 +1000
+From: Rich McLean <richarddrawsstuff@gmail.com>
+Subject: THE WITNESS REMAINS: A FINAL RECORD OF ERASURE, SURVIVAL AND ACCOUNTABILITY
+
+This was a multi-recipient outbound email. Official / authority-class addresses on the recipient list included (non-exhaustive):
+
+NSW Ombudsman: info@ombo.nsw.gov.au, ombudsman@ombo.nsw.gov.au
+IBAC: info@ibac.vic.gov.au
+ICAC NSW: icac@icac.nsw.gov.au
+NACC Inspector: enquiries@naccinspector.gov.au
+NDIS Commission Contact Centre; NDIS Review contactus@ndisreview.gov.au; Erin.Clark@ndis.gov.au
+Media@humanrights.gov.au
+DRC Enquiries (Royal Commission): DRCenquiries@royalcommission.gov.au
+Legal Aid NSW/VIC/QLD addresses
+NSW Police numbered officer addresses and police channels
+TAG NSW: csc@tag.nsw.gov.au
+ART NDIS co-ord: NDISco-ord@art.gov.au
+Parliament / media / UN-related addresses (many delivery failures recorded by Gmail)
+
+Documented system outcomes:
+- Numerous Delivery Status Notifications (address not found / message blocked / inbox full)
+- Auto-acks from Victorian Ombudsman, Federal Court Vic Registry, Local Court Wyong, QLD Policelink, Melissa McIntosh MP office, NACC Inspector, Legal Aid NSW CCMS
+
+Body preview (opening lines only):
+THE WITNESS REMAINS: A FINAL RECORD OF ERASURE, SURVIVAL AND ACCOUNTABILITY
+I am the saint who will slaughter, and the psychopath who blesses with grace. Not with a blade, but with testimony…
+
+Full body remains in Gmail; this file is a permanent public metadata and outcome record.
