@@ -25,7 +25,7 @@
 </header>
 <main>
 <h1>Official government PDFs on GitHub</h1>
-<p class="lede"><strong id="cnt">…</strong> binary PDFs already public on <code>wezzo72/Backup</code>. Drive files are private — public access is via GitHub only.</p>
+<p class="lede"><strong id="cnt">…</strong> binary PDFs already public on <code>wezzo72/Backup</code>. Drive files are <strong>private</strong> — permanent public access is GitHub only.</p>
 <div class="hero-stats">
 <div class="stat"><strong id="n">—</strong> on GitHub now</div>
 <div class="stat"><strong>531+</strong> documents total</div>
@@ -34,30 +34,43 @@
 <div class="caution"><strong>Documented paths, not verdicts.</strong> Filenames identify source material. Not findings of wrongdoing.</div>
 <p>
 <a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">Open folder on GitHub</a>
-<a class="btn" href="import-official-pdfs.html">Import more from Drive</a>
-<a class="btn" href="https://github.com/wezzo72/Backup/upload/main/client/public/documents/government-evidence">Upload PDFs</a>
+<a class="btn" href="import-official-pdfs.html">Import more from Drive (method)</a>
+<a class="btn" href="https://github.com/wezzo72/Backup/upload/main/client/public/documents/government-evidence">Upload PDFs (you must be logged in)</a>
 </p>
 <input type="search" id="q" placeholder="Filter by name…" style="width:100%;max-width:28rem;padding:.4rem;margin:1rem 0;font:inherit;border:1px solid var(--line);background:var(--panel);color:var(--ink)">
-<div id="list">Loading…</div>
+<div id="list">Loading from GitHub…</div>
 </main>
 <footer>© Richard William McLean / Barran Dodger · not a court</footer>
 <script>
-fetch('data/official-gov-pdfs.json').then(r=>r.json()).then(data=>{
-  const docs=data.documents||[];
-  document.getElementById('n').textContent=docs.length;
-  document.getElementById('cnt').textContent=docs.length;
+(async function(){
   const list=document.getElementById('list');
-  function render(filter){
-    const f=(filter||'').toLowerCase();
-    const rows=docs.filter(d=>!f||(d.name||'').toLowerCase().includes(f));
-    list.innerHTML=rows.map(d=>
-      '<div class="doc-row"><div><span class="n">'+d.id+'</span> '+d.name.replace(/</g,'&lt;')+' <span class="meta">('+d.size_kb+' KB)</span></div>'+
-      '<a class="btn" href="'+d.url+'" rel="noopener" target="_blank">Open PDF</a></div>'
-    ).join('')||'<p class="meta">No matches.</p>';
+  try {
+    const res=await fetch('https://api.github.com/repos/wezzo72/Backup/git/trees/main?recursive=1');
+    const data=await res.json();
+    const prefix='client/public/documents/government-evidence/';
+    const docs=(data.tree||[]).filter(t=>t.type==='blob' && t.path && t.path.indexOf(prefix)===0 && /\.pdf$/i.test(t.path))
+      .map((t,i)=>({
+        id:'GOV-'+String(i+1).padStart(4,'0'),
+        name:t.path.split('/').pop(),
+        size_kb:Math.max(1, Math.round((t.size||0)/1024)),
+        url:'https://github.com/wezzo72/Backup/raw/main/'+t.path.split('/').map(encodeURIComponent).join('/')
+      }));
+    document.getElementById('n').textContent=docs.length;
+    document.getElementById('cnt').textContent=docs.length;
+    function render(filter){
+      const f=(filter||'').toLowerCase();
+      const rows=docs.filter(d=>!f||d.name.toLowerCase().includes(f));
+      list.innerHTML=rows.map(d=>
+        '<div class="doc-row"><div><span class="n">'+d.id+'</span> '+d.name.replace(/</g,'&lt;')+' <span class="meta">('+d.size_kb+' KB)</span></div>'+
+        '<a class="btn" href="'+d.url+'" rel="noopener" target="_blank">Open PDF</a></div>'
+      ).join('')||'<p class="meta">No matches.</p>';
+    }
+    document.getElementById('q').addEventListener('input',e=>render(e.target.value));
+    render('');
+  } catch(e){
+    list.innerHTML='<p class="meta">Could not load GitHub tree. <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">Open folder directly</a>.</p>';
   }
-  document.getElementById('q').addEventListener('input',e=>render(e.target.value));
-  render('');
-});
+})();
 </script>
 </body>
 </html>
