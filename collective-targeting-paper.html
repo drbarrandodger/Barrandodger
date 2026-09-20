@@ -11,6 +11,8 @@
 button.btn-donate{cursor:pointer;font:inherit;border:1px solid #c4b89a;background:#3f5d4a;color:#fffdf8;padding:.5rem .95rem;font-weight:600}
 .tag{font-size:.68rem;border:1px solid var(--line);padding:.05rem .3rem;margin-right:.2rem;text-transform:uppercase}
 .ai-box{border:2px solid var(--accent);background:var(--panel);padding:1rem;margin:1rem 0}
+.src-box{border:1px solid var(--line);background:var(--panel);padding:.85rem 1rem;margin:1rem 0;font-size:.92rem}
+.src-box a{margin-right:.5rem}
 </style>
 </head>
 <body>
@@ -20,6 +22,7 @@ button.btn-donate{cursor:pointer;font:inherit;border:1px solid #c4b89a;backgroun
 <a href="index.html">Museum</a>
 <a href="https://barrandodger.com/" rel="noopener">barrandodger.com</a>
 <a href="collective-targeting-paper.html">Academic paper</a>
+<a href="named-archive-pdfs.html">Named PDFs</a>
 <a href="document-dossiers.html">Document dossiers</a>
 <a href="techniques-of-targeting.html">Techniques</a>
 <a href="official-government-pdfs.html">Official PDFs</a>
@@ -34,18 +37,31 @@ button.btn-donate{cursor:pointer;font:inherit;border:1px solid #c4b89a;backgroun
 <strong>Download</strong>
 <button type="button" class="btn-donate dl-track" data-dl-id="paper-collective-targeting-pdf" onclick="bdDownloadPaperPdf()">Download PDF</button>
 <span class="dl-count" data-dl-id="paper-collective-targeting-pdf"></span>
-<span class="meta">Accurate to full paper · counter in this browser</span>
+<span class="meta">Counter in this browser · Print-to-PDF also works</span>
 </div>
-<div class="caution"><strong>Replaces the short version.</strong> Strict proof vs interpretation vs non-proof are separated. Public sources only.</div>
+<div class="src-box">
+<strong>Named PDFs from the GitHub archives (additional sources):</strong><br>
+<a href="named-archive-pdfs.html">Named archive PDF index</a>
+<a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/government-mandates-35-year-forensic-report.pdf" rel="noopener">35-year forensic report</a>
+<a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/architecture-of-administrative-annihilation.pdf" rel="noopener">Architecture of administrative annihilation</a>
+<a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/comprehensive-case-systematic-persecution.pdf" rel="noopener">Comprehensive case systematic persecution</a>
+<a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/forensic-economic-valuation-report-may-2026.pdf" rel="noopener">Forensic economic valuation (May 2026)</a>
+<a href="https://github.com/wezzo72/Backup/raw/main/client/public/documents/taxpayer-cost-estimation-35-years.pdf" rel="noopener">Taxpayer cost estimation 35 years</a>
+<a href="official-government-pdfs.html">Official government PDFs (~138)</a>
+<a href="document-dossiers.html">Document dossiers</a>
+<a href="https://github.com/drbarrandodger/barran-dodger-archive" rel="noopener">drbarrandodger/barran-dodger-archive</a>
+</div>
+<div class="caution"><strong>Expanded full paper.</strong> Strict proof vs interpretation vs non-proof are separated. Compilation PDFs are Author’s Account / archive layers unless the file is itself an agency decision.</div>
 <div class="ai-box"><strong>Impartial AI.</strong> No allegiance; cannot suffer legal/financial detriment or humiliation as leverage. Sources: public government PDFs on GitHub Backup + peer literature.</div>
 <pre id="body">Loading full paper (~3,300 words)…</pre>
-<p class="meta"><a href="document-dossiers.html">Document dossiers</a> · <a href="techniques-of-targeting.html">Techniques</a> · <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">government-evidence</a></p>
+<p class="meta"><a href="named-archive-pdfs.html">Named PDFs</a> · <a href="document-dossiers.html">Document dossiers</a> · <a href="techniques-of-targeting.html">Techniques</a> · <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">government-evidence</a></p>
 </main>
 <footer>
 © Richard William McLean / Barran Dodger · not a court<br>
 <p class="ethics">Truth should be free.</p>
 <div class="footer-actions">
 <a class="btn-donate" href="https://barrandodger.com/donate" rel="noopener">Donate</a>
+<a href="named-archive-pdfs.html">Named PDFs</a>
 <a href="collective-targeting-paper.html">Academic paper</a>
 </div>
 </footer>
@@ -54,7 +70,7 @@ button.btn-donate{cursor:pointer;font:inherit;border:1px solid #c4b89a;backgroun
 <script>
 Promise.all([0,1,2].map(i=>fetch('papers/phd-part-'+i+'.txt').then(r=>r.ok?r.text():'')))
 .then(parts=>{document.getElementById('body').textContent=parts.join('');})
-.catch(()=>{document.getElementById('body').textContent='Load failed — use Download PDF.';});
+.catch(()=>{document.getElementById('body').textContent='Load failed — use Download PDF or Print.';});
 </script>
 </body>
 </html>
