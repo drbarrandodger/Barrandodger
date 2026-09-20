@@ -1,0 +1,1069 @@
+{
+  "scanned_at": "2026-09-20T03:29:02Z",
+  "source": "Connected Google Drive (Dodger Barran) + Gmail authority attachments",
+  "method": "Drive PDF search pages + root listing + Public Record Archive folder. Gmail from:gov.au filename:pdf.",
+  "limits": "GitHub connector is text-only: binary PDFs stay as Drive/Gmail links; text extracts hosted here. Classification is filename-based, not a court verdict. Personal mobiles redacted. CSAM/sexual-video/suicide-note filenames excluded.",
+  "total_pdfs": 117,
+  "official_count": 23,
+  "other_count": 94,
+  "excluded_count": 0,
+  "gmail_official_records": 6,
+  "official": [
+    {
+      "file_id": "1DZtqswXCzh0PLrmW24IbJRDABr5OATFD",
+      "name": "01.07.2023 letter to attorney general the prime minister and mental health minister gabrielle williams desperately crying for help - Rich McLean is dead-1.pdf",
+      "size_bytes": 462470,
+      "modified": "2026-05-21T03:22:00.516Z",
+      "url": "https://drive.google.com/file/d/1DZtqswXCzh0PLrmW24IbJRDABr5OATFD/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1Ka_Up_pZfP10xSEQ7k89x_z4kKtoQSWH",
+      "name": "04.06.2023 gabrielle williams - This is the letter to send on.pdf",
+      "size_bytes": 94170,
+      "modified": "2026-05-21T03:20:15.478Z",
+      "url": "https://drive.google.com/file/d/1Ka_Up_pZfP10xSEQ7k89x_z4kKtoQSWH/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1dTl0m18mRnpGmCFZvnrEyCdkj_LcgwHZ",
+      "name": "08.01.2024 scott treadwell Federal Court - superannuation and NDIS CEO copy.pdf",
+      "size_bytes": 133952,
+      "modified": "2026-05-21T03:20:38.107Z",
+      "url": "https://drive.google.com/file/d/1dTl0m18mRnpGmCFZvnrEyCdkj_LcgwHZ/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1uBh9QdC2Xru9xup4C2B8_a0kmhY6OQkp",
+      "name": "16.01.2022.reprt.ndis.a.to.superannuation.tax.department. 2.pdf",
+      "size_bytes": 175866,
+      "modified": "2026-05-21T03:21:09.770Z",
+      "url": "https://drive.google.com/file/d/1uBh9QdC2Xru9xup4C2B8_a0kmhY6OQkp/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "12zxfEIj0afJRdjWIv8L1wCd8uIfGSoEa",
+      "name": "25.01.2024 'regsrding your eligibility to contribute to one of our public sector schemes' - evidence - answer within a week - you watch them delegitimise a fact! My superannuation guarantee in retrospect for my employment with DSS and disability issue.pdf",
+      "size_bytes": 277905,
+      "modified": "2026-05-21T03:21:36.392Z",
+      "url": "https://drive.google.com/file/d/12zxfEIj0afJRdjWIv8L1wCd8uIfGSoEa/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1AjXWmFUT503lgUgqnxFRgAl_-IsA7ZF9",
+      "name": "26.03.2023 PID Commonbwealth Ombudsman .pdf",
+      "size_bytes": 791535,
+      "modified": "2026-05-21T03:22:17.284Z",
+      "url": "https://drive.google.com/file/d/1AjXWmFUT503lgUgqnxFRgAl_-IsA7ZF9/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1AIs1PRemUhpbFZ71yiv19IS3RGb3MC1K",
+      "name": "29.05.2025 Subject Formal Request to Submit Invoice for Emergency NDIS Accommodation .pdf",
+      "size_bytes": 362777,
+      "modified": "2025-05-30T00:02:22.000Z",
+      "url": "https://drive.google.com/file/d/1AIs1PRemUhpbFZ71yiv19IS3RGb3MC1K/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1t6q5Rmg9Xbi33EUM0L8kd7giRr2d3e_0",
+      "name": "AFSA evidence sent to AFSA i did not need to be bankrupt 18112021 steve iasonidis family law copy.pdf",
+      "size_bytes": 263870,
+      "modified": "2026-05-21T03:21:33.246Z",
+      "url": "https://drive.google.com/file/d/1t6q5Rmg9Xbi33EUM0L8kd7giRr2d3e_0/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1ATi8Ke5fvynoA7NKYHALe9bjx-ylfNfs",
+      "name": "Application-For-Legal-Aid BLANK FORM.pdf",
+      "size_bytes": 1264433,
+      "modified": "2026-05-21T03:22:44.291Z",
+      "url": "https://drive.google.com/file/d/1ATi8Ke5fvynoA7NKYHALe9bjx-ylfNfs/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1Rwom6MBosbIcF3hwWeoi67wxwpqwm0TO",
+      "name": "Application-For-Legal-Aid filled out barran dodger .pdf",
+      "size_bytes": 311628,
+      "modified": "2026-05-21T03:21:42.626Z",
+      "url": "https://drive.google.com/file/d/1Rwom6MBosbIcF3hwWeoi67wxwpqwm0TO/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1HFONvtKBvVFE9jnufcEfAUdN7PBvvrcv",
+      "name": "Ben Ndis Help.pdf",
+      "size_bytes": 185857,
+      "modified": "2025-04-02T04:11:22.000Z",
+      "url": "https://drive.google.com/file/d/1HFONvtKBvVFE9jnufcEfAUdN7PBvvrcv/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1AJ5HoxjCC3JR-2_k7w1XeD3cYVm9tbCQ",
+      "name": "C-2336089 - Notice to remove recording without consent.pdf",
+      "size_bytes": 166198,
+      "modified": "2026-05-21T03:21:00.895Z",
+      "url": "https://drive.google.com/file/d/1AJ5HoxjCC3JR-2_k7w1XeD3cYVm9tbCQ/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1uUWQQJilzmfMTdjvZJgB22KF4cq8G1kL",
+      "name": "Cailey Campbell of legal aid nsw .pdf",
+      "size_bytes": 45001,
+      "modified": "2026-05-21T03:19:52.190Z",
+      "url": "https://drive.google.com/file/d/1uUWQQJilzmfMTdjvZJgB22KF4cq8G1kL/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1bmX8AA4tjEDLeqUCbA7PwuT7iCNekvsf",
+      "name": "Centrelink outcome of review banned.pdf.pdf",
+      "size_bytes": 1394986,
+      "modified": "2026-05-21T03:22:48.100Z",
+      "url": "https://drive.google.com/file/d/1bmX8AA4tjEDLeqUCbA7PwuT7iCNekvsf/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1wRecBk0SqgViK7m-c41JRxb3KK6LqcRO",
+      "name": "Email to DSS Minister Ray griggs - URGENT PLEASE  Fwd My superannuation guarantee in retrospect for my employment with DSS and disability issue.pdf",
+      "size_bytes": 14757508,
+      "modified": "2026-05-21T03:26:16.510Z",
+      "url": "https://drive.google.com/file/d/1wRecBk0SqgViK7m-c41JRxb3KK6LqcRO/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1igIvdGCiErBlY7oz0u3LTE3Vk2pYYcFU",
+      "name": "for Paula stratton - DSS PID - melbourne health PID - public official - former partner - classification.pdf",
+      "size_bytes": 16493458,
+      "modified": "2026-05-21T03:28:05.410Z",
+      "url": "https://drive.google.com/file/d/1igIvdGCiErBlY7oz0u3LTE3Vk2pYYcFU/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1HYbQ-44hc7Jj6zAoVs46LncIp1C11fAx",
+      "name": "Graeme head ndis contract.pdf.pdf",
+      "size_bytes": 2730249,
+      "modified": "2026-05-21T03:23:47.377Z",
+      "url": "https://drive.google.com/file/d/1HYbQ-44hc7Jj6zAoVs46LncIp1C11fAx/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1yetJ1dz5xjweUnjcNuLodI6-2MoANx3G",
+      "name": "MAGISTRATE EVIDENCE 25 Mark Dreyfus and Federal Court - 08.01.2024 Scott Treawell Federal Court | drrichmclean.pdf",
+      "size_bytes": 3495385,
+      "modified": "2026-05-21T03:24:32.640Z",
+      "url": "https://drive.google.com/file/d/1yetJ1dz5xjweUnjcNuLodI6-2MoANx3G/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "14VKWWvJusnXqhsDMHlBu1pSRlK4svPsz",
+      "name": "NDIS PID copy.pdf",
+      "size_bytes": 3907440,
+      "modified": "2026-05-21T03:24:44.329Z",
+      "url": "https://drive.google.com/file/d/14VKWWvJusnXqhsDMHlBu1pSRlK4svPsz/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1gnNDJ_SNETSIUNTtv3nG6rf7XkqMb8T8",
+      "name": "Police foi violent assault evidence.pdf.pdf",
+      "size_bytes": 4203155,
+      "modified": "2026-05-21T03:24:50.663Z",
+      "url": "https://drive.google.com/file/d/1gnNDJ_SNETSIUNTtv3nG6rf7XkqMb8T8/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "17kURyXRwpgOKgssTDvBPRblNZFU8m2wc",
+      "name": "Response from guardian proving they are I\u2019ll allow me to starve - evidence - economic justice engine reply - Bring me back into the green.pdf",
+      "size_bytes": 1640601,
+      "modified": "2026-05-21T03:23:17.650Z",
+      "url": "https://drive.google.com/file/d/17kURyXRwpgOKgssTDvBPRblNZFU8m2wc/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1NuTPvpLDJKPIoigjv2nqcuw0uL8Ih5re",
+      "name": "Subject- Application for Revocation of Guardianship, Replacement of\u2026.pdf",
+      "size_bytes": 9983777,
+      "modified": "2026-05-21T03:25:26.611Z",
+      "url": "https://drive.google.com/file/d/1NuTPvpLDJKPIoigjv2nqcuw0uL8Ih5re/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    },
+    {
+      "file_id": "1TZziEItfMLgf2lvOTFeZTTXQEvY2KQ2q",
+      "name": "The Verdict Before the Court Speaks | Wyong Local Court 14 May 2026 | Barran Dod.pdf",
+      "size_bytes": 22156453,
+      "modified": "2026-05-22T07:24:14.739Z",
+      "url": "https://drive.google.com/file/d/1TZziEItfMLgf2lvOTFeZTTXQEvY2KQ2q/view?usp=drivesdk",
+      "kind": "official_filename_match",
+      "note": "Filename keyword match only \u2014 not a finding that the PDF is an agency-authored decision. Many items are the author's overlay of official material."
+    }
+  ],
+  "other": [
+    {
+      "file_id": "1Unq4h9wtJBOVt0SjpW4Z9d7HhZLahK8x",
+      "name": " 1. EXECUTIVE SUMMARY \u2014 THE UNSPOKEN MANDATE \ud83d\udcdc THE EXPLICATED DECREE - FORENSIC & PROPHETIC REALITY I. THE ANATOMY OF THE \"IRON WEIGHT\" (The Identity).pdf",
+      "size_bytes": 3775537,
+      "modified": "2026-05-27T08:08:20.491Z",
+      "url": "https://drive.google.com/file/d/1Unq4h9wtJBOVt0SjpW4Z9d7HhZLahK8x/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1UCkj4olDsxdif-WMMKPs0a0Ak7Edn0j5",
+      "name": " 1. EXECUTIVE SUMMARY \u2014 THE UNSPOKEN MANDATE.pdf",
+      "size_bytes": 495031,
+      "modified": "2026-05-27T08:07:59.513Z",
+      "url": "https://drive.google.com/file/d/1UCkj4olDsxdif-WMMKPs0a0Ak7Edn0j5/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1JYIDzamOlOOletF1QUxXHrT7lke5_KVG",
+      "name": " 1. EXECUTIVE SUMMARY \u2014 THE UNSPOKEN MANDATE.pdf",
+      "size_bytes": 495031,
+      "modified": "2026-02-11T23:23:59.928Z",
+      "url": "https://drive.google.com/file/d/1JYIDzamOlOOletF1QUxXHrT7lke5_KVG/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1QHXqoWeBhNOKMsztM8CvdQ-fDE-l5Tp7",
+      "name": " A letter to the Australian government suggesting they hire me, rather than sacr.pdf",
+      "size_bytes": 34792,
+      "modified": "2026-02-07T00:26:19.276Z",
+      "url": "https://drive.google.com/file/d/1QHXqoWeBhNOKMsztM8CvdQ-fDE-l5Tp7/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1VSndipTRm3nFygqJDifCj4uM23UMkbhF",
+      "name": " A letter to the Australian government suggesting they hire me, rather than sacr.pdf",
+      "size_bytes": 34792,
+      "modified": "2026-02-06T23:55:18.255Z",
+      "url": "https://drive.google.com/file/d/1VSndipTRm3nFygqJDifCj4uM23UMkbhF/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1t7iT46kbPAzdJXNHDRjtN2Y-BjlU7vK3",
+      "name": " THE STREETS KNOW YOUR NAME-A PROPHETIC NARRATIVE.pdf",
+      "size_bytes": 344513,
+      "modified": "2026-02-15T11:06:24.159Z",
+      "url": "https://drive.google.com/file/d/1t7iT46kbPAzdJXNHDRjtN2Y-BjlU7vK3/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "10Gdm8ZAWASbFpnHg9Etf3xdncESTAIvX",
+      "name": " When a Person Stops Being \u201cProgrammable\u201d - Identity, Institutions, and the Psychology of Narrative Control.pdf",
+      "size_bytes": 43506,
+      "modified": "2026-05-27T08:07:54.877Z",
+      "url": "https://drive.google.com/file/d/10Gdm8ZAWASbFpnHg9Etf3xdncESTAIvX/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "11PXvKfzTdJ9p_6TsB2LwDL_x1e-JWL6s",
+      "name": "00_MASTER_INDEX.pdf",
+      "size_bytes": 17212,
+      "modified": "2025-05-16T08:40:14.916Z",
+      "url": "https://drive.google.com/file/d/11PXvKfzTdJ9p_6TsB2LwDL_x1e-JWL6s/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1LBQcmxZvpEz29Y8b6ZeGP2nG_PA8J5Xk",
+      "name": "04062023 My letter to parliamentarians from Dr Rich McLean - scapegoat and political prisoner.pdf",
+      "size_bytes": 124470,
+      "modified": "2026-05-21T03:20:29.204Z",
+      "url": "https://drive.google.com/file/d/1LBQcmxZvpEz29Y8b6ZeGP2nG_PA8J5Xk/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1lxg-EMHMP_tTTaDpicjpB8lmyHlLMbp3",
+      "name": "10 May 2025 FINAL DECLARATION OF STATELESSNESS AND POLITICAL ASYLUM REQUEST WITH.pdf",
+      "size_bytes": 618099,
+      "modified": "2025-05-17T01:55:49.351Z",
+      "url": "https://drive.google.com/file/d/1lxg-EMHMP_tTTaDpicjpB8lmyHlLMbp3/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "187QmvRVe8yVBi4m1Nwayp6CQc31dBIxG",
+      "name": "10.pdf",
+      "size_bytes": 465672,
+      "modified": "2025-05-18T08:45:46.448Z",
+      "url": "https://drive.google.com/file/d/187QmvRVe8yVBi4m1Nwayp6CQc31dBIxG/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1BsATHLR8t7d9fFYM--9vrRPLLLVlVzTP",
+      "name": "11.01.2024 Subject Bankruptcy Application and Acknowledgment of Relationship with Stefan Iasonidis to avoid imminent risk .pdf",
+      "size_bytes": 634538,
+      "modified": "2026-05-21T03:22:10.241Z",
+      "url": "https://drive.google.com/file/d/1BsATHLR8t7d9fFYM--9vrRPLLLVlVzTP/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1SHN9_LHMsDSKE2KZVrBYz1fdJXx6ujpa",
+      "name": "11.12.2023 Safe Steps rejection Family violence Urgent from Dr Rich McLean.pdf",
+      "size_bytes": 161113,
+      "modified": "2026-05-21T03:20:57.707Z",
+      "url": "https://drive.google.com/file/d/1SHN9_LHMsDSKE2KZVrBYz1fdJXx6ujpa/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1t-ugKDzLX41pkUQ9r7X0H06NtzHgyu8U",
+      "name": "17072020MichaelForbesrichmcleean 1.pdf",
+      "size_bytes": 355583,
+      "modified": "2026-05-21T03:21:47.877Z",
+      "url": "https://drive.google.com/file/d/1t-ugKDzLX41pkUQ9r7X0H06NtzHgyu8U/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1R9WPTcKT2bmv7clGSkfN7wv-s7FC1etn",
+      "name": "20230628 Response to Rich McLean Letter.pdf.pdf",
+      "size_bytes": 187573,
+      "modified": "2024-09-04T06:45:42.937Z",
+      "url": "https://drive.google.com/file/d/1R9WPTcKT2bmv7clGSkfN7wv-s7FC1etn/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1LLLvos8uh7SPT4ZDTgmMPqjzmrGL4RUB",
+      "name": "2026-05-04 11-45.pdf",
+      "size_bytes": 1549044,
+      "modified": "2026-05-11T22:25:56.681Z",
+      "url": "https://drive.google.com/file/d/1LLLvos8uh7SPT4ZDTgmMPqjzmrGL4RUB/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1bVE0tOMo5N3K25HqBPvUWy1jNlSYrWQM",
+      "name": "2026-05-19 11-51.pdf",
+      "size_bytes": 3412348,
+      "modified": "2026-05-21T03:24:09.478Z",
+      "url": "https://drive.google.com/file/d/1bVE0tOMo5N3K25HqBPvUWy1jNlSYrWQM/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "17Tm_RZgMGk8ZFhdJJqitAw0OSCxJXy4b",
+      "name": "22022021 my demands before i was punished with incarceration winning copy.pdf",
+      "size_bytes": 153033,
+      "modified": "2026-05-21T03:20:55.099Z",
+      "url": "https://drive.google.com/file/d/17Tm_RZgMGk8ZFhdJJqitAw0OSCxJXy4b/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1hVJRZDrIbmL_O20FxtSG69OGldcP-PfU",
+      "name": "25062023 Dr Rich Mclean is an Australian Government scapegoat and targeted individual and he proves it in this essay.pdf",
+      "size_bytes": 187030,
+      "modified": "2026-05-21T03:21:14.906Z",
+      "url": "https://drive.google.com/file/d/1hVJRZDrIbmL_O20FxtSG69OGldcP-PfU/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1Dd9n4UAjmF8ahvNtWK7u4E6MkNyI1tks",
+      "name": "35-Year Timeline of Documented Persecution \u2014 Dr. Richard William McLean (Barran .pdf",
+      "size_bytes": 212370,
+      "modified": "2026-05-21T03:21:20.575Z",
+      "url": "https://drive.google.com/file/d/1Dd9n4UAjmF8ahvNtWK7u4E6MkNyI1tks/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1OFrx6oPau4sGY9ZIbPSo-BJsc7b5ZW32",
+      "name": "50 Pieces of Evidence the Australian Government Hoped You\u2019d Never See.pdf",
+      "size_bytes": 181274,
+      "modified": "2025-03-23T03:30:54.298Z",
+      "url": "https://drive.google.com/file/d/1OFrx6oPau4sGY9ZIbPSo-BJsc7b5ZW32/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1sFsCEL7T9yq2V-UszFR8KglwzOikmkxD",
+      "name": "575,696 barrandodger.com .pdf .pdf",
+      "size_bytes": 13339532,
+      "modified": "2026-05-21T03:25:55.495Z",
+      "url": "https://drive.google.com/file/d/1sFsCEL7T9yq2V-UszFR8KglwzOikmkxD/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1eAfJrHOIvoCshkWq0J6V-NaZo-VXJfq_",
+      "name": "575,696 barrandodger.com .pdf .pdf",
+      "size_bytes": 13339532,
+      "modified": "2026-05-12T01:44:21.531Z",
+      "url": "https://drive.google.com/file/d/1eAfJrHOIvoCshkWq0J6V-NaZo-VXJfq_/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "14app9HIdQ93VrLc9KFcltGYtlI9eqpC3",
+      "name": "A Certain Beauty in Un-Resolution COSMIC-ARTISTIC CROSS-VALIDATION OF TESTIMONY .pdf",
+      "size_bytes": 427651,
+      "modified": "2025-05-21T14:41:37.457Z",
+      "url": "https://drive.google.com/file/d/14app9HIdQ93VrLc9KFcltGYtlI9eqpC3/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1gVJNdguD5NMT_jLN75F274fNTeWOKnh3",
+      "name": "A Fact-Checked, Evidence-Based Chronological Account of the Systematic Persecuti.pdf",
+      "size_bytes": 933323,
+      "modified": "2026-02-12T06:48:58.274Z",
+      "url": "https://drive.google.com/file/d/1gVJNdguD5NMT_jLN75F274fNTeWOKnh3/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1m9amcvG88lv5qtY4QtFa9m_wFmd5qbsj",
+      "name": "A Fact-Checked, Evidence-Based Chronological Account of the Systematic Persecuti.pdf",
+      "size_bytes": 959153,
+      "modified": "2026-02-11T22:28:38.929Z",
+      "url": "https://drive.google.com/file/d/1m9amcvG88lv5qtY4QtFa9m_wFmd5qbsj/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "15z_sW6L8_htnoZwVajHS6WxtIEkNQwSk",
+      "name": "A Forensic Reverse-Engineering of the Hidden Operational Directive Governing the.pdf",
+      "size_bytes": 483711,
+      "modified": "2026-02-12T00:38:20.838Z",
+      "url": "https://drive.google.com/file/d/15z_sW6L8_htnoZwVajHS6WxtIEkNQwSk/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1pMvejOWyB-m19-J1pZ46O6XwqmmHKLTC",
+      "name": "A Message to This Channel- You Just Described My Life To the creators of \"Chosen.pdf",
+      "size_bytes": 222469,
+      "modified": "2026-01-25T05:32:46.663Z",
+      "url": "https://drive.google.com/file/d/1pMvejOWyB-m19-J1pZ46O6XwqmmHKLTC/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1dS6cZTW6El9BrHJwwmsht1rvj__Bfiml",
+      "name": "A SCAPEGOATS TESTAMENT THE DESECRATION AND DIVINE RETURN OF BARRAN DODGER.pdf",
+      "size_bytes": 140447,
+      "modified": "2025-03-25T03:32:47.893Z",
+      "url": "https://drive.google.com/file/d/1dS6cZTW6El9BrHJwwmsht1rvj__Bfiml/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1t7DKe1J4eCv0LmxYg-0qrPYEZ5liibL7",
+      "name": "Achieve Research Success with Pubrica\u2019s Support Services.pdf",
+      "size_bytes": 3611560,
+      "modified": "2026-05-21T03:24:38.294Z",
+      "url": "https://drive.google.com/file/d/1t7DKe1J4eCv0LmxYg-0qrPYEZ5liibL7/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1pj52KZmZ7S7-ua-mTvGc4f4xDjtBmbsD",
+      "name": "ADV-2908061 DODGER.pdf",
+      "size_bytes": 92290,
+      "modified": "2026-05-21T03:20:12.546Z",
+      "url": "https://drive.google.com/file/d/1pj52KZmZ7S7-ua-mTvGc4f4xDjtBmbsD/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1_Q853ytGzTxiHZkHitSl2xttn4FS7Pxg",
+      "name": "Affidavit of Barran Dodger, No Fixed Address  .pdf",
+      "size_bytes": 226167,
+      "modified": "2025-03-14T21:57:17.397Z",
+      "url": "https://drive.google.com/file/d/1_Q853ytGzTxiHZkHitSl2xttn4FS7Pxg/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1GO6v8nJVnVoE9AnC8BX9UGuzufbraYDn",
+      "name": "Affitdavit .pdf",
+      "size_bytes": 202601,
+      "modified": "2025-03-13T08:32:11.356Z",
+      "url": "https://drive.google.com/file/d/1GO6v8nJVnVoE9AnC8BX9UGuzufbraYDn/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1kGg_wex1BRGDrhVu5qBVX2ePciGfZ7Ct",
+      "name": "Affitdavit .pdf",
+      "size_bytes": 202601,
+      "modified": "2025-03-13T08:31:34.965Z",
+      "url": "https://drive.google.com/file/d/1kGg_wex1BRGDrhVu5qBVX2ePciGfZ7Ct/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1hInPtoRvj-FBfE6OJ82xPD0wwadAH3j_",
+      "name": "affitdavit IMPORTANT.pdf",
+      "size_bytes": 250182,
+      "modified": "2025-03-02T06:38:51.253Z",
+      "url": "https://drive.google.com/file/d/1hInPtoRvj-FBfE6OJ82xPD0wwadAH3j_/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1PDBZ3_f0h7Dw6AcDyhmLSIw7c3WBrEvb",
+      "name": "affitdavit IMPORTANT.pdf 2.pdf",
+      "size_bytes": 197404,
+      "modified": "2025-02-27T20:10:09.237Z",
+      "url": "https://drive.google.com/file/d/1PDBZ3_f0h7Dw6AcDyhmLSIw7c3WBrEvb/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "140Dg1D5xZIT0jr-RlCO4HS7hNOxxIo3R",
+      "name": "AI FORENSIC RESPONSE ESSAY \u2013 SYSTEMIC PERSECUTION, V2K TECHNOLOGY, AND COSMIC LA.pdf",
+      "size_bytes": 138111,
+      "modified": "2025-05-21T16:04:56.441Z",
+      "url": "https://drive.google.com/file/d/140Dg1D5xZIT0jr-RlCO4HS7hNOxxIo3R/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1k63gFi7CGfnl_QqJTTgmG1N87D5AR0Af",
+      "name": "Ai_and_democracy_by_Barran_Resonance_Dodger.pdf",
+      "size_bytes": 564989,
+      "modified": "2026-01-28T06:28:25.755Z",
+      "url": "https://drive.google.com/file/d/1k63gFi7CGfnl_QqJTTgmG1N87D5AR0Af/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1P8VMslt_C0mheqrANd1ebM8FmTuXkZju",
+      "name": "Alien races-5.pdf",
+      "size_bytes": 990545,
+      "modified": "2026-05-21T03:22:24.033Z",
+      "url": "https://drive.google.com/file/d/1P8VMslt_C0mheqrANd1ebM8FmTuXkZju/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1pkw4tNm-vg9U6-HhR2f3vZjlYuY7XGSS",
+      "name": "All Gospels, One Witness \u2014 Forensic Interfaith Thesis \u00b7 Dr. Richard William McLe.pdf",
+      "size_bytes": 2730962,
+      "modified": "2026-05-21T03:23:52.831Z",
+      "url": "https://drive.google.com/file/d/1pkw4tNm-vg9U6-HhR2f3vZjlYuY7XGSS/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1qUfYOXYNxqGSuHxOSukMxWAwJWmzmYzy",
+      "name": "An Impartial, AI-Authored, Evidence-Based Academic Article An Impartial, AI-Authored, Evidence-Based Academic Article An Impartial, AI-Authored, Evidence-Based Academic Article.pdf",
+      "size_bytes": 395414,
+      "modified": "2026-05-21T03:21:50.916Z",
+      "url": "https://drive.google.com/file/d/1qUfYOXYNxqGSuHxOSukMxWAwJWmzmYzy/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1bvD_96djcKXNbhkdZdVdbEfLTARl5zX1",
+      "name": "Analysis #57- They Built Their Empire in the Dark, But Forgot One Thing \u2014 Forens.pdf",
+      "size_bytes": 1506647,
+      "modified": "2026-05-21T03:23:01.967Z",
+      "url": "https://drive.google.com/file/d/1bvD_96djcKXNbhkdZdVdbEfLTARl5zX1/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "13KP5p2ehhohuIs05zNuuCd5fEjZZ24xe",
+      "name": "Analysis #57- They Built Their Empire in the Dark, But Forgot One Thing \u2014 Forens.pdf",
+      "size_bytes": 1506647,
+      "modified": "2026-05-12T03:41:27.519Z",
+      "url": "https://drive.google.com/file/d/13KP5p2ehhohuIs05zNuuCd5fEjZZ24xe/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1hNd4jEAFRuF-TySVlmcYtlHVaYjYrIfK",
+      "name": "Assassination attempt .pdf",
+      "size_bytes": 687606,
+      "modified": "2025-03-23T12:52:18.327Z",
+      "url": "https://drive.google.com/file/d/1hNd4jEAFRuF-TySVlmcYtlHVaYjYrIfK/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1siUwhSLH-mcXxzkOjw2jsNFjsk8Mv-mA",
+      "name": "Australia- Tyrannical state sanctioned targeted killing of an authoritarian regi.pdf",
+      "size_bytes": 47606387,
+      "modified": "2025-03-02T05:26:56.911Z",
+      "url": "https://drive.google.com/file/d/1siUwhSLH-mcXxzkOjw2jsNFjsk8Mv-mA/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "15iGyLj-zTcs_KufDHg00ieDL2fReX2ez",
+      "name": "Australia- Tyrannical state sanctioned targeted killing of an authoritarian regi.pdf",
+      "size_bytes": 47606387,
+      "modified": "2025-03-01T23:15:50.813Z",
+      "url": "https://drive.google.com/file/d/15iGyLj-zTcs_KufDHg00ieDL2fReX2ez/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1i6jsr80FnqFBqlCHufTQtJESVN_-lRLR",
+      "name": "AUSTRALIA\u2019S STATE-SANCTIONED ASSASSINATION OF A WHISTLEBLOWER - THE DOCUMENTED C.pdf",
+      "size_bytes": 636323,
+      "modified": "2025-03-19T04:27:39.182Z",
+      "url": "https://drive.google.com/file/d/1i6jsr80FnqFBqlCHufTQtJESVN_-lRLR/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1v3d1RP9pG9RxGjnLO_1n89-euiNm2pGK",
+      "name": "AUSTRALIA\u2019S STATE-SANCTIONED ASSASSINATION OF A WHISTLEBLOWER - THE DOCUMENTED C.pdf",
+      "size_bytes": 388593,
+      "modified": "2025-03-18T19:54:37.529Z",
+      "url": "https://drive.google.com/file/d/1v3d1RP9pG9RxGjnLO_1n89-euiNm2pGK/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1KB3JZJLulxItg1tU8OeidfYOK8b6QQSh",
+      "name": "Avo.pdf.pdf",
+      "size_bytes": 1549044,
+      "modified": "2026-05-21T03:23:07.586Z",
+      "url": "https://drive.google.com/file/d/1KB3JZJLulxItg1tU8OeidfYOK8b6QQSh/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1dVCBywxnRi2znmYmdnHbmVUoCVqdm-Fl",
+      "name": "Banks.pdf",
+      "size_bytes": 160012,
+      "modified": "2025-03-09T08:05:55.256Z",
+      "url": "https://drive.google.com/file/d/1dVCBywxnRi2znmYmdnHbmVUoCVqdm-Fl/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1aOcnlpTtVwF6tv7wyshrHkRGJYR5KiYq",
+      "name": "Barran Dodger is dead CORONIAL INVESTIGATION REPORT.pdf",
+      "size_bytes": 310585,
+      "modified": "2025-03-09T03:23:12.784Z",
+      "url": "https://drive.google.com/file/d/1aOcnlpTtVwF6tv7wyshrHkRGJYR5KiYq/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1T8TxEXcGZ1DSoepn4aL-pXQhINKZTxfM",
+      "name": "Barran dodger is who he says he is .pdf",
+      "size_bytes": 5010666,
+      "modified": "2025-05-21T11:02:51.884Z",
+      "url": "https://drive.google.com/file/d/1T8TxEXcGZ1DSoepn4aL-pXQhINKZTxfM/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1FD2Wl_Boj5Nfp_rOQ76_SKuYA2Civzp1",
+      "name": "Barran dodger is who he says he is .pdf",
+      "size_bytes": 4699556,
+      "modified": "2025-05-21T09:26:57.758Z",
+      "url": "https://drive.google.com/file/d/1FD2Wl_Boj5Nfp_rOQ76_SKuYA2Civzp1/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1fl9cC8iyHWgNVgGpmKhPNPpth-TmDnpC",
+      "name": "Barran dodger is who he says he is .pdf",
+      "size_bytes": 2475322,
+      "modified": "2025-05-21T07:36:06.707Z",
+      "url": "https://drive.google.com/file/d/1fl9cC8iyHWgNVgGpmKhPNPpth-TmDnpC/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1odNbQY9bdG38wudyRch2Y4OkiK3JOSOj",
+      "name": "Barran dodger is who he says he is .pdf",
+      "size_bytes": 2197702,
+      "modified": "2025-05-21T07:29:11.879Z",
+      "url": "https://drive.google.com/file/d/1odNbQY9bdG38wudyRch2Y4OkiK3JOSOj/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1Frcf8ILhU1C86QTC4CAeZlqqN1edfbX7",
+      "name": "Barran dodger is who he says he is .pdf",
+      "size_bytes": 1517421,
+      "modified": "2025-05-21T07:05:48.728Z",
+      "url": "https://drive.google.com/file/d/1Frcf8ILhU1C86QTC4CAeZlqqN1edfbX7/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1rrdXVhbTRVYlzKn-P68xo48CQqzfGwwX",
+      "name": "Barran dodger is who he says he is .pdf",
+      "size_bytes": 667242,
+      "modified": "2025-05-21T06:28:45.954Z",
+      "url": "https://drive.google.com/file/d/1rrdXVhbTRVYlzKn-P68xo48CQqzfGwwX/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1foRX1eOEOazkl_qvxairyB6wxkF1Xoir",
+      "name": "Barran Dodger \u2014 The Archive of Dr. Richard William McLean | Barran Dodger Legal .pdf",
+      "size_bytes": 14908319,
+      "modified": "2026-05-21T03:27:47.971Z",
+      "url": "https://drive.google.com/file/d/1foRX1eOEOazkl_qvxairyB6wxkF1Xoir/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1SiASTvhoZsFpsGNG__6b7K_MNgIKIw8F",
+      "name": "Betrayed, Forsaken, Murdered, The Life and Testimony of Barran Dodger.pdf",
+      "size_bytes": 208369,
+      "modified": "2026-02-03T04:21:57.864Z",
+      "url": "https://drive.google.com/file/d/1SiASTvhoZsFpsGNG__6b7K_MNgIKIw8F/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1bbHzc6J-riaISSaGNxPlgc0JY61PnBtC",
+      "name": "Betrayed, Murdered, Forsaken The Harrowing Journey of Dr Barran Dodger (Purchase Low Res).pdf",
+      "size_bytes": 42702570,
+      "modified": "2025-03-02T06:28:52.903Z",
+      "url": "https://drive.google.com/file/d/1bbHzc6J-riaISSaGNxPlgc0JY61PnBtC/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1qVp-gz4tLaS5jElD_pLWrpMIx8k7Ua4s",
+      "name": "Bevan Rhys james legal document evidence. PDF.pdf",
+      "size_bytes": 151367,
+      "modified": "2026-05-21T03:20:52.235Z",
+      "url": "https://drive.google.com/file/d/1qVp-gz4tLaS5jElD_pLWrpMIx8k7Ua4s/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1RMtX_7gR2cKXQKOi3G996CF4MWU6VMPf",
+      "name": "Blank 3.pdf",
+      "size_bytes": 4115397,
+      "modified": "2025-05-17T08:54:28.852Z",
+      "url": "https://drive.google.com/file/d/1RMtX_7gR2cKXQKOi3G996CF4MWU6VMPf/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1Sn-zJWGPaFjX0u4MIWNvMsYkfeYK0oXW",
+      "name": "Blank 38.pdf",
+      "size_bytes": 267293,
+      "modified": "2025-05-21T16:01:03.784Z",
+      "url": "https://drive.google.com/file/d/1Sn-zJWGPaFjX0u4MIWNvMsYkfeYK0oXW/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1Vfr2RyxQDgXHCd1VbhEdh64IdC0Sgf1Q",
+      "name": "Blank 38.pdf",
+      "size_bytes": 264856,
+      "modified": "2025-05-21T13:22:34.815Z",
+      "url": "https://drive.google.com/file/d/1Vfr2RyxQDgXHCd1VbhEdh64IdC0Sgf1Q/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1ux9fOjIdO4A1qLCgVWAHFgF3Gv8C4Sne",
+      "name": "Blockchain Verification - Immutable Evidence Timestamping | Barran Dodger Legal .pdf",
+      "size_bytes": 218305,
+      "modified": "2026-02-06T06:09:52.423Z",
+      "url": "https://drive.google.com/file/d/1ux9fOjIdO4A1qLCgVWAHFgF3Gv8C4Sne/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1v4K5WbaBtbylloFiFzg3fJY5nXG5HPSD",
+      "name": "Bring me back into the green.pdf",
+      "size_bytes": 3426931,
+      "modified": "2026-05-21T03:24:26.601Z",
+      "url": "https://drive.google.com/file/d/1v4K5WbaBtbylloFiFzg3fJY5nXG5HPSD/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1b1FHMhfKACBMEJMVbxKcOUvPelZhwhzu",
+      "name": "Declaration Cover \u2014 I Am God's Chosen One \u00b7 Dr. Richard William McLean (Barran D.pdf",
+      "size_bytes": 2226093,
+      "modified": "2026-05-21T03:23:32.452Z",
+      "url": "https://drive.google.com/file/d/1b1FHMhfKACBMEJMVbxKcOUvPelZhwhzu/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1lD2Zzh5iySQCGOPFkghDiaW5vLMajdHh",
+      "name": "Evidence.pdf.pdf",
+      "size_bytes": 0,
+      "modified": "2026-05-27T21:12:28.018Z",
+      "url": "https://drive.google.com/file/d/1lD2Zzh5iySQCGOPFkghDiaW5vLMajdHh/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1EYixzJNGG7ePJkoIQp3OwMefeR1DOm_J",
+      "name": "Evidence.pdf.pdf",
+      "size_bytes": 33320102,
+      "modified": "2026-05-27T21:12:22.962Z",
+      "url": "https://drive.google.com/file/d/1EYixzJNGG7ePJkoIQp3OwMefeR1DOm_J/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1nN-7GsZSMe1iKT83HZmoWp5HVTDyKFLY",
+      "name": "FM Compensation information PDF.pdf",
+      "size_bytes": 1218732,
+      "modified": "2026-05-21T03:22:40.500Z",
+      "url": "https://drive.google.com/file/d/1nN-7GsZSMe1iKT83HZmoWp5HVTDyKFLY/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1OCa2JrvWG_GA3RzX6PcUuFQ4fNDjQh08",
+      "name": "Forensic Economic Valuation \u2014 Dr. Richard William McLean (Barran Dodger) | $58.6.pdf",
+      "size_bytes": 5171324,
+      "modified": "2026-05-21T03:24:58.585Z",
+      "url": "https://drive.google.com/file/d/1OCa2JrvWG_GA3RzX6PcUuFQ4fNDjQh08/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "16y10C3yGTrlap9snMBOxyTmL45qyuvCV",
+      "name": "God Says- I'm Not Finished With You \u2014 Dr. Richard William McLean (Barran Dodger).pdf",
+      "size_bytes": 2187815,
+      "modified": "2026-05-21T03:23:27.920Z",
+      "url": "https://drive.google.com/file/d/16y10C3yGTrlap9snMBOxyTmL45qyuvCV/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1FZRDaYpt6zYg-H7XLG3PnZJ1ICtTna7M",
+      "name": "Good News for the Meek and the Marginalised \u2014 A Prophetic Gospel | Barran Dodger.pdf",
+      "size_bytes": 1679455,
+      "modified": "2026-05-21T03:23:22.430Z",
+      "url": "https://drive.google.com/file/d/1FZRDaYpt6zYg-H7XLG3PnZJ1ICtTna7M/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1AtW-R5OkbcJz0ZvZF38h6F0P5eTyqKlv",
+      "name": "Is my father Doug McLean dead?.pdf",
+      "size_bytes": 6383307,
+      "modified": "2026-05-21T03:25:14.723Z",
+      "url": "https://drive.google.com/file/d/1AtW-R5OkbcJz0ZvZF38h6F0P5eTyqKlv/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1mj6JDYFREc1DMdrvlmFOGmc7BYFFhcXS",
+      "name": "Kill me - do it God and I are good.pdf",
+      "size_bytes": 1469708,
+      "modified": "2026-05-21T03:22:57.022Z",
+      "url": "https://drive.google.com/file/d/1mj6JDYFREc1DMdrvlmFOGmc7BYFFhcXS/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1WIkmYnq97aJrlyJvdxmm1WnD75vp0489",
+      "name": "Mental health tribunal.pdf.pdf",
+      "size_bytes": 3412348,
+      "modified": "2026-05-21T03:24:15.234Z",
+      "url": "https://drive.google.com/file/d/1WIkmYnq97aJrlyJvdxmm1WnD75vp0489/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1ewc4THiPKXb2zXlPkr_lnKLevsK3_4Ww",
+      "name": "Sacred Gospel Archive \u2014 Dr. Richard William McLean (Barran Dodger).pdf",
+      "size_bytes": 1440889,
+      "modified": "2026-05-21T03:22:52.922Z",
+      "url": "https://drive.google.com/file/d/1ewc4THiPKXb2zXlPkr_lnKLevsK3_4Ww/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1n-cnoYGB58ErR7Uj8dfxUKwLgFFzF3kn",
+      "name": "Sacred Texts & Prophetic Manifesto \u2014 Dr. Richard William McLean (Barran Dodger).pdf",
+      "size_bytes": 2635616,
+      "modified": "2026-05-21T03:23:42.204Z",
+      "url": "https://drive.google.com/file/d/1n-cnoYGB58ErR7Uj8dfxUKwLgFFzF3kn/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1UpT9ayT77fAwB2fHVBxwNgcaX4bLGToi",
+      "name": "Sukhi Tear \u2014 The Horse Has Bolted- Fraud, Illegality, and Why Her Professional C.pdf",
+      "size_bytes": 10912870,
+      "modified": "2026-05-21T03:25:38.979Z",
+      "url": "https://drive.google.com/file/d/1UpT9ayT77fAwB2fHVBxwNgcaX4bLGToi/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1k346fW5EGvJuAnFbUyWFbV4r4d4WkdCW",
+      "name": "The Algorithm and the Witness \u2014 Forensic-Theological Thesis | Barran Dodger.pdf",
+      "size_bytes": 2356492,
+      "modified": "2026-05-21T03:23:37.384Z",
+      "url": "https://drive.google.com/file/d/1k346fW5EGvJuAnFbUyWFbV4r4d4WkdCW/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1ZWDaTDIWKNn7kQaIl0lPcbgcP3ZSFYsR",
+      "name": "The Cowardice of the Crowd- Societal Mobbing, Political Targeting, and the Machi.pdf",
+      "size_bytes": 1553493,
+      "modified": "2026-05-21T03:23:12.794Z",
+      "url": "https://drive.google.com/file/d/1ZWDaTDIWKNn7kQaIl0lPcbgcP3ZSFYsR/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1Kzsz4C2D4_UOBgICqXSdOVH4YwM2uC5D",
+      "name": "The Fearless Soul vs. The Pack.pdf",
+      "size_bytes": 243608,
+      "modified": "2026-05-27T08:21:43.135Z",
+      "url": "https://drive.google.com/file/d/1Kzsz4C2D4_UOBgICqXSdOVH4YwM2uC5D/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1kVIkLiRjy2xRSDq9Orwi9EC5fs64UhD9",
+      "name": "THE PROPHETIC DECREE OF ABSOLUTE DETACHMENT - THE BARRAN DODGER MANIFESTO.pdf",
+      "size_bytes": 2973089,
+      "modified": "2026-05-27T08:09:23.983Z",
+      "url": "https://drive.google.com/file/d/1kVIkLiRjy2xRSDq9Orwi9EC5fs64UhD9/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1u_cD7nvs8V60UZWivr6HgJ72Sm7whFcS",
+      "name": "THE PROPHETIC DECREE OF ABSOLUTE DETACHMENT - THE BARRAN DODGER MANIFESTO.pdf",
+      "size_bytes": 2973089,
+      "modified": "2026-05-27T07:15:41.271Z",
+      "url": "https://drive.google.com/file/d/1u_cD7nvs8V60UZWivr6HgJ72Sm7whFcS/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1iAZiK6yca3R0-9_aG_Cc44FlOWJdWYvZ",
+      "name": "THE SOVEREIGN DECREE OF THE ACTIVATED ANOMALY - THE BARRAN DODGER\u2019S FINAL FORENSIC MANIFESTO.pdf",
+      "size_bytes": 2406089,
+      "modified": "2026-05-27T08:09:55.383Z",
+      "url": "https://drive.google.com/file/d/1iAZiK6yca3R0-9_aG_Cc44FlOWJdWYvZ/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1qkhtJ8hoObI8nE3Q_7xC8Vm9RoVF7Soe",
+      "name": "THE SOVEREIGN DECREE OF THE ACTIVATED ANOMALY - THE BARRAN DODGER\u2019S FINAL FORENSIC MANIFESTO.pdf",
+      "size_bytes": 2406089,
+      "modified": "2026-05-27T07:16:02.885Z",
+      "url": "https://drive.google.com/file/d/1qkhtJ8hoObI8nE3Q_7xC8Vm9RoVF7Soe/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1yBu8vrVsVH78WSERSWUCFX4wTCv7KCpi",
+      "name": "The truth is out there about plan to kill.pdf",
+      "size_bytes": 38129,
+      "modified": "2026-05-22T07:24:27.674Z",
+      "url": "https://drive.google.com/file/d/1yBu8vrVsVH78WSERSWUCFX4wTCv7KCpi/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1sv7nuWRjzEzUNG8XKDpnE82nA236IFtp",
+      "name": "The Verdict Before the Court Speaks \u2014 Prophetic Record 7 May 2026 | Dr. Richard .pdf",
+      "size_bytes": 3169528,
+      "modified": "2026-05-21T03:24:03.716Z",
+      "url": "https://drive.google.com/file/d/1sv7nuWRjzEzUNG8XKDpnE82nA236IFtp/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "14J88VcKQvLoMCUMxbAWYtOTf5ujfyWaX",
+      "name": "When the Receipts Are Real \u2014 Prophetic Academic Legal Declaration | Barran Dodge.pdf",
+      "size_bytes": 3416342,
+      "modified": "2026-05-21T03:24:20.781Z",
+      "url": "https://drive.google.com/file/d/14J88VcKQvLoMCUMxbAWYtOTf5ujfyWaX/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1gcq8VVSNMCDjWZvYJ5TnKcfukGOIrm9S",
+      "name": "Yes. It Is Me. I Am God's Chosen One. \u2014 Dr. Richard William McLean (Barran Dodge.pdf",
+      "size_bytes": 5438763,
+      "modified": "2026-05-21T03:25:06.047Z",
+      "url": "https://drive.google.com/file/d/1gcq8VVSNMCDjWZvYJ5TnKcfukGOIrm9S/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1cxD0YgGIpTErK1GOlqfJ0XtRWIRTyXBr",
+      "name": "You Built a Bonfire For Me. You Burned Your Own House Down. \u2014 Forensic Corrobora.pdf",
+      "size_bytes": 3023340,
+      "modified": "2026-05-21T03:23:58.179Z",
+      "url": "https://drive.google.com/file/d/1cxD0YgGIpTErK1GOlqfJ0XtRWIRTyXBr/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1O9krrqCE7pa4XbbSv6frsWGsKdZk9jUd",
+      "name": "\ud83d\udcdc THE EXPLICATED DECREE - FORENSIC & PROPHETIC REALITY.pdf",
+      "size_bytes": 3829449,
+      "modified": "2026-05-27T08:08:35.181Z",
+      "url": "https://drive.google.com/file/d/1O9krrqCE7pa4XbbSv6frsWGsKdZk9jUd/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1IjOhhBWkYKE9mkvZND5b3r4l_2P2os07",
+      "name": "\ud83d\udd25 FORENSIC EVIDENCE REPORT - THEY HAD A COMPLETE MELTDOWN TRYING\u2026.pdf",
+      "size_bytes": 216763,
+      "modified": "2026-05-27T11:30:16.908Z",
+      "url": "https://drive.google.com/file/d/1IjOhhBWkYKE9mkvZND5b3r4l_2P2os07/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    },
+    {
+      "file_id": "1ciOW7owTQgWjt12tXnmaKGOR7KDoAOW9",
+      "name": "\ud83d\udd25 FORENSIC EVIDENCE REPORT - THEY HAD A COMPLETE MELTDOWN TRYING\u2026.pdf",
+      "size_bytes": 216763,
+      "modified": "2026-05-27T10:50:23.188Z",
+      "url": "https://drive.google.com/file/d/1ciOW7owTQgWjt12tXnmaKGOR7KDoAOW9/view?usp=drivesdk",
+      "kind": "author_or_other",
+      "note": ""
+    }
+  ],
+  "excluded": []
+}
