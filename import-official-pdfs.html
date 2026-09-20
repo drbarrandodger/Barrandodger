@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Import official PDFs to GitHub — easiest method | Barran Dodger Archive</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.steps{border:2px solid var(--accent);background:var(--panel);padding:1.1rem 1.25rem;margin:1.25rem 0}
+.steps ol{margin:.6rem 0 0 1.25rem;line-height:1.55}
+</style>
+</head>
+<body>
+<header>
+<div class="brand"><a href="index.html">Barran Dodger Archive</a></div>
+<nav>
+<a href="index.html">Museum</a>
+<a href="official-government-pdfs.html">Official gov PDFs</a>
+<a href="import-official-pdfs.html">Import method</a>
+<a href="drive-imports.html">Drive inventory</a>
+</nav>
+</header>
+<main>
+<h1>Easiest method: official PDFs → GitHub</h1>
+<p class="lede">Google Drive files are <strong>not public</strong>. The site must link to <strong>GitHub binary copies</strong>. This connector can download from Drive and catalogue pages, but cannot push binary PDFs into GitHub (text-only API).</p>
+
+<div class="caution">
+<strong>Already done for you:</strong> <strong>138</strong> official government evidence PDFs are already binary-hosted on GitHub Backup and listed on the <a href="official-government-pdfs.html">Official gov PDFs</a> page.
+</div>
+
+<div class="steps">
+<h2 style="margin-top:0">Fastest path for remaining Drive PDFs</h2>
+<ol>
+<li>On your computer, open Google Drive and select official government PDFs (or download a folder as ZIP).</li>
+<li>Open this GitHub upload page (logged in as <code>wezzo72</code>):<br>
+<a class="btn" href="https://github.com/wezzo72/Backup/upload/main/client/public/documents/government-evidence">Upload to government-evidence folder</a></li>
+<li>Drag-and-drop the PDFs (multiple files at once). Commit to <code>main</code>.</li>
+<li>Message here after upload — the site index will be refreshed with public raw links for every new file.</li>
+</ol>
+</div>
+
+<div class="steps">
+<h2 style="margin-top:0">Alternative: local git (bulk / ZIP unpack)</h2>
+<ol>
+<li><code>git clone https://github.com/wezzo72/Backup.git</code></li>
+<li>Copy PDFs into <code>client/public/documents/government-evidence/Government Evidence/</code></li>
+<li><code>git add -A && git commit -m "Add official government PDFs" && git push</code></li>
+</ol>
+</div>
+
+<div class="steps">
+<h2 style="margin-top:0">Why not Drive links on the public site?</h2>
+<p>Private Drive files show “request access” for visitors. Only GitHub (or another public host) works for a permanent forensic archive without login.</p>
+</div>
+
+<h2>Already public on GitHub</h2>
+<ul class="plain">
+<li><strong>138</strong> files in government-evidence (featured on site with Open PDF links)</li>
+<li><strong>531+</strong> PDFs under client/public/documents</li>
+<li>PID, FOI, Ombudsman, NDIS, AFP, Comcare, OAIC, AG, PM correspondence and related records</li>
+</ul>
+<p>
+<a class="btn" href="official-government-pdfs.html">Browse 138 official PDFs</a>
+<a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">All documents folder</a>
+<a class="btn" href="https://github.com/wezzo72/Backup/upload/main/client/public/documents/government-evidence">Upload more now</a>
+</p>
+</main>
+<footer>© Richard William McLean / Barran Dodger · not a court</footer>
+</body>
+</html>

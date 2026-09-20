@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Official government PDFs on GitHub | Barran Dodger Archive</title>
+<script>
+Promise.all([
+  fetch('data/ogp-s0.html').then(r=>r.text()),
+  fetch('data/ogp-s1.html').then(r=>r.text())
+]).then(([a,b])=>{document.open();document.write(a+b);document.close();});
+</script>
+</head><body><p style="font-family:system-ui;padding:2rem">Loading 138 official government PDFs…</p></body></html>
