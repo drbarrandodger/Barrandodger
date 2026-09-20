@@ -1,0 +1,13 @@
+SOURCE: connected Gmail export
+STATUS: official auto-acknowledgement of receipt — not a listing or order
+EXPORTED: 20 September 2026
+
+From: Local Court Wyong <local-court-wyong@justice.nsw.gov.au>
+To: Rich McLean <richarddrawsstuff@gmail.com>
+Date: Sat, 19 Sep 2026 12:57:44 +0000
+Subject: Automatic response
+Message-ID: 1a0b9bea469e4905
+
+This is an automatic response to acknowledge your email has been received. Please do not reply to this email. You can contact the court by telephone or email.
+
+Archive note: receipt of email by Wyong Local Court registry. Distinct from the 15 June 2026 Kilborn hearing / bail / interim ADVO letter already hosted as emails/wyong-local-court-2026-06-15-kilborn.txt.
