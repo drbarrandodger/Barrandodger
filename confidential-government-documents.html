@@ -4,25 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Confidential Government Documents — full public index | Barran Dodger Archive</title>
-<meta name="description" content="Sorted public index of 531 PDFs on GitHub Backup: PID, PM letters, Ombudsman, FOI, NDIS, police, Comcare, declarations.">
+<meta name="description" content="531 PDFs on GitHub Backup: PID, PM letters, Ombudsman, FOI, NDIS, police, declarations.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <div id="root"><p class="meta" style="padding:1rem">Loading government documents index…</p></div>
 <script>
 (async function(){
-  const root=document.getElementById("root");
   try{
-    const a=await fetch("data/gov-docs-s0.html").then(r=>r.text());
-    const b=await fetch("data/gov-docs-s1.html").then(r=>r.text());
+    const a=await fetch("data/gov-docs-c0.html").then(r=>r.text());
+    const b=await fetch("data/gov-docs-c1.html").then(r=>r.text());
     document.open(); document.write(a+b); document.close();
   }catch(e){
-    root.innerHTML="<p>Could not load index. Open <a href=\"https://github.com/wezzo72/Backup/tree/main/client/public/documents\">GitHub documents folder</a> directly.</p>";
+    document.getElementById("root").innerHTML='<p>Open <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">GitHub documents folder</a> (531 PDFs).</p>';
   }
 })();
 </script>
-<noscript>
-<p><a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">Open all documents on GitHub</a></p>
-</noscript>
 </body>
 </html>
