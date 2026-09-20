@@ -20,9 +20,9 @@
 <a href="index.html">Museum</a>
 <a href="https://barrandodger.com/" rel="noopener">barrandodger.com</a>
 <a href="official-government-pdfs.html">Official gov PDFs</a>
-<a href="import-official-pdfs.html">Import method</a>
+<a href="named-archive-pdfs.html">Named PDFs</a>
+<a href="document-dossiers.html">Dossiers</a>
 <a href="ethics.html">Ethics</a>
-<a href="confidential-government-documents.html">Gov documents</a>
 </nav>
 </header>
 <main>
@@ -34,11 +34,12 @@
 <div class="stat"><strong>Free</strong> raw download</div>
 </div>
 <div class="caution"><strong>Documented paths, not verdicts.</strong> Filenames identify source material. Not findings of wrongdoing. <a href="ethics.html">Truth should be free</a>.</div>
+<div data-share data-share-title="Official government PDFs on GitHub — Barran Dodger Archive" data-share-path="official-government-pdfs.html" data-share-tags="OfficialPDFs,GovernmentEvidence,FOI,PID"></div>
 <p>
 <a class="btn" href="https://barrandodger.com/" rel="noopener">barrandodger.com</a>
-<a class="btn" href="https://barrandodger.com/confidential-government-documents" rel="noopener">barrandodger.com gov docs</a>
-<a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">Open folder on GitHub</a>
-<a class="btn" href="import-official-pdfs.html">Import more from Drive</a>
+<a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence" rel="noopener">Open folder on GitHub</a>
+<a class="btn" href="document-dossiers.html">Document dossiers</a>
+<a class="btn" href="named-archive-pdfs.html">Named PDFs</a>
 <a class="btn-donate" href="https://barrandodger.com/donate" rel="noopener">Donate</a>
 </p>
 <input type="search" id="q" placeholder="Filter by name…" style="width:100%;max-width:28rem;padding:.4rem;margin:1rem 0;font:inherit;border:1px solid var(--line);background:var(--panel);color:var(--ink)">
@@ -46,14 +47,13 @@
 </main>
 <footer>
 © Richard William McLean / Barran Dodger · not a court<br>
-<p class="ethics">Truth should be free. Primary documents and verification on this archive are not behind a paywall. Optional donations support preservation only — they do not unlock records or purchase findings.</p>
+<p class="ethics">Truth should be free.</p>
 <div class="footer-actions">
 <a class="btn-donate" href="https://barrandodger.com/donate" rel="noopener">Donate</a>
-<a href="https://barrandodger.com/" rel="noopener">barrandodger.com</a>
-<a href="ethics.html">Ethics</a>
-<a href="methodology.html">Method</a>
+<a href="official-government-pdfs.html">Official PDFs</a>
 </div>
 </footer>
+<script src="assets/share.js"></script>
 <script>
 (async function(){
   const list=document.getElementById('list');
@@ -74,7 +74,7 @@
       const f=(filter||'').toLowerCase();
       const rows=docs.filter(d=>!f||d.name.toLowerCase().includes(f));
       list.innerHTML=rows.map(d=>
-        '<div class="doc-row"><div><span class="n">'+d.id+'</span> '+d.name.replace(/</g,'&lt;')+' <span class="meta">('+d.size_kb+' KB)</span></div>'+
+        '<div class="doc-row"><div><span class="n">'+d.id+'</span> '+d.name.replace(/</g,'<')+' <span class="meta">('+d.size_kb+' KB)</span></div>'+
         '<a class="btn" href="'+d.url+'" rel="noopener" target="_blank">Open PDF</a></div>'
       ).join('')||'<p class="meta">No matches.</p>';
     }
