@@ -1,7 +1,6 @@
-Source: Gmail message_id 1a0b989ebf7ca956
-Date: Sat, 19 Sep 2026 12:00:13 +0000
 From: NACC Inspector <enquiries@naccinspector.gov.au>
 To: Rich McLean <richarddrawsstuff@gmail.com>
+Date: Sat, 19 Sep 2026 12:00:13 +0000
 Subject: RE: THE WITNESS REMAINS: A FINAL RECORD OF ERASURE, SURVIVAL AND ACCOUNTABILITY
 
 *** This is an automatically generated email. Please do not respond. ***
@@ -17,3 +16,6 @@ If you want to report corruption to the NACC, you can submit your report via the
 The Inspector is not involved with the NACC’s intake and triage processes.
 
 The Inspector cannot deal with complaints about State agencies, federal agencies (other than NACC), overseas entities or private companies.
+
+---
+Also received identical auto-response on 17 Sep 2026 to FINAL EVIDENTIARY NOTICE.

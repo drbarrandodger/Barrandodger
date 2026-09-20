@@ -1,14 +1,31 @@
-Source: Gmail message_id 1a0b2ee9d2171c9b
-Date: Fri, 18 Sep 2026 05:12:53 +0000
 From: Public Complaint <complaints@ndiscommission.gov.au>
 To: richarddrawsstuff@gmail.com
+Date: Fri, 18 Sep 2026 05:12:53 +0000 (GMT)
 Subject: We’ve received your complaint 01110547 [SEC=OFFICIAL:Sensitive]
 
 Acknowledgement Confirmation: Matter received 01110547
+
 Dear Barran Dodger (Richard McLean),
-Thank you for contacting the NDIS Quality and Safeguards Commission.
-We've received your concerns…
 
-(Preview from Gmail search; full body retrieved as acknowledgement of matter 01110547.)
+Thank you for contacting the NDIS Quality and Safeguards Commission. We’ve received your concerns about the quality of services provided by Support Worker Cass.
 
-Related same-day auto-reply from Complaints (NDIS Commission) confirming Complaints Intake received further correspondence.
+Next steps
+If you haven’t already done so, we recommend discussing the issue/s with the provider involved or Cass directly. Providers are expected to handle complaints fairly and quickly. If you speak with the provider involved or Cass directly, and they agree to address your concerns, you can withdraw your complaint by replying to this email or by calling 1800 035 544.
+We’ll contact you if we need more information. You can also send us further details by direct reply to this email.
+
+Help from an advocate
+An advocate may be able to help you with your complaint. You can find an advocate using the Disability Advocacy Finder | Ask Izzy
+
+Role of the NDIS Commission
+The NDIS Quality and Safeguards Commission is the national regulator of the NDIS. We work to improve the quality and safety of NDIS supports and services accessed by people with disability.
+We do this by:
+- setting and enforcing rules and standards, including the NDIS Code of Conduct and NDIS Practice Standards
+- guiding and empowering NDIS participants to know and exercise their rights.
+
+Privacy: Your personal information will be handled in line with the Privacy Act and Australian Privacy Principles.
+
+Kind regards,
+Abby K
+Senior Regulatory Officer – Complaints Intake (Inbox Management)
+Intake, Assessment and Practice Quality Division
+P: 1800 035 544 E: Complaints@ndiscommission.gov.au
