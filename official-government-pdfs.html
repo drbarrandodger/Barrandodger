@@ -6,7 +6,8 @@
 <title>Official government PDFs on GitHub | Barran Dodger Archive</title>
 <link rel="stylesheet" href="assets/style.css">
 <style>
-.doc-row{border:1px solid var(--line);background:var(--panel);padding:.4rem .7rem;margin-bottom:.28rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.4rem;align-items:center}
+.doc-row{border:1px solid var(--line);background:var(--panel);padding:.55rem .75rem;margin-bottom:.35rem}
+.doc-row-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.4rem;align-items:center}
 .n{font-family:ui-monospace,monospace;font-size:.75rem;color:var(--muted);margin-right:.35rem}
 .hero-stats{display:flex;flex-wrap:wrap;gap:.75rem;margin:1rem 0}
 .stat{border:1px solid var(--line);background:var(--panel);padding:.6rem .9rem}
@@ -27,7 +28,7 @@
 </header>
 <main>
 <h1>Official government PDFs on GitHub</h1>
-<p class="lede"><strong id="cnt">…</strong> binary PDFs already public on <code>wezzo72/Backup</code>. Also mirrored on the primary site <a href="https://barrandodger.com/">barrandodger.com</a>. Drive files are private — permanent public access is GitHub / barrandodger.com.</p>
+<p class="lede"><strong id="cnt">…</strong> binary PDFs already public on <code>wezzo72/Backup</code>. Also mirrored on the primary site <a href="https://barrandodger.com/">barrandodger.com</a>. Each listed PDF has pre-loaded social share buttons (within platform limits) pointing at that exact file URL, plus AI-generated hashtags.</p>
 <div class="hero-stats">
 <div class="stat"><strong id="n">—</strong> on GitHub now</div>
 <div class="stat"><strong>531+</strong> documents total</div>
@@ -70,13 +71,38 @@
       }));
     document.getElementById('n').textContent=docs.length;
     document.getElementById('cnt').textContent=docs.length;
+
+    function tagsFor(name){
+      var n=(name||'').toLowerCase();
+      var t=['OfficialPDF','GovernmentEvidence'];
+      if(/ombudsman|ombud/.test(n)) t.push('Ombudsman');
+      if(/ndis/.test(n)) t.push('NDIS');
+      if(/foi|freedom/.test(n)) t.push('FOI');
+      if(/pid|public.?interest/.test(n)) t.push('PID');
+      if(/comcare|aat|tribunal/.test(n)) t.push('Comcare','Tribunal');
+      if(/nacc|ibac|icac/.test(n)) t.push('IntegrityAgency');
+      if(/legal.?aid/.test(n)) t.push('LegalAid');
+      if(/ahrc|human.?right/.test(n)) t.push('AHRC');
+      if(/police|afp/.test(n)) t.push('Police');
+      if(/minister|pm|prime/.test(n)) t.push('Ministerial');
+      return t.join(',');
+    }
+
     function render(filter){
       const f=(filter||'').toLowerCase();
       const rows=docs.filter(d=>!f||d.name.toLowerCase().includes(f));
-      list.innerHTML=rows.map(d=>
-        '<div class="doc-row"><div><span class="n">'+d.id+'</span> '+d.name.replace(/</g,'<')+' <span class="meta">('+d.size_kb+' KB)</span></div>'+
-        '<a class="btn" href="'+d.url+'" rel="noopener" target="_blank">Open PDF</a></div>'
-      ).join('')||'<p class="meta">No matches.</p>';
+      list.innerHTML=rows.map(d=>{
+        var safeName=d.name.replace(/</g,'&lt;');
+        var title=d.name.replace(/\.pdf$/i,'')+' — official government PDF (Barran Dodger Archive)';
+        return '<div class="doc-row">'+
+          '<div class="doc-row-top"><div><span class="n">'+d.id+'</span> '+safeName+' <span class="meta">('+d.size_kb+' KB)</span></div>'+
+          '<a class="btn" href="'+d.url+'" rel="noopener" target="_blank">Open PDF</a></div>'+
+          '<div data-pdf-share data-pdf-url="'+d.url+'" data-pdf-title="'+title.replace(/"/g,'&quot;')+'" data-pdf-tags="'+tagsFor(d.name)+'"></div>'+
+          '</div>';
+      }).join('')||'<p class="meta">No matches.</p>';
+      if(window.BDShare && window.BDShare.renderPdfShare){
+        list.querySelectorAll('[data-pdf-share]').forEach(function(el){ window.BDShare.renderPdfShare(el); });
+      }
     }
     document.getElementById('q').addEventListener('input',e=>render(e.target.value));
     render('');
