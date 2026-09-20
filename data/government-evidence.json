@@ -1,0 +1,27 @@
+{
+  "generated": "2026-09-20",
+  "source": "wezzo72/Backup client/public/documents/government-evidence",
+  "pdf_count_tree": 138,
+  "browse_url": "https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence",
+  "raw_pattern": "https://github.com/wezzo72/Backup/raw/main/{path}",
+  "note": "Catalogue header only. Paths are public on GitHub Backup. Filename is not a court finding. Classification words in filenames (e.g. SECOFFICIALSensitive) are treated as path labels, not as independent security clearances verified by this presentation site. Full file list is the GitHub tree, not a second binary store in Barrandodger.",
+  "related_pages": [
+    "confidential-government-documents.html",
+    "official.html",
+    "documents.html",
+    "downloads.html",
+    "verification.html"
+  ],
+  "author_declarations": [
+    {
+      "title": "Declaration of Sovereignty",
+      "path": "client/public/documents/declaration_of_sovereignty.pdf",
+      "status": "AUTHOR'S ACCOUNT"
+    },
+    {
+      "title": "Declaration of Integrity",
+      "path": "client/public/documents/declaration-of-integrity.pdf",
+      "status": "AUTHOR'S ACCOUNT"
+    }
+  ]
+}
