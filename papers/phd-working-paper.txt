@@ -1,1 +1,13 @@
-PLACEHOLDER_SEE_NEXT
+Institutional Mobbing, Convergent Scapegoating, and Collective Institutional Betrayal:
+A Doctoral-Level Working Paper on Multi-Agency Administrative Attrition as Documented in Public Australian Government Correspondence and Related Primary Sources (Author-Stated Horizon c. 1990–2025/26)
+
+Barran Dodger Archive Working Paper Series · September 2026 · Constructed by an impartial computational analyst with no institutional allegiance
+
+Status labels. This document is a research working paper. It is not a court judgment, clinical diagnosis, or determination of criminal conspiracy. Where a statement restates what a government letter says on its face, it is labelled as documented. Where a statement synthesises theory and pattern, it is research interpretation. Monetary figures appearing in archive valuation reports are not treated here as independently audited facts.
+
+FULL PAPER: open papers/phd-part-0.txt, phd-part-1.txt, phd-part-2.txt (concatenated on the web page) OR Download PDF from the Academic paper page.
+
+Term of art: institutional mobbing with convergent scapegoating under conditions of collective institutional betrayal.
+
+Primary public corpus: https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence
+Dossiers: https://wezzo72.github.io/Barrandodger/document-dossiers.html
