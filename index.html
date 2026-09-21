@@ -1,1383 +1,757 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Barran Dodger — Master Digital Archive</title>
-<meta name="description" content="Master index of the Barran Dodger / Richard William McLean public documentary archive.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Barran Dodger Archive — The Witness Remains</title>
+
+<meta name="description" content="Barran Dodger documentary archive: declarations, prophetic documents, public-interest disclosures, government records, evidence, essays, chronology, entities and methodology.">
+<meta name="author" content="Barran Dodger">
 
 <style>
 :root{
---bg:#090c10;
---card:#11161c;
---line:#28313a;
---text:#edf1f5;
---muted:#9da8b2;
---gold:#d9b76c;
---blue:#79aee0
+  --bg:#0b0d10;
+  --panel:#12161b;
+  --panel2:#181d23;
+  --text:#e9edf2;
+  --muted:#aeb7c2;
+  --line:#303741;
+  --accent:#d7b45a;
+  --accent2:#8ab4f8;
+  --danger:#d96c6c;
+  --max:1200px;
 }
 
 *{box-sizing:border-box}
 
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior:smooth;
+}
 
 body{
-margin:0;
-background:var(--bg);
-color:var(--text);
-font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  line-height:1.7;
 }
 
 a{
-color:var(--blue)
+  color:var(--accent2);
+  text-decoration:none;
 }
 
-.wrap{
-max-width:1180px;
-margin:auto;
-padding:0 18px
+a:hover{
+  text-decoration:underline;
+}
+
+.container{
+  width:min(94%,var(--max));
+  margin:auto;
 }
 
 header{
-padding:72px 0 48px;
-border-bottom:1px solid var(--line);
-background:
-radial-gradient(circle at 90% 10%,#20304455,transparent 35%),
-radial-gradient(circle at 10% 0,#4a3b2050,transparent 35%)
+  padding:70px 0 45px;
+  text-align:center;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(circle at 50% 0%,#262b32 0%,transparent 55%);
 }
 
 .kicker{
-color:var(--gold);
-font-weight:700;
-letter-spacing:.14em;
-text-transform:uppercase;
-font-size:.78rem
+  color:var(--accent);
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  font-size:.78rem;
+  font-weight:700;
 }
 
 h1{
-font-size:clamp(3rem,8vw,6rem);
-line-height:.92;
-letter-spacing:-.05em;
-margin:12px 0 22px
+  font-family:Georgia,serif;
+  font-size:clamp(2.5rem,7vw,5.5rem);
+  line-height:1.05;
+  margin:15px 0;
 }
 
-h2{
-font-size:2rem;
-line-height:1.1
-}
-
-h3{
-margin-bottom:6px
-}
-
-.lead{
-max-width:900px;
-color:#cbd2d9;
-font-size:1.12rem
-}
-
-.notice,
-.warning{
-padding:17px 20px;
-margin:22px 0;
-border-left:4px solid var(--gold);
-background:#d9b76c0b
-}
-
-.warning{
-border-color:#dfb45d;
-background:#dfb45d0b
+.subtitle{
+  max-width:850px;
+  margin:auto;
+  color:var(--muted);
+  font-size:1.1rem;
 }
 
 nav{
-position:sticky;
-top:0;
-z-index:20;
-background:#090c10ee;
-backdrop-filter:blur(10px);
-border-bottom:1px solid var(--line)
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(11,13,16,.96);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(12px);
 }
 
-nav .wrap{
-display:flex;
-gap:8px;
-overflow:auto;
-padding-top:10px;
-padding-bottom:10px
+.nav-inner{
+  width:min(98%,var(--max));
+  margin:auto;
+  display:flex;
+  gap:5px;
+  overflow-x:auto;
+  padding:8px 2px;
+  scrollbar-width:thin;
 }
 
 nav a{
-white-space:nowrap;
-border:1px solid var(--line);
-border-radius:99px;
-padding:6px 11px;
-text-decoration:none;
-color:#cdd4db;
-font-size:.86rem
+  white-space:nowrap;
+  padding:9px 13px;
+  border:1px solid transparent;
+  border-radius:7px;
+  color:#dbe1e8;
+  font-size:.84rem;
+  font-weight:600;
+}
+
+nav a:hover{
+  background:var(--panel2);
+  border-color:var(--line);
+  text-decoration:none;
+}
+
+main{
+  padding-bottom:100px;
 }
 
 section{
-padding:62px 0;
-border-bottom:1px solid var(--line)
+  padding:80px 0 30px;
+  scroll-margin-top:70px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:16px
+h2{
+  font-family:Georgia,serif;
+  font-size:clamp(2rem,5vw,3.5rem);
+  line-height:1.15;
+  margin:0 0 25px;
+}
+
+h3{
+  font-family:Georgia,serif;
+  font-size:1.55rem;
+  margin-top:35px;
+}
+
+h4{
+  color:var(--accent);
+  margin-bottom:8px;
+}
+
+.lead{
+  font-size:1.15rem;
+  color:#d6dce3;
 }
 
 .card{
-background:var(--card);
-border:1px solid var(--line);
-border-radius:15px;
-padding:20px
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:28px;
+  margin:20px 0;
+  box-shadow:0 8px 30px rgba(0,0,0,.18);
 }
 
-.tag{
-display:inline-block;
-border:1px solid var(--line);
-border-radius:99px;
-padding:2px 8px;
-font-size:.72rem;
-color:#b9c3cc
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:18px;
 }
 
-.tag.gold{
-border-color:var(--gold);
-color:var(--gold)
+.tile{
+  display:block;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:23px;
+  transition:.2s;
 }
 
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-gap:12px;
-margin:25px 0
+.tile:hover{
+  transform:translateY(-2px);
+  border-color:#59616c;
+  text-decoration:none;
 }
 
-.stat{
-background:var(--card);
-border:1px solid var(--line);
-border-radius:13px;
-padding:18px
+.tile strong{
+  display:block;
+  color:var(--accent);
+  font-size:1.05rem;
+  margin-bottom:8px;
 }
 
-.stat b{
-font-size:1.65rem;
-display:block
+.quote{
+  border-left:4px solid var(--accent);
+  padding:18px 22px;
+  background:var(--panel2);
+  margin:25px 0;
+  font-family:Georgia,serif;
+  font-size:1.15rem;
 }
 
-.stat span{
-font-size:.8rem;
-color:var(--muted)
+.warning{
+  border-left:4px solid var(--danger);
+  background:#1c1416;
+  padding:18px 22px;
+  margin:25px 0;
+}
+
+.notice{
+  border-left:4px solid var(--accent2);
+  background:#111923;
+  padding:18px 22px;
+  margin:25px 0;
+}
+
+.declaration{
+  border:1px solid #51472c;
+  background:
+    linear-gradient(145deg,#171711,#111315);
+}
+
+.declaration .number{
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  font-weight:700;
+  font-size:.8rem;
+}
+
+.declaration h2{
+  color:#f1e4bb;
+}
+
+.longform{
+  max-width:900px;
+  margin:auto;
+}
+
+.longform p{
+  margin:0 0 20px;
+}
+
+.longform h3{
+  margin-top:50px;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+}
+
+.toc{
+  columns:2;
+  column-gap:40px;
+}
+
+.toc a{
+  display:block;
+  padding:5px 0;
+}
+
+.entity-list{
+  columns:3;
+  column-gap:35px;
+}
+
+.entity-list li{
+  break-inside:avoid;
+  margin-bottom:7px;
 }
 
 table{
-width:100%;
-border-collapse:collapse
+  width:100%;
+  border-collapse:collapse;
+  margin:25px 0;
 }
 
-th,
-td{
-padding:11px 8px;
-border-bottom:1px solid var(--line);
-text-align:left;
-vertical-align:top
+th,td{
+  border:1px solid var(--line);
+  padding:12px;
+  text-align:left;
+  vertical-align:top;
 }
 
 th{
-color:var(--gold)
+  background:var(--panel2);
+  color:var(--accent);
 }
 
-input{
-width:100%;
-padding:13px;
-border:1px solid var(--line);
-background:#06080b;
-color:white;
-border-radius:10px;
-font-size:1rem
+.button{
+  display:inline-block;
+  padding:11px 17px;
+  background:var(--accent);
+  color:#111;
+  border-radius:7px;
+  font-weight:700;
+  margin:5px 5px 5px 0;
 }
 
-.source{
-padding:14px 0;
-border-bottom:1px solid var(--line)
+.button.secondary{
+  background:var(--panel2);
+  color:var(--text);
+  border:1px solid var(--line);
 }
 
-.url{
-font-size:.8rem;
-color:var(--muted);
-word-break:break-all
+.video{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  margin:25px 0;
 }
 
-.btn{
-display:inline-block;
-padding:9px 13px;
-border-radius:9px;
-background:var(--gold);
-color:#111;
-text-decoration:none;
-font-weight:700;
-margin:4px
+.video iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+  border-radius:10px;
 }
 
-.btn.alt{
-background:transparent;
-color:var(--text);
-border:1px solid var(--line)
+pre{
+  white-space:pre-wrap;
+  word-break:break-word;
+  background:#080a0d;
+  border:1px solid var(--line);
+  padding:20px;
+  border-radius:10px;
+  overflow:auto;
 }
 
 footer{
-padding:55px 0;
-color:var(--muted)
+  border-top:1px solid var(--line);
+  padding:50px 0;
+  color:var(--muted);
+  text-align:center;
 }
 
-@media(max-width:650px){
-section{
-padding:45px 0
+.small{
+  font-size:.9rem;
+  color:var(--muted);
 }
 
-h1{
-font-size:3.2rem
+.abuse-list{
+  columns:2;
+  column-gap:40px;
+  margin:25px 0;
 }
 
-table{
-display:block;
-overflow:auto
+.abuse-list li{
+  break-inside:avoid;
+  margin-bottom:6px;
+  font-size:.95rem;
 }
+
+.technique-list{
+  margin:25px 0;
+}
+
+.technique-list li{
+  margin-bottom:10px;
+}
+
+@media(max-width:700px){
+  section{padding-top:55px}
+  .card{padding:20px}
+  .toc,.entity-list,.abuse-list{columns:1}
+  table{font-size:.88rem}
 }
 </style>
 </head>
 
 <body>
 
-<header id="top">
-<div class="wrap">
+<header>
+<div class="container">
+<div class="kicker">Public Documentary Archive</div>
 
-<div class="kicker">
-Digital Museum · Documentary Archive · Research Record
-</div>
+<h1>THE WITNESS REMAINS</h1>
 
-<h1>BARRAN DODGER</h1>
-
-<p class="lead">
-<strong>Richard William McLean / Barran Dodger</strong><br>
-Artist · Author · Researcher · Academic · Advocate · Public Archive
+<p class="subtitle">
+The documentary archive of Barran Dodger — preserving declarations,
+public-interest disclosures, government records, evidence, correspondence,
+chronology, institutional relationships and the questions arising from the record.
 </p>
 
-<p class="lead">
-A master index connecting public documents, disclosures, institutional responses,
-government records, publications, research, audiovisual material and distributed
-archive mirrors.
-</p>
-
-<div class="notice">
-<strong>Archive rule:</strong>
-Catalogue inclusion is not a finding of fact or liability.
-Primary records, author statements, allegations, analysis and external commentary
-remain distinguishable.
+<div style="margin-top:25px">
+<a class="button" href="#declarations">Read the Declarations</a>
+<a class="button secondary" href="#architecture">Architecture of Erasure</a>
+<a class="button secondary" href="#evidence">Examine the Evidence</a>
+<a class="button secondary" href="#methodology">Methodology</a>
 </div>
-
-<a class="btn" href="#archive">Enter archive</a>
-<a class="btn alt" href="#verification">Verification</a>
-<a class="btn alt" href="#method">Methodology</a>
-
 </div>
 </header>
 
 
 <nav>
-<div class="wrap">
+<div class="nav-inner">
 
-<a href="#archive">Archive</a>
-<a href="#biography">Biography</a>
-<a href="#publications">Publications</a>
-<a href="#government">Government</a>
+<a href="#architecture">Architecture of Erasure</a>
+<a href="#gospels">Gospels</a>
+<a href="#prophetic">Prophetic Documents</a>
+<a href="#pids">PIDs</a>
+<a href="#government">Government Documents</a>
 <a href="#evidence">Evidence</a>
+<a href="#essays">Essays</a>
+<a href="#declarations">Declarations</a>
 <a href="#timeline">Timeline</a>
 <a href="#entities">Entities</a>
-<a href="#mirrors">Mirrors</a>
+<a href="#legal">Legal / International</a>
+<a href="#methodology">Methodology</a>
 <a href="#verification">Verification</a>
-<a href="#method">Method</a>
 
 </div>
 </nav>
 
 
+<main>
+
+
+<!-- ===================================================== -->
+<!-- ARCHIVE MAP -->
+<!-- ===================================================== -->
+
 <section id="archive">
-<div class="wrap">
+<div class="container">
 
-<div class="kicker">01 · Master archive</div>
+<div class="kicker">Archive Index</div>
+<h2>Examine the Record</h2>
 
-<h2>The collection</h2>
-
-<p>
-The original GitHub Pages structure separates PIDs, disclosures, responses,
-government documents, sacred material, video, declarations, evidence, timeline,
-verification and methodology. This master preserves that separation while adding
-a consolidated research index.
+<p class="lead">
+This archive is organised so that individual claims, allegations, documents,
+institutions and events can be traced back to the underlying record.
 </p>
-
-<div class="stats">
-
-<div class="stat">
-<b>3,643+</b>
-<span>Primary-source documents reported by barrandodger.com</span>
-</div>
-
-<div class="stat">
-<b>459,910+</b>
-<span>Downloads reported by barrandodger.com</span>
-</div>
-
-<div class="stat">
-<b>256</b>
-<span>Filenames inspected in the verification manifest</span>
-</div>
-
-<div class="stat">
-<b>10</b>
-<span>Complete git objects in the 19 Sep 2026 inspection</span>
-</div>
-
-<div class="stat">
-<b>134</b>
-<span>Pointer/stub files in that inspection</span>
-</div>
-
-<div class="stat">
-<b>112</b>
-<span>Manifest entries absent from that commit</span>
-</div>
-
-</div>
-
-<div class="warning">
-<strong>Verification warning:</strong>
-The public verification page states that Git history establishes repository history,
-not the truth of document contents. It also reports that the 10 complete objects
-inspected differed in size from the manifest, so this archive does not claim that
-the manifest hashes have been independently reproduced.
-</div>
 
 <div class="grid">
 
-<div class="card">
-<span class="tag gold">PRIMARY</span>
-<h3>Public Interest Disclosures</h3>
-<p>
-Original disclosures, acknowledgements, attachments and processing records.
-</p>
-</div>
+<a class="tile" href="#architecture">
+<strong>Architecture of Erasure</strong>
+Statement on how survival became the evidence — the cumulative pattern of alleged detriment.
+</a>
 
-<div class="card">
-<span class="tag">AUTHOR RECORD</span>
-<h3>Disclosures & testimony</h3>
-<p>
-Statements and documents originating from the author.
-</p>
-</div>
+<a class="tile" href="#gospels">
+<strong>Gospels</strong>
+Faith, resurrection metaphor, spiritual writing and autobiographical testimony.
+</a>
 
-<div class="card">
-<span class="tag">INSTITUTIONAL</span>
-<h3>Responses</h3>
-<p>
-Agency, institutional, legal and other responses kept separate from submissions.
-</p>
-</div>
+<a class="tile" href="#prophetic">
+<strong>Prophetic Documents</strong>
+Prophetic and allegorical writings concerning survival, testimony and the archive.
+</a>
 
-<div class="card">
-<span class="tag">OFFICIAL</span>
-<h3>Government documents</h3>
-<p>
-Official correspondence, reports, proceedings, FOI and administrative records.
-</p>
-</div>
+<a class="tile" href="#pids">
+<strong>Public Interest Disclosures</strong>
+PID material, disclosures and related correspondence.
+</a>
 
-<div class="card">
-<span class="tag">ANALYSIS</span>
-<h3>Evidence centre</h3>
-<p>
-Hashes, provenance, cross-references and forensic analysis.
-</p>
-</div>
+<a class="tile" href="#government">
+<strong>Government Documents</strong>
+Primary-source correspondence, decisions, FOI material and official records.
+</a>
 
-<div class="card">
-<span class="tag">MEDIA</span>
-<h3>Video record</h3>
-<p>
-Public audiovisual sources and video-forensic material.
-</p>
-</div>
+<a class="tile" href="#evidence">
+<strong>Evidence</strong>
+Videos, documents, correspondence, forensic comparisons and source material.
+</a>
 
-</div>
-</div>
-</section>
+<a class="tile" href="#essays">
+<strong>Essays</strong>
+Long-form analysis, testimony and documentary essays.
+</a>
 
+<a class="tile" href="#declarations">
+<strong>Declarations</strong>
+The major public declarations and challenges to independent examination.
+</a>
 
-<section id="biography">
-<div class="wrap">
+<a class="tile" href="#timeline">
+<strong>Timeline</strong>
+Chronology of documented events and institutional responses.
+</a>
 
-<div class="kicker">02 · Biography</div>
+<a class="tile" href="#entities">
+<strong>Entities</strong>
+Agencies, courts, companies, professionals, organisations and places appearing in the archive.
+</a>
 
-<h2>Richard William McLean / Barran Dodger</h2>
+<a class="tile" href="#legal">
+<strong>Legal / International</strong>
+Australian legal material and international human-rights frameworks.
+</a>
 
-<div class="card">
+<a class="tile" href="#methodology">
+<strong>Methodology</strong>
+How documents, allegations, AI analysis and evidentiary status are distinguished.
+</a>
 
-<p>
-The public archive uses both Richard William McLean and Barran Dodger.
-Public catalogue material describes the archive subject as an artist, author,
-researcher, academic and advocate. Those descriptors are retained as catalogue
-metadata and should not be treated as independent findings unless supported by
-the underlying source.
-</p>
-
-</div>
-
-<div class="grid" style="margin-top:16px">
-
-<div class="card">
-<h3>Art & digital work</h3>
-<p>
-Public catalogue records span exhibitions and digital works from the 1990s onward,
-including <em>Transform the Primitive</em> and <em>QWERTY</em>.
-</p>
-</div>
-
-<div class="card">
-<h3>Books</h3>
-<p>
-<em>Recovered, Not Cured</em> and later independent publications form part of
-the literary record.
-</p>
-</div>
-
-<div class="card">
-<h3>Academic work</h3>
-<p>
-Public archive material includes Victoria University research records and
-associated academic publications.
-</p>
-</div>
-
-<div class="card">
-<h3>Advocacy</h3>
-<p>
-The archive contains a long-running public record concerning mental-health
-advocacy, disability, institutional systems and public-interest disclosure.
-</p>
-</div>
+<a class="tile" href="#verification">
+<strong>Verification</strong>
+Primary-source challenge and independent examination framework.
+</a>
 
 </div>
 </div>
 </section>
 
 
-<section id="publications">
-<div class="wrap">
+<!-- ===================================================== -->
+<!-- ARCHITECTURE OF ERASURE -->
+<!-- ===================================================== -->
 
-<div class="kicker">03 · Library</div>
+<section id="architecture">
+<div class="container">
 
-<h2>Books, publications & works</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Recovered, Not Cured</h3>
-<p>
-<em>A Journey Through Schizophrenia</em><br>
-Richard McLean · Allen & Unwin<br>
-ISBN 1-86508-974-5
-</p>
-</div>
-
-<div class="card">
-<h3>Betrayed, Murdered, Forsaken</h3>
-<p>
-<em>The Harrowing Journey of Barran Dodger</em><br>
-Independent public archive work.
-</p>
-</div>
-
-<div class="card">
-<h3>Strange Currencies of Ego & Soul</h3>
-<p>
-Art publication · ISBN 978-0-9805016-0-5
-</p>
-</div>
-
-<div class="card">
-<h3>A Splice of My Life</h3>
-<p>
-Victoria University research record.
-</p>
-</div>
-
-<div class="card">
-<h3>The Universal Embrace</h3>
-<p>
-<em>Considering Phi, Spirit & Society</em>.
-</p>
-</div>
-
-<div class="card">
-<h3>123 Gospels of Barran Dodger</h3>
-<p>
-Author / sacred archive material.
-</p>
-</div>
-
-<div class="card">
-<h3>The Certified Record of Barran Dodger</h3>
-<p>
-Documentary testimony and author record.
-</p>
-</div>
-
-<div class="card">
-<h3>The Paradox of Persecution</h3>
-<p>
-Research / author publication.
-</p>
-</div>
-
-<div class="card">
-<h3>Digital Oppression</h3>
-<p>
-Interdisciplinary research and institutional analysis.
-</p>
-</div>
-
-</div>
-</div>
-</section>
-
-
-<section id="government">
-<div class="wrap">
-
-<div class="kicker">04 · Official record</div>
-
-<h2>Government, FOI, tribunal & institutional material</h2>
-
-<table>
-
-<thead>
-<tr>
-<th>ID</th>
-<th>Record</th>
-<th>Institution / system</th>
-<th>Class</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-<td>DOC-0001</td>
-<td>Federal Court PID assessment / final assessment</td>
-<td>Federal Court of Australia</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0002</td>
-<td>Letter to PM Albanese / OPMC</td>
-<td>Prime Minister / PM&C</td>
-<td>Correspondence</td>
-</tr>
-
-<tr>
-<td>DOC-0003</td>
-<td>CDDA / AFP compensation claim</td>
-<td>AFP / CDDA</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0004</td>
-<td>AFCA letter — 21 May 2021</td>
-<td>AFCA</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0005</td>
-<td>Letter to Attorney-General and Prime Minister</td>
-<td>Commonwealth</td>
-<td>Correspondence</td>
-</tr>
-
-<tr>
-<td>DOC-0006</td>
-<td>Legal Aid NSW guardianship advice letter</td>
-<td>Legal Aid NSW</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0007</td>
-<td>IBAC PID rejection 400008R</td>
-<td>IBAC</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0008</td>
-<td>LECC out-of-jurisdiction record</td>
-<td>LECC</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0009</td>
-<td>NDIS plan approval 366406</td>
-<td>NDIA / NDIS</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0010</td>
-<td>NCAT guardianship evidence</td>
-<td>NCAT</td>
-<td>Tribunal</td>
-</tr>
-
-<tr>
-<td>DOC-0011</td>
-<td>FOI 2022/045IC revised decision</td>
-<td>OAIC / FOI</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0012</td>
-<td>Commonwealth Ombudsman service restriction</td>
-<td>Ombudsman</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0013</td>
-<td>AAT / Comcare 20217478</td>
-<td>AAT / Comcare</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0014</td>
-<td>NSW Trustee and Guardian s122</td>
-<td>NSWTG</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0015</td>
-<td>Victorian Ombudsman FOI s29A rejection</td>
-<td>Victorian Ombudsman</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0022</td>
-<td>NDIS FOI decision letter summary</td>
-<td>NDIA / NDIS</td>
-<td>Official</td>
-</tr>
-
-<tr>
-<td>DOC-0023</td>
-<td>PID Ombudsman rejected acknowledgement 2021</td>
-<td>Commonwealth Ombudsman</td>
-<td>Official</td>
-</tr>
-
-</tbody>
-</table>
-
-</div>
-</section>
-
-
-<section id="evidence">
-<div class="wrap">
-
-<div class="kicker">05 · Evidence centre</div>
-
-<h2>Evidence architecture</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Primary evidence</h3>
-<p>
-Original documents and source records.
-</p>
-</div>
-
-<div class="card">
-<h3>Official record</h3>
-<p>
-Government correspondence, FOI releases, proceedings and administrative records.
-</p>
-</div>
-
-<div class="card">
-<h3>Independent corroboration</h3>
-<p>
-Material from independent sources capable of supporting or challenging an assertion.
-</p>
-</div>
-
-<div class="card">
-<h3>Author record</h3>
-<p>
-Statements and testimony originating from the author.
-</p>
-</div>
-
-<div class="card">
-<h3>Secondary material</h3>
-<p>
-News, commentary and other secondary sources.
-</p>
-</div>
-
-<div class="card">
-<h3>Interpretation</h3>
-<p>
-Analytical, theological or theoretical interpretation.
-</p>
-</div>
-
-<div class="card">
-<h3>Unverified claim</h3>
-<p>
-A claim whose underlying proposition has not been independently established.
-</p>
-</div>
-
-</div>
+<div class="kicker">Principal Statement</div>
+<h2>Statement on The Architecture of Erasure — How my Survival Became the Evidence</h2>
 
 <div class="notice">
-
-<strong>Core rule:</strong>
-a filename is not a finding; a hyperlink is not corroboration; a Git object
-is not proof of document contents; a blockchain timestamp can establish existence
-of data at a time but does not by itself establish the truth of its contents.
-
-</div>
-
-</div>
-</section>
-
-
-<section id="timeline">
-<div class="wrap">
-
-<div class="kicker">06 · Chronology</div>
-
-<h2>Documentary timeline</h2>
-
-<table>
-
-<thead>
-<tr>
-<th>Period</th>
-<th>Record</th>
-<th>Status</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-<td>1996</td>
-<td><em>Transform the Primitive</em> — Kingston Art Centre</td>
-<td>Catalogue record</td>
-</tr>
-
-<tr>
-<td>1997</td>
-<td><em>QWERTY</em> — Linden Galleries</td>
-<td>Catalogue record</td>
-</tr>
-
-<tr>
-<td>2003</td>
-<td><em>Recovered, Not Cured</em> — Allen & Unwin</td>
-<td>Publication record</td>
-</tr>
-
-<tr>
-<td>2007</td>
-<td><em>Strange Currencies of Ego & Soul</em></td>
-<td>Publication record</td>
-</tr>
-
-<tr>
-<td>2009</td>
-<td>Dax Collection material</td>
-<td>Catalogue record</td>
-</tr>
-
-<tr>
-<td>2020</td>
-<td>Victoria University academic record</td>
-<td>Academic record</td>
-</tr>
-
-<tr>
-<td>2021–2026</td>
-<td>
-PID, FOI, NDIS, tribunal, legal and institutional documentary material
-</td>
-<td>Archive record</td>
-</tr>
-
-</tbody>
-</table>
-
-</div>
-</section>
-
-
-<section id="entities">
-<div class="wrap">
-
-<div class="kicker">07 · Named entity index</div>
-
-<h2>People, agencies & institutions</h2>
-
-<input id="q" placeholder="Search this index…">
-
-<div id="list" class="grid" style="margin-top:16px">
-
-<div class="card e">
-<b>Richard William McLean / Barran Dodger</b>
-<small>Archive subject / author</small>
-</div>
-
-<div class="card e">
-<b>Federal Court of Australia</b>
-<small>Judicial institution</small>
-</div>
-
-<div class="card e">
-<b>Prime Minister of Australia / PM&C</b>
-<small>Commonwealth government</small>
-</div>
-
-<div class="card e">
-<b>Attorney-General of Australia</b>
-<small>Commonwealth public office</small>
-</div>
-
-<div class="card e">
-<b>Australian Federal Police</b>
-<small>Commonwealth agency</small>
-</div>
-
-<div class="card e">
-<b>AFCA</b>
-<small>Financial complaints body</small>
-</div>
-
-<div class="card e">
-<b>Legal Aid NSW</b>
-<small>Legal service</small>
-</div>
-
-<div class="card e">
-<b>IBAC</b>
-<small>Victorian integrity body</small>
-</div>
-
-<div class="card e">
-<b>LECC</b>
-<small>NSW oversight body</small>
-</div>
-
-<div class="card e">
-<b>NDIA / NDIS</b>
-<small>Commonwealth disability system</small>
-</div>
-
-<div class="card e">
-<b>NCAT</b>
-<small>NSW tribunal</small>
-</div>
-
-<div class="card e">
-<b>OAIC</b>
-<small>Commonwealth FOI/privacy regulator</small>
-</div>
-
-<div class="card e">
-<b>Commonwealth Ombudsman</b>
-<small>Commonwealth oversight</small>
-</div>
-
-<div class="card e">
-<b>AAT / Comcare</b>
-<small>Administrative/workplace records</small>
-</div>
-
-<div class="card e">
-<b>NSW Trustee and Guardian</b>
-<small>NSW statutory body</small>
-</div>
-
-<div class="card e">
-<b>Victorian Ombudsman</b>
-<small>Victorian oversight</small>
-</div>
-
-<div class="card e">
-<b>Australian Human Rights Commission</b>
-<small>National human rights institution</small>
-</div>
-
-<div class="card e">
-<b>Allen & Unwin</b>
-<small>Publisher</small>
-</div>
-
-<div class="card e">
-<b>SANE Australia</b>
-<small>Mental-health organisation</small>
-</div>
-
-<div class="card e">
-<b>Victoria University</b>
-<small>University</small>
-</div>
-
-<div class="card e">
-<b>Linden Galleries</b>
-<small>Arts institution</small>
-</div>
-
-<div class="card e">
-<b>Kingston Art Centre</b>
-<small>Arts institution</small>
-</div>
-
-<div class="card e">
-<b>McGill University</b>
-<small>University</small>
-</div>
-
-<div class="card e">
-<b>Cunningham Dax Collection</b>
-<small>Arts / mental-health collection</small>
-</div>
-
-</div>
-</div>
-</section>
-
-
-<section id="mirrors">
-<div class="wrap">
-
-<div class="kicker">08 · Distributed archive</div>
-
-<h2>Public archive nodes</h2>
-
-<p>
-These are maintained as separate public nodes. They are linked rather than
-silently merged; readers should compare the underlying source records.
-</p>
-
-<div class="grid">
-
-<a class="card" href="https://wezzo72.github.io/Barrandodger/" target="_blank">
-<h3>GitHub Pages master</h3>
-<p>Current archive presentation.</p>
-</a>
-
-<a class="card" href="https://wezzo72.github.io/Barrandodger/verification.html" target="_blank">
-<h3>Verification portal</h3>
-<p>Repository inspection and verification limitations.</p>
-</a>
-
-<a class="card" href="https://barrandodger.com" target="_blank">
-<h3>barrandodger.com</h3>
-<p>Main public archive.</p>
-</a>
-
-<a class="card" href="https://charm-acorn-bird-reef.grok.me" target="_blank">
-<h3>Grok archive</h3>
-<p>Research museum / catalogue.</p>
-</a>
-
-<a class="card" href="https://bamboo-branch-falcon-daisy.grok.me/workbench" target="_blank">
-<h3>Grok workbench</h3>
-<p>Research interface.</p>
-</a>
-
-<a class="card" href="https://yonder-summit-beacon-horizon.grok.me" target="_blank">
-<h3>McLean archive</h3>
-<p>PDF / repository catalogue.</p>
-</a>
-
-<a class="card" href="https://brook-lilac-coral-flora.grok.me" target="_blank">
-<h3>McLean Corpus</h3>
-<p>Library, art and academic catalogue.</p>
-</a>
-
-<a class="card" href="https://drum-ocean-nova-berry.grok.me" target="_blank">
-<h3>Finding aid</h3>
-<p>Letters, testimony and source separation.</p>
-</a>
-
-<a class="card" href="https://pilot-juniper-drum-comet.grok.me" target="_blank">
-<h3>Whistleblower archive</h3>
-<p>Evidence and provenance catalogue.</p>
-</a>
-
-<a class="card" href="https://barran-dodger-archiv-hz9k.bolt.host" target="_blank">
-<h3>Bolt archive</h3>
-<p>Additional public node.</p>
-</a>
-
-<a class="card" href="https://drbarrandodger.github.io/barran-dodger-archive/" target="_blank">
-<h3>GitHub archive mirror</h3>
-<p>Published repository mirror.</p>
-</a>
-
-<a class="card" href="https://www.barrandodger.com.au" target="_blank">
-<h3>Older website</h3>
-<p>Earlier public material.</p>
-</a>
-
-</div>
+<strong>READING NOTE</strong><br>
+This statement preserves Barran Dodger's testimony, allegations, interpretations
+and descriptive language. The archive does not treat the existence of a statement
+as independently establishing every assertion within it. Individual propositions
+should be examined against their identified documentary sources.
 </div>
-</section>
-
-
-<section id="verification">
-<div class="wrap">
-
-<div class="kicker">09 · Verification</div>
-
-<h2>Independent checking protocol</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>1. Existence</h3>
-<p>
-Confirm the repository path exists.
-</p>
-</div>
-
-<div class="card">
-<h3>2. File type</h3>
-<p>
-Distinguish a complete PDF from a pointer/stub.
-</p>
-</div>
-
-<div class="card">
-<h3>3. Size</h3>
-<p>
-Compare actual object size with any manifest.
-</p>
-</div>
-
-<div class="card">
-<h3>4. SHA-256</h3>
-<p>
-Hash the actual complete file where available.
-</p>
-</div>
-
-<div class="card">
-<h3>5. Provenance</h3>
-<p>
-Record where the document came from.
-</p>
-</div>
-
-<div class="card">
-<h3>6. External comparison</h3>
-<p>
-Compare with an original issuing source where possible.
-</p>
-</div>
-
-<div class="card">
-<h3>7. Status</h3>
-<p>
-Label official record, author account, allegation, analysis or unresolved claim.
-</p>
-</div>
-
-<div class="card">
-<h3>8. Reproducibility</h3>
-<p>
-Another researcher should be able to repeat the check.
-</p>
-</div>
-
-</div>
-
-<p>
-<a class="btn"
-href="https://wezzo72.github.io/Barrandodger/verification.html"
-target="_blank">
-Open full verification portal
-</a>
-</p>
-
-</div>
-</section>
-
-
-<section id="method">
-<div class="wrap">
-
-<div class="kicker">10 · Methodology</div>
-
-<h2>Research method</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Preserve</h3>
-<p>
-Preserve the original document and identifying information.
-</p>
-</div>
-
-<div class="card">
-<h3>Catalogue</h3>
-<p>
-Assign a category and stable record identifier.
-</p>
-</div>
-
-<div class="card">
-<h3>Cross-reference</h3>
-<p>
-Connect documents, dates, agencies, people and responses.
-</p>
-</div>
-
-<div class="card">
-<h3>Verify</h3>
-<p>
-Use source provenance, file inspection and hashes where possible.
-</p>
-</div>
-
-<div class="card">
-<h3>Separate</h3>
-<p>
-Never merge testimony or analysis into an official finding.
-</p>
-</div>
-
-<div class="card">
-<h3>Preserve access</h3>
-<p>
-Use redundant public nodes where legally and technically appropriate.
-</p>
-</div>
-
-<div class="card">
-<h3>State uncertainty</h3>
-<p>
-Unresolved material remains unresolved.
-</p>
-</div>
-
-<div class="card">
-<h3>Allow challenge</h3>
-<p>
-Contradictory evidence and corrections should remain discoverable.
-</p>
-</div>
-
-</div>
-
-<div class="notice">
-
-<strong>Evidence hierarchy:</strong>
-judicial/official determination → primary government record →
-contemporaneous primary document → independent corroboration →
-author record → secondary source → interpretation → unverified claim.
-
-</div>
-
-</div>
-</section>
-
-
-<section id="sources">
-<div class="wrap">
-
-<div class="kicker">11 · Source register</div>
-
-<h2>Public source links</h2>
-
-<div class="source">
-<b>GitHub Pages master</b>
-<div class="url">
-https://wezzo72.github.io/Barrandodger/
-</div>
-</div>
-
-<div class="source">
-<b>Verification</b>
-<div class="url">
-https://wezzo72.github.io/Barrandodger/verification.html
-</div>
-</div>
-
-<div class="source">
-<b>Main archive</b>
-<div class="url">
-https://barrandodger.com
-</div>
-</div>
-
-<div class="source">
-<b>Grok archive</b>
-<div class="url">
-https://charm-acorn-bird-reef.grok.me
-</div>
-</div>
-
-<div class="source">
-<b>Grok workbench</b>
-<div class="url">
-https://bamboo-branch-falcon-daisy.grok.me/workbench
-</div>
-</div>
-
-<div class="source">
-<b>McLean archive</b>
-<div class="url">
-https://yonder-summit-beacon-horizon.grok.me
-</div>
-</div>
-
-<div class="source">
-<b>McLean Corpus</b>
-<div class="url">
-https://brook-lilac-coral-flora.grok.me
-</div>
-</div>
-
-<div class="source">
-<b>Finding aid</b>
-<div class="url">
-https://drum-ocean-nova-berry.grok.me
-</div>
-</div>
-
-<div class="source">
-<b>Whistleblower archive</b>
-<div class="url">
-https://pilot-juniper-drum-comet.grok.me
-</div>
-</div>
-
-<div class="source">
-<b>Bolt archive</b>
-<div class="url">
-https://barran-dodger-archiv-hz9k.bolt.host
-</div>
-</div>
-
-<div class="source">
-<b>GitHub archive mirror</b>
-<div class="url">
-https://drbarrandodger.github.io/barran-dodger-archive/
-</div>
-</div>
-
-<div class="source">
-<b>Older site</b>
-<div class="url">
-https://www.barrandodger.com.au
-</div>
-</div>
-
-</div>
-</section>
-
-
-<section id="notice">
-<div class="wrap">
 
-<div class="kicker">12 · Evidentiary notice</div>
+<article class="card declaration">
+<div class="number">Statement</div>
 
-<h2>Read the record, not merely the assertion</h2>
+<h2>
+THE ARCHITECTURE OF ERASURE — HOW MY SURVIVAL BECAME THE EVIDENCE
+</h2>
 
-<div class="card">
+<div class="longform">
 
-<p>
-This archive may contain official documents, author testimony, allegations,
-interpretations, AI-assisted analyses, historical material and secondary sources.
+<p class="lead">
+Dear all,
 </p>
 
 <p>
-A document can establish that a statement was made or that a record exists
-without establishing the truth of every assertion within it. Inclusion of a
-person, organisation or allegation does not itself establish wrongdoing,
-liability or causation.
+I am circulating the attached statement to those whose actions, decisions, omissions, responses or failures to respond are addressed by, or may be relevant to, the matters documented within it.
 </p>
 
 <p>
-The purpose of the archive is preservation, traceability and independent research.
+I am not asking anyone to accept every allegation simply because I make it.
 </p>
 
+<p>
+I am asking you to examine the record.
+</p>
+
+<p>
+If the evidence contradicts me, identify it.
+</p>
+
+<p>
+If the evidence supports what I have reported, acknowledge it.
+</p>
+
+<p>
+If there are explanations for decisions, omissions, contradictions or missing records, provide them.
+</p>
+
+<p>
+If matters were properly investigated, identify what was investigated and what was determined.
+</p>
+
+<p>
+If they were not investigated, that fact should also be acknowledged.
+</p>
+
+<p>
+I request a substantive written response by no later than 5:00 pm AEST on Friday, 25 September 2026.
+</p>
+
+<p>
+Please ensure that the response addresses the matters raised rather than simply acknowledging receipt or referring me to another agency or previously provided correspondence without addressing the substantive questions.
+</p>
+
+<p>
+If additional time is genuinely required to provide a substantive response, please explain the reason, identify the matters requiring further consideration, and provide a specific proposed date for the response before the above deadline.
+</p>
+
+<p>
+I have spent years being told, explicitly or implicitly, that the central issue was my credibility, character, history, vulnerability or interpretation.
+</p>
+
+<p>
+The attached statement asks a different question:
+</p>
+
+<div class="quote">
+What does the record actually establish?
 </div>
 
+<p>
+My allegations are serious, and I deliberately distinguish allegation from established fact, inference and unresolved question.
+</p>
+
+<p>
+That standard applies to me.
+</p>
+
+<p>
+It also applies to every person and institution whose conduct is capable of examination.
+</p>
+
+<p>
+I have described the cumulative effect of what I experienced as an architecture of erasure: a progression through isolation, discrediting, financial deprivation, institutional fragmentation, administrative delay, loss of autonomy, barriers to justice, reputational damage, unanswered disclosures and the erosion of the practical capacity to defend myself.
+</p>
+
+<p>
+I describe the cumulative consequences as social death, total civil liquidation and administrative annihilation.
+</p>
+
+<p>
+Those are descriptions of my experience and interpretation, not findings that every allegation has already been proved.
+</p>
+
+<p>
+The evidence should determine what is established.
+</p>
+
+<p>
+But there is one fact that requires no interpretation:
+</p>
+
+<div class="quote">
+I survived.<br>
+I remained.<br>
+I continued documenting.<br>
+I preserved what evidence I could.<br>
+I built an archive.<br>
+I continued asking questions.<br>
+And the record remains available for examination.
 </div>
-</section>
 
+<p>
+If anyone believed that time, poverty, isolation, institutional fragmentation, unanswered correspondence or attacks upon my credibility would eventually make these matters disappear, the surviving record demonstrates otherwise.
+</p>
 
-<footer>
-<div class="wrap">
+<p>
+I am not seeking revenge.
+</p>
 
-<strong>Barran Dodger Digital Archive</strong>
-<br>
+<p>
+I am not asking for anyone to be humiliated.
+</p>
 
-LOOK · READ · TRACE · QUESTION · VERIFY · RESEARCH
+<p>
+I am not asking for anyone to be destroyed.
+</p>
 
-<br><br>
+<p>
+I do not need another person to suffer for my suffering to matter.
+</p>
 
-<small>
-Master HTML prepared 21 September 2026.
-</small>
+<p>
+What I am asking for is considerably simpler:
+</p>
 
+<div class="quote">
+Examine the evidence.<br><br>
+Do not believe me merely because I say it.<br>
+Do not disbelieve me merely because I say it.<br>
+Examine what remains.
 </div>
-</footer>
+
+<p>
+Because if the conduct was proper, the record should withstand scrutiny.
+</p>
+
+<p>
+If decisions were justified, their reasoning should withstand scrutiny.
+</p>
+
+<p>
+If complaints were properly addressed, the responses should withstand scrutiny.
+</p>
+
+<p>
+If evidence was considered, the record should show how.
+</p>
+
+<p>
+If allegations were rejected, the reasons should be identifiable.
+</p>
+
+<p>
+And where evidence has disappeared, become inaccessible or remains unexplained, that absence should at least be capable of being examined rather than simply forgotten.
+</p>
+
+<p>
+I remain willing to have my own allegations tested against the evidence.
+</p>
+
+<p>
+I expect the same evidentiary standard to apply to everyone else.
+</p>
+
+<p>
+The attached statement is therefore not an invitation to argue about my character.
+</p>
+
+<p>
+It is an invitation to examine the documentary record.
+</p>
+
+<p>
+Please provide your substantive written response by 5:00 pm AEST, Friday, 25 September 2026.
+</p>
+
+<p>
+If no substantive response is received by that time, I will record the absence of a response as part of the chronology and retain this correspondence as evidence that the opportunity to respond was provided.
+</p>
+
+<p>
+The questions have not disappeared.
+</p>
+
+<p>
+The evidence that survived has not disappeared.
+</p>
+
+<p>
+And neither have I.
+</p>
+
+<p>
+Let the record speak.
+</p>
+
+<p>
+<strong>Barran Dodger</strong>
+</p>
 
 
-<script>
+<h3>The Fullest Expression of Testimony and Allegations</h3>
 
-document.getElementById('q').addEventListener('input',function(){
+<p>
+I have been abused, neglected, surveilled, harassed, threatened, intimidated, beaten, injured, maimed, targeted, persecuted, victimised, discriminated against, isolated, abandoned, exiled, displaced, exploited, manipulated, deceived, gaslit, blamed, shamed, ridiculed, mocked, sexually shamed, publicly humiliated, slandered, defamed, framed, scapegoated, pathologised, stigmatised, discredited, financially deprived, robbed, impoverished, denied resources, denied Legal Aid, denied meaningful access to justice, denied procedural fairness, denied effective remedies, denied protection, ignored when making disclosures, stripped of autonomy, subjected to institutional indifference, bureaucratic obstruction and administrative failure, deprived of relationships and community, exposed to physical and psychological harm, and subjected to what I describe as social death, total civil liquidation and administrative annihilation.
+</p>
 
-const s=this.value.toLowerCase();
+<p>
+In more detail, I have been:
+</p>
 
-document.querySelectorAll('.e').forEach(function(x){
-
-x.style.display=
-x.innerText.toLowerCase().includes(s)
-?'block'
-:'none';
-
-});
-
-});
-
-</script>
-
-</body>
-</html>
+<ul class="abuse-list">
+<li>abused</li>
+<li>neglected</li>
+<li>surveilled</li>
+<li>monitored</li>
+<li>followed</li>
+<li>targeted</li>
+<li>profiled</li>
+<li>harassed</li>
+<li>intimidated</li>
+<li>threatened</li>
+<li>persecuted</li>
+<li>victimised</li>
+<li>discriminated against</li>
+<li>marginalised</li>
+<li>isolated</li>
+<li>socially isolated</li>
+<li>abandoned</li>
+<li>ostrac
