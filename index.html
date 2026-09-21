@@ -16,7 +16,7 @@ header{padding:70px 0 45px;text-align:center;border-bottom:1px solid var(--line)
 h1{font-family:Georgia,serif;font-size:clamp(2.5rem,7vw,5.5rem);line-height:1.05;margin:15px 0}
 .subtitle{max-width:920px;margin:auto;color:var(--muted);font-size:1.1rem}
 nav{position:sticky;top:0;z-index:1000;background:rgba(11,13,16,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-.nav-inner{width:min(98%,var(--max));margin:auto;display:flex;flex-wrap:wrap;gap:5px;overflow-x:visible;padding:8px 2px}
+.nav-inner{width:100%;max-width:100%;margin:auto;display:flex;flex-wrap:nowrap;gap:5px;overflow-x:auto;overflow-y:hidden;padding:8px 10px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
 nav a{white-space:nowrap;padding:9px 13px;border:1px solid transparent;border-radius:7px;color:#dbe1e8;font-size:.84rem;font-weight:600}
 nav a:hover,nav a[aria-current="page"]{background:var(--panel2);border-color:var(--line);text-decoration:none}
 main{padding-bottom:100px}section{padding:80px 0 30px;scroll-margin-top:70px}
