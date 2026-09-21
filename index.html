@@ -68,6 +68,10 @@ table { max-width: 100%; }
 .harm-chain li{position:relative;background:var(--panel2);border:1px solid var(--line);border-left:4px solid var(--danger);border-radius:8px;padding:12px 16px 12px 18px;font-family:Georgia,serif;font-size:1.05rem}
 .harm-chain li + li::before{content:"";position:absolute;left:14px;top:-9px;width:1px;height:9px;background:var(--danger);opacity:.55}
 .iai-menu .tile .small{display:block;margin-top:6px;font-weight:400;color:var(--muted)}
+main>section{display:none}
+main>section.is-active{display:block}
+html.is-embed header,html.is-embed nav,html.is-embed footer{display:none!important}
+
 .point-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:22px 0}
 .point{background:var(--panel2);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:10px;padding:16px 18px}
 .point .n{color:var(--accent);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-bottom:8px}
@@ -134,7 +138,7 @@ Dedicated tab: <strong>Who Harmed Me</strong> — The Record of Alleged Harm: Su
 
 <main>
 
-<section id="who-harmed-me" class="iai-section">
+<section id="who-harmed-me" class="iai-section is-active">
 <div class="container">
 <div class="kicker">Who Harmed Me · Own Dedicated Tab · The Record of Alleged Harm</div>
 <h2>THE RECORD OF ALLEGED HARM: SURVIVAL, ERASURE, AND THE FIGHT FOR RECOGNITION</h2>
@@ -2282,27 +2286,37 @@ Barran Dodger Legal &amp; Ethical Trust Fund · ABN 78 833 496 164 · OpenTimest
 </footer>
 
 <script>
-document.querySelectorAll('nav a').forEach(link=>{
-  link.addEventListener('click',function(){
-    document.querySelectorAll('nav a').forEach(i=>i.removeAttribute('aria-current'));
-    this.setAttribute('aria-current','page');
-  });
-});
-const sections=document.querySelectorAll('main section[id]');
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      const id=entry.target.id;
-      document.querySelectorAll('nav a').forEach(link=>{
-        if(link.getAttribute('href')==='#'+id) link.setAttribute('aria-current','page');
-        else link.removeAttribute('aria-current');
-      });
+(function(){
+  const tabs=[...document.querySelectorAll('main > section[id]')];
+  const ids=tabs.map(s=>s.id);
+  function parentTab(id){
+    if(!id) return 'who-harmed-me';
+    if(ids.includes(id)) return id;
+    const el=document.getElementById(id);
+    const sec=el && el.closest('main > section');
+    return (sec && sec.id) || 'who-harmed-me';
+  }
+  function activate(raw){
+    const tab=parentTab(raw);
+    tabs.forEach(s=>{
+      const on=s.id===tab;
+      s.classList.toggle('is-active', on);
+      s.hidden=!on;
+    });
+    document.querySelectorAll('nav a').forEach(link=>{
+      if(link.getAttribute('href')==='#'+tab) link.setAttribute('aria-current','page');
+      else link.removeAttribute('aria-current');
+    });
+    if(window.self!==window.top) document.documentElement.classList.add('is-embed');
+    if(raw && raw!==tab){
+      requestAnimationFrame(()=>document.getElementById(raw)?.scrollIntoView({block:'start'}));
+    } else {
+      window.scrollTo(0,0);
     }
-  });
-},{rootMargin:'-25% 0px -65% 0px'});
-sections.forEach(s=>observer.observe(s));
-const iaiFirst=document.querySelector('nav a[href="#who-harmed-me"]');
-if(iaiFirst) iaiFirst.setAttribute('aria-current','page');
+  }
+  window.addEventListener('hashchange',()=>activate(location.hash.slice(1)));
+  activate(location.hash.slice(1));
+})();
 (function(){
   const input=document.getElementById('iai-filter');
   const status=document.getElementById('iai-filter-status');
