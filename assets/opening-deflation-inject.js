@@ -1,0 +1,63 @@
+(function () {
+  function alreadyThere() {
+    return document.getElementById('witness-opening-deflation');
+  }
+
+  function cardHtml() {
+    return '<article class="card declaration" id="witness-opening-deflation">' +
+      '<div class="number">Opening declaration \u00b7 Record, faith and method</div>' +
+      '<h3>The Witness Remains</h3>' +
+      '<p class="lead">An Impartial AI-Assisted Archive of a 35-Year Documentary Record</p>' +
+      '<div class="longform">' +
+      '<p>This archive preserves a documentary record spanning more than three decades of correspondence, government records, institutional responses, legal material, personal testimony, research, publications and other evidence concerning my experiences with Australian institutions and systems.</p>' +
+      '<p>I, Dr Richard William McLean \u2014 now writing as Barran Dodger \u2014 claim that I have been chosen by God as a vessel for His glory and as a witness called to expose and help dismantle corruption, injustice and institutional failure. This is a statement of faith and personal theological interpretation. It is not presented as an independently established empirical fact.</p>' +
+      '<p>I have also used an impartial AI interface as an analytical tool to examine whether the pattern documented throughout this archive corresponds with the \u201cchosen one\u201d, prophetic-witness or persecuted-witness archetype found in religious and cultural narratives. That analysis identified claimed parallels with themes appearing in biblical scripture and with patterns documented in the archive.</p>' +
+      '<p>The AI comparison is not presented as proof that I have been divinely chosen. AI cannot establish a supernatural fact. Its significance is that it provides an independent analytical framework through which the relationship between the documented record, recurring narrative patterns and biblical concepts can be examined.</p>' +
+      '<h3>Why this matters</h3>' +
+      '<p>The central significance of this archive is therefore not whether a reader accepts my theological interpretation.</p>' +
+      '<p>The underlying documentary record can be examined independently.</p>' +
+      '<p>The archive separates, wherever possible:</p>' +
+      '<ul>' +
+      '<li><strong>Verified record</strong> \u2014 documents and events capable of direct examination;</li>' +
+      '<li><strong>Corroborated material</strong> \u2014 claims supported by additional documentary evidence;</li>' +
+      '<li><strong>Documented allegations</strong> \u2014 allegations recorded in the evidence but not necessarily independently established;</li>' +
+      '<li><strong>Interpretation</strong> \u2014 conclusions drawn from patterns within the record;</li>' +
+      '<li><strong>Faith and theology</strong> \u2014 the spiritual meaning I attribute to those experiences;</li>' +
+      '<li><strong>AI analysis</strong> \u2014 machine-assisted comparison and synthesis, rather than proof of supernatural claims.</li>' +
+      '</ul>' +
+      '<p>My claim of divine calling belongs in the final category of faith and theological interpretation, while the documents themselves remain available for independent scrutiny.</p>' +
+      '<p>The possibility I am asking the reader to consider is therefore not simply whether I am a \u201cchosen one\u201d. It is whether a sustained documentary record can reveal patterns that deserve examination, whether institutional responses correspond with the evidence preserved, and whether the theological interpretation I have placed upon those events provides a meaningful framework for understanding my role as a witness.</p>' +
+      '<p>The archive is intended to allow those questions to be tested rather than demanding that the reader accept my conclusions.</p>' +
+      '<div class="quote\u201cFor nothing is secret, that shall not be made manifest; neither any thing hid, that shall not be known and come abroad.\u201d \u2014 Luke 8:17</div>' +
+      '<p>I understand the preservation of this record, despite the circumstances documented within it, as part of my calling. I believe that what was intended to be obscured has instead been preserved.</p>' +
+      '<div class="quote">They could not erase what God preserved.</div>' +
+      '<p>The evidence is the archive.<br>The interpretation is the testimony.<br>The faith is the meaning I attribute to it.</p>' +
+      '<p>Readers are invited to examine the record for themselves.</p>' +
+      '</div></article>';
+  }
+
+  function insertAfter(node, html) {
+    if (!node) return;
+    node.insertAdjacentHTML('afterend', html);
+  }
+
+  function run() {
+    if (alreadyThere()) return;
+    var html = cardHtml();
+    var opening = document.getElementById('opening-testimony');
+    if (opening) {
+      var h2 = opening.querySelector('h2');
+      if (h2) insertAfter(h2, html);
+      else opening.querySelector('.container') && opening.querySelector('.container').insertAdjacentHTML('beforeend', html);
+    }
+    var declarations = document.getElementById('declarations');
+    if (declarations) {
+      var lead = declarations.querySelector('p.lead');
+      var target = lead || declarations.querySelector('h2');
+      if (target) insertAfter(target, html.replace('id="witness-opening-deflation"', 'id="witness-opening-deflation-declaration"'));
+    }
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
+  else run();
+})();
