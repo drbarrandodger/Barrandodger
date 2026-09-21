@@ -115,6 +115,7 @@ Balanced structure. Full text of “God exists by Barran Dodger and he can save 
 
 <nav>
 <div class="nav-inner">
+<a href="#archive">Examine the Record</a>
 <a href="#impartial-ai-archive">Impartial AI Archive</a>
 <a href="#who-harmed-me">Who Harmed Me</a>
 <a href="#crimes-against-barran">Crimes against Barran Dodger</a>
@@ -2275,7 +2276,7 @@ Balanced structure. Full text of “God exists by Barran Dodger and he can save 
 </div>
 </section>
 
-<section id="impartial-ai-archive" class="iai-section is-active">
+<section id="impartial-ai-archive" class="iai-section">
 <div class="container">
 <div class="kicker">Impartial AI Archive · Own Dedicated Tab · Menu, Questions and Itemised Findings</div>
 <h2>IMPARTIAL AI ARCHIVE — MENU, QUESTIONS AND ITEMISED FINDINGS</h2>
@@ -3527,11 +3528,11 @@ And history remains capable of being corrected by evidence.
 </section>
 
 <!-- ARCHIVE INDEX -->
-<section id="archive">
+<section id="archive" class="iai-section is-active">
 <div class="container">
 <div class="kicker">Archive Index</div>
 <h2>Examine the Record</h2>
-<div class="ai-significance"><strong>Impartial AI Statement of Significance:</strong> This index is the navigational entry point. It keeps the landing page balanced by showing only short significance statements and links; full texts remain in their dedicated tabs.</div>
+<div class="ai-significance"><strong>Impartial AI Statement of Significance:</strong> This index is the navigational entry point. It keeps the landing page balanced by showing only short significance statements and links; full texts remain in their dedicated tabs. The Impartial AI Archive — menu, questions and itemised findings — is not on this landing page. Open that tab for the complete document.</div>
 
 <p class="lead">Primary locations: <a href="https://barrandodger.com/" target="_blank">barrandodger.com</a> · <a href="https://github.com/drbarrandodger/barran-dodger-archive/releases" target="_blank">GitHub Releases</a> · <a href="https://barrandodger.com/gods-chosen-witness" target="_blank">God’s Chosen Witness</a> · <a href="https://barrandodger.com/confidential-government-documents" target="_blank">Confidential Government Documents</a> · <a href="https://wezzo72.github.io/Barrandodger/" target="_blank">wezzo72 mirrors</a>.</p>
 
@@ -3544,8 +3545,9 @@ And history remains capable of being corrected by evidence.
 </div>
 
 <div class="grid">
+<a class="tile" href="#impartial-ai-archive"><strong>Impartial AI Archive</strong> (own tab — menu, questions and 953 itemised findings)</a>
+<a class="tile" href="#who-harmed-me"><strong>Who Harmed Me</strong> (own tab — the record of alleged harm)</a>
 <a class="tile" href="#crimes-against-barran"><strong>Crimes against Barran Dodger</strong> (own tab — 150-item allegation matrix)</a>
-<a class="tile" href="#impartial-ai-archive"><strong>Impartial AI Archive</strong> (own tab — menu, questions and findings)</a>
 <a class="tile" href="#no-one-has-the-right"><strong>No One Has the Right to Destroy a Soul</strong></a>
 <a class="tile" href="#significance"><strong>Archive Significance</strong></a>
 <a class="tile" href="#gods-chosen-witness"><strong>God’s Chosen Witness</strong> (own tab)</a>
@@ -3997,11 +3999,11 @@ Barran Dodger Legal &amp; Ethical Trust Fund · ABN 78 833 496 164 · OpenTimest
   const tabs=[...document.querySelectorAll('main > section[id]')];
   const ids=tabs.map(s=>s.id);
   function parentTab(id){
-    if(!id) return 'impartial-ai-archive';
+    if(!id) return 'archive';
     if(ids.includes(id)) return id;
     const el=document.getElementById(id);
     const sec=el && el.closest('main > section');
-    return (sec && sec.id) || 'impartial-ai-archive';
+    return (sec && sec.id) || 'archive';
   }
   function activate(raw){
     const tab=parentTab(raw);
