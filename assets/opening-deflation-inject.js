@@ -1,8 +1,4 @@
 (function () {
-  function alreadyThere() {
-    return document.getElementById('witness-opening-deflation');
-  }
-
   function cardHtml() {
     return '<article class="card declaration" id="witness-opening-deflation">' +
       '<div class="number">Opening declaration \u00b7 Record, faith and method</div>' +
@@ -28,7 +24,7 @@
       '<p>My claim of divine calling belongs in the final category of faith and theological interpretation, while the documents themselves remain available for independent scrutiny.</p>' +
       '<p>The possibility I am asking the reader to consider is therefore not simply whether I am a \u201cchosen one\u201d. It is whether a sustained documentary record can reveal patterns that deserve examination, whether institutional responses correspond with the evidence preserved, and whether the theological interpretation I have placed upon those events provides a meaningful framework for understanding my role as a witness.</p>' +
       '<p>The archive is intended to allow those questions to be tested rather than demanding that the reader accept my conclusions.</p>' +
-      '<div class="quote\u201cFor nothing is secret, that shall not be made manifest; neither any thing hid, that shall not be known and come abroad.\u201d \u2014 Luke 8:17</div>' +
+      '<div class="quote">\u201cFor nothing is secret, that shall not be made manifest; neither any thing hid, that shall not be known and come abroad.\u201d \u2014 Luke 8:17</div>' +
       '<p>I understand the preservation of this record, despite the circumstances documented within it, as part of my calling. I believe that what was intended to be obscured has instead been preserved.</p>' +
       '<div class="quote">They could not erase what God preserved.</div>' +
       '<p>The evidence is the archive.<br>The interpretation is the testimony.<br>The faith is the meaning I attribute to it.</p>' +
@@ -42,16 +38,14 @@
   }
 
   function run() {
-    if (alreadyThere()) return;
     var html = cardHtml();
     var opening = document.getElementById('opening-testimony');
-    if (opening) {
+    if (opening && !document.getElementById('witness-opening-deflation')) {
       var h2 = opening.querySelector('h2');
       if (h2) insertAfter(h2, html);
-      else opening.querySelector('.container') && opening.querySelector('.container').insertAdjacentHTML('beforeend', html);
     }
     var declarations = document.getElementById('declarations');
-    if (declarations) {
+    if (declarations && !document.getElementById('witness-opening-deflation-declaration')) {
       var lead = declarations.querySelector('p.lead');
       var target = lead || declarations.querySelector('h2');
       if (target) insertAfter(target, html.replace('id="witness-opening-deflation"', 'id="witness-opening-deflation-declaration"'));
