@@ -97,6 +97,28 @@ h3,#ultimate-harm,#the-record-remains{scroll-margin-top:78px}
 section{padding-top:55px}
 .card{padding:20px}
 }
+
+.landing-hero{min-height:72vh;display:flex;align-items:center;padding:90px 0 75px;background:radial-gradient(circle at 20% 10%,rgba(215,180,90,.16),transparent 38%),radial-gradient(circle at 85% 30%,rgba(138,180,248,.10),transparent 40%),var(--bg);border-bottom:1px solid var(--line)}
+.landing-hero .container{max-width:1100px}
+.landing-title{font-family:Georgia,serif;font-size:clamp(3rem,8vw,7rem);line-height:.95;margin:12px 0 25px}
+.landing-intro{max-width:900px;font-size:1.25rem;color:#d6dce3}
+.landing-actions{margin-top:28px}
+.landing-stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:45px}
+.landing-stat{background:rgba(18,22,27,.85);border:1px solid var(--line);border-radius:12px;padding:20px}
+.landing-stat strong{display:block;color:var(--accent);font-size:1.45rem;font-family:Georgia,serif}
+.landing-stat span{display:block;color:var(--muted);font-size:.9rem;margin-top:4px}
+.landing-note{margin-top:25px;max-width:900px}
+.nav-tools{display:flex;align-items:center;gap:8px;padding:8px 10px;border-bottom:1px solid var(--line);background:rgba(11,13,16,.96)}
+.nav-tools input[type="search"]{flex:1;min-width:0;height:42px;background:#0e1217;border:1px solid var(--line);color:var(--text);padding:0 12px;border-radius:8px}
+.nav-tools input[type="search"]:focus{outline:2px solid var(--accent);outline-offset:2px}
+#global-search-status{color:var(--muted);font-size:.85rem;white-space:nowrap}
+#global-search-results{display:none;position:absolute;left:10px;right:10px;top:100%;z-index:1200;max-height:60vh;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.nav-search-wrap{position:relative}
+.search-hit{display:block;padding:12px 14px;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
+.search-hit:hover{background:var(--panel2);text-decoration:none}
+.search-hit strong{color:var(--accent)}
+.search-hit span{display:block;color:var(--muted);font-size:.85rem;margin-top:4px}
+
 </style>
 </head>
 <body>
@@ -111,6 +133,8 @@ public-interest disclosures, government records, evidence, correspondence,
 chronology, institutional relationships and the questions arising from the record.
 </p>
 <div style="margin-top:25px">
+<a class="button" href="#home">Landing</a>
+
 <a class="button" href="#who-harmed-me">Who Did This to Me</a>
 <a class="button" href="#crimes-against-barran">Crimes against Barran Dodger</a>
 <a class="button secondary" href="#how-they-did-it">How They Did It — Techniques</a>
@@ -121,7 +145,18 @@ chronology, institutional relationships and the questions arising from the recor
 </header>
 
 <nav>
+
+<div class="nav-tools">
+  <div class="nav-search-wrap" style="flex:1;position:relative">
+    <input id="global-search" type="search" placeholder="Search the published tabs…" autocomplete="off" />
+    <div id="global-search-results" role="listbox"></div>
+  </div>
+  <span id="global-search-status"></span>
+</div>
+
 <div class="nav-inner">
+<a href="#home">Home</a>
+
 <a href="#archive">Examine the Record</a>
 <a href="#opening-testimony">Opening Testimony</a>
 <a href="#declarations">The Witness Remains</a>
@@ -154,6 +189,29 @@ chronology, institutional relationships and the questions arising from the recor
 </nav>
 
 <main>
+
+<section id="home" class="landing-hero is-active">
+  <div class="container">
+    <div class="kicker">Barran Dodger Documentary Archive · wezzo72.github.io/Barrandodger</div>
+    <h1 class="landing-title">THE RECORD<br>IS PUBLIC.</h1>
+    <p class="landing-intro">A consolidated landing page for the Barran Dodger archive. The published record, declarations, documentary material, evidence pathways, chronology and verification framework sit at the front of the existing archive without removing or replacing its underlying pages or evidence stores.</p>
+    <div class="landing-actions">
+      <a class="button" href="#archive">Enter the Archive</a>
+      <a class="button secondary" href="#declarations">Read the Declarations</a>
+      <a class="button secondary" href="#evidence">Examine Evidence</a>
+      <a class="button secondary" href="#who-harmed-me">Who Did This to Me</a>
+      <a class="button secondary" href="drive-official-binaries.html">Official PDFs</a>
+    </div>
+    <div class="landing-stat-grid">
+      <div class="landing-stat"><strong>35+ years</strong><span>documentary history referenced by the archive</span></div>
+      <div class="landing-stat"><strong>48 official PDFs</strong><span>Drive / agency records stored on this site</span></div>
+      <div class="landing-stat"><strong>Primary record</strong><span>government documents, correspondence and source pathways</span></div>
+      <div class="landing-stat"><strong>Open examination</strong><span>claims are separated from corroboration and independent verification</span></div>
+    </div>
+    <div class="notice landing-note"><strong>Archive principle:</strong> this landing page is an index and presentation layer. Existing sections, anchors, satellite HTML pages and official PDFs remain intact. Allegations and interpretations are preserved as testimony and should be distinguished from independently established findings. Original evidence stores were not altered.</div>
+  </div>
+</section>
+
 
 <section id="who-harmed-me" class="iai-section">
 <div class="container">
@@ -6383,7 +6441,7 @@ Examine the entire documentary archive and identify every agency, organisation, 
   const tabs=[...document.querySelectorAll('main > section[id]')];
   const ids=tabs.map(s=>s.id);
   function parentTab(id){
-    if(!id) return 'archive';
+    if(!id) return 'home';
     if(id==='who-did-this-to-me') return 'who-harmed-me';
     if(id==='the-witness-remains'||id==='prove-me-wrong'||id==='final') return 'declarations';
     if(id==='prophecy') return 'prophetic';
@@ -6391,7 +6449,7 @@ Examine the entire documentary archive and identify every agency, organisation, 
     if(ids.includes(id)) return id;
     const el=document.getElementById(id);
     const sec=el && el.closest('main > section');
-    return (sec && sec.id) || 'archive';
+    return (sec && sec.id) || 'home';
   }
   function activate(raw){
     const tab=parentTab(raw);
@@ -6500,6 +6558,34 @@ Examine the entire documentary archive and identify every agency, organisation, 
   input.addEventListener('input', apply);
   apply();
 })();
+
+(function(){
+  const input=document.getElementById('global-search');
+  const box=document.getElementById('global-search-results');
+  const status=document.getElementById('global-search-status');
+  if(!input||!box) return;
+  const tabs=[...document.querySelectorAll('main > section[id]')].map(s=>({
+    id:s.id,
+    title:(s.querySelector('h2')?.textContent||s.id).replace(/\s+/g,' ').trim(),
+    text:(s.textContent||'').replace(/\s+/g,' ').trim()
+  }));
+  function close(){ box.style.display='none'; box.innerHTML=''; }
+  input.addEventListener('input',()=>{
+    const q=input.value.trim().toLowerCase();
+    if(!q){ close(); if(status) status.textContent=''; return; }
+    const hits=tabs.filter(t=>(t.title+' '+t.text).toLowerCase().includes(q)).slice(0,12);
+    box.innerHTML=hits.map(t=>{
+      const i=t.text.toLowerCase().indexOf(q);
+      const snip=i<0?t.text.slice(0,140):t.text.slice(Math.max(0,i-60), i+q.length+80);
+      return '<a class="search-hit" href="#'+t.id+'"><strong>'+t.title.replace(/</g,'')+'</strong><span>'+snip.replace(/</g,'')+'</span></a>';
+    }).join('') || '<div class="search-hit">No matching tabs.</div>';
+    box.style.display='block';
+    if(status) status.textContent=hits.length+' tab'+(hits.length===1?'':'s');
+  });
+  box.addEventListener('click',()=>close());
+  document.addEventListener('click',(e)=>{ if(!e.target.closest('.nav-search-wrap')) close(); });
+})();
+
 </script>
 </body>
 </html>
