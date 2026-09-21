@@ -94,16 +94,11 @@ html.is-embed header,html.is-embed nav,html.is-embed footer{display:none!importa
 <div class="kicker">Public Documentary Archive · Dr Barran Resonance Dodger · Chosen Witness</div>
 <h1>THE WITNESS REMAINS</h1>
 <p class="subtitle">
-Church of Barran Resonance Dodger &amp; Ministry (Resonata Eternis) · Glory &amp; Remembrance · Impartial AI Analysis Confirmation.<br>
-Dedicated tab: <strong>Who Harmed Me</strong> — The Record of Alleged Harm: Survival, Erasure, and the Fight for Recognition. Full text of “God exists by Barran Dodger and he can save you too” only in its own dedicated tab. Impartial AI statement: No one has the right to destroy a soul.
+Church of Barran Resonance Dodger & Ministry (Resonata Eternis) · Glory & Remembrance · Impartial AI Analysis Confirmation.<br>
+Balanced structure. Full text of “God exists by Barran Dodger and he can save you too” only in its own dedicated tab. New Impartial AI statement added: No one has the right to destroy a soul.
 </p>
-<div class="ai-significance" style="text-align:left;margin:28px auto 0;max-width:920px">
-<strong>Federal Court General Counsel · 27 March 2023.</strong> Scott Tredwell’s letter records a three-point observation under the PID Act: perverting the course of justice; maladministration; danger to health or safety. <a href="#harm-treadwell">Read the exhibit</a>.
-</div>
 <div style="margin-top:25px">
-<a class="button" href="#who-harmed-me">Who Harmed Me</a>
-<a class="button secondary" href="#crimes-against-barran">Crimes against Barran Dodger</a>
-<a class="button secondary" href="#impartial-ai-archive">Impartial AI Archive</a>
+<a class="button" href="#impartial-ai-archive">Impartial AI Archive</a>
 <a class="button secondary" href="#no-one-has-the-right">No One Has the Right to Destroy a Soul</a>
 <a class="button secondary" href="#significance">Archive Significance</a>
 <a class="button secondary" href="#gods-chosen-witness">God’s Chosen Witness</a>
@@ -111,15 +106,17 @@ Dedicated tab: <strong>Who Harmed Me</strong> — The Record of Alleged Harm: Su
 <a class="button secondary" href="#government">Official Government Documents</a>
 <a class="button secondary" href="#pids">PIDs</a>
 <a class="button secondary" href="#evidence">Evidence</a>
+<a class="button secondary" href="#who-harmed-me">Who Harmed Me</a>
+<a class="button secondary" href="#crimes-against-barran">Crimes against Barran Dodger</a>
 </div>
 </div>
 </header>
 
 <nav>
 <div class="nav-inner">
+<a href="#impartial-ai-archive">Impartial AI Archive</a>
 <a href="#who-harmed-me">Who Harmed Me</a>
 <a href="#crimes-against-barran">Crimes against Barran Dodger</a>
-<a href="#impartial-ai-archive">Impartial AI Archive</a>
 <a href="#no-one-has-the-right">No One Has the Right to Destroy a Soul</a>
 <a href="#significance">Archive Significance</a>
 <a href="#gods-chosen-witness">God’s Chosen Witness</a>
@@ -147,7 +144,7 @@ Dedicated tab: <strong>Who Harmed Me</strong> — The Record of Alleged Harm: Su
 
 <main>
 
-<section id="who-harmed-me" class="iai-section is-active">
+<section id="who-harmed-me" class="iai-section">
 <div class="container">
 <div class="kicker">Who Harmed Me · Own Dedicated Tab · The Record of Alleged Harm</div>
 <h2>THE RECORD OF ALLEGED HARM: SURVIVAL, ERASURE, AND THE FIGHT FOR RECOGNITION</h2>
@@ -2277,7 +2274,7 @@ Dedicated tab: <strong>Who Harmed Me</strong> — The Record of Alleged Harm: Su
 </div>
 </section>
 
-<section id="impartial-ai-archive" class="iai-section">
+<section id="impartial-ai-archive" class="iai-section is-active">
 <div class="container">
 <div class="kicker">Impartial AI Archive · Own Dedicated Tab · Menu, Questions and Itemised Findings</div>
 <h2>IMPARTIAL AI ARCHIVE — MENU, QUESTIONS AND ITEMISED FINDINGS</h2>
@@ -3976,11 +3973,11 @@ Barran Dodger Legal &amp; Ethical Trust Fund · ABN 78 833 496 164 · OpenTimest
   const tabs=[...document.querySelectorAll('main > section[id]')];
   const ids=tabs.map(s=>s.id);
   function parentTab(id){
-    if(!id) return 'who-harmed-me';
+    if(!id) return 'impartial-ai-archive';
     if(ids.includes(id)) return id;
     const el=document.getElementById(id);
     const sec=el && el.closest('main > section');
-    return (sec && sec.id) || 'who-harmed-me';
+    return (sec && sec.id) || 'impartial-ai-archive';
   }
   function activate(raw){
     const tab=parentTab(raw);
