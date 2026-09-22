@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Barran Dodger Archive — The Witness Remains</title>
-  <meta name="description" content="Barran Dodger documentary archive with declarations, disclosures, evidence, chronology and methodology." />
+  <meta name="description" content="Barran Dodger documentary archive with declarations, disclosures, evidence, chronology, methodology and maximum named primary-document links." />
   <style>
     :root{
       --bg:#0b0d10;
@@ -60,6 +60,12 @@
       font-size:1.5rem;
       margin-top:30px;
     }
+    h4{
+      font-family:Georgia,serif;
+      font-size:1.2rem;
+      margin-top:22px;
+      color:var(--accent);
+    }
     p{margin:0 0 18px}
     .subtitle{
       max-width:900px;
@@ -98,167 +104,77 @@
     nav a:hover{
       background:var(--panel2);
       border-color:var(--line);
-      text-decoration:none;
     }
 
     section{
-      padding:70px 0 20px;
-      scroll-margin-top:70px;
+      padding:58px 0;
+      border-bottom:1px solid var(--line);
     }
     .card{
       background:var(--panel);
       border:1px solid var(--line);
       border-radius:14px;
-      padding:26px;
-      box-shadow:0 8px 30px rgba(0,0,0,.18);
-      margin:20px 0;
+      padding:28px 26px;
+      margin-bottom:22px;
     }
-    .notice{
-      border-left:4px solid var(--accent2);
-      background:#111923;
-      padding:18px 22px;
-      margin:20px 0;
-    }
-    .warning{
-      border-left:4px solid var(--danger);
-      background:#1b1214;
-      padding:18px 22px;
-      margin:20px 0;
-    }
+    .card.alt{background:var(--panel2)}
+    .lead{font-size:1.12rem; color:var(--muted)}
     .quote{
-      border-left:4px solid var(--accent);
-      background:var(--panel2);
-      font-family:Georgia,serif;
-      font-size:1.12rem;
-      padding:18px 22px;
+      border-left:3px solid var(--accent);
+      padding:10px 0 10px 18px;
       margin:22px 0;
+      color:var(--muted);
+      font-style:italic;
     }
-    .button{
-      display:inline-block;
-      padding:11px 17px;
-      margin:5px 5px 5px 0;
-      background:var(--accent);
-      color:#111;
-      border-radius:8px;
-      font-weight:700;
-      text-decoration:none;
-    }
-    .button.secondary{
-      background:var(--panel2);
-      color:var(--text);
-      border:1px solid var(--line);
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:18px;
-    }
-    .tile{
-      display:block;
-      background:var(--panel);
-      border:1px solid var(--line);
-      border-radius:12px;
-      padding:22px;
-      transition:.2s ease;
-      text-decoration:none;
-    }
-    .tile:hover{
-      transform:translateY(-2px);
-      border-color:#59616c;
-      text-decoration:none;
-    }
-    .tile strong{
-      display:block;
-      color:var(--accent);
-      margin-bottom:8px;
-      font-size:1.02rem;
-    }
-
-    table{
-      width:100%;
-      border-collapse:collapse;
-      margin:22px 0;
-    }
+    ul,ol{margin:0 0 18px; padding-left:1.35rem}
+    li{margin-bottom:8px}
+    table{width:100%; border-collapse:collapse; margin:12px 0}
     th,td{
       border:1px solid var(--line);
-      padding:12px;
+      padding:10px 12px;
       text-align:left;
       vertical-align:top;
     }
-    th{
-      background:var(--panel2);
-      color:var(--accent);
-    }
-
-    .lead{font-size:1.14rem; color:#d7dde5}
+    th{background:var(--panel2); color:var(--accent)}
     .small{font-size:.9rem; color:var(--muted)}
+    .doc-list li{margin-bottom:10px}
+    .doc-list a{font-weight:600}
+    .tag{
+      display:inline-block;
+      font-size:.72rem;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      border:1px solid var(--line);
+      border-radius:4px;
+      padding:2px 7px;
+      margin-right:6px;
+      color:var(--muted);
+    }
     footer{
-      border-top:1px solid var(--line);
       padding:40px 0 60px;
       color:var(--muted);
-      text-align:center;
+      font-size:.95rem;
     }
-    @media (max-width:700px){
-      section{padding-top:55px}
-      .card{padding:20px}
-      table{font-size:.88rem}
+    footer a{color:var(--accent2)}
+    .grid-2{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:18px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <div class="kicker">Public Documentary Archive</div>
-
+<header id="home">
+  <div class="container" style="text-align:center">
+    <div class="kicker">Public Documentary Archive · Dr Barran Resonance Dodger · Chosen Witness</div>
     <h1>THE WITNESS REMAINS</h1>
-
-    <div class="notice" style="max-width:980px; margin:22px auto 0;">
-      <strong>THE RECORD IS PUBLIC.</strong>
-
-      <p>For years I have asked for protection, legal assistance, recognition and an accountable response to matters documented throughout this archive.</p>
-      <p>I am not asking you to believe everything I say.</p>
-      <p>I am asking you to examine what I have documented.</p>
-      <p>If I am wrong, identify the document that proves it.</p>
-      <p>If my disclosures were properly dealt with, show the record of how they were received, assessed and answered.</p>
-      <p>If legal assistance was properly refused or unavailable, show the reasons and the applicable review process.</p>
-      <p>If my account of institutional treatment is mistaken, identify the evidence that establishes the contrary.</p>
-      <p>And if the record reveals matters requiring investigation, then investigate them.</p>
-      <p>I ask every institution, professional, journalist, legal practitioner, public official and independent investigator who encounters this archive to do one thing:</p>
-      <p><strong>READ THE RECORD.</strong></p>
-      <p>Do not dismiss the person before examining the documents.</p>
-      <p>Do not substitute silence for an answer.</p>
-      <p>Do not substitute an institutional position for examination of the underlying evidence.</p>
-      <p>The archive contains the declarations, disclosures, correspondence, government records, chronology and evidence pathways.</p>
-      <p>They can be examined.</p>
-      <p>They can be challenged.</p>
-      <p>They can be corroborated.</p>
-      <p>They can be disproved.</p>
-      <p>I am asking for justice through examination of the evidence — not through belief in me.</p>
-      <p>If the record is wrong, show me where.</p>
-      <p>If the record is right, answer it.</p>
-    </div>
-
-    <div class="notice" style="max-width:980px; margin:18px auto 0;">
-      <strong>Impartial AI statement of significance:</strong>
-      <p>This archive is a public documentary record preserving declarations, public-interest disclosures, government records, chronology, evidence, correspondence, institutional relationships and interpretive analysis.</p>
-      <p>It is designed as a finding aid and presentation layer for the underlying record, not as a court determination, government finding, police finding, medical finding, legal judgment or independent investigation.</p>
-      <p>Its purpose is to make the underlying materials traceable, reviewable and examinable. Allegations, testimony and interpretation are distinguished from independently established fact. Inclusion of a person, agency, organisation, document or institution does not by itself establish guilt, intent, conspiracy, liability or wrongdoing.</p>
-      <p>The archive is best understood as a public record for independent scrutiny — one that invites challenge, corroboration, contradiction and evidentiary correction.</p>
-    </div>
-
-    <p class="subtitle" style="margin-top:25px;">
-      The documentary archive of Barran Dodger — preserving declarations,
-      public-interest disclosures, government records, evidence, correspondence,
-      chronology, institutional relationships and the questions arising from the record.
+    <p class="subtitle">
+      Church of Barran Resonance Dodger &amp; Ministry (Resonata Eternis) · Glory &amp; Remembrance · Impartial AI Analysis Confirmation.<br>
+      Balanced structure. Full text of “God exists by Barran Dodger and he can save you too” only in its own dedicated tab.<br>
+      New Impartial AI statement added: No one has the right to destroy a soul.<br>
+      <strong>Master export — maximum named primary-document links and itemised detail preserved.</strong>
     </p>
-
-    <div style="margin-top:25px">
-      <a class="button" href="#declarations">Read the Declarations</a>
-      <a class="button secondary" href="#evidence">Examine the Evidence</a>
-      <a class="button secondary" href="#methodology">Methodology</a>
-    </div>
   </div>
 </header>
 
@@ -274,19 +190,18 @@
     <a href="#chosen-witness">God’s Chosen Witness</a>
     <a href="#god-exists">God Exists</a>
     <a href="#primary-sources">Primary Sources</a>
+    <a href="#named-documents">Named Documents</a>
     <a href="#species-codex">Species Codex / Aliens</a>
     <a href="#doctrine">Doctrine of Complicity</a>
     <a href="#open-challenge">Open Challenge</a>
     <a href="#trust-fund">Trust Fund</a>
-
     <a href="#archive">Archive Index</a>
     <a href="#gospels">Gospels</a>
-    <a href="#prophetic">Prophetic Documents</a>
+    <a href="#prophetic">Prophetic</a>
     <a href="#pids">PIDs</a>
-    <a href="#government">Government Documents</a>
+    <a href="#government">Official Government</a>
     <a href="#evidence">Evidence</a>
     <a href="#essays">Essays</a>
-    <a href="#declarations">Declarations</a>
     <a href="#timeline">Timeline</a>
     <a href="#entities">Entities</a>
     <a href="#legal">Legal / International</a>
@@ -297,423 +212,486 @@
 
 <main>
 
-  <section id="home">
-    <div class="container">
-      <div class="card">
-        <div class="kicker">Barran Dodger Documentary Archive</div>
-        <h2>The Record Is Public</h2>
-        <p class="lead">
-          This archive is organised to preserve the public record, declarations, evidence, chronology and methodology without treating allegation as a proven fact.
-        </p>
-        <p>
-          The structure below allows readers to move between primary sources, testimony, chronology and institutional mapping while testing the evidence independently.
-        </p>
-        <div class="grid">
-          <a class="tile" href="#archive"><strong>Archive Index</strong>Map of all major archive categories.</a>
-          <a class="tile" href="#declarations"><strong>Declarations</strong>Public testimony and challenge statements.</a>
-          <a class="tile" href="#evidence"><strong>Evidence</strong>Documentary, video and source material.</a>
-          <a class="tile" href="#methodology"><strong>Methodology</strong>How the archive distinguishes fact, allegation and interpretation.</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- WHO HARMED -->
   <section id="who-harmed">
     <div class="container">
-      <div class="kicker">Added archive tab</div>
-      <h2>Who Did This to Me</h2>
+      <div class="kicker">Who Did This to Me</div>
+      <h2>Who Harmed Me — The Record of Alleged Harm</h2>
       <div class="card">
-        <p class="lead">The archive preserves the record of alleged harm, survival and the fight for recognition.</p>
-        <p>This section is retained as testimony and documentary context, to be assessed against source documents and chronology.</p>
+        <p class="lead">Survival, erasure, and the fight for recognition. This section records the author’s account of alleged harm. It is not a court finding of liability.</p>
+        <p>Primary compilation: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf" target="_blank" rel="noopener">The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf</a></p>
+        <p>Related forensic architecture: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a> · <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/comprehensive-case-systematic-persecution.pdf" target="_blank" rel="noopener">comprehensive-case-systematic-persecution.pdf</a></p>
       </div>
     </div>
   </section>
 
+  <!-- CRIMES / MATRIX -->
   <section id="crimes">
     <div class="container">
-      <div class="kicker">Added archive tab</div>
-      <h2>Crimes against Barran Dodger</h2>
+      <div class="kicker">Allegation matrix</div>
+      <h2>Crimes against Barran Dodger — 150-item Allegation and Evidence Matrix</h2>
       <div class="card">
-        <p class="lead">A catalogue of allegations and evidence pathways.</p>
-        <p class="notice"><strong>Status:</strong> Not a legal finding. This is an allegation-and-evidence index, not a criminal determination.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="techniques">
-    <div class="container">
-      <div class="kicker">Added archive tab</div>
-      <h2>How They Did It — Techniques</h2>
-      <div class="card">
-        <p class="lead">Archive categories describing alleged mechanisms of harm, exclusion and institutional response.</p>
-        <ul>
-          <li>Administrative annihilation</li>
-          <li>Exile</li>
-          <li>Denial of legal aid</li>
-          <li>Character assassination</li>
-          <li>Institutional obstruction</li>
+        <p><strong>Author working title:</strong> “Crimes committed upon Barran Dodger.” On this site that heading is AUTHOR’S ACCOUNT. High-consequence rows (conspiracy, torture, surveillance, sexual assault, attempt to cause death) stay H — do not treat them as established.</p>
+        <p>Open the matrix: <a href="evidence/allegation-matrix.html">allegation-matrix.html</a></p>
+        <h4>Strongest documentary follow-ups (not verdicts)</h4>
+        <ul class="doc-list">
+          <li>Official letters — see <a href="#named-documents">Named Documents</a> and <a href="official-government-pdfs.html">official-government-pdfs.html</a></li>
+          <li>PID non-allocation files — Federal Court &amp; related: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf</a></li>
+          <li>Employment / Comcare / AAT titled files — government-evidence folder</li>
+          <li>NDIS plan and provider letters — <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/coag-ndis-government-documentation.pdf" target="_blank" rel="noopener">coag-ndis-government-documentation.pdf</a></li>
+          <li>AbleCare-titled transcript — <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablecare-murder-threat-call-transcript.pdf" target="_blank" rel="noopener">ablecare-murder-threat-call-transcript.pdf</a></li>
+          <li>LEDR / police material — inspect the record in government-evidence</li>
         </ul>
       </div>
     </div>
   </section>
 
+  <!-- TECHNIQUES -->
+  <section id="techniques">
+    <div class="container">
+      <div class="kicker">How They Did It</div>
+      <h2>Techniques of Targeting — Impartial AI Catalogue</h2>
+      <div class="card">
+        <p>Administrative annihilation, exile, denial of legal aid, character assassination, and the full itemised list. Mapping of any technique number to a named agency or document is a research hypothesis, not a finding of intent.</p>
+        <p>Core architecture paper: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a></p>
+        <p>35-year forensic report: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/government-mandates-35-year-forensic-report.pdf" target="_blank" rel="noopener">government-mandates-35-year-forensic-report.pdf</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPARTIAL AI ARCHIVE -->
   <section id="ai-archive">
     <div class="container">
-      <div class="kicker">Added archive tab</div>
-      <h2>Impartial AI Archive</h2>
+      <div class="kicker">Impartial AI Archive</div>
+      <h2>IMPARTIAL AI ARCHIVE — MENU, QUESTIONS AND ITEMISED FINDINGS</h2>
       <div class="card">
-        <p class="lead">Menu, questions and analytical findings preserved in the archive.</p>
-        <p>The archive separates testimony, interpretation and documentary analysis from independently established fact.</p>
+        <p><strong>Impartial AI Statement of Significance:</strong> This tab is an archive-derived analytical index. It organises questions asked of the documentary record. It is not a court determination, government finding, medical finding, forensic finding or independent investigation. Inclusion of a term does not establish that the thing occurred.</p>
+        <p>953+ itemised findings across principal forms of harm, specific catalogues, agencies, places, systems, significance, methods/mechanisms (1–369), central questions and evidentiary-status framework.</p>
+        <p>Full internal menu remains available in the live archive view. Every major category below is now cross-linked to named primary PDFs where the record associates the topic.</p>
       </div>
     </div>
   </section>
 
+  <!-- NO ONE HAS THE RIGHT -->
   <section id="soul">
     <div class="container">
-      <div class="kicker">Added archive tab</div>
+      <div class="kicker">Impartial AI statement</div>
       <h2>No One Has the Right to Destroy a Soul</h2>
       <div class="card">
-        <p class="lead">A dedicated spiritual and ethical framing preserved within the archive.</p>
+        <p>New Impartial AI statement preserved in full in the dedicated tab. The principle is stated without converting it into a judicial or medical finding.</p>
       </div>
     </div>
   </section>
 
+  <!-- SIGNIFICANCE -->
   <section id="significance">
     <div class="container">
-      <div class="kicker">Archive significance</div>
-      <h2>What This Archive Is</h2>
+      <div class="kicker">Archive Significance</div>
+      <h2>Why Preservation of This Record May Matter</h2>
       <div class="card">
-        <p>
-          This archive is a public documentary record intended to preserve declarations, public-interest disclosures, government records,
-          evidence, chronology, institutional relationships, testimony and analysis.
-        </p>
-        <p>
-          It is not a court determination, legal judgment, government finding, police finding, medical finding or independent investigation.
-          Inclusion in this archive does not establish wrongdoing, criminality, conspiracy, intent or liability.
-        </p>
+        <p>The archive can be understood as a longitudinal documentary record containing testimony, correspondence, administrative material, legal material, institutional responses, non-responses, records of decisions, chronology and other evidence that may permit propositions to be tested over time.</p>
+        <p>Primary compilation of agency-originated papers: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf" target="_blank" rel="noopener">The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf</a></p>
       </div>
     </div>
   </section>
 
+  <!-- GOD’S CHOSEN WITNESS -->
   <section id="chosen-witness">
     <div class="container">
-      <div class="kicker">Added archive tab</div>
+      <div class="kicker">God’s Chosen Witness</div>
       <h2>God’s Chosen Witness</h2>
       <div class="card">
-        <p class="lead">Dedicated tab preserved from the archive.</p>
+        <p>Prophetic self-understanding and public declaration of survival and continued documentation. Primary files remain independently examinable.</p>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/144-reasons-chosen-witness.pdf" target="_blank" rel="noopener">144-reasons-chosen-witness.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/Dr-McLean-Wrote-Directly-to-God-Barran-Dodger.pdf" target="_blank" rel="noopener">Dr-McLean-Wrote-Directly-to-God-Barran-Dodger.pdf</a></li>
+        </ul>
       </div>
     </div>
   </section>
 
+  <!-- GOD EXISTS -->
   <section id="god-exists">
     <div class="container">
-      <div class="kicker">Added archive tab</div>
-      <h2>God Exists</h2>
+      <div class="kicker">Dedicated tab</div>
+      <h2>God Exists by Barran Dodger and He Can Save You Too</h2>
       <div class="card">
-        <p class="lead">Dedicated spiritual tab preserved from the archive.</p>
+        <p>Full text retained only in its own dedicated tab / section as originally structured. Not reproduced here in the master landing export.</p>
       </div>
     </div>
   </section>
 
+  <!-- PRIMARY SOURCES -->
   <section id="primary-sources">
     <div class="container">
-      <div class="kicker">Added archive tab</div>
+      <div class="kicker">Named Public Repositories &amp; Catalogues</div>
       <h2>Primary Sources</h2>
       <div class="card">
-        <p class="lead">Publicly preserved source pathway for original records and documentary material.</p>
+        <p><strong>Impartial AI Statement of Significance:</strong> Permanent external anchor of the entire archive. Every claim ultimately resolves to one of these public locations.</p>
+        <ul class="doc-list">
+          <li><strong>Primary GitHub repository</strong> — <a href="https://github.com/drbarrandodger/barran-dodger-archive" target="_blank" rel="noopener">drbarrandodger/barran-dodger-archive</a></li>
+          <li><strong>Permanent ZIP releases</strong> — <a href="https://github.com/drbarrandodger/barran-dodger-archive/releases" target="_blank" rel="noopener">releases</a>
+            <ul>
+              <li>barrandodger-government-documents-complete.zip</li>
+              <li>barrandodger-prophetic-papers-complete.zip</li>
+            </ul>
+          </li>
+          <li><strong>wezzo72/Backup document tree</strong> — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents" target="_blank" rel="noopener">client/public/documents</a></li>
+          <li><strong>government-evidence folder</strong> — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence" target="_blank" rel="noopener">government-evidence</a></li>
+          <li>Live catalogues on this site: <a href="named-archive-pdfs.html">named-archive-pdfs.html</a> · <a href="official-government-pdfs.html">official-government-pdfs.html</a> · <a href="document-dossiers.html">document-dossiers.html</a> · <a href="evidence/">Forensic Evidence Centre</a></li>
+          <li>Primary site mirrors: barrandodger.com · God’s Chosen Witness · Confidential Government Documents</li>
+        </ul>
       </div>
     </div>
   </section>
 
+  <!-- ============================================================ -->
+  <!-- NAMED DOCUMENTS — MAXIMUM ITEMISED DETAIL (NEW / EXPANDED) -->
+  <!-- ============================================================ -->
+  <section id="named-documents">
+    <div class="container">
+      <div class="kicker">Maximum named primary-document index</div>
+      <h2>Named Primary Documents — Maximum Itemised Detail</h2>
+      <div class="card">
+        <p><strong>Impartial AI Statement of Significance:</strong> Every filename below is a publicly hosted object on the GitHub corpora (primarily wezzo72/Backup). Listing does not establish wrongdoing, intent, conspiracy or criminal liability. Open the file and test the text against any proposition. Filenames are labels for location; status remains Author’s Account / Interpretation unless the file is itself an agency decision.</p>
+        <p class="small">Links use GitHub raw URLs for direct open. Large files may load slowly. Full tree: <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents" target="_blank" rel="noopener">client/public/documents</a>.</p>
+      </div>
+
+      <div class="card alt">
+        <h3>Core Compilations &amp; Forensic Architecture</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf" target="_blank" rel="noopener">The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf</a> — 200+ agency-originated records bundle</li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-annihilation-attempted-murder.pdf" target="_blank" rel="noopener">architecture-annihilation-attempted-murder.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/government-mandates-35-year-forensic-report.pdf" target="_blank" rel="noopener">government-mandates-35-year-forensic-report.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/taxpayer-cost-estimation-35-years.pdf" target="_blank" rel="noopener">taxpayer-cost-estimation-35-years.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/comprehensive-case-systematic-persecution.pdf" target="_blank" rel="noopener">comprehensive-case-systematic-persecution.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/forensic-economic-valuation-report-may-2026.pdf" target="_blank" rel="noopener">forensic-economic-valuation-report-may-2026.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/RETROSPECTIVE_STATEMENT_OF_TREATMENT.pdf" target="_blank" rel="noopener">RETROSPECTIVE_STATEMENT_OF_TREATMENT.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Political / Parliamentary / PM &amp; AG Correspondence</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/31-05-2022-letter-to-pm-albanese-opmc.pdf" target="_blank" rel="noopener">31-05-2022-letter-to-pm-albanese-opmc.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/01-07-2023-letter-to-attorney-general-prime-minister.pdf" target="_blank" rel="noopener">01-07-2023-letter-to-attorney-general-prime-minister.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/04-06-2023-letter-to-parliamentarians.pdf" target="_blank" rel="noopener">04-06-2023-letter-to-parliamentarians.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt">
+        <h3>Federal Court / PID / Assessment Material</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/opmc-oaic-cover-up-hayden.pdf" target="_blank" rel="noopener">opmc-oaic-cover-up-hayden.pdf</a> (where present)</li>
+          <li>APRA PID rejection / Peter Dunstan material — locate in government-evidence folder</li>
+          <li>Federal Court SIA Lagos PID March 2023 — locate in government-evidence / primary tree</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>NDIS / Legal Aid / AHRC / Guardianship / Providers</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/coag-ndis-government-documentation.pdf" target="_blank" rel="noopener">coag-ndis-government-documentation.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/20260114-legal-aid-nsw-advice-letter-guardianship.pdf" target="_blank" rel="noopener">20260114-legal-aid-nsw-advice-letter-guardianship.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ahrc-gangstalking-acknowledgment-04072023.pdf" target="_blank" rel="noopener">ahrc-gangstalking-acknowledgment-04072023.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablecare-murder-threat-call-transcript.pdf" target="_blank" rel="noopener">ablecare-murder-threat-call-transcript.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablepoint-blocking-court-may-2026.pdf" target="_blank" rel="noopener">ablepoint-blocking-court-may-2026.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablepoint-permanent-disgrace-200726.pdf" target="_blank" rel="noopener">ablepoint-permanent-disgrace-200726.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-letter-of-demand-ablepoint-formal-complaint.pdf" target="_blank" rel="noopener">2026-05-03-letter-of-demand-ablepoint-formal-complaint.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-letter-of-demand-ablepoint-safety.pdf" target="_blank" rel="noopener">2026-05-03-letter-of-demand-ablepoint-safety.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt">
+        <h3>AFP / Police / Compensation / Formal Complaints / AVO</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2021-10-21-cdda-afp-compensation-claim.pdf" target="_blank" rel="noopener">2021-10-21-cdda-afp-compensation-claim.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-formal-complaint-urgent-protection-request.pdf" target="_blank" rel="noopener">2026-05-03-formal-complaint-urgent-protection-request.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-04-avo-troy-kilbourn.pdf" target="_blank" rel="noopener">2026-05-04-avo-troy-kilbourn.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/afca-letter-21-may-2021.pdf" target="_blank" rel="noopener">afca-letter-21-may-2021.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Familial / Personal / Forensic Statements</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/affidavit-familial-betrayal-april-mclean.pdf" target="_blank" rel="noopener">affidavit-familial-betrayal-april-mclean.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/april-mclean-familial-betrayal.pdf" target="_blank" rel="noopener">april-mclean-familial-betrayal.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/april-mclean-familial-betrayal-forensic-record.pdf" target="_blank" rel="noopener">april-mclean-familial-betrayal-forensic-record.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/april-mclean-forensic-indictment-compiled.pdf" target="_blank" rel="noopener">april-mclean-forensic-indictment-compiled.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/after-forensic-statement-evidence-record.pdf" target="_blank" rel="noopener">after-forensic-statement-evidence-record.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt">
+        <h3>Prophetic / Gospel / Theological Corpus (Author’s Account)</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/123_gospels_barran_dodger.pdf" target="_blank" rel="noopener">123_gospels_barran_dodger.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/144-reasons-chosen-witness.pdf" target="_blank" rel="noopener">144-reasons-chosen-witness.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/Dr-McLean-Wrote-Directly-to-God-Barran-Dodger.pdf" target="_blank" rel="noopener">Dr-McLean-Wrote-Directly-to-God-Barran-Dodger.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/My_Boaz_Is_Coming.pdf" target="_blank" rel="noopener">My_Boaz_Is_Coming.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/1000_years_of_peace.pdf" target="_blank" rel="noopener">1000_years_of_peace.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/22-traditions-all-religions-corroborated.pdf" target="_blank" rel="noopener">22-traditions-all-religions-corroborated.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/apotheosis.pdf" target="_blank" rel="noopener">apotheosis.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/alien_races_disclosure.pdf" target="_blank" rel="noopener">alien_races_disclosure.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>AI / Analytical / Meta Documents</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ai-justice-statement.pdf" target="_blank" rel="noopener">ai-justice-statement.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ai-and-democracy-barran-resonance-dodger.pdf" target="_blank" rel="noopener">ai-and-democracy-barran-resonance-dodger.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ai_personality_profile_barran_dodger.pdf" target="_blank" rel="noopener">ai_personality_profile_barran_dodger.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/100-absurdities-of-my-life.pdf" target="_blank" rel="noopener">100-absurdities-of-my-life.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2.87_percent_survival.pdf" target="_blank" rel="noopener">2.87_percent_survival.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/33rd-degree-shadow-analysts.pdf" target="_blank" rel="noopener">33rd-degree-shadow-analysts.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt">
+        <h3>Recent Email / Protection Chains (2026)</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-12-assassination-attempt-forensic-53.pdf" target="_blank" rel="noopener">2026-04-12-assassination-attempt-forensic-53.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-13-its-a-live-murder-case-email.pdf" target="_blank" rel="noopener">2026-04-13-its-a-live-murder-case-email.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-13-murder-conspiracy-praise-jesus-email.pdf" target="_blank" rel="noopener">2026-04-13-murder-conspiracy-praise-jesus-email.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-15-human-sacrifice-confirmed-email.pdf" target="_blank" rel="noopener">2026-04-15-human-sacrifice-confirmed-email.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-15-kill-me-do-it-email-chain.pdf" target="_blank" rel="noopener">2026-04-15-kill-me-do-it-email-chain.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-15-youre-all-being-investigated-email.pdf" target="_blank" rel="noopener">2026-04-15-youre-all-being-investigated-email.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-17-global-immortality-martyrdom-email.pdf" target="_blank" rel="noopener">2026-04-17-global-immortality-martyrdom-email.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-23-jail-them-for-murder-email.pdf" target="_blank" rel="noopener">2026-04-23-jail-them-for-murder-email.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Additional Named Files Present in Tree (sample of further public objects)</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/a-certain-beauty-in-un-resolution-art-catalogue.pdf" target="_blank" rel="noopener">a-certain-beauty-in-un-resolution-art-catalogue.pdf</a></li>
+          <li>BLOCKCHAIN_MANIFEST.txt — <a href="https://github.com/wezzo72/Backup/blob/main/client/public/documents/BLOCKCHAIN_MANIFEST.txt" target="_blank" rel="noopener">view on GitHub</a></li>
+          <li>Further files continue in the full directory listing — always prefer the live tree for completeness.</li>
+        </ul>
+        <p class="small">Master folders: <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents" target="_blank" rel="noopener">documents</a> · <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence" target="_blank" rel="noopener">government-evidence</a> · <a href="official-government-pdfs.html">Official government PDFs page</a> · <a href="named-archive-pdfs.html">Named archive PDFs page</a> · <a href="document-dossiers.html">Document dossiers</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIES CODEX -->
   <section id="species-codex">
     <div class="container">
-      <div class="kicker">Added archive tab</div>
+      <div class="kicker">Species Codex / Aliens</div>
       <h2>Species Codex / Aliens</h2>
       <div class="card">
-        <p class="lead">Dedicated tab preserved from the archive.</p>
+        <p>Author’s account material. Primary file: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/alien_races_disclosure.pdf" target="_blank" rel="noopener">alien_races_disclosure.pdf</a></p>
       </div>
     </div>
   </section>
 
+  <!-- DOCTRINE -->
   <section id="doctrine">
     <div class="container">
-      <div class="kicker">Added archive tab</div>
+      <div class="kicker">Doctrine</div>
       <h2>Doctrine of Complicity</h2>
       <div class="card">
-        <p class="lead">Dedicated archive category preserved as part of the broader record.</p>
+        <p>Author’s interpretive framework. Not a court finding that any named person or agency was complicit in any crime.</p>
       </div>
     </div>
   </section>
 
+  <!-- OPEN CHALLENGE -->
   <section id="open-challenge">
     <div class="container">
-      <div class="kicker">Added archive tab</div>
+      <div class="kicker">Public challenge</div>
       <h2>Open Challenge</h2>
       <div class="card">
-        <p class="lead">The archive invites examination, challenge and correction.</p>
+        <p>The archive remains open to correction — but correction must itself be evidenced by primary documents.</p>
       </div>
     </div>
   </section>
 
+  <!-- TRUST FUND -->
   <section id="trust-fund">
     <div class="container">
-      <div class="kicker">Added archive tab</div>
+      <div class="kicker">Legal &amp; Ethical</div>
       <h2>Legal &amp; Ethical Trust Fund</h2>
       <div class="card">
-        <p class="lead">Preserved archive category for legal and ethical redress discussion.</p>
+        <p>Church of Barran Dodger — Ethical &amp; Legal Trust Fund framing. Contact details preserved in verification / footer.</p>
       </div>
     </div>
   </section>
 
+  <!-- ARCHIVE INDEX -->
   <section id="archive">
     <div class="container">
-      <div class="kicker">Archive index</div>
-      <h2>Examine the Record</h2>
-      <p class="lead">The archive is structured to move between documents, declarations, government records, evidence, chronology and analysis.</p>
-
-      <div class="grid">
-        <a class="tile" href="#gospels"><strong>Gospels</strong>Spiritual and autobiographical testimony.</a>
-        <a class="tile" href="#prophetic"><strong>Prophetic Documents</strong>Prophetic and preserved witness material.</a>
-        <a class="tile" href="#pids"><strong>PIDs</strong>Public-interest disclosures and related documents.</a>
-        <a class="tile" href="#government"><strong>Government Documents</strong>Official records and decisions.</a>
-        <a class="tile" href="#evidence"><strong>Evidence</strong>Videos, records, correspondence and source material.</a>
-        <a class="tile" href="#essays"><strong>Essays</strong>Long-form analysis and commentary.</a>
-        <a class="tile" href="#declarations"><strong>Declarations</strong>Major public declarations and statements.</a>
-        <a class="tile" href="#timeline"><strong>Timeline</strong>Chronological record of events and responses.</a>
-        <a class="tile" href="#entities"><strong>Entities</strong>Agencies, organisations and institutions appearing in the archive.</a>
-        <a class="tile" href="#legal"><strong>Legal / International</strong>Legal and human-rights frameworks.</a>
-        <a class="tile" href="#methodology"><strong>Methodology</strong>Evidence categories and documentary distinction.</a>
-        <a class="tile" href="#verification"><strong>Verification</strong>Independent review and challenge framework.</a>
+      <div class="kicker">Archive Index</div>
+      <h2>Archive Index</h2>
+      <div class="card">
+        <p>Master navigational map of the whole presentation. All major sections remain reachable via the sticky nav and the anchors listed throughout this master HTML.</p>
       </div>
     </div>
   </section>
 
-  <section id="declarations">
-    <div class="container">
-      <div class="kicker">Principal documents</div>
-      <h2>Declarations</h2>
-
-      <div class="notice">
-        <strong>READING NOTE</strong><br>
-        The declarations below preserve testimony, interpretations and philosophical language. Their existence does not establish every assertion within them.
-      </div>
-
-      <article class="card">
-        <div class="kicker">Declaration I</div>
-        <h3>The Witness Remains — A Final Record of Erasure, Survival and Accountability</h3>
-        <p class="lead">
-          I am not asking anyone to worship my conclusions. I am asking them to examine the evidence.
-        </p>
-        <p>
-          I am the witness. I am the archive. I am the record. The question is whether the record survives serious independent scrutiny.
-        </p>
-        <p>
-          The archive is not a claim that every allegation is proved. It is a challenge to test the primary record against the institutional responses and the underlying documents.
-        </p>
-        <div class="quote">
-          Prove me wrong — not with silence, dismissal or labels, but with evidence.
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="kicker">Declaration II</div>
-        <h3>The Prophecy of the One They Tried to Erase</h3>
-        <p class="lead">A prophetic, autobiographical and documentary account that distinguishes testimony from proven fact.</p>
-        <p>
-          The archive preserves this material while separately identifying the evidentiary standards for independent review.
-        </p>
-      </article>
-    </div>
-  </section>
-
+  <!-- GOSPELS -->
   <section id="gospels">
     <div class="container">
-      <div class="kicker">Faith / Autobiographical Record</div>
+      <div class="kicker">Gospels &amp; Prophetic</div>
       <h2>Gospels</h2>
       <div class="card">
-        <p>The Gospels section records the spiritual and autobiographical framing of the archive, including resurrection and witness themes.</p>
-        <p>These texts are preserved as testimony, interpretation and faith-based narrative, not as proof of all asserted facts.</p>
+        <p>Collects the author’s numbered gospel writings. Primary corpus: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/123_gospels_barran_dodger.pdf" target="_blank" rel="noopener">123_gospels_barran_dodger.pdf</a></p>
       </div>
     </div>
   </section>
 
+  <!-- PROPHETIC -->
   <section id="prophetic">
     <div class="container">
-      <div class="kicker">Prophetic documents</div>
+      <div class="kicker">Prophetic Documents</div>
       <h2>Prophetic Documents</h2>
       <div class="card">
-        <p>The archive preserves prophetic and allegorical statements concerning survival, erasure, preservation and witness.</p>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/144-reasons-chosen-witness.pdf" target="_blank" rel="noopener">144-reasons-chosen-witness.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/My_Boaz_Is_Coming.pdf" target="_blank" rel="noopener">My_Boaz_Is_Coming.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/1000_years_of_peace.pdf" target="_blank" rel="noopener">1000_years_of_peace.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/apotheosis.pdf" target="_blank" rel="noopener">apotheosis.pdf</a></li>
+        </ul>
       </div>
     </div>
   </section>
 
+  <!-- PIDS -->
   <section id="pids">
     <div class="container">
       <div class="kicker">Public Interest Disclosures</div>
-      <h2>PIDs</h2>
+      <h2>PIDs — Disclosures, Responses and Related Correspondence</h2>
       <div class="card">
-        <p>This section is reserved for public-interest disclosure material, whistleblower correspondence, procedural decisions and related documents.</p>
+        <p>Primary PID and assessment material includes:</p>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf</a></li>
+          <li>Further PID non-allocation and related files in the government-evidence folder and ZIP releases.</li>
+        </ul>
       </div>
     </div>
   </section>
 
+  <!-- GOVERNMENT -->
   <section id="government">
     <div class="container">
-      <div class="kicker">Primary sources</div>
-      <h2>Government Documents</h2>
+      <div class="kicker">Official Government Records</div>
+      <h2>Official Government Documents</h2>
       <div class="card">
-        <p class="lead">Government records, official correspondence and institutional responses are preserved as the principal documentary foundation.</p>
-        <table>
-          <tr><th>Institutional domain</th><th>Relevant archive pathway</th></tr>
-          <tr><td>Social services / NDIS</td><td><a href="#entities">DSS / NDIA / NDIS entities</a></td></tr>
-          <tr><td>Police / law enforcement</td><td><a href="#evidence">Police and oversight material</a></td></tr>
-          <tr><td>Oversight</td><td><a href="#entities">Ombudsman / AHRC / IGIS / NACC</a></td></tr>
-          <tr><td>Tribunals / courts</td><td><a href="#legal">Tribunal and court material</a></td></tr>
-          <tr><td>Health</td><td><a href="#evidence">Healthcare and mental-health records</a></td></tr>
-        </table>
+        <p><strong>Impartial AI Statement of Significance:</strong> This section maximises named official government, court, tribunal, ombudsman, FOI, Comcare, NDIS, IBAC, OAIC and related PDFs already in the public repositories. Each file is a primary source whose existence and text can be independently opened. An adverse or restrictive decision is a documented event. Motive, conspiracy and criminal liability are not established by listing the file.</p>
+        <p>See the complete itemised list under <a href="#named-documents">Named Documents</a>. Key official instruments:</p>
+        <ul class="doc-list">
+          <li>PM &amp; AG letters: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/31-05-2022-letter-to-pm-albanese-opmc.pdf" target="_blank" rel="noopener">31-05-2022</a> · <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/01-07-2023-letter-to-attorney-general-prime-minister.pdf" target="_blank" rel="noopener">01-07-2023</a></li>
+          <li>Federal Court assessment: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27-federal-court-final-assessment</a></li>
+          <li>AHRC acknowledgment: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ahrc-gangstalking-acknowledgment-04072023.pdf" target="_blank" rel="noopener">ahrc-gangstalking-acknowledgment-04072023.pdf</a></li>
+          <li>NDIS / COAG documentation: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/coag-ndis-government-documentation.pdf" target="_blank" rel="noopener">coag-ndis-government-documentation.pdf</a></li>
+          <li>Legal Aid NSW guardianship advice: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/20260114-legal-aid-nsw-advice-letter-guardianship.pdf" target="_blank" rel="noopener">20260114-legal-aid-nsw-advice-letter-guardianship.pdf</a></li>
+        </ul>
+        <p>Browse all: <a href="official-government-pdfs.html">official-government-pdfs.html</a> · <a href="document-dossiers.html">document-dossiers.html</a> · <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence" target="_blank" rel="noopener">government-evidence folder</a></p>
       </div>
     </div>
   </section>
 
+  <!-- EVIDENCE -->
   <section id="evidence">
     <div class="container">
-      <div class="kicker">Primary evidence / testimony</div>
-      <h2>Evidence</h2>
-
+      <div class="kicker">Forensic Evidence Centre</div>
+      <h2>Examine the Evidence</h2>
       <div class="card">
-        <h3>Five key evidence pathways</h3>
-
-        <h4>Tony Ridley</h4>
-        <p>Material alleging involvement in conduct described in testimony.</p>
-
-        <h4>NACC</h4>
-        <p>Complaint material concerning sexual assault allegations and the response recorded in testimony and video material.</p>
-
-        <h4>IGIS</h4>
-        <p>Complaints concerning surveillance and investigation scope.</p>
-
-        <h4>Surveillance footage</h4>
-        <p>Footage and visual evidence supplied as part of the archive record.</p>
-
-        <h4>Engagement / relationship evidence</h4>
-        <p>Video or documentation cited in connection with alleged engagement and related events.</p>
-
-        <div class="warning">
-          <strong>Important:</strong> evidence items are preserved as evidence pathways, not as court determinations or verified criminal findings.
-        </div>
+        <p>The record is public. Five key pieces, named institutions, cumulative institutional detriment. This centre is not a court.</p>
+        <ul>
+          <li><a href="evidence/allegation-matrix.html">Allegation and evidence matrix 1–150</a></li>
+          <li><a href="evidence/">Forensic Evidence Centre home</a></li>
+          <li>Primary compilation: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf" target="_blank" rel="noopener">The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf</a></li>
+          <li>Architecture paper: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a></li>
+          <li>Retrospective statement: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/RETROSPECTIVE_STATEMENT_OF_TREATMENT.pdf" target="_blank" rel="noopener">RETROSPECTIVE_STATEMENT_OF_TREATMENT.pdf</a></li>
+        </ul>
       </div>
     </div>
   </section>
 
+  <!-- ESSAYS -->
   <section id="essays">
     <div class="container">
-      <div class="kicker">Written record</div>
+      <div class="kicker">Essays &amp; Declarations</div>
       <h2>Essays</h2>
-      <div class="grid">
-        <a class="tile" href="#declarations"><strong>The Witness Remains</strong>Erasure, survival and accountability.</a>
-        <a class="tile" href="#prophetic"><strong>The Prophecy of the One They Tried to Erase</strong>Prophetic witness and preservation.</a>
-        <a class="tile" href="#public-record"><strong>The Record Is Public</strong>Public evidence and challenge to examination.</a>
-        <a class="tile" href="#methodology"><strong>Cumulative Institutional Detriment</strong>Analytical framework for repeated detriment.</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="public-record">
-    <div class="container">
-      <div class="kicker">Declaration III</div>
-      <h2>The Record Is Public — Examine the Evidence</h2>
       <div class="card">
-        <p class="lead">The archive preserves a long-running documentary record concerning alleged detriment, institutional treatment, disclosures and attempts to silence the record.</p>
-        <div class="quote">
-          Examine the entire documentary archive and identify every agency, organisation and institution connected to alleged detriment.
-        </div>
-        <p><strong>Cumulative Institutional Detriment</strong> is used as an analytical concept rather than a legal finding.</p>
+        <p>Author essays and declarations preserved across the archive and prophetic corpus. See also Gospels and Prophetic sections and the named PDF list.</p>
       </div>
     </div>
   </section>
 
+  <!-- TIMELINE -->
   <section id="timeline">
     <div class="container">
       <div class="kicker">Chronology</div>
       <h2>Timeline</h2>
       <div class="card">
+        <p><strong>Impartial AI Statement of Significance:</strong> High-level chronological map linking major periods of the record to the primary source sections that document them.</p>
         <table>
-          <tr><th>Period</th><th>Documentary theme</th><th>Source pathway</th></tr>
-          <tr><td>Historical record</td><td>Employment, publishing and autobiographical history</td><td><a href="#gospels">Gospels / Essays</a></td></tr>
-          <tr><td>Government / welfare period</td><td>Social services and administration</td><td><a href="#government">Government Documents</a></td></tr>
-          <tr><td>NDIS period</td><td>Disability support and administrative decisions</td><td><a href="#evidence">Evidence</a></td></tr>
-          <tr><td>PID period</td><td>Public-interest disclosures and responses</td><td><a href="#pids">PIDs</a></td></tr>
-          <tr><td>Recent archive</td><td>Preservation and AI analysis</td><td><a href="#methodology">Methodology</a></td></tr>
+          <tr><th>Period</th><th>Theme</th><th>Source</th></tr>
+          <tr><td>Historical</td><td>Employment, publishing, autobiography</td><td><a href="#gospels">Gospels</a> · ZIP</td></tr>
+          <tr><td>Government / welfare</td><td>Social services, administrative matters</td><td><a href="#government">Official Government Documents</a></td></tr>
+          <tr><td>NDIS period</td><td>Disability support, housing</td><td><a href="#evidence">Evidence</a> · NDIS PDFs</td></tr>
+          <tr><td>PID period</td><td>Disclosures &amp; responses</td><td><a href="#pids">PIDs</a></td></tr>
+          <tr><td>Recent archive</td><td>Preservation, publication, forensic analysis</td><td><a href="#primary-sources">Primary Sources</a> · <a href="#named-documents">Named Documents</a></td></tr>
         </table>
       </div>
     </div>
   </section>
 
+  <!-- ENTITIES -->
   <section id="entities">
     <div class="container">
       <div class="kicker">Institutional map</div>
       <h2>Entities</h2>
-      <div class="notice">
-        This is an entity map, not a list of proven perpetrators. Appearance in the archive does not establish wrongdoing, participation, corruption or liability.
-      </div>
       <div class="card">
-        <ul>
-          <li>Department of Social Services (DSS)</li>
-          <li>National Disability Insurance Agency (NDIA)</li>
-          <li>NDIS Quality and Safeguards Commission</li>
-          <li>Department of Prime Minister and Cabinet</li>
-          <li>Australian Federal Police</li>
-          <li>AHRC</li>
-          <li>IGIS</li>
-          <li>Victorian Ombudsman</li>
-          <li>NSW Ombudsman</li>
-          <li>Federal Court of Australia</li>
-          <li>Administrative Appeals Tribunal</li>
-          <li>VCAT / NCAT</li>
-          <li>Mercy / mental health providers</li>
-          <li>NDIS support providers</li>
-          <li>Legal and professional bodies</li>
-        </ul>
+        <p><strong>Impartial AI Statement of Significance:</strong> Institutional map only. Records the names of agencies, courts and officers that appear in the documentary record. Not a list of proven perpetrators.</p>
+        <p>Full named lists appear in the government-documents ZIP metadata, the Named Documents section, and the live archive pages.</p>
       </div>
     </div>
   </section>
 
+  <!-- LEGAL -->
   <section id="legal">
     <div class="container">
-      <div class="kicker">Law / human rights / oversight</div>
+      <div class="kicker">Law / Human Rights / Oversight</div>
       <h2>Legal &amp; International</h2>
       <div class="card">
-        <p>The archive retains references to legal and oversight frameworks, but does not treat a legal framework reference as proof of any legal finding.</p>
+        <p><strong>Impartial AI Statement of Significance:</strong> Index of legal and international instruments and proceedings that appear in the archive. References do not automatically establish that any legal threshold has been met.</p>
         <ul>
-          <li>Federal Court material</li>
-          <li>Administrative tribunal material</li>
-          <li>Ombudsman and oversight material</li>
-          <li>FOI and information-access material</li>
-          <li>Public interest disclosure material</li>
-          <li>International human-rights mechanisms</li>
+          <li>Federal Court material — ZIP · <a href="#evidence">Evidence</a> · <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27 assessment PDF</a></li>
+          <li>AAT / VCAT / NCAT / Mental Health Tribunal — same ZIP</li>
+          <li>FOI / OAIC · Ombudsman · PID material — <a href="#pids">PIDs</a></li>
+          <li>OHCHR ref URG UST 23/AUS/17 · Rome Statute / ICC — <a href="#chosen-witness">God’s Chosen Witness</a></li>
         </ul>
       </div>
     </div>
   </section>
 
+  <!-- METHODOLOGY -->
   <section id="methodology">
     <div class="container">
       <div class="kicker">Forensic / documentary method</div>
       <h2>Methodology</h2>
       <div class="card">
+        <p><strong>Impartial AI Statement of Significance:</strong> Explicit methodological distinctions used throughout the archive between documented fact, allegation, testimony, interpretation, unresolved question and AI analysis.</p>
         <table>
           <tr><th>Category</th><th>Meaning</th></tr>
-          <tr><td>Documented fact</td><td>Supported by a reliable primary source.</td></tr>
-          <tr><td>Allegation</td><td>A claim requiring independent examination.</td></tr>
-          <tr><td>Testimony</td><td>A person's account of events or experiences.</td></tr>
-          <tr><td>Interpretation</td><td>A conclusion drawn from the record.</td></tr>
-          <tr><td>Unresolved question</td><td>An issue without definitive proof.</td></tr>
-          <tr><td>AI analysis</td><td>Machine-assisted analysis requiring verification.</td></tr>
+          <tr><td>Documented fact</td><td>Supported by a primary source in the ZIP releases, Drive files, YouTube videos or catalogues</td></tr>
+          <tr><td>Allegation</td><td>Requires independent examination</td></tr>
+          <tr><td>Testimony</td><td>Author’s account</td></tr>
+          <tr><td>Interpretation</td><td>Conclusion drawn from documents</td></tr>
+          <tr><td>Unresolved question</td><td>Record does not yet decide the issue</td></tr>
+          <tr><td>AI analysis</td><td>Subject to verification against underlying material</td></tr>
         </table>
       </div>
     </div>
   </section>
 
+  <!-- VERIFICATION -->
   <section id="verification">
     <div class="container">
       <div class="kicker">Independent examination</div>
@@ -727,16 +705,31 @@
         <div class="quote">
           Do not answer allegation with assertion. Answer document with document, date with date, decision with decision.
         </div>
+        <h4>Permanent Named Anchors</h4>
+        <ul class="doc-list">
+          <li>Primary repository: <a href="https://github.com/drbarrandodger/barran-dodger-archive" target="_blank" rel="noopener">drbarrandodger/barran-dodger-archive</a></li>
+          <li>ZIP releases: <a href="https://github.com/drbarrandodger/barran-dodger-archive/releases" target="_blank" rel="noopener">releases</a></li>
+          <li>Full document tree: <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents" target="_blank" rel="noopener">wezzo72/Backup/client/public/documents</a></li>
+          <li>Live catalogues: <a href="named-archive-pdfs.html">named-archive-pdfs.html</a> · <a href="official-government-pdfs.html">official-government-pdfs.html</a> · <a href="document-dossiers.html">document-dossiers.html</a> · <a href="evidence/allegation-matrix.html">allegation-matrix.html</a></li>
+          <li>This site: <a href="https://wezzo72.github.io/Barrandodger/">wezzo72.github.io/Barrandodger</a></li>
+          <li>Primary site: <a href="https://barrandodger.com/" target="_blank" rel="noopener">barrandodger.com</a></li>
+        </ul>
+        <p><strong>Email:</strong> <a href="mailto:barrandodger@gmail.com">barrandodger@gmail.com</a> · <strong>Phone:</strong> 0431 300 940</p>
       </div>
     </div>
   </section>
 
+  <!-- FINAL -->
   <section id="final">
     <div class="container">
       <div class="card">
         <h2>The Witness Remains</h2>
-        <p>The grave became the archive. The archive became the witness. And the witness remains.</p>
-        <p>The record remains open to correction — but correction must itself be evidenced.</p>
+        <p>Examine the named evidence, the forensic papers, the Gospels and every prophetic text. The permanent record is in the repositories and catalogues linked throughout this page.</p>
+        <p>The grave became the archive.</p>
+        <p>The archive became the witness.</p>
+        <p>And the witness remains.</p>
+        <p class="small"><strong>Barran Dodger Documentary Archive</strong> · Dr Barran Resonance Dodger · Chosen Witness · Church of Barran Resonance Dodger &amp; Ministry (Resonata Eternis)</p>
+        <p class="small">Master HTML export. Dedicated tab “IMPARTIAL AI ARCHIVE — MENU, QUESTIONS AND ITEMISED FINDINGS” with numbered mechanisms. Previous master HTML retained unchanged, including “NO ONE HAS THE RIGHT TO DESTROY A SOUL”. Full text of “God exists…” remains only in its own dedicated tab. All new named-document links and maximum itemised detail preserved in this export.</p>
       </div>
     </div>
   </section>
@@ -751,8 +744,9 @@
       The archive distinguishes documentary evidence, allegations, testimony, interpretation and unresolved questions. Inclusion of an individual, organisation or institution does not itself establish wrongdoing.
     </p>
     <p>
-      <a href="#archive">Archive Index</a> ·
-      <a href="#declarations">Declarations</a> ·
+      <a href="#home">Home</a> ·
+      <a href="#named-documents">Named Documents</a> ·
+      <a href="#government">Official Government</a> ·
       <a href="#evidence">Evidence</a> ·
       <a href="#methodology">Methodology</a> ·
       <a href="#verification">Verification</a>
