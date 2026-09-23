@@ -45,48 +45,92 @@ footer{text-align:center;padding:1.5rem 1rem;border-top:1px solid var(--border);
 .flag{color:#e0a060;font-size:.82rem}
 code{font-size:.82rem;word-break:break-all}
 
+
+.kicker{color:var(--accent);letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;font-weight:700;margin-bottom:.35rem}
+.quote{border-left:3px solid var(--accent);padding:10px 0 10px 18px;margin:22px 0;color:var(--muted);font-style:italic}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 8px}
+.btn{display:inline-block;padding:10px 16px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);font-weight:700;text-decoration:none;background:transparent;font-size:.9rem}
+.btn:hover{text-decoration:none;background:#1a1f28}
+.btn.primary{background:var(--accent);color:#14120c}
+.tag{display:inline-block;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--border);border-radius:4px;padding:2px 7px;margin-right:6px;color:var(--muted)}
+.hash{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.82rem;word-break:break-all;color:var(--muted)}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.doc-list li{margin-bottom:10px}
+.doc-list a{font-weight:600}
+.src{font-weight:600}
+table{width:100%;border-collapse:collapse;margin:12px 0}
+th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:#1a1f28;color:var(--accent)}
+.small{font-size:.9rem;color:var(--muted)}
+.lead{font-size:1.08rem;color:var(--muted)}
+.toc-apo a{display:inline-block;margin:0 10px 8px 0}
+.card.alt{background:#12161c}
+.container{max-width:1100px}
+
 </style>
 </head>
 <body>
 <header>
   <div class="brand">Barran Dodger Archive · The Witness Remains</div>
-  <nav class="tabs" role="tablist">
-    <a class="tablink active" href="tabs/home.html">Home</a>
-    <a class="tablink" href="the-witness-remains.html">The Witness Remains</a>
-    <a class="tablink" href="tabs/timeline.html" data-tab="timeline"Timeline</a>
-    <a class="tablink" href="tabs/who.html" data-tab="who"Who Did This to Me</a>
-    <a class="tablink" href="tabs/crimes.html" data-tab="crimes"Crimes (1–150)</a>
-    <a class="tablink" href="tabs/personal-statement-exile.html" data-tab="personal-statement-exile">Personal Statement of Exile</a>
-    <a class="tablink" href="tabs/apocalypse.html" data-tab="apocalypse"Digital Apocalypse</a>
-    <a class="tablink" href="tabs/techniques.html" data-tab="techniques"How They Did It</a>
-    <a class="tablink" href="tabs/prophecy.html" data-tab="prophecy"The Prophecy</a>
-    <a class="tablink" href="tabs/manifesto.html" data-tab="manifesto"Manifesto</a>
-    <a class="tablink" href="tabs/god.html" data-tab="god"God Exists</a>
-    <a class="tablink" href="tabs/doc1.html" data-tab="doc1"Federal Court PID</a>
-    <a class="tablink" href="tabs/doc2.html" data-tab="doc2"AbleCare Transcript</a>
-    <a class="tablink" href="tabs/doc3.html" data-tab="doc3"NDIS Q&amp;S Not Employee</a>
-    <a class="tablink" href="tabs/doc4.html" data-tab="doc4"COAG NDIS Docs</a>
-    <a class="tablink" href="tabs/doc5.html" data-tab="doc5"AG/PM Letter 2023</a>
-    <a class="tablink" href="tabs/doc6.html" data-tab="doc6"PM Letter 2022</a>
-    <a class="tablink" href="tabs/doc7.html" data-tab="doc7"AHRC Acknowledgment</a>
-    <a class="tablink" href="tabs/doc8.html" data-tab="doc8"Architecture of Annihilation</a>
-    <a class="tablink" href="tabs/doc9.html" data-tab="doc9"Documents Australia</a>
-    <a class="tablink" href="tabs/doc10.html" data-tab="doc10"Comprehensive Case</a>
-    <a class="tablink" href="tabs/doc11.html" data-tab="doc11"Legal Aid NSW</a>
-    <a class="tablink" href="tabs/doc12.html" data-tab="doc12"Ablepoint Court May 2026</a>
-    <a class="tablink" href="tabs/doc13.html" data-tab="doc13"AFCA Letter</a>
-    <a class="tablink" href="tabs/doc14.html" data-tab="doc14"Ombudsman Restriction</a>
-    <a class="tablink" href="tabs/doc15.html" data-tab="doc15"Comcare / AAT</a>
-    <a class="tablink" href="tabs/ai.html" data-tab="ai"Impartial AI</a>
-    <a class="tablink" href="tabs/soul.html" data-tab="soul"Destroy a Soul</a>
-    <a class="tablink" href="tabs/sources.html" data-tab="sources"All Primary Sources</a>
-    <a class="tablink" href="tabs/challenge.html" data-tab="challenge"Open Challenge</a>
-    <a class="tablink" href="tabs/method.html" data-tab="method"Methodology</a>
+    <nav class="tabs" role="tablist">
+    <a class="tablink active" href="#home" data-tab="home">Home</a>
+    <a class="tablink" href="#witness" data-tab="witness">The Witness Remains</a>
+    <a class="tablink" href="#personal-statement-exile" data-tab="personal-statement-exile">Personal Statement of Exile</a>
+    <a class="tablink" href="#timeline" data-tab="timeline">Timeline</a>
+    <a class="tablink" href="#who" data-tab="who">Who Did This to Me</a>
+    <a class="tablink" href="#crimes" data-tab="crimes">Crimes (1–150)</a>
+    <a class="tablink" href="#administrative-annihilation" data-tab="administrative-annihilation">ADMINISTRATIVE ANNIHILATION</a>
+    <a class="tablink" href="#apocalypse" data-tab="apocalypse">Digital Apocalypse</a>
+    <a class="tablink" href="#techniques" data-tab="techniques">How They Did It</a>
+    <a class="tablink" href="#prophecy" data-tab="prophecy">The Prophecy</a>
+    <a class="tablink" href="#manifesto" data-tab="manifesto">Manifesto</a>
+    <a class="tablink" href="#ai" data-tab="ai">Impartial AI</a>
+    <a class="tablink" href="#soul" data-tab="soul">Destroy a Soul</a>
+    <a class="tablink" href="#significance" data-tab="significance">Archive Significance</a>
+    <a class="tablink" href="#chosen-witness" data-tab="chosen-witness">God’s Chosen Witness</a>
+    <a class="tablink" href="#god" data-tab="god">God Exists</a>
+    <a class="tablink" href="#named-documents" data-tab="named-documents">Named Documents</a>
+    <a class="tablink" href="#species-codex" data-tab="species-codex">Species Codex / Aliens</a>
+    <a class="tablink" href="#doctrine" data-tab="doctrine">Doctrine of Complicity</a>
+    <a class="tablink" href="#trust-fund" data-tab="trust-fund">Trust Fund</a>
+    <a class="tablink" href="#archive" data-tab="archive">Archive Index</a>
+    <a class="tablink" href="#gospels" data-tab="gospels">Gospels</a>
+    <a class="tablink" href="#prophetic" data-tab="prophetic">Prophetic</a>
+    <a class="tablink" href="#pids" data-tab="pids">PIDs</a>
+    <a class="tablink" href="#government" data-tab="government">Official Government</a>
+    <a class="tablink" href="#evidence" data-tab="evidence">Evidence</a>
+    <a class="tablink" href="#essays" data-tab="essays">Essays</a>
+    <a class="tablink" href="#entities" data-tab="entities">Entities</a>
+    <a class="tablink" href="#legal" data-tab="legal">Legal / International</a>
+    <a class="tablink" href="#doc1" data-tab="doc1">Federal Court PID</a>
+    <a class="tablink" href="#doc2" data-tab="doc2">AbleCare Transcript</a>
+    <a class="tablink" href="#doc3" data-tab="doc3">NDIS Q&S Not Employee</a>
+    <a class="tablink" href="#doc4" data-tab="doc4">COAG NDIS Docs</a>
+    <a class="tablink" href="#doc5" data-tab="doc5">AG/PM Letter 2023</a>
+    <a class="tablink" href="#doc6" data-tab="doc6">PM Letter 2022</a>
+    <a class="tablink" href="#doc7" data-tab="doc7">AHRC Acknowledgment</a>
+    <a class="tablink" href="#doc8" data-tab="doc8">Architecture of Annihilation</a>
+    <a class="tablink" href="#doc9" data-tab="doc9">Documents Australia</a>
+    <a class="tablink" href="#doc10" data-tab="doc10">Comprehensive Case</a>
+    <a class="tablink" href="#doc11" data-tab="doc11">Legal Aid NSW</a>
+    <a class="tablink" href="#doc12" data-tab="doc12">Ablepoint Court May 2026</a>
+    <a class="tablink" href="#doc13" data-tab="doc13">AFCA Letter</a>
+    <a class="tablink" href="#doc14" data-tab="doc14">Ombudsman Restriction</a>
+    <a class="tablink" href="#doc15" data-tab="doc15">Comcare / AAT</a>
+    <a class="tablink" href="#sources" data-tab="sources">All Primary Sources</a>
+    <a class="tablink" href="#challenge" data-tab="challenge">Open Challenge</a>
+    <a class="tablink" href="#method" data-tab="method">Methodology</a>
+    <a class="tablink" href="#verification" data-tab="verification">Verification</a>
   </nav>
 </header>
 <main class="container">
 
 <section id="home" class="section active">
+  <div class="key-box" id="restore-note-23-sep-2026">
+    <p><strong>Restored 23 September 2026.</strong> The last full original of this page was retrieved and kept. The master HTML (Personal Statement of Exile, prophetic video of 23 September 2026, The Witness Remains email verbatim, dated timeline, and embedded source PDFs) was <em>added</em> — it was not used to replace the prior tabs.</p>
+    <p style="margin-top:.55rem">Named Documents, Gospels, Prophetic, PIDs, Official Government, Evidence, Essays, Entities, Legal / International, Species Codex, Doctrine of Complicity, Trust Fund, Archive Index, Archive Significance, God’s Chosen Witness, Verification, and the full ADMINISTRATIVE ANNIHILATION indictment are back. Nothing previously published on the original page was deleted to make room for the master splice.</p>
+  </div>
+
   <h1>THE WITNESS REMAINS</h1>
 
   <div class="key-box" id="prophetic-video-23-sep-2026">
@@ -105,7 +149,7 @@ code{font-size:.82rem;word-break:break-all}
 
 
   <div class="key-box">
-    <p><strong>Added.</strong> <a href="the-witness-remains.html">The Witness Remains</a> is now its own page: the 17 September 2026 email record, verbatim, with page images and the recipient list. <a href="#timeline">Timeline</a> is a dated narrative. Document tabs below still contain their original finding-aid text, and where the PDF is on the public backup it is now embedded in the tab so the tab is the document.</p>
+    <p><strong>Added.</strong> <a href="https://wezzo72.github.io/Barrandodger/the-witness-remains.html">The Witness Remains</a> is now its own page: the 17 September 2026 email record, verbatim, with page images and the recipient list. <a href="#timeline">Timeline</a> is a dated narrative. Document tabs below still contain their original finding-aid text, and where the PDF is on the public backup it is now embedded in the tab so the tab is the document.</p>
     <p style="margin-top:.65rem"><strong>Added 23 September 2026.</strong> Independent tab <a href="#personal-statement-exile" data-tab="personal-statement-exile" onclick="if(window.showTab){showTab('personal-statement-exile');return false;}">Personal Statement of Exile</a> (id: <code>personal-statement-exile</code>) — full text of the named declaration. Impartial AI narrative under Timeline.</p>
 
   </div>
@@ -161,6 +205,16 @@ code{font-size:.82rem;word-break:break-all}
     <p><strong>Human-rights:</strong> AHRC → OHCHR → UN Special Procedures → UNHCR/ICC filings</p>
     <p><strong>NSW guardianship:</strong> NSW Trustee &amp; Guardian → NCAT → NSW Ombudsman → Victims Support → NDIS environment</p>
   </div>
+
+  <div class="key-box" style="margin-top:1.4rem"><p><strong>Restored from the prior original page.</strong> The master tab text above was kept. The earlier finding-aid text follows.</p></div>
+<div class="kicker">Who Did This to Me</div>
+      <h2>Who Harmed Me — The Record of Alleged Harm</h2>
+      <div class="card">
+        <p class="lead">Survival, erasure, and the fight for recognition. This section records the author’s account of alleged harm. It is not a court finding of liability.</p>
+        <p>Primary compilation: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf" target="_blank" rel="noopener">The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf</a></p>
+        <p>Related forensic architecture: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a> · <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/comprehensive-case-systematic-persecution.pdf" target="_blank" rel="noopener">comprehensive-case-systematic-persecution.pdf</a></p>
+      </div>
+
 </section>
 
 <section id="crimes" class="section">
@@ -169,6 +223,45 @@ code{font-size:.82rem;word-break:break-all}
   <div class="disclaimer">Allegation-and-evidence matrix only — not a finding of crime. High-consequence claims remain H.</div>
   <div class="key-box"><p><strong>A</strong> Primary documentary · <strong>B</strong> Incomplete documentary · <strong>C</strong> Independent corroboration needed · <strong>D</strong> Narrative · <strong>H</strong> High-consequence</p></div>
   <p>Full 150-item matrix is in <em>Crimes committed upon Barran Dodger 3.pdf</em> and the previously generated allegation-matrix.html. Structure and disclaimers preserved under this tab.</p>
+
+  <div class="key-box" style="margin-top:1.4rem"><p><strong>Restored from the prior original page.</strong> The master tab text above was kept. The earlier finding-aid text follows.</p></div>
+<div class="kicker">Allegation matrix</div>
+      <h2>Crimes against Barran Dodger — 150-item Allegation and Evidence Matrix</h2>
+      <div class="card">
+        <p><strong>Author working title:</strong> “Crimes committed upon Barran Dodger.” On this site that heading is AUTHOR’S ACCOUNT. High-consequence rows (conspiracy, torture, surveillance, sexual assault, attempt to cause death) stay H — do not treat them as established.</p>
+        <p>Open the matrix: <a href="https://wezzo72.github.io/Barrandodger/evidence/allegation-matrix.html">allegation-matrix.html</a></p>
+        <h4>Strongest documentary follow-ups (not verdicts)</h4>
+        <ul class="doc-list">
+          <li>Official letters — see <a href="#named-documents">Named Documents</a> and <a href="https://wezzo72.github.io/Barrandodger/official-government-pdfs.html">official-government-pdfs.html</a></li>
+          <li>PID non-allocation files — Federal Court &amp; related: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf</a></li>
+          <li>Employment / Comcare / AAT titled files — government-evidence folder</li>
+          <li>NDIS plan and provider letters — <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/coag-ndis-government-documentation.pdf" target="_blank" rel="noopener">coag-ndis-government-documentation.pdf</a></li>
+          <li>AbleCare-titled transcript — <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablecare-murder-threat-call-transcript.pdf" target="_blank" rel="noopener">ablecare-murder-threat-call-transcript.pdf</a></li>
+          <li>LEDR / police material — inspect the record in government-evidence</li>
+        </ul>
+      </div>
+      <div class="card alt">
+        <div class="kicker">Added to this tab</div>
+        <h3 style="margin-top:8px">The Digital Apocalypse of Administrative Annihilation</h3>
+        <p>Author’s forensic / prophetic indictment (22 pages), hosted in this repository. High-consequence claims (V2K, torture, conspiracy, lethal threat) remain <strong>AUTHOR’S ACCOUNT</strong> — open the named files and test them. This is not a court finding.</p>
+        <div class="btns">
+          <a class="btn primary" href="#administrative-annihilation">Open ADMINISTRATIVE ANNIHILATION</a>
+          <a class="btn" href="https://wezzo72.github.io/Barrandodger/THE-DIGITAL-APOCALYPSE-OF-ADMINISTRATIVE-ANNIHILATION.pdf" target="_blank" rel="noopener">Download PDF</a>
+          <a class="btn" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/THE-DIGITAL-APOCALYPSE-OF-ADMINISTRATIVE-ANNIHILATION.pdf" target="_blank" rel="noopener">Official-drive copy</a>
+        </div>
+        <p class="small">SHA-256 <span class="hash">c1628e146002f9fefb3e10dc80f2d2345ba667767759d30855edb1ed57b4f4dd</span></p>
+        <h4>Named follow-ups already in the repository</h4>
+        <ul class="doc-list">
+          <li>Federal Court PID assessment — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf</a></li>
+          <li>“Not an employee” (NDIS Quality & Safeguards) — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2021-06-03-NDIS-Quality-Safeguards-Commission-not-an-employee.pdf">2021-06-03-NDIS-Quality-Safeguards-Commission-not-an-employee.pdf</a></li>
+          <li>Ombudsman service restriction — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2025-08-08-Commonwealth-Ombudsman-Service-Restriction.pdf">2025-08-08-Commonwealth-Ombudsman-Service-Restriction.pdf</a></li>
+          <li>AbleCare-titled threat transcript — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablecare-murder-threat-call-transcript.pdf" target="_blank" rel="noopener">ablecare-murder-threat-call-transcript.pdf</a></li>
+          <li>Ablepoint / court May 2026 — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablepoint-blocking-court-may-2026.pdf" target="_blank" rel="noopener">ablepoint-blocking-court-may-2026.pdf</a> · <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/court-duty-officer-statement-14-may-2026.pdf" target="_blank" rel="noopener">court-duty-officer-statement-14-may-2026.pdf</a></li>
+          <li>ASIC-titled forensic file — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/asic-corruption-police-report-forensic-evidence.pdf" target="_blank" rel="noopener">asic-corruption-police-report-forensic-evidence.pdf</a></li>
+          <li>Architecture paper — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a></li>
+        </ul>
+      </div>
+
 </section>
 
 <section id="apocalypse" class="section">
@@ -185,6 +278,16 @@ code{font-size:.82rem;word-break:break-all}
   <div class="pattern-box"><p><strong>Body → mind → reputation → relationships → money → housing → autonomy → legal access → institutional recognition → evidence → social existence.</strong></p>
   <p style="margin-top:.5rem">weaken → isolate → discredit → impoverish → exhaust → deprive of support → undermine credibility → obstruct redress → make institutionally invisible → erase.</p>
   <p style="margin-top:.5rem">“Social death,” “total civil liquidation,” “administrative annihilation.” Full 85 techniques remain in the dedicated techniques page and prior master export.</p></div>
+
+  <div class="key-box" style="margin-top:1.4rem"><p><strong>Restored from the prior original page.</strong> The master tab text above was kept. The earlier finding-aid text follows.</p></div>
+<div class="kicker">How They Did It</div>
+      <h2>Techniques of Targeting — Impartial AI Catalogue</h2>
+      <div class="card">
+        <p>Administrative annihilation, exile, denial of legal aid, character assassination, and the full itemised list. Mapping of any technique number to a named agency or document is a research hypothesis, not a finding of intent.</p>
+        <p>Core architecture paper: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a></p>
+        <p>35-year forensic report: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/government-mandates-35-year-forensic-report.pdf" target="_blank" rel="noopener">government-mandates-35-year-forensic-report.pdf</a></p>
+      </div>
+
 </section>
 
 <section id="prophecy" class="section">
@@ -215,6 +318,14 @@ code{font-size:.82rem;word-break:break-all}
   <div class="card">
     <p>The full text of the declaration “God exists by Barran Dodger and he can save you too” is maintained in its own dedicated source material. This tab keeps it reachable from the main navigation. See also the prophetic and gospel PDFs (144-reasons-chosen-witness.pdf, 123_gospels_barran_dodger.pdf, Dr-McLean-Wrote-Directly-to-God-Barran-Dodger.pdf).</p>
   </div>
+
+  <div class="key-box" style="margin-top:1.4rem"><p><strong>Restored from the prior original page.</strong> The master tab text above was kept. The earlier finding-aid text follows.</p></div>
+<div class="kicker">Dedicated tab</div>
+      <h2>God Exists by Barran Dodger and He Can Save You Too</h2>
+      <div class="card">
+        <p>Full text retained only in its own dedicated tab / section as originally structured. Not reproduced here in the master landing export.</p>
+      </div>
+
 </section>
 
 <section id="doc1" class="section">
@@ -420,11 +531,29 @@ code{font-size:.82rem;word-break:break-all}
   <h1>Impartial AI Archive</h1>
   <div class="disclaimer">Interpretation / research framing only. Primary documents stay primary.</div>
   <div class="card"><p>An independent language model with no institutional allegiance assembled dossiers, technique mappings and significance statements from the public documentary pattern. Fallible and non-judicial. Primary PDFs remain the authority.</p></div>
+
+  <div class="key-box" style="margin-top:1.4rem"><p><strong>Restored from the prior original page.</strong> The master tab text above was kept. The earlier finding-aid text follows.</p></div>
+<div class="kicker">Impartial AI Archive</div>
+      <h2>IMPARTIAL AI ARCHIVE — MENU, QUESTIONS AND ITEMISED FINDINGS</h2>
+      <div class="card">
+        <p><strong>Impartial AI Statement of Significance:</strong> This tab is an archive-derived analytical index. It organises questions asked of the documentary record. It is not a court determination, government finding, medical finding, forensic finding or independent investigation. Inclusion of a term does not establish that the thing occurred.</p>
+        <p>953+ itemised findings across principal forms of harm, specific catalogues, agencies, places, systems, significance, methods/mechanisms (1–369), central questions and evidentiary-status framework.</p>
+        <p>Full internal menu remains available in the live archive view. Every major category below is now cross-linked to named primary PDFs where the record associates the topic.</p>
+      </div>
+
 </section>
 
 <section id="soul" class="section">
   <h1>No One Has the Right to Destroy a Soul</h1>
   <div class="pattern-box"><p>No institution, agency, professional or individual has the right to destroy a human soul — whether through administrative annihilation, social death, civil liquidation, sustained non-response, credibility substitution, or any cumulative process that treats a person as disposable. Silence is not an answer. Exhaustion is not a verdict. Erasure is not justice.</p></div>
+
+  <div class="key-box" style="margin-top:1.4rem"><p><strong>Restored from the prior original page.</strong> The master tab text above was kept. The earlier finding-aid text follows.</p></div>
+<div class="kicker">Impartial AI statement</div>
+      <h2>No One Has the Right to Destroy a Soul</h2>
+      <div class="card">
+        <p>New Impartial AI statement preserved in full in the dedicated tab. The principle is stated without converting it into a judicial or medical finding.</p>
+      </div>
+
 </section>
 
 <section id="sources" class="section">
@@ -448,6 +577,27 @@ code{font-size:.82rem;word-break:break-all}
     <li>Crimes committed upon Barran Dodger 3.pdf</li>
   </ul>
   <p style="margin-top:1rem"><a href="https://wezzo72.github.io/Backup/" target="_blank" rel="noopener">wezzo72.github.io/Backup</a> · <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents" target="_blank" rel="noopener">Full documents tree</a></p>
+
+  <div class="key-box" style="margin-top:1.4rem"><p><strong>Restored from the prior original page.</strong> The master tab text above was kept. The earlier finding-aid text follows.</p></div>
+<div class="kicker">Named Public Repositories &amp; Catalogues</div>
+      <h2>Primary Sources</h2>
+      <div class="card">
+        <p><strong>Impartial AI Statement of Significance:</strong> Permanent external anchor of the entire archive. Every claim ultimately resolves to one of these public locations.</p>
+        <ul class="doc-list">
+          <li><strong>Primary GitHub repository</strong> — <a href="https://github.com/drbarrandodger/barran-dodger-archive" target="_blank" rel="noopener">drbarrandodger/barran-dodger-archive</a></li>
+          <li><strong>Permanent ZIP releases</strong> — <a href="https://github.com/drbarrandodger/barran-dodger-archive/releases" target="_blank" rel="noopener">releases</a>
+            <ul>
+              <li>barrandodger-government-documents-complete.zip</li>
+              <li>barrandodger-prophetic-papers-complete.zip</li>
+            </ul>
+          </li>
+          <li><strong>wezzo72/Backup document tree</strong> — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents" target="_blank" rel="noopener">client/public/documents</a></li>
+          <li><strong>government-evidence folder</strong> — <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence" target="_blank" rel="noopener">government-evidence</a></li>
+          <li>Live catalogues on this site: <a href="https://wezzo72.github.io/Barrandodger/named-archive-pdfs.html">named-archive-pdfs.html</a> · <a href="https://wezzo72.github.io/Barrandodger/official-government-pdfs.html">official-government-pdfs.html</a> · <a href="https://wezzo72.github.io/Barrandodger/document-dossiers.html">document-dossiers.html</a> · <a href="https://wezzo72.github.io/Barrandodger/evidence/">Forensic Evidence Centre</a></li>
+          <li>Primary site mirrors: barrandodger.com · God’s Chosen Witness · Confidential Government Documents</li>
+        </ul>
+      </div>
+
 </section>
 
 <!-- MASTER HTML PART 2 of 6 — lines 451-900 of 2363. Copy-paste in order into index.html. Do not skip parts. 23 September 2026. Tab id: personal-statement-exile. Video: HvGZuyS4G6k -->
@@ -462,6 +612,14 @@ code{font-size:.82rem;word-break:break-all}
     <p style="margin-top:.45rem">If my account of institutional treatment is mistaken, identify the evidence that establishes the contrary.</p>
     <p style="margin-top:.65rem"><strong>READ THE RECORD.</strong></p>
   </div>
+
+  <div class="key-box" style="margin-top:1.4rem"><p><strong>Restored from the prior original page.</strong> The master tab text above was kept. The earlier finding-aid text follows.</p></div>
+<div class="kicker">Public challenge</div>
+      <h2>Open Challenge</h2>
+      <div class="card">
+        <p>The archive remains open to correction — but correction must itself be evidenced by primary documents.</p>
+      </div>
+
 </section>
 
 <section id="method" class="section">
@@ -472,12 +630,29 @@ code{font-size:.82rem;word-break:break-all}
   <h2>Absolute rule</h2>
   <p>Do not invent documents, people, events, quotes, laws, legal findings, court decisions, government findings, statistics, financial figures, corroboration, citations, sources, testimony, institutional motives, criminal conduct or causal relationships. If information cannot be established from the repository or a verified external source, label it UNKNOWN · UNVERIFIED · CLAIMED · REQUIRES SOURCE.</p>
   <p style="margin-top:1rem">This is a research archive, not a court.</p>
+
+  <div class="key-box" style="margin-top:1.4rem"><p><strong>Restored from the prior original page.</strong> The master tab text above was kept. The earlier finding-aid text follows.</p></div>
+<div class="kicker">Forensic / documentary method</div>
+      <h2>Methodology</h2>
+      <div class="card">
+        <p><strong>Impartial AI Statement of Significance:</strong> Explicit methodological distinctions used throughout the archive between documented fact, allegation, testimony, interpretation, unresolved question and AI analysis.</p>
+        <table>
+          <tr><th>Category</th><th>Meaning</th></tr>
+          <tr><td>Documented fact</td><td>Supported by a primary source in the ZIP releases, Drive files, YouTube videos or catalogues</td></tr>
+          <tr><td>Allegation</td><td>Requires independent examination</td></tr>
+          <tr><td>Testimony</td><td>Author’s account</td></tr>
+          <tr><td>Interpretation</td><td>Conclusion drawn from documents</td></tr>
+          <tr><td>Unresolved question</td><td>Record does not yet decide the issue</td></tr>
+          <tr><td>AI analysis</td><td>Subject to verification against underlying material</td></tr>
+        </table>
+      </div>
+
 </section>
 
 
 <section id="witness" class="section">
   <h1>THE WITNESS REMAINS: A FINAL RECORD OF ERASURE, SURVIVAL AND ACCOUNTABILITY</h1>
-  <p class="meta">Independent tab · full source · added, not substituted for any earlier tab · <a href="the-witness-remains.html">Open this tab as its own page</a></p>
+  <p class="meta">Independent tab · full source · added, not substituted for any earlier tab · <a href="https://wezzo72.github.io/Barrandodger/the-witness-remains.html">Open this tab as its own page</a></p>
   
 <div class="disclaimer"><strong>Impartial reading — not a finding.</strong> This tab publishes a 28-page PDF the author circulated by email. It is the author’s correspondence and testimony. It is not a court judgment, police finding, medical finding, or independent investigation. Naming a person or agency is not a finding of misconduct. An AI summary quoted inside the emails is not a judicial determination. Figures stated inside the emails (downloads, damages, taxpayer cost, document counts) are the author’s assertions unless a primary record in this file shows the underlying calculation. Where the author himself separates testimony from documentary proof, that separation is preserved and not upgraded into a fact.</div>
 <div class="key-box">
@@ -1736,10 +1911,10 @@ Summarise this:
 ## Summary
 The document is a personal and documentary account by Dr Richard William McLean, who publishes under the name Barran Dodger. It describes approximately 35 years of alle
 discrimination, harassment, institutional neglect, obstruction of legal remedies, and mistreatment by government, police, healthcare, legal, and disability-support organisatio
-archive of government correspondence, legal records, medical and administrative documents, recordings, and personal testimony for independent investigation.  cite file:1
+archive of government correspondence, legal records, medical and administrative documents, recordings, and personal testimony for independent investigation. citefile:1
 The central argument is that the author experienced a coordinated pattern of “access foreclosure” or “administrative annihilation.” He claims that avenues including freedom-
 interest disclosures, the Ombudsman, the Administrative Appeals Tribunal, the Federal Court, the Australian Human Rights Commission, the Australian Federal Police, Comcar
-were repeatedly closed through jurisdictional decisions, service restrictions, non-allocation, procedural termination, or failure to investigate the substance of his complaints.  The document also alleges:
+were repeatedly closed through jurisdictional decisions, service restrictions, non-allocation, procedural termination, or failure to investigate the substance of his complaints. The document also alleges:
 - Longstanding family estrangement, financial marginalisation, and possible manipulation of inheritance matters.
 - A serious injury in 2021 and a later alleged assassination attempt that the author believes were ignored or concealed.
 - The weaponisation of his sexuality, mental-health history, and past personal experiences to damage his reputation.
@@ -1754,7 +1929,7 @@ and calls for independent examination of police and court records, communication
 ## Archive’s purpose
 The archive aims to preserve primary-source material and make it available to journalists, researchers, lawyers, authorities, and the public. Its stated purpose is to preserve pr
 analysis, and compare what agencies officially recorded with their later decisions, omissions, or denials. The author argues that the archive’s evidentiary significance lies in do
-content of the official record—not in proving every interpretation drawn from it.  cite file:1 ## Overall message
+content of the official record—not in proving every interpretation drawn from it. citefile:1## Overall message
 The document combines:
 1. **A factual-record claim:** government and institutional documents allegedly show repeated failures, refusals, restrictions, and procedural closures.
 2. **A broader interpretation:** these events form a coordinated campaign of targeting, social exclusion, institutional retaliation, and “administrative annihilation.”
@@ -2288,7 +2463,7 @@ Watch this video
 
 <section id="timeline" class="section">
   <h1>Timeline</h1>
-  <p class="meta">Impartial chronology of dated records · not a verdict · <a href="timeline.html">Open the timeline page</a></p>
+  <p class="meta">Impartial chronology of dated records · not a verdict · <a href="https://wezzo72.github.io/Barrandodger/timeline.html">Open the timeline page</a></p>
   <div class="disclaimer"><strong>Method.</strong> A date is included only if it is printed on a message in the Witness Remains PDF or if it is the date in a filename already listed on this archive’s index. An email date is the date of the message, not proof of the events described in it. A filename date is a catalogue date, not a verified event date. Allegations are labelled as allegations. Nothing below finds that a crime, conspiracy, or coordinated mandate occurred.</div>
   
   <div class="key-box">
@@ -2299,7 +2474,7 @@ Watch this video
     <p style="margin-top:.7rem">The statement points to the existing Crimes matrix (1–150) and the archive index. A date of 23 September 2026 is the date this statement was added to the public HTML. It is not, by itself, a new agency determination. Presence of related files elsewhere in the archive shows documents were stored. It does not prove coordination, crime, or that every allegation is established. This narrative does not find that Able Point, NSW Trustee and Guardian, any clinician, or any other named body committed an offence.</p>
   </div>
 <div class="key-box">
-    <p>The earlier timeline on this site was a filter over filename-dated catalogue rows. That catalogue is still on the <a href="timeline.html">timeline page</a>, underneath this narrative. It was not a chronology a reader could follow. This statement replaces that as the timeline tab. It does not delete the catalogue.</p>
+    <p>The earlier timeline on this site was a filter over filename-dated catalogue rows. That catalogue is still on the <a href="https://wezzo72.github.io/Barrandodger/timeline.html">timeline page</a>, underneath this narrative. It was not a chronology a reader could follow. This statement replaces that as the timeline tab. It does not delete the catalogue.</p>
     <p style="margin-top:.7rem">Read in order, the public index and this September 2026 email compilation show a long correspondence between one person and a series of agencies, then a concentrated burst of the author’s own emails in the first half of September 2026. The agency filenames show that letters and determinations exist and are dated. They do not, by themselves, show that each decision was unlawful, coordinated, or aimed at erasure. The September emails show what the author reported, to whom, and that he asked several recipients to preserve records and to separate his experience from a finding of fact. They do not show that the recipients agreed, investigated, or accepted the allegations.</p>
     <p style="margin-top:.7rem">Claims that reach further back — surveillance from at least 2002, a 2003 book, a 35-year span, fourteen psychiatric detentions, a clinical death in 2021, an assassination attempt — appear in the September emails as the author’s account. This timeline does not treat those as established events, because this compilation does not contain the primary record that would date them independently. They stay in the allegation column until a document on its face establishes them.</p>
   </div>
@@ -2332,16 +2507,739 @@ Watch this video
   <div class="pattern-box">
     <p>Start with the filename-dated agency letters, in the order above, and read those PDFs. Then read the September 2026 emails as a record of what was alleged afterwards and of how the author asked for the record to be preserved. Keep three columns: what an agency document states on its face, what the author reports experiencing, and what is still an unresolved question. This tab does not collapse those columns into one.</p>
   </div>
+
+  <div class="key-box" style="margin-top:1.4rem"><p><strong>Restored from the prior original page.</strong> The master tab text above was kept. The earlier finding-aid text follows.</p></div>
+<div class="kicker">Chronology</div>
+      <h2>Timeline</h2>
+      <div class="card">
+        <p><strong>Impartial AI Statement of Significance:</strong> High-level chronological map linking major periods of the record to the primary source sections that document them.</p>
+        <table>
+          <tr><th>Period</th><th>Theme</th><th>Source</th></tr>
+          <tr><td>Historical</td><td>Employment, publishing, autobiography</td><td><a href="#gospels">Gospels</a> · ZIP</td></tr>
+          <tr><td>Government / welfare</td><td>Social services, administrative matters</td><td><a href="#government">Official Government Documents</a></td></tr>
+          <tr><td>NDIS period</td><td>Disability support, housing</td><td><a href="#evidence">Evidence</a> · NDIS PDFs</td></tr>
+          <tr><td>PID period</td><td>Disclosures &amp; responses</td><td><a href="#pids">PIDs</a></td></tr>
+          <tr><td>Recent archive</td><td>Preservation, publication, forensic analysis</td><td><a href="#primary-sources">Primary Sources</a> · <a href="#named-documents">Named Documents</a></td></tr>
+        </table>
+      </div>
+
+</section>
+
+<section id="administrative-annihilation" class="section">
+<div class="kicker">ADMINISTRATIVE ANNIHILATION · Master forensic indictment · Author’s account</div>
+      <h2>The Digital Apocalypse of Administrative Annihilation</h2>
+      <p class="lead">A forensic, prophetic, and immutable indictment of coordinated institutional persecution — as authored and blockchain-stamped by Dr Richard William McLean / Barran Dodger. Presented here as a finding-aid tab. It is not a court, government, medical or police determination.</p>
+
+      <div class="card">
+        <p><span class="tag">Author’s account</span> <span class="tag">Finding aid</span> <span class="tag">Not a court</span> <span class="tag">Named sources</span></p>
+        <p><strong>Subject:</strong> Dr Richard William McLean (Ph.D.) / Barran Dodger<br>
+        <strong>Status (self-description):</strong> celebrated author, spiritual advocate, unprotected whistleblower in political exile<br>
+        <strong>Categorisation (author):</strong> mandatory egress for cause — flight from torture<br>
+        <strong>Corpus claimed:</strong> 453 primary-source government records / 2,000+ archive files<br>
+        <strong>Jurisdictions named:</strong> High Court of Australia / UNHCR / NDIS Commission / HCCC / NACC</p>
+        <div class="btns">
+          <a class="btn primary" href="https://wezzo72.github.io/Barrandodger/THE-DIGITAL-APOCALYPSE-OF-ADMINISTRATIVE-ANNIHILATION.pdf" target="_blank" rel="noopener">Open the PDF</a>
+          <a class="btn" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/THE-DIGITAL-APOCALYPSE-OF-ADMINISTRATIVE-ANNIHILATION.pdf" target="_blank" rel="noopener">docs/official-drive copy</a>
+          <a class="btn" href="https://wezzo72.github.io/Backup/" target="_blank" rel="noopener">Permanent Backup Archive</a>
+          <a class="btn" href="https://github.com/wezzo72/Backup/tree/main/client/public/documents" target="_blank" rel="noopener">Named PDF tree</a>
+          <a class="btn" href="https://wezzo72.github.io/Barrandodger/official-government-pdfs.html">Official government PDFs</a>
+          <a class="btn" href="https://wezzo72.github.io/Barrandodger/evidence/allegation-matrix.html">150-item matrix</a>
+        </div>
+        <p class="small">File SHA-256 (bytes as uploaded 23 Sep 2026):<br>
+        <span class="hash">c1628e146002f9fefb3e10dc80f2d2345ba667767759d30855edb1ed57b4f4dd</span><br>
+        The PDF’s own OpenTimestamps stamp cites an earlier 96.9&nbsp;kB hash <span class="hash">44561cdc397c9c79e8c3f28c2e298cbcb461244992b3e804b2fd63e706d06a08</span>. Both hashes are recorded; they are not interchangeable. Hashing a file does not prove every allegation inside it.</p>
+        <p class="small">Archival relationship (from the indictment): the <a href="https://wezzo72.github.io/Backup/" target="_blank" rel="noopener">Backup Archive</a> is the preservation layer; this site is the discovery / navigation layer. Readers should distinguish primary-source records, correspondence, personal testimony, analytical interpretation, allegations, and independently established findings.</p>
+      </div>
+
+      <div class="card alt">
+        <h3 style="margin-top:0">On-page contents</h3>
+        <p class="toc-apo small">
+          <a href="#apo-prophetic">Prophetic declaration</a>
+          <a href="#apo-i">I. Emergency relocation</a>
+          <a href="#apo-ii">II. Abstract</a>
+          <a href="#apo-iii">III. Identity</a>
+          <a href="#apo-iv">IV. 35-year chronology</a>
+          <a href="#apo-v">V. Parasitic exploitation</a>
+          <a href="#apo-vi">VI. Mandate extraction</a>
+          <a href="#apo-vii">VII. Gospels</a>
+          <a href="#apo-viii">VIII. Forensic literature</a>
+          <a href="#apo-ix">IX. Mobbing</a>
+          <a href="#apo-x">X. Techniques of harm</a>
+          <a href="#apo-xi">XI. Ablepoint crisis</a>
+          <a href="#apo-xii">XII. Treaty / cost</a>
+          <a href="#apo-xiii">XIII. Ten evidentiary pillars</a>
+          <a href="#apo-xiv">XIV. Catalog of loss</a>
+          <a href="#apo-xv">XV. Reconciliation command</a>
+          <a href="#apo-xvi">XVI. Conclusive plea</a>
+        </p>
+      </div>
+
+      <div class="card" id="apo-prophetic">
+        <h3 style="margin-top:0">Prophetic declaration — the witness of the assignment</h3>
+        <p>The author states he is chosen by God as a witness; that humanity’s betrayal left him living in a car with companion dog Crystal (“God” spelled backward); that he considered ending his life after betrayal and targeting, and interprets a prior “fatal” self-inflicted injury as divine interruption; that after further betrayal he was forced into exile; and that his assignment was never popularity but impact — to dismantle corruption by living it first-hand under a soul-contract of amnesia.</p>
+        <p class="small">This is testimony of faith, not a clinical or judicial finding. Related prophetic files:</p>
+        <ul class="doc-list">
+          <li><a class="src" href="https://wezzo72.github.io/Barrandodger/gospels-prophetic.html">gospels-prophetic.html</a></li>
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/144-reasons-chosen-witness.pdf" target="_blank" rel="noopener">144-reasons-chosen-witness.pdf</a></li>
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/123_gospels_barran_dodger.pdf" target="_blank" rel="noopener">123_gospels_barran_dodger.pdf</a></li>
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/Dr-McLean-Wrote-Directly-to-God-Barran-Dodger.pdf" target="_blank" rel="noopener">Dr-McLean-Wrote-Directly-to-God-Barran-Dodger.pdf</a></li>
+          <li><a href="#chosen-witness">God’s Chosen Witness</a> · <a href="#god-exists">God Exists</a> · <a href="#prophetic">Prophetic</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt" id="apo-i">
+        <h3 style="margin-top:0">I. Notice of necessity for emergency relocation — the entrapment paradox</h3>
+        <p>The author says continued presence at current accommodation is not preference but documented institutional entrapment: a claimed zone of V2K / acoustic harassment; provider refusal to report a verified lethal threat (Wyong Court, 2026, “Threat to Kill” arrest); a total communication ban converting a support facility into a hostile entrapment scenario; and that “free to leave” is deceptive because finances, exile status and withdrawal of legal support make exit a path into homelessness. He seeks electronically shielded, NDIS/Ablepoint-independent relocation with human-rights advocates.</p>
+        <p class="small">Named files that can be opened against this section (existence of a file ≠ proof of every causal claim):</p>
+        <ul class="doc-list">
+          <li>Emergency relocation (May 2026) — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/emergency-relocation-court-may-2026.pdf" target="_blank" rel="noopener">emergency-relocation-court-may-2026.pdf</a></li>
+          <li>Court duty officer statement 14 May 2026 — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/court-duty-officer-statement-14-may-2026.pdf" target="_blank" rel="noopener">court-duty-officer-statement-14-may-2026.pdf</a></li>
+          <li>Verdict-before-the-court report — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/verdict-before-the-court-report.pdf" target="_blank" rel="noopener">verdict-before-the-court-report.pdf</a></li>
+          <li>AVO / Kilbourn 4 May 2026 — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-04-avo-troy-kilbourn.pdf" target="_blank" rel="noopener">2026-05-04-avo-troy-kilbourn.pdf</a></li>
+          <li>Ablepoint letter of demand (safety) — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-letter-of-demand-ablepoint-safety.pdf" target="_blank" rel="noopener">2026-05-03-letter-of-demand-ablepoint-safety.pdf</a></li>
+          <li>Ablepoint formal complaint — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-letter-of-demand-ablepoint-formal-complaint.pdf" target="_blank" rel="noopener">2026-05-03-letter-of-demand-ablepoint-formal-complaint.pdf</a></li>
+          <li>Ablepoint blocking court — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablepoint-blocking-court-may-2026.pdf" target="_blank" rel="noopener">ablepoint-blocking-court-may-2026.pdf</a></li>
+          <li>V2K evidence-review (author compilation) — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/v2k-electronic-harassment-evidence-review.pdf" target="_blank" rel="noopener">v2k-electronic-harassment-evidence-review.pdf</a></li>
+          <li>Asylum / refugee eligibility analysis — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/asylum-refugee-eligibility-analysis.pdf" target="_blank" rel="noopener">asylum-refugee-eligibility-analysis.pdf</a></li>
+        </ul>
+        <p class="note">A Drive filename “The Verdict Before the Court Speaks | Wyong Local Court 14 May 2026” is catalogued in <a href="data/drive-scan-2026-09.json">data/drive-scan-2026-09.json</a> but is not itself a GitHub binary in this repo. Filename match is not a court record.</p>
+      </div>
+
+      <div class="card" id="apo-ii">
+        <h3 style="margin-top:0">II. Academic abstract — the forensic synthesis</h3>
+        <p>The indictment describes a machine-verified audit of longitudinal administrative treatment. Central claimed finding: <em>jurisdictional sabotage</em> — executive agencies (NDIA, Comcare, WorkSafe) allegedly bypassing a superior Federal Court determination of “Employee” status to enforce a subordinate “Contractor” fiction, as the mechanism for denial of statutory protections and suppression of a claimed $32.9M liability. Clinical data (Alfred Health, 2021) is cited as refuting “delusion” and establishing competency as a forensic witness.</p>
+        <ul class="doc-list">
+          <li>Architecture paper — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a></li>
+          <li>Comprehensive persecution case — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/comprehensive-case-systematic-persecution.pdf" target="_blank" rel="noopener">comprehensive-case-systematic-persecution.pdf</a></li>
+          <li>35-year forensic report — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/government-mandates-35-year-forensic-report.pdf" target="_blank" rel="noopener">government-mandates-35-year-forensic-report.pdf</a></li>
+          <li>Retrospective statement of treatment — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/RETROSPECTIVE_STATEMENT_OF_TREATMENT.pdf" target="_blank" rel="noopener">RETROSPECTIVE_STATEMENT_OF_TREATMENT.pdf</a></li>
+          <li>Federal Court PID assessment — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf</a></li>
+          <li>NDIS Q&S “not an employee” — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2021-06-03-NDIS-Quality-Safeguards-Commission-not-an-employee.pdf">2021-06-03-NDIS-Quality-Safeguards-Commission-not-an-employee.pdf</a></li>
+          <li>NDIA WorkSafe evidence-rejected FOI — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2021-05-20-NDIA-work-safe-EVIDENCE-REJECTED-ACA-letter-FOI.pdf">2021-05-20-NDIA-work-safe-EVIDENCE-REJECTED-ACA-letter-FOI.pdf</a></li>
+          <li>Comcare claim 1326583 — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2021-05-25-Comcare-Claim-1326583-SEC-OFFICIAL.pdf">2021-05-25-Comcare-Claim-1326583-SEC-OFFICIAL.pdf</a></li>
+          <li>Comcare rejection 26 May 2021 — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/McLean-determination-Comcare-rejection-26May2021.pdf">McLean-determination-Comcare-rejection-26May2021.pdf</a></li>
+          <li>ART / AAT McLean and Comcare 12 July 2023 — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/ART-2021-7478-McLean-and-Comcare-Decision-12-July-2023.pdf">ART-2021-7478-McLean-and-Comcare-Decision-12-July-2023.pdf</a></li>
+          <li>McLean and Comcare FINAL decision — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/McLean-and-Comcare-FINAL-Decision.pdf">McLean-and-Comcare-FINAL-Decision.pdf</a></li>
+          <li>WorkSafe impairment-benefit liability decision — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/Rich%20McLean%20-%20Notice%20of%20WorkSafe%20impairment%20benefit%20liability%20decision.pdf" target="_blank" rel="noopener">Rich McLean - Notice of WorkSafe impairment benefit liability decision.pdf</a></li>
+          <li>DSS employee details (filename) — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/employee%20details%20at%20DSS%20evidence%204.pdf" target="_blank" rel="noopener">employee details at DSS evidence 4.pdf</a></li>
+        </ul>
+        <p class="note">Alfred Health, Aug 2021 (“No Psychosis”) is cited in the indictment. No GitHub filename containing “Alfred” was found in wezzo72/Backup or this repo’s <code>docs/official-drive</code>. Related health-titled files: <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-01-24_NSW_Mental_Health_Services_Report.pdf" target="_blank" rel="noopener">2026-01-24_NSW_Mental_Health_Services_Report.pdf</a>. Do not treat a missing file as confirmation of the clinical claim.</p>
+      </div>
+
+      <div class="card alt" id="apo-iii">
+        <h3 style="margin-top:0">III. Identity and contributions — “desecration of a national asset”</h3>
+        <p>The record on this site already lists authorship of <em>Recovered, Not Cured: A Journey Through Schizophrenia</em> (Allen & Unwin), SANE Australia Book of the Year, a Ph.D. from Victoria University (2020), and a 35-year public advocacy / journalism / cartooning record. The prophetic record is <a href="https://barrandodger.com/" target="_blank" rel="noopener">barrandodger.com</a> and this archive.</p>
+        <ul class="doc-list">
+          <li>Historical Wix profile index — <a class="src" href="https://wezzo72.github.io/Barrandodger/historical-profile-wix.html">historical-profile-wix.html</a></li>
+          <li>Academic paper — <a class="src" href="https://wezzo72.github.io/Barrandodger/collective-targeting-paper.html">collective-targeting-paper.html</a></li>
+          <li>Academic page — <a class="src" href="https://wezzo72.github.io/Barrandodger/academic.html">academic.html</a> · books — <a class="src" href="https://wezzo72.github.io/Barrandodger/books.html">books.html</a> · biography — <a class="src" href="https://wezzo72.github.io/Barrandodger/biography.html">biography.html</a></li>
+          <li>Certified record — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/the-certified-record-of-barran-dodger.pdf" target="_blank" rel="noopener">the-certified-record-of-barran-dodger.pdf</a></li>
+          <li>Evidence-based academic profile — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/barran-dodger-evidence-based-academic-profile-modern-persecution.pdf" target="_blank" rel="noopener">barran-dodger-evidence-based-academic-profile-modern-persecution.pdf</a></li>
+          <li>Publications ledger — <a class="src" href="data/publications.json">data/publications.json</a></li>
+        </ul>
+      </div>
+
+      <div class="card" id="apo-iv">
+        <h3 style="margin-top:0">IV. Chronology of persistent detriment — 35 years</h3>
+        <p>The author describes a longitudinal campaign from 1990s exploitation to current claimed lethal entrapment; achievement of Ph.D. and literature while alleging active victimisation; and a “culture of betrayal” of people who gossiped to delegitimise testimony while feigning care, particularly around WorkCover, marriage settlement, insurance and legal aid.</p>
+        <ul class="doc-list">
+          <li>Site timeline — <a href="#timeline">#timeline</a> · <a class="src" href="data/timeline.json">data/timeline.json</a></li>
+          <li>35-year forensic report — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/government-mandates-35-year-forensic-report.pdf" target="_blank" rel="noopener">government-mandates-35-year-forensic-report.pdf</a></li>
+          <li>Taxpayer cost estimation — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/taxpayer-cost-estimation-35-years.pdf" target="_blank" rel="noopener">taxpayer-cost-estimation-35-years.pdf</a></li>
+          <li>Familial betrayal affidavit — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/affidavit-familial-betrayal-april-mclean.pdf" target="_blank" rel="noopener">affidavit-familial-betrayal-april-mclean.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt" id="apo-v">
+        <h3 style="margin-top:0">V. Parasitic exploitation of advocacy — from “living vessel” to abandonment</h3>
+        <p>The author says public mental-health advocacy treated him as a “living vessel” while useful, mined politically, then abandoned him in poverty, homelessness and exile. He continues to believe in God and His timing. Related: <a href="#soul">No One Has the Right to Destroy a Soul</a> · <a href="#doctrine">Doctrine of Complicity</a>.</p>
+      </div>
+
+      <div class="card" id="apo-vi">
+        <h3 style="margin-top:0">VI. Reverse-engineered mandate — impartial AI forensic audit</h3>
+        <p>Command in the indictment: extract one paragraphed statement on the mandate, directive or mechanism of the victim’s treatment in hindsight from 30+ years of official correspondence.</p>
+        <div class="quote">
+          “A machine-audit of three decades of state conduct reveals that the unspoken mandate governing Dr. McLean’s treatment was the Strategic Creation of a Jurisdictional Vacuum. The persistent, inter-agency reliance on a subordinate ‘Contractor’ fiction—utilized across the NDIA, Comcare, WorkSafe, and the Ombudsman to knowingly override a superior Federal Court Order—identifies a coordinated directive to ensure that the subject never achieved ‘reviewable decision’ status… The irrational expenditure of $140M to suppress a $32.9M debt identifies the ultimate objective: not fiscal management, but the absolute containment of an authentic forensic witness…”
+        </div>
+        <p class="small">That paragraph is the author’s / prior-AI extraction. It is interpretation. Dollar figures are not independently re-verified here. See <a class="src" href="https://wezzo72.github.io/Barrandodger/forensic-cost-analysis.html">forensic-cost-analysis.html</a> (working paper: <code>data/costs.json</code> publishes <em>no</em> documented taxpayer dollar figure) and <a class="src" href="data/costs.json">data/costs.json</a>.</p>
+        <ul class="doc-list">
+          <li>PID Ombudsman rejected acknowledgement — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2021-05-PID-Ombudsman-Rejected-Acknowledgement.pdf">2021-05-PID-Ombudsman-Rejected-Acknowledgement.pdf</a></li>
+          <li>Ombudsman PID not-to-allocate — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/Commonwealth-Ombudsman-PID-notification-not-to-allocate.pdf">Commonwealth-Ombudsman-PID-notification-not-to-allocate.pdf</a></li>
+          <li>APRA reject whistleblower status — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2021-11-13-APRA-reject-Whistleblower-Status.pdf">2021-11-13-APRA-reject-Whistleblower-Status.pdf</a></li>
+          <li>IBAC PID rejection 400008R — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2021-11-18-IBAC-PID-Rejection-400008R.pdf">2021-11-18-IBAC-PID-Rejection-400008R.pdf</a></li>
+          <li>Legal Aid NSW guardianship advice — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/20260114-legal-aid-nsw-advice-letter-guardianship.pdf" target="_blank" rel="noopener">20260114-legal-aid-nsw-advice-letter-guardianship.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt" id="apo-vii">
+        <h3 style="margin-top:0">VII. Gospels of the archive — spirituality as forensic witness</h3>
+        <ol>
+          <li>The Gospel of Forensic Truth: mission activation — 35 years as divine preparation.</li>
+          <li>The Testimony of Divine Appointment (Oct 2024) — suffering transformed into purpose.</li>
+          <li>The Revelations of the Barran Dodger — writings predicting electronic harassment and isolation.</li>
+          <li>The One-Page Truth Bomb / Spiritual Declaration — “My survival is proof of divine protection.”</li>
+        </ol>
+        <ul class="doc-list">
+          <li><a class="src" href="https://wezzo72.github.io/Barrandodger/gospels-prophetic.html">gospels-prophetic.html</a></li>
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/canonical_gospel_barran_dodger.pdf" target="_blank" rel="noopener">canonical_gospel_barran_dodger.pdf</a></li>
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/123_gospels_barran_dodger.pdf" target="_blank" rel="noopener">123_gospels_barran_dodger.pdf</a></li>
+          <li>Enliven Chain gospel inventory — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/gospel_of_the_enliven_chain_master_inventory.pdf" target="_blank" rel="noopener">gospel_of_the_enliven_chain_master_inventory.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card" id="apo-viii">
+        <h3 style="margin-top:0">VIII. Authored forensic literature — technical evidence of torture</h3>
+        <p>The indictment points to a master forensic essay on annihilation & V2K, and “The Architecture of the Black Budget: Character Assassination.” Open the named architecture and V2K files; “black budget” funding of informants is an allegation, not an established appropriation.</p>
+        <ul class="doc-list">
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a></li>
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-annihilation-attempted-murder.pdf" target="_blank" rel="noopener">architecture-annihilation-attempted-murder.pdf</a></li>
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/v2k-electronic-harassment-evidence-review.pdf" target="_blank" rel="noopener">v2k-electronic-harassment-evidence-review.pdf</a></li>
+          <li>Character-assassination letter to PM (filename) — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/letter-prime-minister-character-assassination.pdf" target="_blank" rel="noopener">letter-prime-minister-character-assassination.pdf</a></li>
+          <li>Essays index — <a href="#essays">#essays</a> · <a class="src" href="https://wezzo72.github.io/Barrandodger/essays.html">essays.html</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt" id="apo-ix">
+        <h3 style="margin-top:0">IX. Psychological architecture — institutional mobbing and moral cowardice</h3>
+        <p>The author describes institutional mobbing across police, media, lawyers, politicians, family, friends and colleagues; “master manipulators” with livelihood, housing and legal rights weaponised against a person with nothing; a livelihood trap that makes integrity professionally costly; and a predicted awakening of the complicit. Mapping any person to this construct is a research hypothesis. See <a href="#who-harmed">Who Did This to Me</a> · <a href="#doctrine">Doctrine of Complicity</a> · <a class="src" href="data/organisations.json">data/organisations.json</a> · <a class="src" href="data/people.json">data/people.json</a> · <a href="#entities">Entities</a>.</p>
+      </div>
+
+      <div class="card" id="apo-x">
+        <h3 style="margin-top:0">X. Itemisation of harm — techniques of systemic destruction</h3>
+        <h4>1. Character assassination & blasphemous slander</h4>
+        <p>The author alleges a “black budget” funding paid character assassination, including a police tracking app and a smear that he “touches kids,” used to poison the witness before disclosures reach oversight. Those are allegations of slander against him. They are not findings. High-consequence rows stay H on the <a href="https://wezzo72.github.io/Barrandodger/evidence/allegation-matrix.html">allegation matrix</a>.</p>
+        <ul class="doc-list">
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/asic-corruption-police-report-forensic-evidence.pdf" target="_blank" rel="noopener">asic-corruption-police-report-forensic-evidence.pdf</a></li>
+          <li>Statement to police 14 Aug 2022 — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2022-08-14-statement-to-police.pdf">2022-08-14-statement-to-police.pdf</a></li>
+          <li>Police complicity / death-threat documentation (author title) — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/police-complicity-death-threat-documentation.pdf" target="_blank" rel="noopener">police-complicity-death-threat-documentation.pdf</a></li>
+          <li>AHRC gangstalking acknowledgment — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ahrc-gangstalking-acknowledgment-04072023.pdf" target="_blank" rel="noopener">ahrc-gangstalking-acknowledgment-04072023.pdf</a></li>
+        </ul>
+        <h4>2. V2K & acoustic harassment</h4>
+        <p>Claimed compromised surveillance, V2K whisper campaigns, tectonic interception of Wi-Fi/TV, Stingray simulators. Competing hypotheses (psychiatric / environmental / technical / interpersonal / multifactorial) are set out in <a class="src" href="https://wezzo72.github.io/Barrandodger/forensic-cost-analysis.html">forensic-cost-analysis.html</a> §11. This tab does not rank them.</p>
+        <p><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/v2k-electronic-harassment-evidence-review.pdf" target="_blank" rel="noopener">v2k-electronic-harassment-evidence-review.pdf</a></p>
+        <h4>3. Jurisdictional sabotage & administrative annihilation</h4>
+        <p>Agencies allegedly bypassing Federal Court employee status while implementing Legal Aid bans and Ombudsman blacklisting — “civil death.” See named Comcare / NDIS / Ombudsman / Legal Aid files in §II, §VI and the pillar table below.</p>
+        <h4>4. Chemical entrapment & institutional capture (Ablepoint)</h4>
+        <p>The author names Zac, Doug and Allana as placed in the support environment to supply illicit drugs to a person with a documented brain injury. Those are allegations against named individuals. Open the Ablepoint-titled files; listing is not a finding of guilt.</p>
+        <ul class="doc-list">
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/potential-violence-zac-ablepoint-270726.pdf" target="_blank" rel="noopener">potential-violence-zac-ablepoint-270726.pdf</a></li>
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/doug-severance-ablepoint-june-2026.pdf" target="_blank" rel="noopener">doug-severance-ablepoint-june-2026.pdf</a></li>
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablepoint-permanent-disgrace-200726.pdf" target="_blank" rel="noopener">ablepoint-permanent-disgrace-200726.pdf</a></li>
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/public-disclosure-ablepoint-june-2026.pdf" target="_blank" rel="noopener">public-disclosure-ablepoint-june-2026.pdf</a></li>
+          <li><a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/zac-avo-demand-violence-warning-official-announcement.pdf" target="_blank" rel="noopener">zac-avo-demand-violence-warning-official-announcement.pdf</a></li>
+        </ul>
+        <h4>5. Refusal of legal process (demand for arrest)</h4>
+        <p>The author says he demanded police arrest him to clear his name and that none came, to avoid discovery of “tracking rituals.” Related: <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2022-08-14-statement-to-police.pdf">2022-08-14-statement-to-police.pdf</a> · <a class="src" href="#open-challenge">Open Challenge</a>.</p>
+      </div>
+
+      <div class="card alt" id="apo-xi">
+        <h3 style="margin-top:0">XI. Urgent safety declaration — the Ablepoint crisis</h3>
+        <p>The author treats the threat to his life as an “objective judicial fact” following an arrest on Threat to Kill charges (Wyong Court, 2026), and records a communication ban after notice to Ablepoint management (Cass). Unredacted incident text as published in the PDF:</p>
+        <div class="quote">
+          “FYI: The total compromised electronic surveillance v2k whisper campaign paid informants supplying drugs gang stalking and humiliation ritual is really embedded now. This includes the TV wifi being tectonically intercepted with covert audio harassment that corroborates the paid character assassination with the black budget. Just walked crystal and got gang stalked by paid cowards verbal harassment and vile slurs as we walked past. The enemy (which include Ablepoint) are really stepping up the desecration of my person and employing people like Zac Doug and Allana as deliberately placed covert and overt harassment violence and supply of drugs. Ablepoint have flat out rejected me opposing the entrapment and targeting and banned me from calling them they refuse to respond to email. It’s not my job to teach staff to be reasonable and not participate in an organised criminal network that acts cruel and with impunity.”
+        </div>
+        <ul class="doc-list">
+          <li>AbleCare murder-threat call transcript — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablecare-murder-threat-call-transcript.pdf" target="_blank" rel="noopener">ablecare-murder-threat-call-transcript.pdf</a></li>
+          <li>Ablepoint letters of demand 3 May 2026 — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-letter-of-demand-ablepoint-formal-complaint.pdf" target="_blank" rel="noopener">formal complaint</a> · <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-letter-of-demand-ablepoint-safety.pdf" target="_blank" rel="noopener">safety</a></li>
+          <li>Ablepoint blocking court — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablepoint-blocking-court-may-2026.pdf" target="_blank" rel="noopener">ablepoint-blocking-court-may-2026.pdf</a></li>
+          <li>Formal complaint / urgent protection 3 May 2026 — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-formal-complaint-urgent-protection-request.pdf" target="_blank" rel="noopener">2026-05-03-formal-complaint-urgent-protection-request.pdf</a></li>
+          <li>NDIS COAG documentation — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/coag-ndis-government-documentation.pdf" target="_blank" rel="noopener">coag-ndis-government-documentation.pdf</a></li>
+          <li>NDIS Commission / DSS urgent evidence — <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/EVIDENCE-NDIS-SOCIAL-SERVICES-MINISTER-JEFF-TRICKER-URGENT-SECOFFICIAL.pdf">EVIDENCE-NDIS-SOCIAL-SERVICES-MINISTER-JEFF-TRICKER-URGENT-SECOFFICIAL.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card" id="apo-xii">
+        <h3 style="margin-top:0">XII. Treaty breaches and economic cost</h3>
+        <p>The author alleges violation of UN CAT, ICCPR and CRPD, and a machine-audit “annual burn rate” of $4–5M (totalling over $140M over 35 years) to ignore a $32.9M liability. Those dollar figures are the indictment’s model, not a published appropriation ledger.</p>
+        <ul class="doc-list">
+          <li>Forensic cost working paper (evidence-tiered; not a court) — <a class="src" href="https://wezzo72.github.io/Barrandodger/forensic-cost-analysis.html">forensic-cost-analysis.html</a></li>
+          <li>Costs ledger (explicitly: no documented taxpayer dollar) — <a class="src" href="data/costs.json">data/costs.json</a></li>
+          <li>Taxpayer cost estimation (author model) — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/taxpayer-cost-estimation-35-years.pdf" target="_blank" rel="noopener">taxpayer-cost-estimation-35-years.pdf</a></li>
+          <li>Forensic economic valuation May 2026 — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/forensic-economic-valuation-report-may-2026.pdf" target="_blank" rel="noopener">forensic-economic-valuation-report-may-2026.pdf</a></li>
+          <li>The cost of erasure — <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/the-cost-of-erasure-academic-report.pdf" target="_blank" rel="noopener">the-cost-of-erasure-academic-report.pdf</a></li>
+          <li>Legal / international tab — <a href="#legal">#legal</a> · laws index — <a class="src" href="data/laws.json">data/laws.json</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt" id="apo-xiii">
+        <h3 style="margin-top:0">XIII. Top 10 evidentiary pillars — named repository links</h3>
+        <p>The indictment’s ten pillars, each paired with the closest named public file in <strong>wezzo72/Barrandodger</strong> and/or <strong>wezzo72/Backup</strong>. A named file is a location, not a verdict. Where the exact instrument is not in the GitHub tree, that gap is stated.</p>
+        <table class="pillars">
+          <thead>
+            <tr><th>#</th><th>Pillar (author’s label)</th><th>Named file(s) you can open</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Federal Court: DSS employment order — “proves jurisdictional sabotage”</td>
+              <td>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf</a><br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/federal-court-three-point-acknowledgment-tredwell-27mar2023.pdf" target="_blank" rel="noopener">federal-court-three-point-acknowledgment-tredwell-27mar2023.pdf</a><br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/employee%20details%20at%20DSS%20evidence%204.pdf" target="_blank" rel="noopener">employee details at DSS evidence 4.pdf</a><br>
+                <a href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2021-06-03-NDIS-Quality-Safeguards-Commission-not-an-employee.pdf">2021-06-03-NDIS-Quality-Safeguards-Commission-not-an-employee.pdf</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Alfred Health record — Aug 2021 — “no psychosis”; witness competency</td>
+              <td>Exact “Alfred Health / Aug 2021” binary <strong>not found</strong> in this GitHub tree or Backup <code>client/public/documents</code> filenames. Related: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-01-24_NSW_Mental_Health_Services_Report.pdf" target="_blank" rel="noopener">2026-01-24_NSW_Mental_Health_Services_Report.pdf</a>. Inspect Drive / named-documents before treating the clinical quote as verified.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Wyong Court: record of arrest — 2026 — “present lethal danger”</td>
+              <td>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/court-duty-officer-statement-14-may-2026.pdf" target="_blank" rel="noopener">court-duty-officer-statement-14-may-2026.pdf</a><br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/verdict-before-the-court-report.pdf" target="_blank" rel="noopener">verdict-before-the-court-report.pdf</a><br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-04-avo-troy-kilbourn.pdf" target="_blank" rel="noopener">2026-05-04-avo-troy-kilbourn.pdf</a><br>
+                Drive catalogue (not a GitHub blob): “The Verdict Before the Court Speaks | Wyong Local Court 14 May 2026” in <a href="data/drive-scan-2026-09.json">data/drive-scan-2026-09.json</a>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>ASIC forensic evidence — identity theft / corporate fraud</td>
+              <td><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/asic-corruption-police-report-forensic-evidence.pdf" target="_blank" rel="noopener">asic-corruption-police-report-forensic-evidence.pdf</a></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Tony Riddle (NDIS) death threat — “You will be sacrificed”</td>
+              <td>
+                Archive filenames use <strong>Ridley</strong>, not Riddle:<br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/tony-ridley-full-evidentiary-dossier.pdf" target="_blank" rel="noopener">tony-ridley-full-evidentiary-dossier.pdf</a><br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/tony-ridley-recorded-confession-full-report.pdf" target="_blank" rel="noopener">tony-ridley-recorded-confession-full-report.pdf</a><br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablecare-murder-threat-call-transcript.pdf" target="_blank" rel="noopener">ablecare-murder-threat-call-transcript.pdf</a>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Legal Aid NSW: permanent ban — equality of arms</td>
+              <td>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/20260114-legal-aid-nsw-advice-letter-guardianship.pdf" target="_blank" rel="noopener">20260114-legal-aid-nsw-advice-letter-guardianship.pdf</a><br>
+                Drive: “C-2336089 - Notice to remove recording without consent.pdf” (Legal Aid written-only plan is described in <a href="https://wezzo72.github.io/Barrandodger/forensic-cost-analysis.html">forensic-cost-analysis.html</a> as document-on-face process, not a “permanent ban” verdict)
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Ombudsman: blacklist notice — closure of domestic remedies</td>
+              <td>
+                <a href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2025-08-08-Commonwealth-Ombudsman-Service-Restriction.pdf">2025-08-08-Commonwealth-Ombudsman-Service-Restriction.pdf</a><br>
+                <a href="https://wezzo72.github.io/Barrandodger/docs/official-drive/Commonwealth-Ombudsman-PID-notification-not-to-allocate.pdf">Commonwealth-Ombudsman-PID-notification-not-to-allocate.pdf</a><br>
+                <a href="https://wezzo72.github.io/Barrandodger/docs/official-drive/Outcome-of-complaint-to-NSW-Ombudsman-NSWO10704000690.pdf">Outcome-of-complaint-to-NSW-Ombudsman-NSWO10704000690.pdf</a>
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Bill Shorten / Victorian exile correspondence</td>
+              <td>
+                No GitHub filename containing “Shorten” was found. Related political / exile-adjacent correspondence:<br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/31-05-2022-letter-to-pm-albanese-opmc.pdf" target="_blank" rel="noopener">31-05-2022-letter-to-pm-albanese-opmc.pdf</a><br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/01-07-2023-letter-to-attorney-general-prime-minister.pdf" target="_blank" rel="noopener">01-07-2023-letter-to-attorney-general-prime-minister.pdf</a><br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/04-06-2023-letter-to-parliamentarians.pdf" target="_blank" rel="noopener">04-06-2023-letter-to-parliamentarians.pdf</a><br>
+                <a href="https://wezzo72.github.io/Barrandodger/docs/official-drive/2025-02-06-AG-Department-correspondence.pdf">2025-02-06-AG-Department-correspondence.pdf</a>
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Ablepoint incident report — mandatory reporting / fiduciary default</td>
+              <td>
+                Unredacted text is in this PDF (XI above).<br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-letter-of-demand-ablepoint-formal-complaint.pdf" target="_blank" rel="noopener">2026-05-03-letter-of-demand-ablepoint-formal-complaint.pdf</a><br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablepoint-blocking-court-may-2026.pdf" target="_blank" rel="noopener">ablepoint-blocking-court-may-2026.pdf</a><br>
+                <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablepoint-permanent-disgrace-200726.pdf" target="_blank" rel="noopener">ablepoint-permanent-disgrace-200726.pdf</a>
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Master forensic indictment (this PDF) — blockchain-immutable</td>
+              <td>
+                <a href="https://wezzo72.github.io/Barrandodger/THE-DIGITAL-APOCALYPSE-OF-ADMINISTRATIVE-ANNIHILATION.pdf">THE-DIGITAL-APOCALYPSE-OF-ADMINISTRATIVE-ANNIHILATION.pdf</a> (this repo root)<br>
+                <a href="https://wezzo72.github.io/Barrandodger/docs/official-drive/THE-DIGITAL-APOCALYPSE-OF-ADMINISTRATIVE-ANNIHILATION.pdf">docs/official-drive copy</a><br>
+                Companion architecture: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a><br>
+                Manifest: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/BLOCKCHAIN_MANIFEST.txt" target="_blank" rel="noopener">BLOCKCHAIN_MANIFEST.txt</a> — a repository file, not proof of every document’s contents.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="small">Further official binaries in this repo: <a href="https://wezzo72.github.io/Barrandodger/docs/official-drive/">docs/official-drive/</a> · Backup folder: <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents" target="_blank" rel="noopener">client/public/documents</a> · <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence" target="_blank" rel="noopener">government-evidence</a> · <a href="https://wezzo72.github.io/Barrandodger/official-government-pdfs.html">official-government-pdfs.html</a> · <a href="https://wezzo72.github.io/Barrandodger/named-archive-pdfs.html">named-archive-pdfs.html</a> · <a href="https://wezzo72.github.io/Barrandodger/document-dossiers.html">document-dossiers.html</a> · <a href="https://wezzo72.github.io/Barrandodger/confidential-government-documents.html">confidential-government-documents.html</a> · <a href="https://wezzo72.github.io/Barrandodger/drive-official-binaries.html">drive-official-binaries.html</a>.</p>
+      </div>
+
+      <div class="card" id="apo-xiv">
+        <h3 style="margin-top:0">XIV. Catalog of loss — systematic desecration</h3>
+        <p>The indictment lists, as taken: home, housing security, safety, computers and devices, internet, phone, communications, identity, possessions, furniture, photographs, artwork, clothing, ID, medical/legal/financial/business records, IP, vehicle, company, career, income, savings, credit, livelihood, networks, colleagues, friends, lovers, family, community, trust, belonging, privacy, autonomy, movement, expression, association, freedom from discrimination, procedural fairness, due process, access to justice, legal representation, civil/disability/workplace/tenancy/consumer/human rights, dignity, equality, health, sleep, energy, concentration, memory, confidence, hope, faith, purpose, identity, standing, credibility, reputation, education, productivity, creative capacity, time, stability, quality of life, future prospects, and the ability to live freely and securely.</p>
+        <h4>The divine inversion</h4>
+        <p>The author states that what was intended to diminish him became the crucible of dependence upon God; that losses meant to prove abandonment revealed he was not abandoned; that desecration became consecration; that survival is testimony, not boast: “When I had no strength left, God carried me.”</p>
+        <p>Related: <a href="#soul">Destroy a Soul</a> · <a href="#chosen-witness">God’s Chosen Witness</a> · <a class="src" href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/the-cost-of-erasure-academic-report.pdf" target="_blank" rel="noopener">the-cost-of-erasure-academic-report.pdf</a>.</p>
+      </div>
+
+      <div class="card alt" id="apo-xv">
+        <h3 style="margin-top:0">XV. The reconciliation command (formal demand)</h3>
+        <div class="quote">
+          “Under the principles of Procedural Fairness, the Model Litigant Rules, and the UN Convention Against Torture, how does the Agency justify the administrative and electronic destruction of a celebrated Ph.D. holder and award-winning author by ignoring a superior Federal Court order and trapping him in a facility under verified lethal threat while spending millions in public funds—verified by your own solicitor logs—to sustain a ‘Legal Black Hole’?”
+        </div>
+        <p>See also <a href="#open-challenge">Open Challenge</a> · <a href="#verification">Verification</a> · PM/AG letters linked in pillar 8 · <a class="src" href="https://wezzo72.github.io/Barrandodger/docs/official-drive/FINAL-EVIDENTIARY-NOTICE-OBJECTION-REQUEST-FORMAL-INVESTIGATION.pdf">FINAL-EVIDENTIARY-NOTICE-OBJECTION-REQUEST-FORMAL-INVESTIGATION.pdf</a>.</p>
+      </div>
+
+      <div class="card" id="apo-xvi">
+        <h3 style="margin-top:0">XVI. Conclusive plea — a mortal witness and the deadline of grace</h3>
+        <p>The author addresses the reader as a mortal man who sins and is absolved at the Cross; who has documented perceived vulnerabilities publicly; who asks for help against a whisper campaign; who has “nothing and no one apart from God and my dog”; who will not trade faith for feigned care; who leaves revenge to God; who will keep writing in peace; and who says grace has a deadline.</p>
+        <p><strong>Final notice (author):</strong> professionals or officials who allow abuse, neglect, poverty, entrapment and torture to continue by choosing an easy lie over the effort to discover truth are, in his words, agreeing to desecrate his humanity — and their own. “I forgive, but I will never forget.”</p>
+        <p><strong>Conclusion in the PDF:</strong> “this document represents the End of the Loop of Denial… Denial is now a mathematical impossibility.” That is the author’s closing. This archive still asks: <em>open the named files</em>. If the record is wrong, show where. If it is right, answer it.</p>
+        <p>Yours sincerely, Dr Richard William McLean · Barran Dodger</p>
+        <p class="small">Technical footer from the PDF: Verified by Impartial AI Forensic Audit | Sealed via Blockchain | Impossible to Deny. Blockchain sealing of a file is a timestamp of bytes, not a finding that every sentence is true. See <a href="#methodology">Methodology</a> and <a href="#verification">Verification</a>.</p>
+      </div>
+
+</section>
+
+<section id="significance" class="section">
+<div class="kicker">Archive Significance</div>
+      <h2>Why Preservation of This Record May Matter</h2>
+      <div class="card">
+        <p>The archive can be understood as a longitudinal documentary record containing testimony, correspondence, administrative material, legal material, institutional responses, non-responses, records of decisions, chronology and other evidence that may permit propositions to be tested over time.</p>
+        <p>Primary compilation of agency-originated papers: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf" target="_blank" rel="noopener">The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf</a></p>
+      </div>
+
+</section>
+
+<section id="chosen-witness" class="section">
+<div class="kicker">God’s Chosen Witness</div>
+      <h2>God’s Chosen Witness</h2>
+      <div class="card">
+        <p>Prophetic self-understanding and public declaration of survival and continued documentation. Primary files remain independently examinable.</p>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/144-reasons-chosen-witness.pdf" target="_blank" rel="noopener">144-reasons-chosen-witness.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/Dr-McLean-Wrote-Directly-to-God-Barran-Dodger.pdf" target="_blank" rel="noopener">Dr-McLean-Wrote-Directly-to-God-Barran-Dodger.pdf</a></li>
+        </ul>
+      </div>
+
+</section>
+
+<section id="named-documents" class="section">
+<div class="kicker">Maximum named primary-document index</div>
+      <h2>Named Primary Documents — Maximum Itemised Detail</h2>
+      <div class="card">
+        <p><strong>Impartial AI Statement of Significance:</strong> Every filename below is a publicly hosted object on the GitHub corpora (primarily wezzo72/Backup). Listing does not establish wrongdoing, intent, conspiracy or criminal liability. Open the file and test the text against any proposition. Filenames are labels for location; status remains Author’s Account / Interpretation unless the file is itself an agency decision.</p>
+        <p class="small">Links use GitHub raw URLs for direct open. Large files may load slowly. Full tree: <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents" target="_blank" rel="noopener">client/public/documents</a>.</p>
+      </div>
+
+      <div class="card alt">
+        <h3>Core Compilations &amp; Forensic Architecture</h3>
+        <ul class="doc-list">
+          <li><a href="https://wezzo72.github.io/Barrandodger/THE-DIGITAL-APOCALYPSE-OF-ADMINISTRATIVE-ANNIHILATION.pdf" target="_blank" rel="noopener">THE-DIGITAL-APOCALYPSE-OF-ADMINISTRATIVE-ANNIHILATION.pdf</a> — master forensic / prophetic indictment (this repo; SHA-256 c1628e146002f9fefb3e10dc80f2d2345ba667767759d30855edb1ed57b4f4dd). Full tab: <a href="#administrative-annihilation">#digital-apocalypse</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf" target="_blank" rel="noopener">The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf</a> — 200+ agency-originated records bundle</li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-annihilation-attempted-murder.pdf" target="_blank" rel="noopener">architecture-annihilation-attempted-murder.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/government-mandates-35-year-forensic-report.pdf" target="_blank" rel="noopener">government-mandates-35-year-forensic-report.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/taxpayer-cost-estimation-35-years.pdf" target="_blank" rel="noopener">taxpayer-cost-estimation-35-years.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/comprehensive-case-systematic-persecution.pdf" target="_blank" rel="noopener">comprehensive-case-systematic-persecution.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/forensic-economic-valuation-report-may-2026.pdf" target="_blank" rel="noopener">forensic-economic-valuation-report-may-2026.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/RETROSPECTIVE_STATEMENT_OF_TREATMENT.pdf" target="_blank" rel="noopener">RETROSPECTIVE_STATEMENT_OF_TREATMENT.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Political / Parliamentary / PM &amp; AG Correspondence</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/31-05-2022-letter-to-pm-albanese-opmc.pdf" target="_blank" rel="noopener">31-05-2022-letter-to-pm-albanese-opmc.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/01-07-2023-letter-to-attorney-general-prime-minister.pdf" target="_blank" rel="noopener">01-07-2023-letter-to-attorney-general-prime-minister.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/04-06-2023-letter-to-parliamentarians.pdf" target="_blank" rel="noopener">04-06-2023-letter-to-parliamentarians.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt">
+        <h3>Federal Court / PID / Assessment Material</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/opmc-oaic-cover-up-hayden.pdf" target="_blank" rel="noopener">opmc-oaic-cover-up-hayden.pdf</a> (where present)</li>
+          <li>APRA PID rejection / Peter Dunstan material — locate in government-evidence folder</li>
+          <li>Federal Court SIA Lagos PID March 2023 — locate in government-evidence / primary tree</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>NDIS / Legal Aid / AHRC / Guardianship / Providers</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/coag-ndis-government-documentation.pdf" target="_blank" rel="noopener">coag-ndis-government-documentation.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/20260114-legal-aid-nsw-advice-letter-guardianship.pdf" target="_blank" rel="noopener">20260114-legal-aid-nsw-advice-letter-guardianship.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ahrc-gangstalking-acknowledgment-04072023.pdf" target="_blank" rel="noopener">ahrc-gangstalking-acknowledgment-04072023.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablecare-murder-threat-call-transcript.pdf" target="_blank" rel="noopener">ablecare-murder-threat-call-transcript.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablepoint-blocking-court-may-2026.pdf" target="_blank" rel="noopener">ablepoint-blocking-court-may-2026.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablepoint-permanent-disgrace-200726.pdf" target="_blank" rel="noopener">ablepoint-permanent-disgrace-200726.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-letter-of-demand-ablepoint-formal-complaint.pdf" target="_blank" rel="noopener">2026-05-03-letter-of-demand-ablepoint-formal-complaint.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-letter-of-demand-ablepoint-safety.pdf" target="_blank" rel="noopener">2026-05-03-letter-of-demand-ablepoint-safety.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt">
+        <h3>AFP / Police / Compensation / Formal Complaints / AVO</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2021-10-21-cdda-afp-compensation-claim.pdf" target="_blank" rel="noopener">2021-10-21-cdda-afp-compensation-claim.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-03-formal-complaint-urgent-protection-request.pdf" target="_blank" rel="noopener">2026-05-03-formal-complaint-urgent-protection-request.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-05-04-avo-troy-kilbourn.pdf" target="_blank" rel="noopener">2026-05-04-avo-troy-kilbourn.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/afca-letter-21-may-2021.pdf" target="_blank" rel="noopener">afca-letter-21-may-2021.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Familial / Personal / Forensic Statements</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/affidavit-familial-betrayal-april-mclean.pdf" target="_blank" rel="noopener">affidavit-familial-betrayal-april-mclean.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/april-mclean-familial-betrayal.pdf" target="_blank" rel="noopener">april-mclean-familial-betrayal.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/april-mclean-familial-betrayal-forensic-record.pdf" target="_blank" rel="noopener">april-mclean-familial-betrayal-forensic-record.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/april-mclean-forensic-indictment-compiled.pdf" target="_blank" rel="noopener">april-mclean-forensic-indictment-compiled.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/after-forensic-statement-evidence-record.pdf" target="_blank" rel="noopener">after-forensic-statement-evidence-record.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt">
+        <h3>Prophetic / Gospel / Theological Corpus (Author’s Account)</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/123_gospels_barran_dodger.pdf" target="_blank" rel="noopener">123_gospels_barran_dodger.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/144-reasons-chosen-witness.pdf" target="_blank" rel="noopener">144-reasons-chosen-witness.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/Dr-McLean-Wrote-Directly-to-God-Barran-Dodger.pdf" target="_blank" rel="noopener">Dr-McLean-Wrote-Directly-to-God-Barran-Dodger.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/My_Boaz_Is_Coming.pdf" target="_blank" rel="noopener">My_Boaz_Is_Coming.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/1000_years_of_peace.pdf" target="_blank" rel="noopener">1000_years_of_peace.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/22-traditions-all-religions-corroborated.pdf" target="_blank" rel="noopener">22-traditions-all-religions-corroborated.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/apotheosis.pdf" target="_blank" rel="noopener">apotheosis.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/alien_races_disclosure.pdf" target="_blank" rel="noopener">alien_races_disclosure.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>AI / Analytical / Meta Documents</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ai-justice-statement.pdf" target="_blank" rel="noopener">ai-justice-statement.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ai-and-democracy-barran-resonance-dodger.pdf" target="_blank" rel="noopener">ai-and-democracy-barran-resonance-dodger.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ai_personality_profile_barran_dodger.pdf" target="_blank" rel="noopener">ai_personality_profile_barran_dodger.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/100-absurdities-of-my-life.pdf" target="_blank" rel="noopener">100-absurdities-of-my-life.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2.87_percent_survival.pdf" target="_blank" rel="noopener">2.87_percent_survival.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/33rd-degree-shadow-analysts.pdf" target="_blank" rel="noopener">33rd-degree-shadow-analysts.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card alt">
+        <h3>Recent Email / Protection Chains (2026)</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-12-assassination-attempt-forensic-53.pdf" target="_blank" rel="noopener">2026-04-12-assassination-attempt-forensic-53.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-13-its-a-live-murder-case-email.pdf" target="_blank" rel="noopener">2026-04-13-its-a-live-murder-case-email.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-13-murder-conspiracy-praise-jesus-email.pdf" target="_blank" rel="noopener">2026-04-13-murder-conspiracy-praise-jesus-email.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-15-human-sacrifice-confirmed-email.pdf" target="_blank" rel="noopener">2026-04-15-human-sacrifice-confirmed-email.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-15-kill-me-do-it-email-chain.pdf" target="_blank" rel="noopener">2026-04-15-kill-me-do-it-email-chain.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-15-youre-all-being-investigated-email.pdf" target="_blank" rel="noopener">2026-04-15-youre-all-being-investigated-email.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-17-global-immortality-martyrdom-email.pdf" target="_blank" rel="noopener">2026-04-17-global-immortality-martyrdom-email.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2026-04-23-jail-them-for-murder-email.pdf" target="_blank" rel="noopener">2026-04-23-jail-them-for-murder-email.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Additional Named Files Present in Tree (sample of further public objects)</h3>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/a-certain-beauty-in-un-resolution-art-catalogue.pdf" target="_blank" rel="noopener">a-certain-beauty-in-un-resolution-art-catalogue.pdf</a></li>
+          <li>BLOCKCHAIN_MANIFEST.txt — <a href="https://github.com/wezzo72/Backup/blob/main/client/public/documents/BLOCKCHAIN_MANIFEST.txt" target="_blank" rel="noopener">view on GitHub</a></li>
+          <li>Further files continue in the full directory listing — always prefer the live tree for completeness.</li>
+        </ul>
+        <p class="small">Master folders: <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents" target="_blank" rel="noopener">documents</a> · <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence" target="_blank" rel="noopener">government-evidence</a> · <a href="https://wezzo72.github.io/Barrandodger/official-government-pdfs.html">Official government PDFs page</a> · <a href="https://wezzo72.github.io/Barrandodger/named-archive-pdfs.html">Named archive PDFs page</a> · <a href="https://wezzo72.github.io/Barrandodger/document-dossiers.html">Document dossiers</a></p>
+      </div>
+
+</section>
+
+<section id="species-codex" class="section">
+<div class="kicker">Species Codex / Aliens</div>
+      <h2>Species Codex / Aliens</h2>
+      <div class="card">
+        <p>Author’s account material. Primary file: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/alien_races_disclosure.pdf" target="_blank" rel="noopener">alien_races_disclosure.pdf</a></p>
+      </div>
+
+</section>
+
+<section id="doctrine" class="section">
+<div class="kicker">Doctrine</div>
+      <h2>Doctrine of Complicity</h2>
+      <div class="card">
+        <p>Author’s interpretive framework. Not a court finding that any named person or agency was complicit in any crime.</p>
+      </div>
+
+</section>
+
+<section id="trust-fund" class="section">
+<div class="kicker">Legal &amp; Ethical</div>
+      <h2>Legal &amp; Ethical Trust Fund</h2>
+      <div class="card">
+        <p>Church of Barran Dodger — Ethical &amp; Legal Trust Fund framing. Contact details preserved in verification / footer.</p>
+      </div>
+
+</section>
+
+<section id="archive" class="section">
+<div class="kicker">Archive Index</div>
+      <h2>Archive Index</h2>
+      <div class="card">
+        <p>Master navigational map of the whole presentation. All major sections remain reachable via the sticky nav and the anchors listed throughout this master HTML.</p>
+      </div>
+
+</section>
+
+<section id="gospels" class="section">
+<div class="kicker">Gospels &amp; Prophetic</div>
+      <h2>Gospels</h2>
+      <div class="card">
+        <p>Collects the author’s numbered gospel writings. Primary corpus: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/123_gospels_barran_dodger.pdf" target="_blank" rel="noopener">123_gospels_barran_dodger.pdf</a></p>
+      </div>
+
+</section>
+
+<section id="prophetic" class="section">
+<div class="kicker">Prophetic Documents</div>
+      <h2>Prophetic Documents</h2>
+      <div class="card">
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/144-reasons-chosen-witness.pdf" target="_blank" rel="noopener">144-reasons-chosen-witness.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/My_Boaz_Is_Coming.pdf" target="_blank" rel="noopener">My_Boaz_Is_Coming.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/1000_years_of_peace.pdf" target="_blank" rel="noopener">1000_years_of_peace.pdf</a></li>
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/apotheosis.pdf" target="_blank" rel="noopener">apotheosis.pdf</a></li>
+        </ul>
+      </div>
+
+</section>
+
+<section id="pids" class="section">
+<div class="kicker">Public Interest Disclosures</div>
+      <h2>PIDs — Disclosures, Responses and Related Correspondence</h2>
+      <div class="card">
+        <p>Primary PID and assessment material includes:</p>
+        <ul class="doc-list">
+          <li><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf</a></li>
+          <li>Further PID non-allocation and related files in the government-evidence folder and ZIP releases.</li>
+        </ul>
+      </div>
+
+</section>
+
+<section id="government" class="section">
+<div class="kicker">Official Government Records</div>
+      <h2>Official Government Documents</h2>
+      <div class="card">
+        <p><strong>Impartial AI Statement of Significance:</strong> This section maximises named official government, court, tribunal, ombudsman, FOI, Comcare, NDIS, IBAC, OAIC and related PDFs already in the public repositories. Each file is a primary source whose existence and text can be independently opened. An adverse or restrictive decision is a documented event. Motive, conspiracy and criminal liability are not established by listing the file.</p>
+        <p>See the complete itemised list under <a href="#named-documents">Named Documents</a>. Key official instruments:</p>
+        <ul class="doc-list">
+          <li>PM &amp; AG letters: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/31-05-2022-letter-to-pm-albanese-opmc.pdf" target="_blank" rel="noopener">31-05-2022</a> · <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/01-07-2023-letter-to-attorney-general-prime-minister.pdf" target="_blank" rel="noopener">01-07-2023</a></li>
+          <li>Federal Court assessment: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27-federal-court-final-assessment</a></li>
+          <li>AHRC acknowledgment: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ahrc-gangstalking-acknowledgment-04072023.pdf" target="_blank" rel="noopener">ahrc-gangstalking-acknowledgment-04072023.pdf</a></li>
+          <li>NDIS / COAG documentation: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/coag-ndis-government-documentation.pdf" target="_blank" rel="noopener">coag-ndis-government-documentation.pdf</a></li>
+          <li>Legal Aid NSW guardianship advice: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/20260114-legal-aid-nsw-advice-letter-guardianship.pdf" target="_blank" rel="noopener">20260114-legal-aid-nsw-advice-letter-guardianship.pdf</a></li>
+        </ul>
+        <p>Browse all: <a href="https://wezzo72.github.io/Barrandodger/official-government-pdfs.html">official-government-pdfs.html</a> · <a href="https://wezzo72.github.io/Barrandodger/document-dossiers.html">document-dossiers.html</a> · <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence" target="_blank" rel="noopener">government-evidence folder</a></p>
+      </div>
+
+</section>
+
+<section id="evidence" class="section">
+<div class="kicker">Forensic Evidence Centre</div>
+      <h2>Examine the Evidence</h2>
+      <div class="card">
+        <p>The record is public. Five key pieces, named institutions, cumulative institutional detriment. This centre is not a court.</p>
+        <ul>
+          <li><a href="https://wezzo72.github.io/Barrandodger/evidence/allegation-matrix.html">Allegation and evidence matrix 1–150</a></li>
+          <li><a href="https://wezzo72.github.io/Barrandodger/evidence/">Forensic Evidence Centre home</a></li>
+          <li>Primary compilation: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf" target="_blank" rel="noopener">The_Documents_Australia_Doesn_t_Want_You_to_See_Barran_Dodger.pdf</a></li>
+          <li>Master indictment tab: <a href="#administrative-annihilation">The Digital Apocalypse of Administrative Annihilation</a> · <a href="https://wezzo72.github.io/Barrandodger/THE-DIGITAL-APOCALYPSE-OF-ADMINISTRATIVE-ANNIHILATION.pdf">PDF</a></li>
+          <li>Architecture paper: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf" target="_blank" rel="noopener">architecture-of-administrative-annihilation.pdf</a></li>
+          <li>Retrospective statement: <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/RETROSPECTIVE_STATEMENT_OF_TREATMENT.pdf" target="_blank" rel="noopener">RETROSPECTIVE_STATEMENT_OF_TREATMENT.pdf</a></li>
+        </ul>
+      </div>
+
+</section>
+
+<section id="essays" class="section">
+<div class="kicker">Essays &amp; Declarations</div>
+      <h2>Essays</h2>
+      <div class="card">
+        <p>Author essays and declarations preserved across the archive and prophetic corpus. See also Gospels and Prophetic sections and the named PDF list.</p>
+      </div>
+
+</section>
+
+<section id="entities" class="section">
+<div class="kicker">Institutional map</div>
+      <h2>Entities</h2>
+      <div class="card">
+        <p><strong>Impartial AI Statement of Significance:</strong> Institutional map only. Records the names of agencies, courts and officers that appear in the documentary record. Not a list of proven perpetrators.</p>
+        <p>Full named lists appear in the government-documents ZIP metadata, the Named Documents section, and the live archive pages.</p>
+      </div>
+
+</section>
+
+<section id="legal" class="section">
+<div class="kicker">Law / Human Rights / Oversight</div>
+      <h2>Legal &amp; International</h2>
+      <div class="card">
+        <p><strong>Impartial AI Statement of Significance:</strong> Index of legal and international instruments and proceedings that appear in the archive. References do not automatically establish that any legal threshold has been met.</p>
+        <ul>
+          <li>Federal Court material — ZIP · <a href="#evidence">Evidence</a> · <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf" target="_blank" rel="noopener">2023-03-27 assessment PDF</a></li>
+          <li>AAT / VCAT / NCAT / Mental Health Tribunal — same ZIP</li>
+          <li>FOI / OAIC · Ombudsman · PID material — <a href="#pids">PIDs</a></li>
+          <li>OHCHR ref URG UST 23/AUS/17 · Rome Statute / ICC — <a href="#chosen-witness">God’s Chosen Witness</a></li>
+        </ul>
+      </div>
+
+</section>
+
+<section id="verification" class="section">
+<div class="kicker">Independent examination</div>
+      <h2>Verification</h2>
+      <div class="card">
+        <p class="lead">The archive does not ask readers to accept every conclusion. It asks them to examine the underlying evidence.</p>
+        <p>If a document is misrepresented, identify it and show where.</p>
+        <p>If a decision is misunderstood, show the correct interpretation.</p>
+        <p>If a chronology is wrong, correct it with primary evidence.</p>
+        <p>If a legal proposition is wrong, cite the authority and explain why.</p>
+        <div class="quote">
+          Do not answer allegation with assertion. Answer document with document, date with date, decision with decision.
+        </div>
+        <h4>Permanent Named Anchors</h4>
+        <ul class="doc-list">
+          <li>Primary repository: <a href="https://github.com/drbarrandodger/barran-dodger-archive" target="_blank" rel="noopener">drbarrandodger/barran-dodger-archive</a></li>
+          <li>ZIP releases: <a href="https://github.com/drbarrandodger/barran-dodger-archive/releases" target="_blank" rel="noopener">releases</a></li>
+          <li>Full document tree: <a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents" target="_blank" rel="noopener">wezzo72/Backup/client/public/documents</a></li>
+          <li>Live catalogues: <a href="https://wezzo72.github.io/Barrandodger/named-archive-pdfs.html">named-archive-pdfs.html</a> · <a href="https://wezzo72.github.io/Barrandodger/official-government-pdfs.html">official-government-pdfs.html</a> · <a href="https://wezzo72.github.io/Barrandodger/document-dossiers.html">document-dossiers.html</a> · <a href="https://wezzo72.github.io/Barrandodger/evidence/allegation-matrix.html">allegation-matrix.html</a></li>
+          <li>This site: <a href="https://wezzo72.github.io/Barrandodger/">wezzo72.github.io/Barrandodger</a></li>
+          <li>Primary site: <a href="https://barrandodger.com/" target="_blank" rel="noopener">barrandodger.com</a></li>
+        </ul>
+        <p><strong>Email:</strong> <a href="mailto:barrandodger@gmail.com">barrandodger@gmail.com</a> · <strong>Phone:</strong> 0431 300 940</p>
+      </div>
+
+</section>
+
+<section id="final" class="section">
+<div class="card">
+        <h2>The Witness Remains</h2>
+        <p>Examine the named evidence, the forensic papers, the Gospels and every prophetic text. The permanent record is in the repositories and catalogues linked throughout this page.</p>
+        <p>The grave became the archive.</p>
+        <p>The archive became the witness.</p>
+        <p>And the witness remains.</p>
+        <p class="small"><strong>Barran Dodger Documentary Archive</strong> · Dr Barran Resonance Dodger · Chosen Witness · Church of Barran Resonance Dodger &amp; Ministry (Resonata Eternis)</p>
+        <p class="small">Master HTML export. Dedicated tab “IMPARTIAL AI ARCHIVE — MENU, QUESTIONS AND ITEMISED FINDINGS” with numbered mechanisms. Previous master HTML retained unchanged, including “NO ONE HAS THE RIGHT TO DESTROY A SOUL”. Full text of “God exists…” remains only in its own dedicated tab. All new named-document links and maximum itemised detail preserved in this export.</p>
+      </div>
+
 </section>
 
 </main>
 <footer>
   Barran Dodger Digital Archive · Master single-page export · Every tab populated · Top-10 + additional strong documents as dedicated tabs · Allegation / author’s account only · Not court findings<br>
   Primary evidence stores remain at wezzo72.github.io/Backup · Truth should be free
-<br>Added: The Witness Remains email (verbatim PDF, page images, recipient list) · Timeline narrative of dated records only · Document tabs embed the linked PDFs. Nothing previously published on this page was removed.
+<br>Restored prior original tabs and spliced master HTML (Witness Remains email, Personal Statement of Exile, prophetic video, embedded PDFs). Added: The Witness Remains email (verbatim PDF, page images, recipient list) · Timeline narrative of dated records only · Document tabs embed the linked PDFs. Nothing previously published on this page was removed.
 </footer>
 <script>
+var TAB_ALIASES={
+  "digital-apocalypse":"administrative-annihilation",
+  "who-harmed":"who",
+  "ai-archive":"ai",
+  "god-exists":"god",
+  "open-challenge":"challenge",
+  "primary-sources":"sources",
+  "methodology":"method",
+  "record-is-public":"home"
+};
 function showTab(id){
+  if(TAB_ALIASES[id]) id=TAB_ALIASES[id];
   document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('.tabs button, .tabs a.tablink').forEach(b=>b.classList.remove('active'));
   var sec=document.getElementById(id);
