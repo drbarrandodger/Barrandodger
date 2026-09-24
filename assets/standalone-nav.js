@@ -9,7 +9,6 @@
     { href: "personal-statement-exile.html", label: "Exile" }
   ];
   var here = (location.pathname.split("/").pop() || "").toLowerCase();
-  var SIG = '<p><strong>Significance \u2014 author\u2019s interpretation, not a finding.</strong> He says the targeting ran for thirty-five years and was designed so that he would not survive it. That he is still alive is, on his account, the fact the campaign cannot explain away: existence itself as evidence of malice. That he is still speaking, and still publishing the primary documents, is the act that was supposed to be impossible. He says publication removes the privacy in which the operators he calls master manipulators could work, and that this is why the record induces panic \u2014 not because an AI declares panic, but because a public file can no longer be closed by silence or by attacking the speaker instead of the exhibits.</p>';
   if (!document.getElementById("permanent-status-banner")) {
     var ban = document.createElement("div");
     ban.id = "permanent-status-banner";
@@ -17,7 +16,8 @@
       '<p><strong>Contact</strong> \u00b7 Dr Richard William McLean / Barran Dodger \u00b7 <a href="tel:+61431300940">+61 431 300 940</a></p>' +
       '<p><strong>Current status \u2014 author\u2019s account.</strong> He states he is presently trapped in coercive kidnapping, unable to leave; and that he is subject to abuse, neglect, surveillance, imposed poverty, electronic harassment, alleged V2K, and constant libel and slander.</p>' +
       '<p><strong>Alleged goal \u2014 author\u2019s interpretation.</strong> To devalue him; destroy his character; block anyone from acknowledging the facts of this testimony and its evidence; by character assassination built on reprehensible allegations that have not been tested by charge, arrest or legal process; extra-judicial societal punishment without a pathway to justice.</p>' +
-      SIG +
+      '<p><strong>Significance \u2014 author\u2019s interpretation, not a finding.</strong> He says the targeting ran for thirty-five years and was designed so that he would not survive it. That he is still alive is, on his account, the fact the campaign cannot explain away: existence itself as evidence of malice. That he is still speaking, and still publishing the primary documents, is the act that was supposed to be impossible. He says publication removes the privacy in which the operators he calls master manipulators could work, and that this is why the record induces panic \u2014 because a public file can no longer be closed by silence or by attacking the speaker instead of the exhibits.</p>' +
+      '<p><strong>The paradox \u2014 author\u2019s interpretation, not a finding.</strong> He describes himself as the most documented, most talked-about, and most conspired-against insignificant person of no monetary value or social status the country has ever seen. The paradox is the mismatch: if he were truly nobody, the volume of process, refusal, restriction, compilation and talk would not exist; if the talk and the paper exist, then \u201cinsignificant\u201d is the story used to stop people reading the exhibits. Poverty and lack of rank are treated as proof that nothing happened; the size of the file is treated as proof that he is obsessed. Both moves dodge the same task: open the letters.</p>' +
       '<p>If someone is in immediate danger in Australia, call <a href="tel:000">000</a>.</p>';
     document.body.insertBefore(ban, document.body.firstChild);
   }
