@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>How to add a tab — Barran Dodger Archive</title>
+<style>
+body{margin:0;background:#0b0d10;color:#e8e6e3;font-family:"Segoe UI",system-ui,sans-serif;line-height:1.55}
+.wrap{max-width:800px;margin:auto;padding:24px 16px 80px}a{color:#7eb8da}h1,h2{color:#c9a227}
+code,pre{background:#161b22;padding:.15rem .4rem;border-radius:4px}
+pre{padding:12px;overflow:auto}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Add a tab with its own content</h1>
+<p>Do not edit <code>index.html</code> for new tab bodies. Each tab is a file in <code>tabs/</code>.</p>
+<h2>Steps</h2>
+<ol>
+<li>Copy <a href="_template.html">tabs/_template.html</a> to <code>tabs/your-id.html</code>.</li>
+<li>Put the full text in that file.</li>
+<li>Open <a href="https://github.com/wezzo72/Barrandodger/edit/main/assets/standalone-nav.js">assets/standalone-nav.js</a> and add one object to the <code>TABS</code> array, for example:<pre>{ id: "your-id", href: "your-id.html", label: "Your tab" },</pre></li>
+<li>Commit both files. Live URL: <code>https://wezzo72.github.io/Barrandodger/tabs/your-id.html</code></li>
+</ol>
+<p>The black bar at the top of standalone pages is drawn by <code>standalone-nav.js</code>. Change order there (Crimes is first). That bar does not change the homepage strip on <code>index.html</code>.</p>
+<p>Existing standalone tabs already in the menu: Crimes 1–150, PIDs, Lagos/Tredwell, Exile, Home, Who, Witness, Timeline, Sources, Method, Challenge.</p>
+<p><a href="crimes.html">Open Crimes 1–150</a> · <a href="../index.html">master homepage</a></p>
+</div>
+<script src="../assets/standalone-nav.js"></script>
+</body>
+</html>
