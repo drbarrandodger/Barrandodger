@@ -26,8 +26,9 @@
 <p>If the record is wrong, show me where. If the record is right, answer it.</p>
 </div>
 <h1>The Good Bits</h1>
-<p>Full page also at <a href="tabs/the-good-bits.html">tabs/the-good-bits.html</a> — text below is that file, in the page, not a nested window.</p>
-<div id="good-bits-inline">LOADING_MARKER</div>
+<p>Same words as <a href="tabs/the-good-bits.html">tabs/the-good-bits.html</a>, in this page scroll.</p>
+<div id="good-bits-inline"></div>
+<script>(function(){var t=document.getElementById('good-bits-inline');fetch('tabs/the-good-bits.html').then(function(r){return r.text()}).then(function(html){var d=new DOMParser().parseFromString(html,'text/html');var w=d.querySelector('.wrap')||d.body;var n=w.cloneNode(true);var a=n.querySelector('a[href="home.html"]');if(a&&a.parentNode)a.parentNode.removeChild(a);var h=n.querySelector('h1');if(h&&h.parentNode)h.parentNode.removeChild(h);t.appendChild(n);}).catch(function(){t.innerHTML='<p><a href="tabs/the-good-bits.html">Open The Good Bits</a></p>';});})();</script>
 <h2>Exhibit videos</h2>
 <div class="vidgrid">
 <div class="video-wrap"><iframe src="https://www.youtube.com/embed/uJV1AHsPfWM" allowfullscreen></iframe></div>
