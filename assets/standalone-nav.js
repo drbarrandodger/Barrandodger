@@ -1,4 +1,10 @@
 (function () {
+  if (!document.getElementById('bd-global-look')) {
+    var g = document.createElement('style');
+    g.id = 'bd-global-look';
+    g.textContent = "html{background:#08090c}body{margin:0;background:#08090c;color:#f3efe6;font-family:'Palatino Linotype',Palatino,'Iowan Old Style','Times New Roman',serif;line-height:1.7;font-size:18px}h1,h2,h3,h4,.eyebrow,.tab,.brand{font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif}h1{color:#fff6e8;letter-spacing:.01em;line-height:1.12}h2,h3{color:#d4a017}a{color:#8ec4e6}a:hover{color:#d7eef8}.now,.disclaimer,.ai,.notice{background:#160e0c;border-left:4px solid #c4452f}.box,.card,.sig{background:#10151c;border:1px solid #2a323c}.video-wrap{border:1px solid #2a323c}";
+    document.head.appendChild(g);
+  }
   if (window.self !== window.top) return;
   var TABS = [
     { href: "home.html", label: "Home" },
@@ -38,12 +44,12 @@
     var s = document.createElement("style");
     s.id = "standalone-nav-css";
     s.textContent =
-      "#standalone-tabs{position:sticky;top:0;z-index:40;display:flex;overflow-x:auto;gap:6px;padding:8px 10px;background:#120c0c;border-bottom:2px solid #c9a227}" +
-      "#standalone-tabs a{flex:0 0 auto;color:#e8e6e3;text-decoration:none;padding:8px 12px;border:1px solid #2a3038;border-radius:8px;white-space:nowrap;font:600 13px/1.2 sans-serif}" +
-      "#standalone-tabs a.active{background:#3a1a1a;border-color:#c45c5c;color:#ffd0d0}" +
-      "#permanent-status-banner{background:#1a1210;border-bottom:2px solid #c44;color:#e8e6e3;padding:12px 14px;font:15px/1.5 sans-serif}" +
-      "#permanent-status-banner a{color:#7eb8da}" +
-      "#permanent-status-banner strong{color:#f0a080}";
+      "#standalone-tabs{position:sticky;top:0;z-index:40;display:flex;overflow-x:auto;gap:6px;padding:8px 10px;background:#050608;border-bottom:3px solid #c4452f}" +
+      "#standalone-tabs a{flex:0 0 auto;color:#f3efe6;text-decoration:none;padding:8px 12px;border:1px solid #2a323c;border-radius:2px;white-space:nowrap;font:650 13px/1.2 'Avenir Next','Segoe UI',sans-serif}" +
+      "#standalone-tabs a.active{background:#3a1612;border-color:#c4452f;color:#ffd2c6}" +
+      "#permanent-status-banner{background:#160e0c;border-bottom:3px solid #c4452f;color:#f3efe6;padding:12px 14px;font:17px/1.55 'Palatino Linotype',Palatino,serif}" +
+      "#permanent-status-banner a{color:#8ec4e6}" +
+      "#permanent-status-banner strong{color:#e8b07a}";
     document.head.appendChild(s);
   }
 })();
