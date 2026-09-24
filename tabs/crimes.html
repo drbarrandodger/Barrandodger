@@ -3,91 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>crimes — Barran Dodger Archive</title>
+<title>Crimes occurring to Barran Dodger — independent tab</title>
 <style>
-:root{--bg:#0b0d10;--card:#161b22;--text:#e8e6e3;--muted:#9a9690;--accent:#c9a227;--border:#2a3038;--danger:#c44;--link:#7eb8da;--tab-active:#1a1f28}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:"Segoe UI",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;font-size:15.5px}
-a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+:root{--bg:#0b0d10;--card:#161b22;--text:#e8e6e3;--muted:#9a9690;--accent:#c9a227;--border:#2a3038;--danger:#c44;--link:#7eb8da}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;font-size:15.5px}
+a{color:var(--link)}
 header{background:#0e1116;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:200}
 .brand{max-width:1200px;margin:0 auto;padding:.75rem 1rem .3rem;font-size:.92rem;color:var(--accent);font-weight:600}
-.tabs{max-width:1200px;margin:0 auto;display:flex;flex-wrap:nowrap;overflow-x:auto;gap:.12rem;padding:0 .5rem .45rem;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
-.tabs button{flex:0 0 auto;background:transparent;border:1px solid transparent;color:var(--muted);padding:.4rem .6rem;font-size:.76rem;border-radius:4px;cursor:pointer;white-space:nowrap;font-family:inherit}
-.tabs button:hover{color:var(--text);background:#1a1f28}
-.tabs button.active{color:var(--accent);background:var(--tab-active);border-color:var(--border)}
+.tabs{max-width:1200px;margin:0 auto;display:flex;flex-wrap:nowrap;overflow-x:auto;gap:.12rem;padding:0 .5rem .45rem}
+.tabs a.tablink{flex:0 0 auto;color:var(--muted);padding:.4rem .6rem;font-size:.76rem;border-radius:4px;text-decoration:none;white-space:nowrap}
+.tabs a.tablink.active{color:var(--accent);background:#1a1f28;border:1px solid var(--border)}
 .container{max-width:900px;margin:0 auto;padding:1.4rem 1rem 4rem}
-.section{display:none}.section.active{display:block}
-h1{font-size:1.55rem;font-weight:700;color:var(--accent);margin-bottom:.35rem}
-h2{font-size:1.18rem;color:var(--accent);margin:1.7rem 0 .7rem;border-bottom:1px solid var(--border);padding-bottom:.3rem}
-.disclaimer{background:#1a1210;border:1px solid #5a3020;border-left:4px solid var(--danger);padding:1rem 1.15rem;margin:1.1rem 0 1.4rem;border-radius:4px;font-size:.9rem}
-.disclaimer strong{color:#f0a080}
-.card,.entity,.doc{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:.9rem 1.1rem;margin:.5rem 0}
-.num{font-weight:700;color:var(--accent)}.title{font-weight:600;color:#f0ece6}
-.meta{color:var(--muted);font-size:.86rem;margin-bottom:1rem}
-.pattern-box,.key-box{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1rem 1.2rem;margin:1.1rem 0}
-.pattern-box strong,.key-box strong{color:var(--accent)}
-ul,ol{margin:.4rem 0 .4rem 1.3rem}li{margin:.2rem 0}
-.doc a{font-weight:600}
-footer{text-align:center;padding:1.5rem 1rem;border-top:1px solid var(--border);color:var(--muted);font-size:.8rem}
-@media(max-width:640px){h1{font-size:1.28rem}.tabs button{font-size:.72rem;padding:.35rem .5rem}}
-
-.tabs a.tablink{flex:0 0 auto;background:transparent;border:1px solid transparent;color:var(--muted);padding:.4rem .6rem;font-size:.76rem;border-radius:4px;cursor:pointer;white-space:nowrap;font-family:inherit;text-decoration:none;display:inline-block}
-.tabs a.tablink:hover{color:var(--text);background:#1a1f28;text-decoration:none}
-.tabs a.tablink.active{color:var(--accent);background:var(--tab-active);border-color:var(--border)}
-.docframe{width:100%;height:78vh;min-height:480px;border:1px solid var(--border);background:#111;border-radius:6px;margin:1rem 0}
-.verbatim{white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;line-height:1.45;background:#10141a;border:1px solid var(--border);padding:1rem;border-radius:6px;overflow:auto}
-.pages img{width:100%;height:auto;border:1px solid var(--border);margin:.35rem 0;background:#fff;display:block}
-.pages figcaption{color:var(--muted);font-size:.8rem;margin-top:.8rem}
-.recipients{margin:.4rem 0 .4rem 1.2rem}
-.recipients li{margin:.28rem 0}
-.flag{color:#e0a060;font-size:.82rem}
-code{font-size:.82rem;word-break:break-all}
-
+h1{font-size:1.45rem;color:var(--accent);margin-bottom:.4rem}
+h2{font-size:1.12rem;color:var(--accent);margin:1.5rem 0 .6rem}
+.disclaimer{background:#1a1210;border-left:4px solid var(--danger);padding:1rem;margin:1rem 0;font-size:.9rem}
+.item{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:.9rem 1.1rem;margin:.55rem 0}
+.tag{color:#f0a080;font-weight:700;font-size:.78rem}
+footer{text-align:center;padding:1.5rem;border-top:1px solid var(--border);color:var(--muted);font-size:.8rem}
 </style>
 </head>
 <body>
 <header>
   <div class="brand"><a href="../index.html">Barran Dodger Archive</a> · independent page · crimes</div>
-  <nav class="tabs"><a class="tablink" href="home.html">home</a>
-<a class="tablink" href="who.html">who</a>
-<a class="tablink" href="crimes.html">crimes</a>
-<a class="tablink" href="apocalypse.html">apocalypse</a>
-<a class="tablink" href="techniques.html">techniques</a>
-<a class="tablink" href="prophecy.html">prophecy</a>
-<a class="tablink" href="manifesto.html">manifesto</a>
-<a class="tablink" href="god.html">god</a>
-<a class="tablink" href="doc1.html">doc1</a>
-<a class="tablink" href="doc2.html">doc2</a>
-<a class="tablink" href="doc3.html">doc3</a>
-<a class="tablink" href="doc4.html">doc4</a>
-<a class="tablink" href="doc5.html">doc5</a>
-<a class="tablink" href="doc6.html">doc6</a>
-<a class="tablink" href="doc7.html">doc7</a>
-<a class="tablink" href="doc8.html">doc8</a>
-<a class="tablink" href="doc9.html">doc9</a>
-<a class="tablink" href="doc10.html">doc10</a>
-<a class="tablink" href="doc11.html">doc11</a>
-<a class="tablink" href="doc12.html">doc12</a>
-<a class="tablink" href="doc13.html">doc13</a>
-<a class="tablink" href="doc14.html">doc14</a>
-<a class="tablink" href="doc15.html">doc15</a>
-<a class="tablink" href="ai.html">ai</a>
-<a class="tablink" href="soul.html">soul</a>
-<a class="tablink" href="sources.html">sources</a>
-<a class="tablink" href="challenge.html">challenge</a>
-<a class="tablink" href="method.html">method</a>
-<a class="tablink" href="witness.html">witness</a>
-<a class="tablink" href="timeline.html">timeline</a></nav>
+  <nav class="tabs">
+    <a class="tablink active" href="crimes.html">crimes</a>
+    <a class="tablink" href="pids.html">pids</a>
+    <a class="tablink" href="personal-statement-exile.html">exile</a>
+    <a class="tablink" href="home.html">home</a>
+    <a class="tablink" href="who.html">who</a>
+    <a class="tablink" href="witness.html">witness</a>
+    <a class="tablink" href="timeline.html">timeline</a>
+    <a class="tablink" href="sources.html">sources</a>
+    <a class="tablink" href="method.html">method</a>
+    <a class="tablink" href="challenge.html">challenge</a>
+  </nav>
 </header>
 <main class="container">
-<section id="crimes" class="section active">
-  <h1>Crimes against Barran Dodger</h1>
-  <p class="meta">Master Allegation and Evidence Matrix · 1–150</p>
-  <div class="disclaimer">Allegation-and-evidence matrix only — not a finding of crime. High-consequence claims remain H.</div>
-  <div class="key-box"><p><strong>A</strong> Primary documentary · <strong>B</strong> Incomplete documentary · <strong>C</strong> Independent corroboration needed · <strong>D</strong> Narrative · <strong>H</strong> High-consequence</p></div>
-  <p>Full 150-item matrix is in <em>Crimes committed upon Barran Dodger 3.pdf</em> and the previously generated allegation-matrix.html. Structure and disclaimers preserved under this tab.</p>
-</section>
+<h1>Crimes occurring to Barran Dodger</h1>
+<p>Independent subpage for the Crimes tab. Source compilation title: <em>Crimes committed upon Barran Dodger</em>.</p>
+<div class="disclaimer"><strong>Not a finding of crime.</strong> Each item is an allegation or a documentary event. <strong>A</strong> primary document · <strong>B</strong> incomplete · <strong>C</strong> corroboration needed · <strong>D</strong> narrative · <strong>H</strong> high-consequence — do not treat H as established.</div>
+
+<div class="item"><p><strong>1. PIDs refused, rejected or not allocated</strong> <span class="tag">A</span></p>
+<p>Author alleges every formal disclosure path was closed without investigating the substance. Face of the letters: rejected, not allocated, IBAC PID rejected, APRA status rejected, NDIS PID out of time, 2025 Ombudsman service restriction.</p>
+<p><a href="../docs/official-drive/My-PID-for-commonwealth-Ombudsman.pdf">My PID</a> · <a href="../docs/official-drive/2021-05-PID-Ombudsman-Rejected-Acknowledgement.pdf">rejected May 2021</a> · <a href="../docs/official-drive/Commonwealth-Ombudsman-PID-notification-not-to-allocate.pdf">not allocated</a> · <a href="../docs/official-drive/2021-11-18-IBAC-PID-Rejection-400008R.pdf">IBAC 400008R</a> · <a href="../docs/official-drive/2021-11-13-APRA-reject-Whistleblower-Status.pdf">APRA</a> · <a href="../docs/official-drive/NDIS-PID-response-not-in-time-appeal-to-ombudsman-2023Krypton.pdf">NDIS Krypton</a> · <a href="../docs/official-drive/2025-08-08-Commonwealth-Ombudsman-Service-Restriction.pdf">restriction 2025</a> · <a href="pids-all.html">all PID files</a></p></div>
+
+<div class="item"><p><strong>2. Federal Court PID to Sia Lagos / Scott Tredwell — process without protection</strong> <span class="tag">A</span></p>
+<p>3/6 March 2023 letter to the Court CEO. Tredwell named as authorised officer. DSS public-official claim. 14-day duty cited. Assessment 27 March 2023. Author’s three points from that letter: maladministration; corruption-category conduct; harm — asked for protection in the same document.</p>
+<p><a href="https://sites.google.com/view/barrandodger/dear-the-ceo-and-principal-registrar-of-the-federal-court-sia-lagos-on-06">Lagos letter</a> · <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2023-03-27-federal-court-final-assessment-dr-rich-mclean.pdf">27 Mar 2023 assessment</a> · <a href="pids-sia-lagos.html">Lagos / Tredwell brief</a></p></div>
+
+<div class="item"><p><strong>3. Employment claimed for PID; WorkCover/Comcare refused; AAT without a lawyer</strong> <span class="tag">A</span></p>
+<p>NDIS Q&S letter titled “not an employee.” Comcare rejected 26 May 2021. ART/AAT McLean and Comcare 12 July 2023.</p>
+<p><a href="../docs/official-drive/2021-06-03-NDIS-Quality-Safeguards-Commission-not-an-employee.pdf">not an employee</a> · <a href="../docs/official-drive/McLean-determination-Comcare-rejection-26May2021.pdf">Comcare rejection</a> · <a href="../docs/official-drive/ART-2021-7478-McLean-and-Comcare-Decision-12-July-2023.pdf">ART decision</a></p></div>
+
+<div class="item"><p><strong>4. Alleged threat to kill — AbleCare transcript</strong> <span class="tag">H</span></p>
+<p>Transcript preserved is not a conviction.</p>
+<p><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/ablecare-murder-threat-call-transcript.pdf">ablecare-murder-threat-call-transcript.pdf</a></p></div>
+
+<div class="item"><p><strong>5. Alleged forced dependency / no practical exit</strong> <span class="tag">D / C</span></p>
+<p>Exile statement: no lease to Able Point; told he is free to leave without money, transport or destination.</p>
+<p><a href="personal-statement-exile.html">Exile statement</a></p></div>
+
+<div class="item"><p><strong>6. Alleged financial control and blocked access to justice</strong> <span class="tag">C</span></p>
+<p>Author alleges trustee/guardianship administration closed off legal representation.</p>
+<p><a href="../index.html#legalaid">Legal Aid tab</a> · <a href="personal-statement-exile.html">Exile statement</a></p></div>
+
+<div class="item"><p><strong>7. Complaints treated as illness rather than investigated</strong> <span class="tag">D</span></p>
+<p>Exile statement and Lagos PID: distress read as psychiatric; CTO / forced medication alleged to treat symptoms without examining the circumstances he says cause them.</p>
+<p><a href="personal-statement-exile.html">Exile statement</a></p></div>
+
+<div class="item"><p><strong>8. Alleged electronic surveillance / V2K</strong> <span class="tag">H</span></p>
+<p>Reported experience. Mechanism not independently established on this page.</p>
+<p><a href="personal-statement-exile.html">Exile statement</a></p></div>
+
+<div class="item"><p><strong>9. Alleged harm to companion dog Crystal</strong> <span class="tag">C</span></p>
+<p>Named in the Exile statement. Further documentary follow-up required.</p>
+<p><a href="personal-statement-exile.html">Exile statement</a></p></div>
+
+<div class="item"><p><strong>10. Ministerial / Cabinet / FOI loops</strong> <span class="tag">A</span></p>
+<p>PM/AG directed to Ombudsman. OAIC review of PM&C. FOI 2022/045 series.</p>
+<p><a href="../docs/official-drive/Letter-to-PM-and-Attorney-General-response-directing-to-Ombudsman.pdf">directed to Ombudsman</a> · <a href="../docs/official-drive/OAIC-IC-review-Department-Prime-Minister-Cabinet.pdf">OAIC v PM&C</a> · <a href="../docs/official-drive/FOI-2022-045-Decision.pdf">FOI 2022/045</a></p></div>
+
+<div class="item"><p><strong>11. CDDA / AFP compensation claim</strong> <span class="tag">B</span></p>
+<p>Filename is the claim, not the scheme outcome. Open the PDF.</p>
+<p><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/2021-10-21-cdda-afp-compensation-claim.pdf">2021-10-21 CDDA AFP</a></p></div>
+
+<div class="item"><p><strong>12. ASIC-titled compilations in this repo</strong> <span class="tag">B</span></p>
+<p>Author-titled files, not ASIC findings.</p>
+<p><a href="../ASIC%20corruption%20.pdf">ASIC corruption .pdf</a> · <a href="../ASIC%20evidence%20of%20corruption%20and%20dentist%20theft%20or%20manipulation%20.pdf">second file</a></p></div>
+
+<div class="item"><p><strong>13. Further integrity-body letters</strong> <span class="tag">A</span></p>
+<p><a href="../docs/official-drive/2020-04-09-IBAC-CASE-2020712-Outcome-letter.pdf">IBAC 2020712</a> · <a href="../docs/official-drive/2023-10-29-IBAC-CASE-20231101-CASE-20233846.pdf">2023 IBAC cases</a> · <a href="../docs/official-drive/2022-06-14-Vic-Ombudsman-Rejects-FOI-s29A.pdf">Vic Ombudsman s29A</a> · <a href="../docs/official-drive/Outcome-of-complaint-to-NSW-Ombudsman-NSWO10704000690.pdf">NSW Ombudsman</a></p></div>
+
+<div class="item"><p><strong>14. AFCA / Ombudsman referral loop</strong> <span class="tag">A / B</span></p>
+<p><a href="../docs/official-drive/Ombudsman-AFCA-referral-loop-evidence.pdf">loop file</a> · <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/afca-letter-21-may-2021.pdf">AFCA 21 May 2021</a></p></div>
+
+<div class="item"><p><strong>15. Police statement / LEDR</strong> <span class="tag">C / H</span></p>
+<p>Author’s police-report compilation. Testimony unless a finding appears on the face of that file.</p>
+<p><a href="../index.html#police-statement">Statement to Police</a></p></div>
+
+<div class="item"><p><strong>16. Cumulative administrative-annihilation pattern</strong> <span class="tag">D</span></p>
+<p>Analytical compilation. Isolated refusals to be read together.</p>
+<p><a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/architecture-of-administrative-annihilation.pdf">architecture PDF</a> · <a href="https://raw.githubusercontent.com/wezzo72/Backup/main/client/public/documents/comprehensive-case-systematic-persecution.pdf">comprehensive case</a></p></div>
+
+<div class="item"><p><strong>17. Political exile / reputational exclusion</strong> <span class="tag">D</span></p>
+<p><a href="personal-statement-exile.html">Exile statement</a></p></div>
+
+<h2>150-row working matrix</h2>
+<p>Longer numbered matrix: <a href="../evidence/allegation-matrix.html">evidence/allegation-matrix.html</a>. This page does not invent missing row titles from “Crimes committed upon Barran Dodger 3.pdf”.</p>
+<p>Also: <a href="../crimes.html">root crimes.html</a> · master hash <a href="../index.html#crimes">index.html#crimes</a></p>
 </main>
-<footer><a href="../index.html">Master index</a> · This page is the full tab, not an anchor on the landing page.</footer>
+<footer>Independent Crimes tab · not a court · <a href="../index.html">master index</a></footer>
 </body>
 </html>
