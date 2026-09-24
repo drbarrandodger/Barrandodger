@@ -1,94 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>techniques — Barran Dodger Archive</title>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>How They Did It — techniques 1–85</title>
 <style>
-:root{--bg:#0b0d10;--card:#161b22;--text:#e8e6e3;--muted:#9a9690;--accent:#c9a227;--border:#2a3038;--danger:#c44;--link:#7eb8da;--tab-active:#1a1f28}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:"Segoe UI",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;font-size:15.5px}
-a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
-header{background:#0e1116;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:200}
-.brand{max-width:1200px;margin:0 auto;padding:.75rem 1rem .3rem;font-size:.92rem;color:var(--accent);font-weight:600}
-.tabs{max-width:1200px;margin:0 auto;display:flex;flex-wrap:nowrap;overflow-x:auto;gap:.12rem;padding:0 .5rem .45rem;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
-.tabs button{flex:0 0 auto;background:transparent;border:1px solid transparent;color:var(--muted);padding:.4rem .6rem;font-size:.76rem;border-radius:4px;cursor:pointer;white-space:nowrap;font-family:inherit}
-.tabs button:hover{color:var(--text);background:#1a1f28}
-.tabs button.active{color:var(--accent);background:var(--tab-active);border-color:var(--border)}
-.container{max-width:900px;margin:0 auto;padding:1.4rem 1rem 4rem}
-.section{display:none}.section.active{display:block}
-h1{font-size:1.55rem;font-weight:700;color:var(--accent);margin-bottom:.35rem}
-h2{font-size:1.18rem;color:var(--accent);margin:1.7rem 0 .7rem;border-bottom:1px solid var(--border);padding-bottom:.3rem}
-.disclaimer{background:#1a1210;border:1px solid #5a3020;border-left:4px solid var(--danger);padding:1rem 1.15rem;margin:1.1rem 0 1.4rem;border-radius:4px;font-size:.9rem}
-.disclaimer strong{color:#f0a080}
-.card,.entity,.doc{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:.9rem 1.1rem;margin:.5rem 0}
-.num{font-weight:700;color:var(--accent)}.title{font-weight:600;color:#f0ece6}
-.meta{color:var(--muted);font-size:.86rem;margin-bottom:1rem}
-.pattern-box,.key-box{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1rem 1.2rem;margin:1.1rem 0}
-.pattern-box strong,.key-box strong{color:var(--accent)}
-ul,ol{margin:.4rem 0 .4rem 1.3rem}li{margin:.2rem 0}
-.doc a{font-weight:600}
-footer{text-align:center;padding:1.5rem 1rem;border-top:1px solid var(--border);color:var(--muted);font-size:.8rem}
-@media(max-width:640px){h1{font-size:1.28rem}.tabs button{font-size:.72rem;padding:.35rem .5rem}}
-
-.tabs a.tablink{flex:0 0 auto;background:transparent;border:1px solid transparent;color:var(--muted);padding:.4rem .6rem;font-size:.76rem;border-radius:4px;cursor:pointer;white-space:nowrap;font-family:inherit;text-decoration:none;display:inline-block}
-.tabs a.tablink:hover{color:var(--text);background:#1a1f28;text-decoration:none}
-.tabs a.tablink.active{color:var(--accent);background:var(--tab-active);border-color:var(--border)}
-.docframe{width:100%;height:78vh;min-height:480px;border:1px solid var(--border);background:#111;border-radius:6px;margin:1rem 0}
-.verbatim{white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;line-height:1.45;background:#10141a;border:1px solid var(--border);padding:1rem;border-radius:6px;overflow:auto}
-.pages img{width:100%;height:auto;border:1px solid var(--border);margin:.35rem 0;background:#fff;display:block}
-.pages figcaption{color:var(--muted);font-size:.8rem;margin-top:.8rem}
-.recipients{margin:.4rem 0 .4rem 1.2rem}
-.recipients li{margin:.28rem 0}
-.flag{color:#e0a060;font-size:.82rem}
-code{font-size:.82rem;word-break:break-all}
-
-</style>
-</head>
+body{margin:0;background:#0b0d10;color:#e8e6e3;font-family:"Segoe UI",system-ui,sans-serif;line-height:1.55}
+.wrap{max-width:880px;margin:auto;padding:20px 14px 80px}a{color:#7eb8da}h1,h2{color:#c9a227}
+.ai{background:#141a20;border-left:4px solid #c9a227;padding:12px;margin:14px 0}
+ol{padding-left:1.3rem}li{margin:.28rem 0}
+table{width:100%;border-collapse:collapse;font-size:.88rem}th,td{border-bottom:1px solid #2a3038;padding:.4rem;vertical-align:top;text-align:left}
+</style></head>
 <body>
-<header>
-  <div class="brand"><a href="../index.html">Barran Dodger Archive</a> · independent page · techniques</div>
-  <nav class="tabs"><a class="tablink" href="home.html">home</a>
-<a class="tablink" href="who.html">who</a>
-<a class="tablink" href="crimes.html">crimes</a>
-<a class="tablink" href="apocalypse.html">apocalypse</a>
-<a class="tablink" href="techniques.html">techniques</a>
-<a class="tablink" href="prophecy.html">prophecy</a>
-<a class="tablink" href="manifesto.html">manifesto</a>
-<a class="tablink" href="god.html">god</a>
-<a class="tablink" href="doc1.html">doc1</a>
-<a class="tablink" href="doc2.html">doc2</a>
-<a class="tablink" href="doc3.html">doc3</a>
-<a class="tablink" href="doc4.html">doc4</a>
-<a class="tablink" href="doc5.html">doc5</a>
-<a class="tablink" href="doc6.html">doc6</a>
-<a class="tablink" href="doc7.html">doc7</a>
-<a class="tablink" href="doc8.html">doc8</a>
-<a class="tablink" href="doc9.html">doc9</a>
-<a class="tablink" href="doc10.html">doc10</a>
-<a class="tablink" href="doc11.html">doc11</a>
-<a class="tablink" href="doc12.html">doc12</a>
-<a class="tablink" href="doc13.html">doc13</a>
-<a class="tablink" href="doc14.html">doc14</a>
-<a class="tablink" href="doc15.html">doc15</a>
-<a class="tablink" href="ai.html">ai</a>
-<a class="tablink" href="soul.html">soul</a>
-<a class="tablink" href="sources.html">sources</a>
-<a class="tablink" href="challenge.html">challenge</a>
-<a class="tablink" href="method.html">method</a>
-<a class="tablink" href="witness.html">witness</a>
-<a class="tablink" href="timeline.html">timeline</a></nav>
-</header>
-<main class="container">
-<section id="techniques" class="section active">
-  <h1>How They Did It</h1>
-  <p class="meta">Techniques of Targeting · 1–85</p>
-  <div class="disclaimer">Author’s model. Not a court finding.</div>
-  <div class="pattern-box"><p><strong>Body → mind → reputation → relationships → money → housing → autonomy → legal access → institutional recognition → evidence → social existence.</strong></p>
-  <p style="margin-top:.5rem">weaken → isolate → discredit → impoverish → exhaust → deprive of support → undermine credibility → obstruct redress → make institutionally invisible → erase.</p>
-  <p style="margin-top:.5rem">“Social death,” “total civil liquidation,” “administrative annihilation.” Full 85 techniques remain in the dedicated techniques page and prior master export.</p></div>
-</section>
-</main>
-<footer><a href="../index.html">Master index</a> · This page is the full tab, not an anchor on the landing page.</footer>
-</body>
-</html>
+<div class="wrap">
+<p><a href="home.html">Home</a> · <a href="../techniques-of-targeting.html">source page (full)</a> · <a href="exhibits.html">Exhibits</a></p>
+<h1>How They Did It — Techniques of targeting 1–85</h1>
+<div class="ai"><strong>Author’s model. Not a court finding.</strong> Public documents only. A technique is mapped to an exhibit where a letter exists. No exhibit means the item stays Author’s Account.</div>
+
+<h2>Named mechanisms → technique numbers → exhibits</h2>
+<table>
+<thead><tr><th>Named mechanism</th><th>Technique nos.</th><th>Repository evidence</th></tr></thead>
+<tbody>
+<tr><td>Denial of legal aid / legal-access obstruction</td><td>17, 59, 80</td><td><a href="../index.html#legalaid">Legal Aid tab</a> · Exile E32</td></tr>
+<tr><td>Exile / displacement</td><td>10, 11, 65</td><td><a href="personal-statement-exile.html">Exile statement</a> E32</td></tr>
+<tr><td>Psychiatric weaponisation / pathologisation</td><td>24, 25, 26, 36, 38</td><td>E32 · Lagos PID E17</td></tr>
+<tr><td>Induced poverty / financial restriction</td><td>13, 14, 15, 80</td><td>E12 E13 E15 E30 E32</td></tr>
+<tr><td>Entrapment / dependency exploitation</td><td>12, 65</td><td>E32 Able Point named in Exile</td></tr>
+<tr><td>Referral loops / endless referral</td><td>18, 19, 53, 75, 81</td><td>E19 E28 E29 E02 E11 E27</td></tr>
+<tr><td>Stonewalling / institutional silence</td><td>20, 21, 47, 76</td><td>E01 E02 E27 E22</td></tr>
+<tr><td>Character assassination / credibility attack</td><td>27, 28, 44, 73, 74, 83</td><td>Author account E32 · matrix rows on slander</td></tr>
+<tr><td>Media ban / public narrative control</td><td>41, 42, 46</td><td>Map / Witness circulation list — not a court “ban” order on file here</td></tr>
+<tr><td>PID protection refused</td><td>39, 57, 58</td><td><a href="pid-act-protections.html">PID Act tab</a> E01–E07 E17 E27</td></tr>
+<tr><td>Contradictory status (employee / not employee)</td><td>54</td><td>E10 E17 E12 E15</td></tr>
+<tr><td>Threat / intimidation</td><td>2</td><td>E31 AbleCare transcript — H allegation</td></tr>
+</tbody>	able>
+
+<h2>Full list 1–85 (from techniques-of-targeting.html)</h2>
+<ol>
+<li>Physical violence — alleged assault, beating, injury and maiming.</li>
+<li>Threat and intimidation — creating fear, uncertainty or perceived danger.</li>
+<li>Surveillance and monitoring — alleged observation, tracking or scrutiny of my activities.</li>
+<li>Harassment — persistent conduct intended, in my account, to distress, provoke or wear me down.</li>
+<li>Psychological pressure — creating circumstances of prolonged stress and uncertainty.</li>
+<li>Gaslighting — causing me to question my own perceptions, experiences or interpretation of events.</li>
+<li>Provocation — attempting to elicit reactions that could subsequently be used against me.</li>
+<li>Isolation — reducing access to people, community, support and alternative perspectives.</li>
+<li>Social exclusion — marginalising me from relationships, organisations and communities.</li>
+<li>Exile and displacement — removing or separating me from places and networks of belonging.</li>
+<li>Abandonment — withdrawing assistance or leaving me without adequate support.</li>
+<li>Dependency exploitation — allegedly using my dependence on services, money, accommodation or support as leverage.</li>
+<li>Financial restriction — restricting access to resources necessary for independence and survival.</li>
+<li>Impoverishment — circumstances resulting in prolonged poverty and economic vulnerability.</li>
+<li>Property and financial deprivation — alleged robbery, loss of property and economic detriment.</li>
+<li>Employment and livelihood disruption — loss or interference with work, career and income.</li>
+<li>Legal-access obstruction — barriers to obtaining representation, Legal Aid or effective remedies.</li>
+<li>Procedural obstruction — delays, referrals, jurisdictional deflection and administrative circularity.</li>
+<li>Institutional fragmentation — forcing matters through multiple disconnected systems without effective resolution.</li>
+<li>Institutional silence — failure to provide substantive responses to complaints, questions or disclosures.</li>
+<li>Administrative delay — allowing matters to remain unresolved for prolonged periods.</li>
+<li>Denial of participation — excluding me from meaningful decision-making concerning my circumstances.</li>
+<li>Loss of autonomy and choice — reducing my capacity to control important aspects of my life.</li>
+<li>Pathologisation — interpreting testimony or conduct primarily through a medical or psychiatric framework.</li>
+<li>Medicalisation — transforming disputes or experiences into questions of treatment or illness.</li>
+<li>Stigmatisation — attaching socially discrediting meanings to disability or mental-health history.</li>
+<li>Credibility attack — undermining whether I should be believed rather than addressing the substance of my evidence.</li>
+<li>Character assassination — attacking my character, morality or motives.</li>
+<li>Scapegoating — attributing broader problems to me as the individual.</li>
+<li>Misrepresentation — presenting my words, conduct or motives in a way I say was inaccurate.</li>
+<li>Mischaracterisation — defining me through a simplified or distorted narrative.</li>
+<li>Blame shifting — transferring responsibility for circumstances onto me.</li>
+<li>Sexual shaming — using sexuality or intimate behaviour as a means of humiliation or discrediting.</li>
+<li>Weaponisation of vulnerability — using my vulnerabilities against me.</li>
+<li>Weaponisation of disability — using disability-related information to undermine autonomy or credibility.</li>
+<li>Weaponisation of mental-health history — using psychiatric history to discount testimony or allegations.</li>
+<li>Weaponisation of faith — using religious belief or spiritual identity to ridicule or discredit me.</li>
+<li>Weaponisation of testimony — turning the act of reporting harm into evidence against the person reporting it.</li>
+<li>Weaponisation of disclosures — creating consequences for making complaints or public-interest disclosures.</li>
+<li>Delegitimisation of evidence — shifting attention away from documentary material toward the character of its author.</li>
+<li>Narrative control — attempting, in my interpretation, to determine how events would be understood by others.</li>
+<li>Public humiliation — exposing or portraying me in ways intended to damage dignity or reputation.</li>
+<li>Ridicule and mockery — reducing serious claims to something socially embarrassing or laughable.</li>
+<li>Slander and defamation — alleged dissemination of damaging statements about my character or conduct.</li>
+<li>Framing — presenting circumstances so that I appear responsible, unreliable or culpable.</li>
+<li>Social invisibility — making my existence, testimony or concerns easier for others to ignore.</li>
+<li>Institutional invisibility — allowing my complaints or disclosures to remain formally present but substantively unresolved.</li>
+<li>Evidence fragmentation — separating documents and events across agencies so the overall chronology becomes difficult to reconstruct.</li>
+<li>Loss of records — unexplained missing, inaccessible, corrupted or incomplete documentary material.</li>
+<li>Evidentiary displacement — shifting attention from primary documents to secondary interpretations of me.</li>
+<li>Repetition and exhaustion — requiring repeated explanations, applications, complaints and retelling of events.</li>
+<li>Resource exhaustion — allowing prolonged disputes to consume money, time, energy and capacity.</li>
+<li>Institutional referral without resolution — repeatedly directing matters elsewhere without producing substantive determination.</li>
+<li>Contradictory decision-making — producing inconsistent or apparently incompatible institutional outcomes.</li>
+<li>Differential treatment — circumstances that I interpret as unequal treatment compared with what I believe should have occurred.</li>
+<li>Failure to investigate — alleged absence of adequate independent examination of serious allegations.</li>
+<li>Failure to protect — alleged failure to provide protection despite disclosures of harm or danger.</li>
+<li>Failure to recognise — failure to acknowledge my stated circumstances, evidence or disclosures.</li>
+<li>Failure to provide redress — absence of effective remedy, compensation or accountability.</li>
+<li>Professional exclusion — loss of professional opportunities, recognition or participation.</li>
+<li>Relationship disruption — deterioration or destruction of family, intimate and community relationships.</li>
+<li>Reputational isolation — creating circumstances in which others become reluctant to associate with or support me.</li>
+<li>Autonomy erosion — progressively reducing independence, agency, choice and control.</li>
+<li>Opportunity destruction — cumulative loss of employment, education, housing, relationships and professional opportunities.</li>
+<li>Institutional dependency — making access to essential resources dependent upon systems over which I had limited control.</li>
+<li>Secondary victimisation — experiencing further harm through responses to the original harm.</li>
+<li>Institutional retraumatisation — repeated encounters with systems that I experienced as reproducing distress.</li>
+<li>Compounding harm — one disadvantage creating conditions for additional disadvantages.</li>
+<li>Cumulative harm — numerous separate experiences combining into a substantially greater overall impact.</li>
+<li>Administrative annihilation — what I describe as the progressive destruction of my ability to function socially, financially, legally and institutionally.</li>
+<li>Social death — what I describe as being treated as though my identity, credibility and existence no longer carried meaningful social recognition.</li>
+<li>Total civil liquidation — what I describe as the cumulative destruction of financial, legal, social, professional and institutional standing.</li>
+<li>Character-based displacement — making who I am the central issue instead of what happened.</li>
+<li>Credibility substitution — replacing examination of evidence with judgments about whether I should be believed.</li>
+<li>Institutional compartmentalisation — each institution addressing only its own fragment while the cumulative pattern remains unexamined.</li>
+<li>Silence as attrition — allowing unresolved matters to persist until exhaustion, poverty or isolation reduces the person’s ability to continue.</li>
+<li>Stigma as social control — using shame, ridicule or stigma to discourage disclosure.</li>
+<li>Fear as behavioural control — creating circumstances in which speaking, complaining or challenging decisions carries perceived consequences.</li>
+<li>Isolation as evidentiary control — reducing access to witnesses, advocates and independent people able to scrutinise events.</li>
+<li>Poverty as disempowerment — reducing the practical ability to obtain representation, relocate, communicate, preserve evidence or pursue remedies.</li>
+<li>Bureaucracy as attrition — allowing procedural complexity, delay and institutional boundaries to consume the capacity to pursue justice.</li>
+<li>Delegitimisation through identity — attempting to make the identity or history of the complainant more important than the evidence presented.</li>
+<li>Reputational pre-emption — allegedly damaging credibility before allegations can receive substantive examination.</li>
+<li>Suppression through exhaustion — creating conditions in which continuing to complain becomes progressively harder.</li>
+<li>Erasure through accumulation — producing so many separate obstacles, losses and institutional failures that the combined effect becomes what I describe as an attempt to erase me.</li>
+</ol>
+<p>Source wording: <a href="../techniques-of-targeting.html">techniques-of-targeting.html</a>.</p>
+</div>
+<script src="../assets/standalone-nav.js"></script>
+</body></html>
