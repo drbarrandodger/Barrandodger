@@ -1,21 +1,14 @@
-/* Shared top menu for /tabs/*.html
- * Add a tab: append one object here, then create tabs/your-id.html from tabs/_template.html
- */
+/* Shared top menu for /tabs/*.html */
 (function () {
   var TABS = [
+    { id: "exhibits", href: "exhibits.html", label: "Exhibits E01–E34" },
+    { id: "ten", href: "ten.html", label: "Ten statements" },
     { id: "crimes", href: "crimes.html", label: "Crimes 1–150" },
     { id: "pids", href: "pids-all.html", label: "PIDs" },
     { id: "lagos", href: "pids-sia-lagos.html", label: "Lagos / Tredwell" },
     { id: "exile", href: "personal-statement-exile.html", label: "Exile statement" },
-    { id: "home", href: "home.html", label: "Home" },
-    { id: "who", href: "who.html", label: "Who" },
-    { id: "witness", href: "witness.html", label: "Witness" },
-    { id: "timeline", href: "timeline.html", label: "Timeline" },
-    { id: "sources", href: "sources.html", label: "Sources" },
-    { id: "method", href: "method.html", label: "Method" },
-    { id: "challenge", href: "challenge.html", label: "Challenge" }
+    { id: "home", href: "home.html", label: "Home" }
   ];
-
   var here = (location.pathname.split("/").pop() || "home.html").toLowerCase();
   var nav = document.getElementById("standalone-tabs");
   if (!nav) {
@@ -24,12 +17,14 @@
     document.body.insertBefore(nav, document.body.firstChild);
   }
   nav.setAttribute("aria-label", "Standalone tabs");
-  nav.innerHTML = TABS.map(function (t) {
-    var on = here === t.href.toLowerCase() || here === t.id + ".html";
-    return '<a class="" + (on ? "active" : "") + '" href="' + t.href + '">' + t.label + "</a>";
-  }).join("") +
-    '<a href="../index.html">master site</a>';
-
+  var html = "";
+  for (var i = 0; i < TABS.length; i++) {
+    var t = TABS[i];
+    var on = here === t.href.toLowerCase();
+    html += '<a class="' + (on ? "active" : "") + '" href="' + t.href + '">' + t.label + "</a>";
+  }
+  html += '<a href="../index.html">master site</a>';
+  nav.innerHTML = html;
   if (!document.getElementById("standalone-nav-css")) {
     var s = document.createElement("style");
     s.id = "standalone-nav-css";
