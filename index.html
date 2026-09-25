@@ -13,8 +13,8 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-syst
 #chrome header{padding:18px 16px 10px;max-width:1200px;margin:0 auto}
 .eyebrow{font-size:.72rem;letter-spacing:.12em;color:var(--accent);font-weight:700}
 #chrome h1{font-size:clamp(1.2rem,4vw,1.75rem);margin:4px 0 0;line-height:1.2}
-.tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:5px;padding:8px 10px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
-.tab{flex:0 0 auto;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:9px 12px;border-radius:8px;white-space:nowrap;cursor:pointer;font:inherit}
+.tabs{display:flex;flex-wrap:wrap;overflow:visible;gap:5px;padding:8px 10px}
+.tab{flex:0 0 auto;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:7px 10px;border-radius:8px;white-space:nowrap;cursor:pointer;font:inherit;font-size:.82rem}
 .tab.active{background:var(--panel2);border-color:var(--accent);color:var(--accent)}
 #content{max-width:1200px;margin:0 auto;padding:20px 16px 80px;min-height:60vh}
 #content .loading{color:var(--muted);padding:2rem 0}
@@ -60,38 +60,38 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-syst
   "who": "tabs/who.html",
   "timeline": "tabs/timeline.html",
   "evidence": "evidence/allegation-matrix.html",
-  "official": "tabs/exhibits.html",
+  "official": "official.html",
   "declarations": "tabs/pids.html",
-  "legal-affidavits": "tabs/exhibits.html",
+  "legal-affidavits": "documents.html",
   "police-statement": "tabs/exhibits.html",
   "good-bits": "tabs/the-good-bits.html",
   "tv-recording": "tabs/tv-wifi-audio.html",
   "record-essay": "tabs/record-that-refused-to-disappear.html",
   "ahrc-letter": "tabs/ahrc-4jul2023.html",
   "family-notice": "tabs/family-notice.html",
-  "documents": "tabs/exhibits.html",
-  "primary": "SOURCES.html",
-  "named-evidence": "tabs/exhibits.html",
-  "video-exhibit": "tabs/home.html",
+  "documents": "documents.html",
+  "primary": "tabs/sources.html",
+  "named-evidence": "tabs/named-institutions.html",
+  "video-exhibit": "tabs/tv-wifi-audio.html",
   "legal": "legal-brief.html",
   "fedcourt": "tabs/n03-federal-court-dss-comcare.html",
   "ndis": "tabs/able-point-exile.html",
-  "pm": "tabs/exhibits.html",
+  "pm": "confidential-government-documents.html",
   "ombudsman": "tabs/n02-pids-recorded-outcomes.html",
   "legalaid": "tabs/exhibits.html",
-  "coag": "tabs/exhibits.html",
-  "archive": "SOURCES.html",
+  "coag": "official.html",
+  "archive": "inventory.html",
   "significance": "tabs/ahrc-gangstalking-significance.html",
-  "opening": "tabs/home.html",
+  "opening": "tabs/n01-the-record-is-public.html",
   "reckoning": "tabs/record-that-refused-to-disappear.html",
   "aiarchive": "tabs/ai.html",
   "methods": "tabs/techniques.html",
   "digital": "tabs/apocalypse.html",
   "prophecy": "tabs/prophecy.html",
   "destroy": "tabs/soul.html",
-  "gospels": "tabs/god.html",
-  "essays": "tabs/record-that-refused-to-disappear.html",
-  "entities": "tabs/who.html",
+  "gospels": "gospels-prophetic.html",
+  "essays": "essays.html",
+  "entities": "tabs/named-institutions.html",
   "doctrine": "tabs/method.html",
   "god": "tabs/god.html",
   "chosen": "tabs/witness.html",
@@ -103,7 +103,7 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-syst
   "open": "tabs/challenge.html",
   "architecture": "tabs/techniques.html",
   "trust": "tabs/exhibits.html",
-  "source-record": "SOURCES.html",
+  "source-record": "named-archive-pdfs.html",
   "species": "tabs/ten.html",
   "forensic": "tabs/forensic-command.html",
   "sources": "SOURCES.html"
@@ -154,7 +154,7 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-syst
         cache[href] = html;
       }
       var body = extractBody(html);
-      content.innerHTML = '<p id="open-source">Full source (every word preserved): <a href="tabs/home-full-part1.html" target="_blank" rel="noopener">home (full text included)</a></p><div class="src-root">' + body + '</div>';
+      content.innerHTML = '<p id="open-source">Full source (every word preserved): <a href="' + href + '" target="_blank" rel="noopener">open this tab source</a></p><div class="src-root">' + body + '</div>';
       window.scrollTo(0, 0);
       if(window.linkifySources){ window.linkifySources(content); }
     } catch(err){
