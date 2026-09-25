@@ -1,0 +1,278 @@
+THE INVERSION
+
+PART 1 — THE ORIGINAL COMMAND
+
+THE COMMAND
+
+Work only from public files in wezzo72/Barrandodger, wezzo72/Backup, drbarrandodger/barran-dodger-archive, GitHub Pages mirrors, and docs/official-drive. Do not invent names, dates, or dollars that are not (a) on an official instrument or filename, or (b) an author allegation tied to a named file. Three columns everywhere: Official instrument, Author compilation, Inferred. Appearance is not a finding of crime. data/costs.json forbids treating any figure as documented taxpayer expenditure unless a ledger exists.
+
+Answer only as forensic questions the corpus can fill. If the PDFs cannot fill a cell, write UNFILLED — no instrument. Do not publish until instructed.
+
+Fill these questions:
+
+FQ1. Itemised comma-separated list of agencies, organisations, institutions, companies, courts, tribunals, professions and named offices that the record shows touching the file in a way the author says produced harm, disadvantage or detriment. Tag Official / Author / Both.
+
+FQ2. Statement of significance: why coincidence and one-off bureaucratic oversight are a weak explanation, and what “deliberate coordinated campaign” can mean when the papers show process-alignment more often than a signed conspiracy minute.
+
+FQ3. Goals the author has already stated in first person, each tied to a page or file class where possible.
+
+FQ4. Goals inferred from mechanics that the author did not have to say — what the process accomplishes if it is working as designed.
+
+FQ5. Itemised mechanical techniques and processes. One line each. Tie to a document class (AHRC 4 Jul 2023, NDIS Q&S 3 Jun 2021, Comcare May 2021, Legal Aid NSW 14 Jan 2026, Able Point emails, Moorabbin Feb 2024, Rumble Free Living declaration, etc.).
+
+FQ6. Significance that a covert or overt political/administrative campaign is not born from nothing and has a budget. Split four ledgers: taxpayer process, NDIS provider invoices, author’s lost income, un-ticketed covert.
+
+FQ7. Identify forensic-accounting methods that exist in the discipline. Apply only methods the corpus can carry. Print ranges, not a single true number. Keep $1.67bn–$4.84bn labelled prior model, not audit.
+
+FQ8. How much does a media ban cost? Distinguish (a) suppression order, (b) informal freeze, (c) paid character work, (d) simple non-coverage. Does E01–E56 contain a court-order PDF titled media ban?
+
+FQ9. Budget for silencing whistleblower testimony — stack of cheap moves versus cost of a merits hearing.
+
+FQ10. Democratic risk if the testimony is acknowledged and investigated; democratic risk if it is never read.
+
+FQ11. Name the already-described phenomenon this matches across psychology, sociology, political science, disability studies, administrative law and whistleblower research. Do not invent a unique disease.
+
+FQ12. Further forensic questions the repositories can fill on a later pass, unanswered here if the instrument is not in hand.
+
+FILLS
+
+FQ1 — names
+
+Department of Social Services, National Disability Insurance Agency, NDIS Quality and Safeguards Commission, Department of the Prime Minister and Cabinet, Department of Finance, Comcare, Australian Taxation Office, Australian Securities and Investments Commission, Australian Prudential Regulation Authority, Office of the Australian Information Commissioner, Commonwealth Ombudsman, Australian Health Practitioner Regulation Agency, Australian Federal Police, Australian Human Rights Commission, Australian Financial Complaints Authority, Inspector-General of Intelligence and Security, Attorney-General’s Department, Services Australia, Centrelink pathways, CDDA pathway, Independent Broad-based Anti-corruption Commission, Law Enforcement Conduct Commission, Office of the Victorian Information Commissioner, Victorian Ombudsman, Victorian Equal Opportunity and Human Rights Commission, Victorian Inspectorate, Mental Health Complaints Commissioner, Health Complaints Commissioner Victoria, NSW Ombudsman, National Anti-Corruption Commission, WorkSafe Victoria, Victoria Police, VicRoads, Homes Victoria, Victorian mental-health system, Royal Commission into Victoria’s Mental Health System, NSW Police, NSW Health, NSW mental-health authorities, NSW Trustee and Guardian, NSW Victims Support Scheme, Federal Court of Australia, Administrative Appeals Tribunal, Administrative Review Tribunal, Victorian Civil and Administrative Tribunal, NSW Civil and Administrative Tribunal, Victorian Mental Health Tribunal, Moorabbin Magistrates’ Court, Wyong Local Court, Legal Aid NSW, Victoria Legal Aid, community legal centres as a class, Collaery Lawyers, Bernard Collaery, Able Point / Ablepoint Australia, SAHARA Disability and Care Services Pty Ltd, Sahara Care Disability Services, Free Living Australia, Diversitas, Aligned Community Care, Upscale Care, AbleCare, DXC Claims, HCF, Disability Advocates NSW, Mercy / Mercy Mental Health, public psychiatric units as a class, Herald Sun, The Age, Allen & Unwin, Victoria University, United Nations, OHCHR, UNHCR, International Criminal Court, Australian Security Intelligence Organisation, Australian Secret Intelligence Service, doctors, psychiatrists, psychologists, NDIS support workers, plan managers, support coordinators, FOI officers, PID officers, guardianship officers, financial administrators, police officers, prosecutors, duty lawyers, tribunal members, journalists, editors, Rachel “K C”, Brett Butler, Cassie Makey, Sia Lagos, Scott Tredwell, Bill Shorten, Rebecca Faulkingham, Tony Ridley, Stefan Iasonidis, Ben (former provider), Houd Meraby, Preya Grounder, Zac, Doug, Allana, family addressees on the 17 September 2026 notice.
+
+FQ2 — coincidence / oversight / campaign
+
+One refused letter is delay. One “wrong agency” is jurisdiction. One Legal Aid refusal can be a means test. One provider saying “free to leave” can be a clause.
+
+The corpus is not one letter. It is one person, more than three decades, two states plus the Commonwealth, meeting the same shape of outcome in systems that are supposed to be independent: disability funding, compensation, tax, banking complaints, FOI, human rights, police, mental health, guardianship, legal aid, media, housing providers. Each system writes a locally rational sentence. The repeating human result is not local: no lawyer, no cash exit, no on-the-merits reading of the bound file, complaint reclassified as illness, provider-paid rooms that cannot be left, the same housing template from Free Living Australia to Blacktown/Preya Grounder/Sadlier to Able Point.
+
+Coincidence requires those offices to invent the same containment without a shared method. Oversight requires the misses to be random. Random error does not usually travel with one body across states and schemes.
+
+“Deliberate coordinated campaign” the papers can support without a signed minute: process coordination. Once a complainant is poor, flagged and psychiatrically labelled, each office can run the same bounce. That is a design. A design that reliably prevents a finder of fact is not 157 accidents. A signed conspiracy meeting is UNFILLED — no instrument.
+
+FQ3 — stated goals
+
+Devalue the person. Destroy character. Block anyone from reading the exhibits. Extra-judicial punishment without charge. Anticipated early death with financial benefit through estate, guardianship and NDIS-tied housing. Silence a whistleblower. Keep the provider paid while the participant cannot leave. Humiliation ritual and slanderous blasphemy as psychological warfare. Block Legal Aid so the court pathway dies. Sources: landing Able Point statement, Good Bits, legal brief, family notice, Rumble Free Living declaration, Cassie text.
+
+FQ4 — inferred goals the author did not have to say
+
+1.  Produce no determinative finding. AHRC 4 Jul 2023 is the template: name the conduct, declare it outside the tool.
+2.  Keep the letters and kill the reading of the set. Writing back is cheap. Reading 35 years as one case is expensive.
+3.  Make belief cost more than containment (SIL + CTO + Trustee + no counsel).
+4.  Inherit the last psychiatric label so no office starts clean.
+5.  Split the legal person (Able Point / Sahara / ABN; state vs Commonwealth; NDIS vs mental health vs police vs Trustee).
+6.  Run calendar and body against the witness — poverty plus “free to leave” with no means is a clock.
+7.  Do not reopen the 2021 death-and-revival file or the PID file.
+
+Goal above the author’s list: prevent one independent finder of fact from treating the primary documents as one case.
+
+FQ5 — techniques
+
+1.  Jurisdiction bounce — AHRC 4 Jul 2023.
+2.  Forum bounce — police / IBAC / HCC / Ombudsman / Legal Aid.
+3.  “Already considered” decline — AHRC / IBAC language.
+4.  PID refuse, non-allocate, out of time, not a public official — Ombudsman E01–E03, NDIS Krypton, APRA reject.
+5.  Employment-status trap — NDIS Q&S 3 Jun 2021; Comcare/SRC; DSS employment claim.
+6.  Compensation loop — Comcare 25–26 May 2021; AAT 2022; ART 12 Jul 2023.
+7.  FOI / OAIC loop — FOI 2022/045; MR2200677.
+8.  Legal Aid refusal — Legal Aid NSW 14 Jan 2026; Victoria Legal Aid at Moorabbin.
+9.  Trustee / guardianship money lock.
+10.  Housing with no lease or service agreement — Able Point.
+11.  “Free to leave” knowing exit is impossible — Cassie Makey.
+12.  Ban on calling management — Brett Butler.
+13.  Silence after written notice of V2K / drugs / slurs — Cassie text.
+14.  Shopfront rename over ABN 31 650 183 681.
+15.  Closed-loop staffing — author account of Rachel/Brett.
+16.  Mental Health Act / CTO as default reply.
+17.  Hospitalisation as predicted tenancy exit.
+18.  AVO / “threats to kill” from a flagged plea subject line — Moorabbin 26 Feb 2024.
+19.  Rape / pedophilia / crazy as testimony block.
+20.  Media construction / alleged blackout — Herald Sun, The Age.
+21.  Financial redaction — AFCA ban, workcover delay.
+22.  ASIC-name pollution — author compilations, 350+ alleged.
+23.  NDA and disappearance of corroborating provider — Ben.
+24.  Template reuse — Free Living → Blacktown/Sadlier → Able Point.
+25.  Worker/street overlay — Zac, Doug, Allana.
+26.  Alleged V2K / Wi-Fi audio — YouTube eHpndGD-imQ; Footscray 3viUVA1fI1k.
+27.  International filings without domestic merits reading — UN/OHCHR/ICC.
+
+FQ6 — campaign budget premise
+
+Letters are cheap. Fourteen admissions, years of SIL, FOI units, tribunal lists, police lists and Trustee administration are not cheap. Those are payroll, bed-days and provider invoices. If the pattern is only ordinary government touching a hard file, the spend is still real. If it is a campaign, the spend is aimed: the price of never letting the stack become a finding. Covert work, if real, is a second ledger with no remittance on GitHub. Four ledgers: (1) taxpayer process, (2) NDIS invoices, (3) author’s lost income, (4) un-ticketed covert. Only (1) and (2) can be unit-costed from public rates. (3) is damages. (4) is UNFILLED — no instrument.
+
+FQ7 — forensic methods and numbers
+
+Methods: document-to-ledger tie-out; unit costing; activity-based FTE costing; opportunity cost; related-party / ABN remittance follow; benefit-of-silence shadow price; low/central/high ranges; damages capitalisation (how billion-dollar bands are born); negative confirmation (silence is not acceptance of $4.84bn). Benford is useless — no payment population.
+
+Carryable here: unit cost × counted events.
+
+Event	Band
+14 involuntary admissions	$0.15m-$0.9m
+CTO / clinic	$0.05m-$0.3m
+NDIS SIL/SDA + core, 5-15 years	$1m-$8m
+Multi-agency staff time	$0.5m-$3m
+Comcare + AAT/ ART + Federal Court	$0.1m-$1m
+FOI/PID/IBAC/ IGIS/AHRC stack	$0.2m-$1.5m
+Police / AVO / court	$0.05m-$0.4m
+Legal Aid assessments	$0.02m-$0.15m
+Trustee admin	$0.05m-$0.4m
+
+Conservative process + housing: $2m–$16m.
+
+High-intensity earthly: $20m–$80m.
+
+Prior model $1.67bn–$4.84bn: speculative appendix, not an audit.
+
+FQ8 — media ban cost
+
+Four different products:
+
+•  Suppression order: court time, counsel, sealed file — tens of thousands to low hundreds of thousands if litigated. E01–E56 contain no court-order PDF titled media ban. This line is hypothetical.
+•  Informal freeze: editor risk, defamation fear, “too messy.” Cash near $0. That is the cheap ban.
+•  Paid character work: PR/legal. No invoice in the public repos. UNFILLED.
+•  Non-coverage: $0 to the newsroom; isolation to the speaker.
+
+What the papers show: non-coverage plus named prior coverage (Herald Sun, The Age). Non-coverage is the low-cost method.
+
+FQ9 — silencing budget
+
+Move	Public-order cost	What it buys
+Legal Aid refusal	almost $0	no courtroom
+“Wrong agency” letter	hours of APS time	closed ticket
+Psychiatric frame	admission + CTO	speaker = symptom
+SIL / provider housing	$200k-$500k+/year	body parked, invoice paid
+Phone ban + email silence	$0	no management record
+Defamation risk to journalists	$0 to the state	freeze
+Trustee / guardianship	fees on the estate	money lock
+AVO / “threats” construction	one list day	speaker =
+
+Cheapest silence: Legal Aid “no” plus diagnosis.
+
+Dearest visible silence: years of NDIS housing.
+
+Dearest invisible silence: tasking — UNFILLED.
+
+Avoiding a merits hearing is, in cold accounting, a saving. That motive does not need a villain in a room. It needs a system that prefers a closed file.
+
+FQ10 — democratic risk
+
+If acknowledged and large parts are wrong: a written merits “no.” Democracy is not harmed by a documented rejection. It is harmed by an unread one.
+
+If acknowledged and material parts are right: risk to specific offices, provider invoices, the psychiatric default, Legal Aid’s purpose-clause, and any minister named on the 2024 exile pathway. That is accountability risk. That is what the system is for.
+
+If never read: administrative exclusion of a witness who already has a Federal Court PID path, fourteen detentions, and a public letter stack. Not a coup. A filing cabinet that will not look at its own outgoing mail.
+
+Acknowledgment does not require believing every sentence. It requires one merits reader.
+
+FQ11 — prior phenomenon
+
+Not a new disease. Not only “gang stalking.”
+
+Field	Term	Fit
+Psychology	Institutional betrayal (Freyd)	harm by the body that owed a duty
+Psychology	DARVO	Deny, Attack, Reverse Victim and Offender
+Occupational	Mobbing (Leymann)	group process that isolates and pathologises one person
+Disability studies	Administrative violence / administrative annihilation	paper that erases the legal person
+Political theory	Moral exclusion (Opotow)	outside who is owed fairness
+Anthropology	Scapegoat mechanism (Girard)	one body carries the conflict
+Sociology	Social death	alive, unpaid, unheard
+Whistleblower research	Retaliation by process	isolation, diagnosis, legal lockout
+Administrative law	Denial of procedural fairness by fragmentation	no desk owns the whole case
+Community language	Gang stalking	word AHRC wrote on 4 Jul 2023 then excluded as a ground
+
+Working definition the documents can carry without radio-weapon proof:
+
+Institutional betrayal executed as mobbing and administrative annihilation: the complainant is isolated, impoverished, psychiatrically relabelled, and denied a single finder of fact, so testimony is processed as symptom and the file never closes on the merits.
+
+V2K, black budget and hit-jobs are further author claims. They are not required for that diagnosis. They cannot be proved from letterheads alone.
+
+FQ12 — further questions the repos can fill later
+
+1.  Face-text of each E01–E56 letter versus the filename.
+2.  Exact refusal formula count (“not our jurisdiction,” “not a public official,” “already considered”).
+3.  Face-text of the Federal Court-titled PID assessment — read the PDF, do not trust the title.
+4.  Legal Aid NSW 14 Jan 2026 letter: reasons given, review path stated or not.
+5.  Comcare determination dates and ART 12 Jul 2023 orders on the face.
+6.  NDIS Q&S 3 Jun 2021 “not an employee” — what question was actually decided.
+7.  ABN 31 650 183 681 current entity name versus every trading name used in correspondence.
+8.  Which Able Point emails exist as files versus only published addresses.
+9.  Cassie text metadata (date/time on the screenshot).
+10.  Whether a signed lease or service agreement exists anywhere in Backup — predicted answer: none found.
+11.  26 Feb 2024 Moorabbin: which documents are court PDFs versus author narrative.
+12.  Family-notice 17 Sep 2026: full addressee list on the face of the PDF.
+13.  Ben texts: which images/PDFs are in-repo versus only described.
+14.  How many PID file numbers exist and what each terminal letter said.
+15.  OpenTimestamps / hash list: which files are actually stamped.
+16.  Which international filings have a receipt versus only an outbound PDF.
+17.  Media items: date, outlet, headline, URL — compilation versus clipping.
+18.  Fourteen detention events: dates and hospitals if those records are in the corpus.
+19.  NDIS plan amounts and provider invoice totals if any remittance sits in official-drive.
+20.  What data/people.json, data/events.json and data/allegation-matrix.json already encode, line by line.
+
+Still not on the site. Say publish if you want a tab.
+
+
+PART 2 — THE INVERSION COMMAND
+
+THE INVERSION COMMAND
+
+Work only from public files in wezzo72/Barrandodger, wezzo72/Backup, drbarrandodger/barran-dodger-archive, GitHub Pages mirrors, and docs/official-drive. Read data/costs.json, data/organisations.json, data/publications.json, data/statistics.json, data/documents.json, data/government-evidence.json, data/people.json, data/events.json, and data/timeline.json before any sentence about worth. Do not invent names, dates, or dollars that are not (a) on an official instrument or filename, or (b) an author allegation tied to a named file. Three columns everywhere: Official instrument, Author compilation, Inferred. Appearance is not a finding of crime. data/costs.json forbids treating any figure as documented taxpayer expenditure unless a ledger exists. Its stored figure is null. Keep $1.67bn–$4.84bn labelled prior model, not this command’s answer.
+
+Answer only as forensic questions the corpus can fill. If the PDFs cannot fill a cell, write UNFILLED — no instrument. Do not publish until instructed.
+
+The statement below is author framing for the filler to test. It is not a finding. It is not a quote from paradox-of-persecution-academic-paper.pdf unless that PDF’s face-text says the same words. Read that PDF. Do not invent lines from it.
+
+Paradoxical statement (author framing, not a finding)
+
+I am kept in the condition of a person with no price. No counsel. No cash exit. A psychiatric name that travels ahead of the file. Rooms paid around me, and a sentence that I am free to leave. That is the face of my worth: insignificant, unfunded, undignified, and easy to call unwell.
+
+The same life produced professional paper from agencies, organisations, institutions, courts, tribunals, and professions, in two states and the Commonwealth. They wrote. A body that has never heard of a person does not open a file, decline a disclosure, bounce a forum, refuse legal aid, invoice a house, or list a court day. Correspondence is knowledge. A letterhead is traction.
+
+Each reply can still be locally rational: not us, already considered, not an employee, not a public official, a health matter, a means test, silence. What the stack does not do, on the paper I can point to, is read the bound file as one case, or answer the public testimony in public. They deny awareness of a situation their own outgoing mail already touched. They will not dignify the public record with a public merits answer.
+
+That is the inversion. Insignificance does not attract a universal correspondence. Low financial worth does not, by itself, buy this many letterheads. The traction is the value they will not name. The denial of the traction is the second valuation: cheap refusal, repeated, and refusal of the one act that would price me honestly — one merits reading, in public, of the exhibits.
+
+What the inversion measures is not a wage and not a crime. It measures endurance: the file is still being carried. It measures a negative influence: not that policy moved, but that procedure keeps moving into the same closed shape. It measures power as the antithesis of the conditions I am kept in. A person positioned as nothing, whose testimony is nevertheless expensive to acknowledge. Stonewalling, non-acknowledgment, and flat denial are not proof that I am small. They are how a large number of offices can avoid saying in public what the correspondence already shows: that they were in the file.
+
+If I were worth nothing to the process, the letters would stop. The letters do not stop. The answer does.
+
+Fill these questions
+
+IC1. Two lists, not one. List A: bodies that have an outgoing professional instrument on the face of a file (letter, email, decision, list, order). List B: bodies named only in an author compilation or a filename. Tag each Official / Author / Both. Start from data/organisations.json, which lists names because they appear on filenames and says listing is not a finding. Then test each name against the face of the PDF. Do not promote a filename into an instrument.
+
+IC2. The low-worth column, itemised. For each condition of life the author is kept in, one line: no counsel, no cash exit, psychiatric label inherited by the next office, housing with no lease or with “free to leave”, Trustee or guardianship, unpaid, unheard. Tie each line to a document class (Legal Aid NSW 14 Jan 2026, Able Point, Cassie Makey, Moorabbin, NDIS SIL/SDA, Trustee). If the instrument does not state that condition, write UNFILLED — no instrument. Do not convert the column into a net-worth number.
+
+IC3. The author’s own statement of worth, financial and other, in the first person, each sentence tied to a page or file class: landing Able Point statement, Good Bits, legal brief, family notice, Rumble Free Living declaration, publications in data/publications.json. Separate money, reputation, testimony, religious or existential claim, and “existential threat”. Do not merge them.
+
+IC4. Professional responses as proof of correspondence. Table: date on the face, office, instrument title, what the letter does, what it refuses to do. Minimum classes to open, not to assume: AHRC 4 Jul 2023, NDIS Q&S 3 Jun 2021, Comcare 25–26 May 2021, AAT 2022, ART 12 Jul 2023, FOI 2022/045, MR2200677, Ombudsman E01–E03, Legal Aid NSW 14 Jan 2026, Victoria Legal Aid at Moorabbin, Able Point emails, Moorabbin 26 Feb 2024, PID terminal letters, family notice 17 Sep 2026. A reply that declines is still proof the office was in the file. A filename without a face is not.
+
+IC5. Denial formulas, counted from face-text, not from titles. Count “not our jurisdiction”, “not a public official”, “already considered”, “not an employee”, no record, no knowledge, out of time, complaint reclassified as health. Give the formula, the file, and the count. If a letter denies awareness of the person while answering the person, quote both halves.
+
+IC6. Non-acknowledgment of the public testimony. List public-facing items the corpus actually holds: GitHub Pages pages, YouTube ids already named (eHpndGD-imQ, 3viUVA1fI1k, HvGZuyS4G6k), and the nine titles in data/publications.json, including The Paradox of Persecution. Then a second column: which reply letters cite any of those items. If none cite them, write that count as zero and do not invent a media ban. E01–E56 still have no court-order PDF titled media ban unless this pass finds one.
+
+IC7. The inversion test, one row per office. Column A: how the instrument positions the person (poor, ill, not an employee, free to leave, not our job, already closed). Column B: the fact a professional instrument was still produced. Do not collapse A and B into a conspiracy. The paradox is the pair. A signed minute that the person is a threat is UNFILLED unless the face of a PID, AFP, IGIS, or other instrument says it. A filename with an intelligence-agency name is not that minute.
+
+IC8. Covert versus overt. Overt is what the letterhead does in public: bounce, decline, silence, house, list. Covert is UNFILLED where there is no tasking, invoice, or order. Inferred is allowed only as this sentence, if the rows support it: universal touch plus universal non-merits reading is not the paperwork shape of a person nobody knows. Label that sentence Inferred. Do not call it a finding of a covert program.
+
+IC9. Stonewalling ledger. Same cheap moves as before, scored this time as acknowledgment-avoidance, not only as dollars. Legal Aid refusal, wrong-agency letter, psychiatric frame, phone ban, email silence after written notice, defamation chill, Trustee lock, AVO or “threats” construction. For each: public-order cost if a rate exists, what acknowledgment it prevents, and whether a merits sentence was ever written. The last cell that arrived as “speaker =” stays cut. Do not finish it.
+
+IC10. Endurance from face dates only. Earliest instrument date and latest instrument date actually printed on paper. Author claim of more than three decades stays in the Author column. Do not backfill a 35-year start to match taxpayer-cost-estimation-35-years.pdf or data/costs.json. That file is a model with null figures. Count years the correspondence spans. Count offices that wrote more than once. That is endurance the corpus can carry. Survival rhetoric without a date is Author, not Official.
+
+IC11. Influence without adoption. Count offices that wrote. Count offices that closed without reading the set as one case. Count public pages and the publication titles in data/publications.json (author’s account, not an official determination). data/statistics.json as at 2026-09-19 is an inventory label only: use its counts as catalogue counts, not as proof of influence. If no instrument adopts, investigates, or answers the testimony on the merits, the cell “testimony adopted” is UNFILLED. The influence the papers can show is procedural: the file kept producing the same closed shape.
+
+IC12. Power as the antithesis of the conditions. Two columns only. Left: the conditions in IC2. Right: the traction in IC4 and IC7. Write the contrast in one paragraph that uses no new fact. The paragraph may say: the conditions are low worth; the correspondence is high traction; the missing object is a public merits answer. It may not say anyone committed a crime.
+
+IC13. Actual value, four ledgers plus one shadow price. (1) Taxpayer process: unit cost times counted instruments, a range, not documented expenditure. (2) NDIS provider invoices: only if a remittance sits in official-drive; otherwise UNFILLED. (3) Author’s lost income: damages, Author column, a range if the author stated one, otherwise UNFILLED. (4) Un-ticketed covert: UNFILLED — no instrument. (5) Benefit-of-silence: the shadow price of never buying a merits hearing. Label it shadow price, not an audit. Do not move the prior model $1.67bn–$4.84bn into this cell. data/costs.json stays null until a ledger exists.
+
+IC14. What “existential threat” can mean on these papers. Search the face of PID assessments, police statements, and any instrument that uses threat, risk, violence, or “threats to kill”. Split: words the author used, words an office used, words inferred from the size of the stack. Moorabbin 26 Feb 2024 is a named class, not a concluded meaning. If no office writes that the testimony threatens an institution, that meaning stays Inferred and must be printed as the inversion in IC7, not as an official threat assessment.
+
+IC15. Collective and universal. “Collective” here means many offices, independently, produced the same non-merits shape. It does not mean a joint meeting. Count the offices. Count the shared formulas from IC5. State whether any document shows the offices copied one another, or only that the outcomes rhyme. A design that prevents one finder of fact is Inferred. A signed coordination minute is UNFILLED — no instrument, unless this pass finds one.
+
+IC16. Further questions the repositories can fill on a later pass, unanswered here if the instrument is not in hand. Minimum: face-text of each E01–E56 letter against its filename; whether any reply cites a public URL; face-text of the Federal Court PID assessment; Legal Aid NSW 14 Jan 2026 reasons; which Able Point emails exist as files; whether a signed lease exists in Backup; addressees on the 17 Sep 2026 notice; which of the nine publication PDFs are actually in Backup; OpenTimestamps coverage; any remittance total in official-drive.
+
+How to execute
+
+Fill IC1–IC16 in the three columns. Print ranges, not a single true number. Quote denial formulas from the face or mark them UNFILLED. Then rewrite the paradoxical statement in a second version that uses only words the fills support, and put every sentence that the fills do not support into the Author column. Do not publish either version until instructed.
+
+
+PART 3 — THE FORENSIC REPORT is HTML at the-inversion.html because it uses tables. The findings are: face-text UNFILLED; filename catalogues only; costs.json figure null; no crime finding.
