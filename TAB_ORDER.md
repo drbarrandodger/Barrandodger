@@ -1,29 +1,62 @@
-# Tab order by significance (25 Sep 2026)
+# Tab order — original documentary archive sequence
 
-Claymore Command tab **removed**.
+Claymore Command **removed**. All other tabs in original order:
 
-Left-to-right order of significance:
+1. Home
+2. Manifesto
+3. Able Point
+4. TV recording
+5. The Good Bits
+6. The Record
+7. AHRC 4 Jul 2023
+8. Family notice
+9. Declarations
+10. Personal Statement of Exile
+11. PIDs and Responses
+12. Official Government Documents
+13. Affidavits
+14. Statement to Police
+15. The Witness Remains
+16. Timeline
+17. Who Did This to Me
+18. Crimes
+19. Evidence
+20. Official Document Index
+21. Primary Sources
+22. Named Evidence
+23. Repositories
+24. Video Exhibit
+25. Legal / International
+26. Federal Court / AAT / Comcare
+27. NDIS / DSS / WorkCover
+28. Ministerial Correspondence
+29. Ombudsman / IGIS
+30. Legal Aid
+31. COAG
+32. Archive Index
+33. Archive Significance
+34. Opening Testimony
+35. The Reckoning Paper
+36. Impartial AI Archive
+37. How They Did It
+38. Digital Apocalypse
+39. The Prophecy
+40. Destroy a Soul
+41. Gospels
+42. Essays
+43. Entities
+44. Doctrine of Complicity
+45. God Exists
+46. God’s Chosen Witness
+47. No One Has the Right to Destroy a Soul
+48. Architecture of Erasure
+49. Species Codex / Aliens
+50. Methodology
+51. Verification
+52. Open Challenge
+53. Architecture of Annihilation
+54. Trust Fund
+55. Published Source Record
+56. species
 
-1. **Home** — tabs/home.html (full unredacted statements)
-2. **Crimes occurring to Barran Dodger** — tabs/crimes.html (itemised 1–150)
-3. **Legal Brief** — legal-brief.html
-4. **PIDs and Responses** — tabs/pids-all.html (+ pid-act-protections, n02 outcomes)
-
-Then: Personal Statement of Exile · The Witness Remains · Able Point · Who Did This to Me · Timeline · Evidence · Official Government Documents · Declarations · Affidavits · Statement to Police · Manifesto · The Good Bits · TV recording · The Record · AHRC · Family notice · and remaining archive tabs.
-
-## Sources (full data, no redaction)
-
-Master sources hub: **[SOURCES.html](SOURCES.html)**
-
-| Tab | Primary source |
-|-----|----------------|
-| Home | tabs/home.html |
-| Crimes 1–150 | tabs/crimes.html · evidence/allegation-matrix.html · matrix-1/2/3 |
-| Legal Brief | legal-brief.html |
-| PIDs + responses | tabs/pids-all.html · tabs/pid-act-protections.html · tabs/n02-pids-recorded-outcomes.html |
-| Exhibits | tabs/exhibits.html · docs/official-drive · Backup documents |
-| Who / entities | tabs/who.html |
-| Techniques | techniques.html |
-
-Official store: https://github.com/wezzo72/Barrandodger/tree/main/docs/official-drive  
-Backup: https://github.com/wezzo72/Backup/tree/main/client/public/documents
+Full data retained. Sources: [SOURCES.html](SOURCES.html)
