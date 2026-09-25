@@ -136,7 +136,16 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-syst
     content.innerHTML = '<p class="loading">Loading full text (every word)…</p>';
     try{
       var html;
-      if(cache[href]){
+      if(id === 'home'){
+        if(cache['home-full-inline']){ html = cache['home-full-inline']; }
+        else {
+          var r1 = await fetch('tabs/home-full-part1.html', {cache:'no-cache'});
+          var r2 = await fetch('tabs/home-full-part2.html', {cache:'no-cache'});
+          if(!r1.ok||!r2.ok) throw new Error('home full parts');
+          html = (await r1.text()) + (await r2.text());
+          cache['home-full-inline'] = html;
+        }
+      } else if(cache[href]){
         html = cache[href];
       } else {
         var res = await fetch(href, {cache: 'no-cache'});
@@ -145,7 +154,7 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-syst
         cache[href] = html;
       }
       var body = extractBody(html);
-      content.innerHTML = '<p id="open-source">Full source (every word preserved): <a href="' + href + '" target="_blank" rel="noopener">' + href + '</a></p><div class="src-root">' + body + '</div>';
+      content.innerHTML = '<p id="open-source">Full source (every word preserved): <a href="tabs/home-full-part1.html" target="_blank" rel="noopener">home (full text included)</a></p><div class="src-root">' + body + '</div>';
       window.scrollTo(0, 0);
       if(window.linkifySources){ window.linkifySources(content); }
     } catch(err){
