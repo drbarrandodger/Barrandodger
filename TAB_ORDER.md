@@ -1,6 +1,6 @@
 # Tab order — original documentary archive sequence
 
-Claymore Command **removed**. All other tabs in original order:
+Original documentary archive sequence. Full data retained on Home and in the tab files.
 
 1. Home
 2. Manifesto
