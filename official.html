@@ -8,39 +8,21 @@
 <body>
 <style>
 .kicker{letter-spacing:.12em;font-size:.72rem;color:#f1c75b;font-weight:700}
-.lede,.caution,.meta{color:#a9b4bf;font-size:.9rem}
-.caution{border:1px solid #293642;padding:.7rem .85rem;margin:1rem 0}
-.toc a{color:#8fc9ff;margin:0 .7rem .3rem 0;display:inline-block}
-.row{border:1px solid #293642;background:#0e151d;padding:.5rem .7rem;margin:0 0 .32rem}
-.row .t{font-size:.92rem}
-.row .src{font-size:.72rem;color:#a9b4bf;word-break:break-all;margin:.15rem 0}
-.row a{color:#8fc9ff;margin-right:.75rem;font-size:.82rem}
-.n{font-family:ui-monospace,monospace;font-size:.72rem;color:#a9b4bf;margin-right:.35rem}
-input#q{width:100%;max-width:28rem;padding:.45rem .6rem;margin:1rem 0;font:inherit;border:1px solid #293642;background:#0e151d;color:#eef3f7}
-.count{font-size:.8rem;color:#a9b4bf}
-.stats{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0}
-.stat{border:1px solid #293642;padding:.45rem .7rem}
-.stat strong{display:block}
-h2{font-size:1.05rem;margin:1.5rem 0 .5rem;color:#f1c75b}
+.lede,.meta{color:#a9b4bf;font-size:.9rem}
+.caution{border:1px solid #293642;padding:.7rem .85rem;margin:1rem 0;color:#a9b4bf}
+a{color:#8fc9ff}
+iframe.cat{width:100%;min-height:75vh;border:1px solid #293642;background:#070b10;border-radius:8px}
 </style>
 <p class="kicker">OFFICIAL GOVERNMENT DOCUMENTS & CORRESPONDENCE</p>
-<h1>Itemised list — every official file on GitHub</h1>
-<p class="lede">Organised finding aid of official government PDFs and official correspondence already public on GitHub. Stores: <code>wezzo72/Barrandodger</code> <code>docs/official-drive/</code> and <code>wezzo72/Backup</code> <code>client/public/documents/government-evidence/</code>, plus official-titled letters in <code>documents/</code>.</p>
-<div class="caution"><strong>Finding aid, not a finding.</strong> A path on GitHub is a document location. It is not a court verdict. Open the PDF. Read the letterhead, date and signatory. Filenames are labels, including any SEC=OFFICIAL wording in the filename.</div>
-<div class="stats">
-<div class="stat"><strong id="n-total">…</strong> listed paths</div>
-<div class="stat"><strong id="n-ge">…</strong> government-evidence</div>
-<div class="stat"><strong>47</strong> official-drive copies</div>
-</div>
-<p>
-<a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">Backup government-evidence folder</a> ·
-<a href="https://github.com/wezzo72/Barrandodger/tree/main/docs/official-drive">Barrandodger official-drive</a> ·
-<a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents">All Backup documents</a>
+<h1>Itemised list — linked to GitHub sources</h1>
+<p class="lede">Every official government PDF and official correspondence currently public on GitHub, grouped by agency. Each row has <strong>Open PDF</strong> and <strong>GitHub source</strong>.</p>
+<div class="caution"><strong>Finding aid, not a finding.</strong> Inclusion is a public path. It is not a court verdict. Open the letterhead.</div>
+<p class="meta">
+Sources:
+<a href="https://github.com/wezzo72/Backup/tree/main/client/public/documents/government-evidence">wezzo72/Backup · government-evidence</a> ·
+<a href="https://github.com/wezzo72/Barrandodger/tree/main/docs/official-drive">wezzo72/Barrandodger · official-drive</a> ·
+<a href="official-full.html">open catalogue full-page</a>
 </p>
-<input id="q" type="search" placeholder="Filter by filename, agency or path…"/>
-<nav class="toc" id="toc"></nav>
-<div id="list">Loading GitHub trees…</div>
-<p class="meta" id="foot"></p>
-<script src="assets/official-catalogue.js"></script>
+<iframe class="cat" title="Official government document catalogue" src="official-full.html"></iframe>
 </body>
 </html>
