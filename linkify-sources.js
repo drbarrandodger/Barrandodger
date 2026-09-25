@@ -1,6 +1,7 @@
 /**
  * Sitewide phrase → source/PDF linker
  * Applied to each loaded tab. Longer phrases first. Skips existing links.
+ * Also mounts the per-tab evidence catalogue from GitHub.
  */
 (function(global){
   var LINKS = [
@@ -134,6 +135,13 @@
         textNode.parentNode.replaceChild(out, textNode);
       }
     });
+
+    var old = document.getElementById('tab-ev-script');
+    if(old && old.parentNode) old.parentNode.removeChild(old);
+    var s = document.createElement('script');
+    s.id = 'tab-ev-script';
+    s.src = 'assets/tab-evidence.js';
+    (document.getElementById('content') || document.body).appendChild(s);
   }
 
   global.linkifySources = linkify;
