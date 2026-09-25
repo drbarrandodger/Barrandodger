@@ -33,7 +33,7 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-syst
 <body>
 <div id="chrome">
 <header>
-<div class="eyebrow">PUBLIC DOCUMENTARY ARCHIVE</div>
+<div class="eyebrow">PUBLIC DOCUMENTARY ARCHIVE — EVERY WORD PRESERVED</div>
 <h1>THE WITNESS REMAINS</h1>
 </header>
 <nav class="tabs" id="tabs" aria-label="Archive sections">
@@ -119,6 +119,7 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-syst
   }
 
   function extractBody(html){
+    /* COMMAND: NEVER delete a single word. Only strip script tags so they do not double-run. */
     var m = html.match(/<body[^>]*>([\s\S]*)<\/body>/i);
     var inner = m ? m[1] : html;
     inner = inner.replace(/<script[\s\S]*?<\/script>/gi, '');
@@ -130,7 +131,7 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-syst
     if(!href){ content.innerHTML = '<p class="error">Unknown section.</p>'; return; }
     setActive(id);
     history.replaceState(null, '', '#' + id);
-    content.innerHTML = '<p class="loading">Loading full text…</p>';
+    content.innerHTML = '<p class="loading">Loading full text (every word)…</p>';
     try{
       var html;
       if(cache[href]){
@@ -142,20 +143,7 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-syst
         cache[href] = html;
       }
       var body = extractBody(html);
-      var lead = '';
-      if(id === 'home'){
-        lead = '<div class="now hit-job" id="hit-job-video" style="background:#160e0c;border-left:4px solid #f1c75b;padding:14px;margin:0 0 18px;">'+
-          '<p style="font-size:1.2em;color:#f1c75b;margin:0 0 10px;"><strong>The hit job they ordered was their biggest mistake.</strong></p>'+
-          '<p><strong>God preserved my life</strong> and archive evidence to expose corruption.</p>'+
-          '<p>My account. Not a court finding.</p>'+
-          '<div class="video-wrap"><iframe src="https://www.youtube.com/embed/_DF0ivaxCxQ" title="The hit job they ordered was their biggest mistake — God preserved my life" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>'+
-          '<p><a href="https://www.youtube.com/live/_DF0ivaxCxQ">https://www.youtube.com/live/_DF0ivaxCxQ</a></p>'+
-          '</div>';
-        if(body.indexOf('_DF0ivaxCxQ') !== -1){
-          body = body.replace(/<div[^>]*id="hit-job-video"[\s\S]*?<\/div>\s*/i, '');
-        }
-      }
-      content.innerHTML = lead + '<p id="open-source">Full source file: <a href="' + href + '" target="_blank" rel="noopener">' + href + '</a></p><div class="src-root">' + body + '</div>';
+      content.innerHTML = '<p id="open-source">Full source (every word preserved): <a href="' + href + '" target="_blank" rel="noopener">' + href + '</a></p><div class="src-root">' + body + '</div>';
       window.scrollTo(0, 0);
       if(window.linkifySources){ window.linkifySources(content); }
     } catch(err){
