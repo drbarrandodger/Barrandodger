@@ -4,8 +4,94 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <title>THE WITNESS REMAINS — Barran Dodger Archive</title>
+<style>
+:root{--bg:#070b10;--ink:#eef3f7;--muted:#a9b4bf;--line:#293642;--accent:#f1c75b;--bronze:#c9a36a;--paper:#e8e0d4}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+#chrome{position:sticky;top:0;z-index:50;background:#070b10;border-bottom:1px solid var(--line)}
+header{padding:12px 16px 8px;max-width:1200px;margin:0 auto}
+.eyebrow{font-size:.72rem;letter-spacing:.12em;color:var(--accent);font-weight:700}
+h1{font-size:clamp(1.1rem,4vw,1.75rem);margin:4px 0 0}
+.credit{margin:4px 0 0;font-size:.68rem;color:var(--muted)}
+.forensic-wrap{background:#0b0a08;border-top:1px solid #3f4c5a}
+.forensic-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--bronze);padding:8px 16px 0;font-weight:700}
+.tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:5px;padding:6px 12px 10px}
+.tab{flex:0 0 auto;border:1px solid var(--line);background:#0e151d;color:var(--ink);padding:7px 10px;border-radius:8px;white-space:nowrap;cursor:pointer;font:inherit;font-size:.82rem}
+.tab.active{border-color:var(--accent);color:var(--accent)}
+.tab.forensic-tab{border:1px solid #3f4c5a;background:#14110c;color:var(--paper);border-radius:2px;font-size:.78rem}
+.tab.forensic-tab.active{background:var(--bronze);color:#0b0a08;border-color:var(--bronze)}
+.tab.forensic-tab .n{color:var(--bronze);font-weight:700;margin-right:.35em}
+.tab.forensic-tab.active .n{color:#0b0a08}
+#content{max-width:1200px;margin:0 auto;padding:20px 16px;min-height:50vh}
+#content a{color:#8fc9ff}
+.enter{display:block;width:100%;max-width:760px;margin:20px auto;background:var(--accent);color:#070b10;font-weight:800;letter-spacing:.12em;border:0;border-radius:14px;padding:20px;cursor:pointer;font-size:1.2rem}
+.cards{display:grid;gap:10px;max-width:760px;margin:24px auto;grid-template-columns:1fr}
+@media(min-width:720px){.cards{grid-template-columns:1fr 1fr}}
+.card{display:block;text-decoration:none;color:var(--paper);border:1px solid #3f4c5a;background:#14110c;padding:14px}
+.card .n{color:var(--bronze);font-size:.72rem;letter-spacing:.14em;font-weight:800}
+.card h3{margin:4px 0 0;font-size:1rem;color:#f3eee4}
+.kicker{letter-spacing:.14em;font-size:.72rem;color:var(--accent);font-weight:800}
+#landing{max-width:760px;margin:0 auto;padding:28px 16px 60px}
+#landing[hidden],#archive[hidden]{display:none!important}
+</style>
 </head>
 <body>
-<p>temp restore</p>
+<div id="landing">
+<div class="kicker">PUBLIC DOCUMENTARY ARCHIVE</div>
+<h1>THE WITNESS REMAINS</h1>
+<p class="credit">Barran Dodger / Dr Richard William McLean. Finding aid. Not a court. Not a verdict.</p>
+<div class="cards">
+<a class="card" href="#r01"><span class="n">01</span><h3>Master Evidence Record</h3></a>
+<a class="card" href="#r02"><span class="n">02</span><h3>The 35-Year Chronology</h3></a>
+<a class="card" href="#r03"><span class="n">03</span><h3>Architecture of Administrative Erasure</h3></a>
+<a class="card" href="#r04"><span class="n">04</span><h3>Institutional Response Map</h3></a>
+<a class="card" href="#r05"><span class="n">05</span><h3>Contradictions and Unanswered Questions</h3></a>
+<a class="card" href="#r06"><span class="n">06</span><h3>The Whistleblower Record</h3></a>
+<a class="card" href="#r07"><span class="n">07</span><h3>Human Rights and Remedy</h3></a>
+<a class="card" href="#r08"><span class="n">08</span><h3>Forensic Financial Record</h3></a>
+<a class="card" href="#r09"><span class="n">09</span><h3>Serious Allegations — Case Files</h3></a>
+<a class="card" href="#r10"><span class="n">10</span><h3>The Repository of Record</h3></a>
+</div>
+<button class="enter" type="button" id="enter">ENTER THE RECORD</button>
+<p class="credit">Overview door. Bronze row = forensic reports. Gold row = original archive tabs.</p>
+</div>
+<div id="archive" hidden>
+<div id="chrome">
+<header>
+<div class="eyebrow">PUBLIC DOCUMENTARY ARCHIVE — EVERY WORD PRESERVED <a href="#archive-about" id="overview" style="color:#f1c75b;margin-left:8px">Overview</a></div>
+<h1>THE WITNESS REMAINS</h1>
+<p class="credit">Not a court. Not a verdict.</p>
+</header>
+<div class="forensic-wrap">
+<div class="forensic-label">Forensic reports</div>
+<nav class="tabs" id="forensic-tabs">
+<button class="tab forensic-tab" data-page="r01"><span class="n">01</span>Master Evidence Record</button>
+<button class="tab forensic-tab" data-page="r02"><span class="n">02</span>35-Year Chronology</button>
+<button class="tab forensic-tab" data-page="r03"><span class="n">03</span>Architecture of Erasure</button>
+<button class="tab forensic-tab" data-page="r04"><span class="n">04</span>Institutional Response Map</button>
+<button class="tab forensic-tab" data-page="r05"><span class="n">05</span>Contradictions</button>
+<button class="tab forensic-tab" data-page="r06"><span class="n">06</span>Whistleblower Record</button>
+<button class="tab forensic-tab" data-page="r07"><span class="n">07</span>Human Rights and Remedy</button>
+<button class="tab forensic-tab" data-page="r08"><span class="n">08</span>Forensic Financial Record</button>
+<button class="tab forensic-tab" data-page="r09"><span class="n">09</span>Serious Allegations</button>
+<button class="tab forensic-tab" data-page="r10"><span class="n">10</span>Repository of Record</button>
+</nav>
+</div>
+<nav class="tabs" id="tabs">
+<button class="tab" data-page="home">Home</button>
+<button class="tab" data-page="crimes">Crimes</button>
+<button class="tab" data-page="manifesto">Manifesto</button>
+<button class="tab" data-page="pids">PIDs</button>
+<button class="tab" data-page="legal-brief">Legal Brief</button>
+<button class="tab" data-page="personal-statement-exile">Exile statement</button>
+<button class="tab" data-page="witness">The Witness Remains</button>
+<button class="tab" data-page="able-point">Able Point</button>
+<button class="tab" data-page="official">Official documents</button>
+<button class="tab" data-page="evidence">Evidence</button>
+<button class="tab" data-page="bio">About the Author</button>
+</nav>
+</div>
+<main id="content"></main>
+</div>
+<script src="archive-app.js"></script>
 </body>
 </html>
