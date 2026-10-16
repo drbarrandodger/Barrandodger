@@ -1,0 +1,877 @@
+L
+BARRAN DODGER ARCHIVE
+MASTER FORENSIC CORROBORATION REPORT
+Official Government Identifiers • Documentary Provenance • 35-Year Chronology • Institutional Responses • Targeted Individual / Gang-Stalking Comparative Record • Public Verification
+Archive subject: Barran Dodger / Richard William McLean Principal public archive: The Witness Remains Primary repository: WEZZO72 / Barrandodger Secondary archive: DRBARRANDODGER / barran-dodger-archive Additional preservation repository: WEZZO72 / Backup Documentary period represented: approximately 1990–2025 Purpose: preservation, provenance, chronology, corroboration, contradiction analysis and independent public verification.
+ 
+⸻
+ 
+1. EXECUTIVE PURPOSE
+The Barran Dodger Archive is a public documentary preservation project designed to place the underlying record before independent readers.
+Its purpose is not to require belief in a predetermined conclusion.
+Its purpose is to provide a traceable evidentiary chain:
+CLAIM → DOCUMENT → OFFICIAL IDENTIFIER → DATE → INSTITUTION → PRIMARY RECORD → CORROBORATION → CONTRADICTION → RESPONSE → FINDING STATUS → PUBLIC SOURCE
+The archive itself describes the project as a finding aid rather than a court or verdict, and states that evidence should be distinguished from testimony, allegations and interpretation.
+THE WITNESS REMAINS — principal public archive⁠
+WEZZO72 / Barrandodger — primary GitHub repository⁠
+BarranDodger.com — principal public website⁠
+ 
+⸻
+ 
+2. THE CENTRAL FORENSIC QUESTION
+The archive investigates:
+What can be established from the surviving documentary record concerning the events, decisions, correspondence, institutional responses, financial consequences, legal proceedings and allegations preserved within the archive, and what patterns or explanations remain supported, contradicted or unresolved after independent examination?
+The archive does not need to predetermine the answer.
+Its function is to preserve the evidence necessary for others to examine the question.
+ 
+⸻
+ 
+3. PUBLIC ARCHIVE INFRASTRUCTURE
+3.1 THE WITNESS REMAINS
+Home / Archive Landing Page⁠
+Crimes⁠
+Official Government Documents⁠
+Forensic Evidence Index⁠
+PIDs and Responses⁠
+Federal Court / AAT / Comcare⁠
+NDIS / DSS / WorkCover⁠
+Ministerial Correspondence⁠
+Ombudsman / IGIS⁠
+Legal Aid⁠
+Legal / International⁠
+Primary Sources⁠
+Official Document Index⁠
+Archive Index⁠
+Archive Significance⁠
+Impartial AI Archive⁠
+How They Did It / Methods⁠
+The Record⁠
+AHRC 4 July 2023⁠
+Named Evidence⁠
+Video Exhibit⁠
+Opening Testimony⁠
+The Reckoning Paper⁠
+Family Notice⁠
+COAG⁠
+Methodology⁠
+Verification⁠
+Published Source Record⁠
+The live archive currently exposes these sections as part of its public documentary architecture.
+ 
+⸻
+ 
+4. SECOND PUBLIC SITE
+BarranDodger.com⁠
+This provides a second public-facing access layer.
+The existence of two public websites does not constitute independent corroboration of the substantive allegations; it constitutes redundant public preservation and accessibility.
+ 
+⸻
+ 
+5. GITHUB PRESERVATION LAYERS
+WEZZO72
+WEZZO72 / Barrandodger⁠
+Important directories include:
+Evidence⁠
+Sources⁠
+Emails⁠
+Papers⁠
+Archive Parts⁠
+Data⁠
+Tabs⁠
+DRBARRANDODGER
+DRBARRANDODGER / barran-dodger-archive⁠
+DRBARRANDODGER GitHub Pages mirror⁠
+BACKUP
+WEZZO72 / Backup⁠
+Government Evidence folder⁠
+Public Documents folder⁠
+ 
+⸻
+ 
+6. ARCHIVE INVENTORY CONTROL
+The current public Government PDFs catalogue identifies:
+	•	186 binary government PDFs already public on the Backup repository;
+	•	48 additional official Drive/Gmail PDFs copied into the Barrandodger repository;
+	•	531+ documents within the broader public-document collection.
+Official Government PDFs Catalogue⁠
+Official Catalogue⁠
+Official Drive Binary Catalogue⁠
+Machine-readable Drive Catalogue⁠
+The 48-file Drive-binary catalogue records SHA-256 values, raw GitHub URLs and, where available, original Google Drive file IDs.
+This means the archive has multiple levels of inventory:
+repository total
+indexed-document total
+government-document total
+binary-PDF total
+Drive/Gmail imported total
+These numbers must not be added together without deduplication.
+ 
+⸻
+ 
+7. MASTER EVIDENCE RECORD
+Report 01 — Master Evidence Record⁠
+The Master Evidence Record provides the principal evidence-control structure.
+The intended fields include:
+	1.	Evidence ID
+	2.	Document title
+	3.	Original filename
+	4.	Repository
+	5.	Repository path
+	6.	File type
+	7.	Document date
+	8.	Acquisition date
+	9.	Publication date
+	10.	Author / creator
+	11.	Recipient
+	12.	Institution
+	13.	Reference number
+	14.	Case number
+	15.	Evidence classification
+	16.	Source URL
+	17.	Archive URL
+	18.	SHA-256
+	19.	Git commit
+	20.	Corroborating record
+	21.	Contradictory record
+	22.	Official response
+	23.	Finding status
+	24.	Current status
+ 
+⸻
+ 
+8. 35-YEAR CHRONOLOGY
+Report 02 — The 35-Year Chronology⁠
+The chronology provides the temporal framework against which individual documents can be examined.
+It does not assume that chronological sequence proves causation.
+Instead:
+DATE → EVENT → DOCUMENT → ACTOR → RESPONSE → CONSEQUENCE
+must be established separately.
+ 
+⸻
+ 
+9. ARCHITECTURE OF ADMINISTRATIVE ERASURE
+Report 03 — Architecture of Administrative Erasure⁠
+This report treats “administrative erasure” as an analytical hypothesis rather than a predetermined fact.
+The relevant connecting evidence includes:
+	•	common instructions;
+	•	direct communications;
+	•	shared records;
+	•	explicit cross-references;
+	•	synchronised actions;
+	•	admissions;
+	•	repeated documented procedures;
+	•	other independently connecting evidence.
+Temporal proximity alone is not sufficient to establish coordination.
+ 
+⸻
+ 
+10. INSTITUTIONAL RESPONSE MAP
+Report 04 — Institutional Response Map⁠
+The response map asks:
+	1.	Who received the complaint?
+	2.	What reference number was assigned?
+	3.	What date was it received?
+	4.	What evidence accompanied it?
+	5.	Was it allocated?
+	6.	Was it rejected?
+	7.	Was it transferred?
+	8.	Was it investigated?
+	9.	Was a finding made?
+	10.	What happened subsequently?
+ 
+⸻
+ 
+11. CONTRADICTIONS AND UNANSWERED QUESTIONS
+Report 05 — Contradictions, Discrepancies and Unanswered Questions⁠
+A forensic archive must preserve evidence that challenges its preferred interpretation.
+Contradictory records are therefore not to be deleted merely because they complicate the narrative.
+ 
+⸻
+ 
+12. WHISTLEBLOWER RECORD
+Report 06 — Whistleblower Record⁠
+The record distinguishes:
+disclosure made
+from
+allegation contained in disclosure
+from
+supporting evidence
+from
+institutional response
+from
+independent finding.
+ 
+⸻
+ 
+13. HUMAN RIGHTS AND REMEDY
+Report 07 — Human Rights and Remedy⁠
+This report should be read together with the underlying complaints, decisions and primary records.
+A human-rights characterization is not automatically equivalent to an adjudicated finding.
+ 
+⸻
+ 
+14. FORENSIC FINANCIAL RECORD
+Report 08 — Forensic Financial Record⁠
+Financial amounts should be identified as:
+	•	documented loss;
+	•	calculated loss;
+	•	estimate;
+	•	projection;
+	•	alleged loss;
+	•	opportunity cost;
+	•	unresolved amount.
+Each amount requires its own documentary basis and calculation.
+ 
+⸻
+ 
+15. SERIOUS ALLEGATIONS CASE FILES
+Report 09 — Serious Allegations Case Files⁠
+Each serious allegation should be linked to:
+source → date → actor → institution → evidence → response → corroboration → contradiction → finding status.
+ 
+⸻
+ 
+16. REPOSITORY OF RECORD
+Report 10 — Repository of Record⁠
+This report establishes the preservation architecture and public documentary pathways.
+ 
+⸻
+ 
+17. OFFICIAL GOVERNMENT IDENTIFIER REGISTER
+The following identifiers are directly represented in the public Government Evidence catalogue.
+IBAC
+IBAC CASE 2020712
+Date: 9 April 2020
+IBAC CASE 2020712 — outcome letter PDF⁠
+IBAC CASE 20233846 / CASE 20231101
+Date: 29 October 2023
+IBAC CASE 20233846 / 20231101 PDF⁠
+ 
+⸻
+ 
+18. OAIC
+CP2102752
+Privacy matter: March 2021
+OAIC CP2102752 PDF⁠
+43704714
+OAIC 43704714 PDF⁠
+ 
+⸻
+ 
+19. COMCARE
+Claim 1326583
+Date: 25 May 2021
+Comcare Claim 1326583 PDF⁠
+Claim identifier appearing as 13265831
+The repository also contains a filename identifying:
+13265831
+Comcare 13265831 determination document⁠
+This is retained as a separate identifier occurrence rather than silently normalised.
+That is a deliberate forensic control.
+ 
+⸻
+ 
+20. ADMINISTRATIVE REVIEW TRIBUNAL
+ART 2021/7478
+Matter: McLean and Comcare
+Decision: 12 July 2023
+ART 2021/7478 — McLean and Comcare PDF⁠
+This is a particularly important primary document because it supplies a formal tribunal identifier and a decision document that can be independently inspected.
+ 
+⸻
+ 
+21. COMMONWEALTH OMBUDSMAN
+Complaint 2021103546
+Commonwealth Ombudsman 2021103546 PDF⁠
+Complaint 2021705589
+Commonwealth Ombudsman 2021705589 PDF⁠
+Section 44(3) notification
+Commonwealth Ombudsman s44(3) notification — 22 March 2023⁠
+ 
+⸻
+ 
+22. FOI IDENTIFIERS
+FOI-2022-045
+FOI-2022-045 Decision PDF⁠
+FOI-2022-045IC
+FOI-2022-045IC documents for release⁠
+FOI-22-01-IR
+Decision date: 6 May 2022
+FOI-22-01-IR decision letter PDF⁠
+MR2200677
+MR2200677 FOI review record⁠
+ 
+⸻
+ 
+23. NDIS / DSS
+NDIS FOI 2023-0072
+NDIS/DSS FOI 2023-0072 decision PDF⁠
+NDIS Summary of FOI Decision
+NDIS FOI decision letter PDF⁠
+NDIS / DSS PID
+NDIS DSS allegations PID PDF⁠
+NDIS PID response
+NDIS PID response / Ombudsman material⁠
+ 
+⸻
+ 
+24. PID RECORDS
+2023 PID Krypton
+PID Krypton Preliminary PDF⁠
+18 June 2023
+Notification of decision not to allocate a disclosure⁠
+Numbered copy
+01 — 18 June 2023 PID notification⁠
+DSS PID rejection
+08 — DSS PID rejection / appeal⁠
+ 
+⸻
+ 
+25. APRA / OAIC WHISTLEBLOWER RECORD
+22 October 2021
+APRA/OAIC PID whistleblower response⁠
+PID whistleblower intentions — multiple agencies⁠
+13 November 2021
+APRA whistleblower-status response⁠
+ 
+⸻
+ 
+26. AHRC
+4 July 2023
+AHRC contact — SEC OFFICIAL Sensitive⁠
+AHRC whistleblower / human-rights correspondence⁠
+ 
+⸻
+ 
+27. VICTORIAN OMBUDSMAN
+14 June 2022
+Victorian Ombudsman FOI s29A record⁠
+ 
+⸻
+ 
+28. VOCAT / VICTORIAN ADMINISTRATIVE RECORDS
+5 October 2022
+VOCAT / Ombudsman / Ben Calder complaint record⁠
+MC20-004770
+MC20-004770⁠
+MC22-000112
+MC22-000112⁠
+MC23-026854-1
+MC23-026854-1⁠
+ 
+⸻
+ 
+29. NDIS PROVIDER REGISTRATION
+Richard William McLean — Notice of decision to refuse application to be a registered NDIS provider⁠
+The exact decision document should be used whenever the underlying decision is discussed.
+ 
+⸻
+ 
+30. NSW POLICE
+24 August 2024
+NSW Police Force complaint response⁠
+Police record
+Archived police record PDF⁠
+ 
+⸻
+ 
+31. COMMUNICATION PROTOCOL
+7 November 2022
+McLean — Communication Protocol⁠
+ 
+⸻
+ 
+32. FEDERAL COURT RECORD
+27 March 2023
+The archive preserves a PDF attributed to the General Counsel of the Federal Court of Australia:
+27 March 2023 Federal Court final assessment — archived PDF⁠
+The document should be distinguished into:
+document existence
+document authorship / provenance
+statements contained in the document
+interpretation of those statements
+any subsequent judicial finding.
+Those are different evidentiary propositions.
+ 
+⸻
+ 
+33. TARGETED INDIVIDUALS — DEFINITIONS AND COMPARATIVE RECORD
+The archive also examines the terminology of “Targeted Individual” (TI) and “gang stalking” / “group stalking.”
+There is no single internationally authoritative definition that establishes “Targeted Individual” as a legally recognised victim category or establishes a worldwide coordinated gang-stalking program.
+Instead, the term is used by:
+	•	people describing their own experiences;
+	•	advocacy organisations;
+	•	academic researchers studying those reports;
+	•	legal litigants;
+	•	journalists and commentators;
+	•	online communities.
+The evidentiary status of each use must therefore be identified.
+ 
+⸻
+ 
+34. TARGETED JUSTICE — ORGANISATIONAL DEFINITION
+Targeted Justice describes a Targeted Individual as a person it considers a victim of government weaponisation and alleges that such people may be subjected to surveillance, stalking, harassment and other forms of targeting.
+Targeted Justice — What Is a Targeted Individual?⁠
+Targeted Justice — main public site⁠
+The organisation’s own description should be quoted and cited as:
+Targeted Justice’s definition / position
+rather than converted into an independent finding.
+Its website currently makes extensive claims concerning government agencies, watchlists and organised targeting. Those are Targeted Justice’s claims, not findings established merely by the website.
+ 
+⸻
+ 
+35. TARGETED JUSTICE — GANSTALKING DEFINITION
+Targeted Justice defines gang stalking as a coordinated effort by multiple people to harass, intimidate, isolate or otherwise undermine a person whom it calls a Targeted Individual.
+Its page identifies alleged tactics including:
+	1.	surveillance;
+	2.	spreading information or rumours;
+	3.	social isolation;
+	4.	psychological manipulation;
+	5.	stalking and harassment;
+	6.	public humiliation;
+	7.	coercion or threats.
+Targeted Justice — Gangstalking / Organized Stalking⁠
+This provides a documented definition used by an advocacy organisation.
+It should not be represented as an internationally accepted legal or scientific definition.
+Targeted Justice goes substantially further and alleges that U.S. government agencies and fusion centres operate such a program. Those additional propositions are organisational allegations and require separate independent evidence.
+ 
+⸻
+ 
+36. TARGETED JUSTICE — PUBLIC PDF: REALITY OF THE TARGETING PROGRAM
+Targeted Justice publishes:
+Reality of the Targeting Program — public PDF⁠
+This is useful as a primary source for determining:
+	•	what Targeted Justice itself claims;
+	•	how it describes Targeted Individuals;
+	•	how it categorises alleged targeting;
+	•	what statistics it presents;
+	•	what terminology its movement uses.
+It should be labelled in the archive:
+ADVOCACY ORGANISATION DOCUMENT — ORGANISATIONAL CLAIMS
+rather than:
+INDEPENDENT GOVERNMENT REPORT.
+ 
+⸻
+ 
+37. TARGETED JUSTICE — PUBLIC FLYERS / PDF COLLECTION
+Targeted Justice — Flyers and Public PDFs⁠
+This collection includes PDFs labelled:
+	•	What Is a Targeted Individual?
+	•	CIA targeting program
+	•	Illegal Listing on TSDB
+	•	Tracking & Burns
+	•	Microwave Burns
+	•	Reltron Weapon
+	•	Main Message
+	•	38 Levels of Security Clearance
+	•	Targeted Individuals diagrams
+	•	Advice about gangstalking
+	•	other TI-related documents.
+These documents are useful for establishing the terminology, claims, categories and public advocacy material of the TI movement.
+They should not be treated as independent proof merely because they are available as PDFs.
+ 
+⸻
+ 
+38. TARGETED JUSTICE — LEGAL CASE CATALOGUE
+Targeted Justice maintains a legal-information page listing 201 cases that it says involve Targeted Individuals, including gangstalking and directed-energy allegations.
+Targeted Justice — Legal Information / Court Cases⁠
+This is valuable as a research index.
+It does not mean that all allegations in those cases were proven.
+Each case must be checked against its actual docket and judgment.
+ 
+⸻
+ 
+39. TARGETED JUSTICE V. GARLAND — INDEPENDENT COURT RECORD
+One of the most important independent records concerning Targeted Justice itself is:
+Targeted Justice, Inc. et al. v. Merrick B. Garland et al.
+U.S. Court of Appeals for the Fifth Circuit
+Case No. 23-20342
+Document 74-1
+Filed: 8 March 2024
+Official Fifth Circuit PDF — Targeted Justice v Garland⁠
+The case is independently verifiable through the federal appellate court.
+The plaintiffs alleged government targeting and related matters, including organized stalking.
+The court record therefore independently establishes that such allegations were brought before a federal court.
+It does not establish the allegations as facts.
+The Fifth Circuit’s decision is especially important because it provides the court’s actual treatment of the claims, rather than Targeted Justice’s description of its own case.
+ 
+⸻
+ 
+40. ACADEMIC SOURCE — SHERIDAN & JAMES 2015
+One of the principal peer-reviewed studies specifically examining reports of gang stalking is:
+Lorraine P. Sheridan & David V. James
+“Complaints of group-stalking (‘gang-stalking’): an exploratory study of their nature and impact on complainants.”
+Journal of Forensic Psychiatry & Psychology
+Volume 26, Issue 5
+Pages 601–623
+2015
+DOI: 10.1080/14789949.2015.1054857
+Publisher’s full article page⁠
+ResearchGate public article/PDF record⁠
+The study examined 1,040 respondents who met the researchers’ stalking definitions; 128 reported group stalking and were compared with individually stalked cases.
+Importantly, the researchers reached a specific psychological interpretation of the reports, including their conclusion that the reported group-stalking cases in their sample were likely delusional in basis.
+Therefore this study is evidence that:
+people report group/gang stalking
+but it is not evidence that a coordinated government gang-stalking program exists.
+It is also relevant because it documents the reported phenomenon and its reported psychological and practical consequences.
+ 
+⸻
+ 
+41. ACADEMIC SOURCE — SHERIDAN, JAMES & ROTH 2020
+A second major peer-reviewed/open-access source is:
+Lorraine Sheridan, David V. James & Jayden Roth
+“The Phenomenology of Group Stalking (‘Gang-Stalking’): A Content Analysis of Subjective Experiences.”
+International Journal of Environmental Research and Public Health
+2020; 17(7):2506
+PMCID: PMC7178134
+PMID: 32268595
+DOI: 10.3390/ijerph17072506
+Full open-access article — PubMed Central⁠
+PubMed record⁠
+Publisher / public PDF record⁠
+The researchers analysed 50 personal accounts describing experiences of gang stalking.
+The accounts included explicit statements such as people describing themselves as “targeted individuals.”
+This is useful comparative evidence because it demonstrates that the terminology, experiences and reported tactics appearing in TI communities are not unique to one individual archive.
+However, the methodology was an analysis of subjective accounts found online; it did not independently verify that the alleged perpetrators or coordinating organisations actually existed.
+ 
+⸻
+ 
+42. ACADEMIC SOURCE — SARTESCHI 2018
+Christine M. Sarteschi
+“Mass Murder, Targeted Individuals, and Gang-Stalking: Exploring the Connection.”
+Violence and Gender
+Volume 5, Issue 1
+Pages 45–54
+2018
+DOI: 10.1089/vio.2017.0022
+Publisher’s article record⁠
+This paper documents the existence of people worldwide who describe themselves as Targeted Individuals and report gang stalking, while examining a limited set of cases involving extreme violence.
+It is useful as evidence concerning the existence of the TI/gang-stalking belief and advocacy phenomenon.
+It should not be presented as proof that every reported gang-stalking account is factually established.
+ 
+⸻
+ 
+43. COMPARATIVE CORROBORATION MATRIX
+The following categories can now be compared across the Barran Dodger archive, Targeted Justice material and academic literature.
+Reported category	Barran Dodger archive	Targeted Justice	Academic literature	Evidentiary meaning
+Surveillance	Documentary allegations / records where identified	Central TI claim	Reported by study participants	Cross-source similarity
+Following / monitoring	Documentary allegations where identified	Central gang-stalking claim	Reported in accounts	Comparative corroboration of reported experience
+Social isolation	Archive material where documented	Explicitly identified	Appears in qualitative literature	Similar reported category
+Reputation damage	Correspondence / allegations where documented	Explicit TI tactic	Reported in accounts	Comparative category
+Institutional involvement	Must be established document-by-document	Targeted Justice alleges government involvement	Studies do not independently establish a government program	Requires separate verification
+Whistleblower targeting	Archive contains PID/whistleblower records	Targeted Justice identifies whistleblowers as alleged targets	Appears in TI literature	Comparative theme, not proof of common causation
+Psychological impact	Medical / correspondence records where documented	Central advocacy claim	Academic studies document reported distress	Cross-source similarity
+“Targeted Individual” identity	Appears as archive terminology	Core organisational category	Explicitly used in academic inclusion criteria	Strong terminology-level corroboration
+Gang stalking	Archive may document allegation/testimony	Core organisational concept	Directly studied as reported experience	Existence of reported phenomenon
+Coordinated government program	Requires primary proof	Targeted Justice asserts it	Not established by these studies	Unresolved proposition requiring independent evidence
+ 
+⸻
+ 
+44. WHAT THIS COMPARATIVE RECORD ACTUALLY CORROBORATES
+The strongest defensible conclusion from the comparison is:
+The experiences, terminology and categories described within the Barran Dodger archive have identifiable parallels in the wider Targeted Individual / gang-stalking literature and advocacy record.
+That includes recurring descriptions involving:
+	1.	surveillance;
+	2.	monitoring;
+	3.	following;
+	4.	harassment;
+	5.	social isolation;
+	6.	reputation attacks;
+	7.	institutional involvement;
+	8.	perceived coordinated conduct;
+	9.	whistleblower targeting;
+	10.	psychological pressure;
+	11.	family/social disruption;
+	12.	the term Targeted Individual itself.
+The 2020 academic study specifically selected online accounts because they explicitly described people as victims of gang stalking or as Targeted Individuals.
+That provides comparative corroboration of the existence of similar testimony and terminology.
+It does not independently prove that the same underlying perpetrators, institutions or mechanisms caused every account.
+ 
+⸻
+ 
+45. IMPORTANT DISTINCTION: TESTIMONY VS INDEPENDENT CORROBORATION
+The archive should use the following four-level model.
+LEVEL 1 — TESTIMONY
+A person reports:
+“This happened to me.”
+This establishes that the person made the statement.
+LEVEL 2 — DOCUMENTARY CORROBORATION
+A contemporaneous email, letter, photograph, medical record, police report, government record or other document independently establishes an aspect of the event.
+LEVEL 3 — INSTITUTIONAL CORROBORATION
+A government body, tribunal, regulator, court or other competent institution independently records or determines the relevant fact.
+LEVEL 4 — CROSS-SOURCE CORROBORATION
+The same category of conduct appears independently in multiple records, institutions, witnesses or datasets.
+This is the level at which the comparative TI literature becomes useful.
+It can establish that similar reports exist elsewhere.
+It does not automatically establish a common perpetrator.
+ 
+⸻
+ 
+46. TARGETED JUSTICE: WHAT CAN BE CORROBORATED
+Targeted Justice’s public material can independently establish:
+	1.	Targeted Justice exists.
+	2.	It identifies itself as an organisation supporting Targeted Individuals.
+	3.	It publishes a definition of Targeted Individuals.
+	4.	It publishes a definition of gang stalking.
+	5.	It maintains a legal case catalogue.
+	6.	It publishes PDFs and other documentary material.
+	7.	It claims that government agencies are involved in targeting.
+	8.	It advocates legal and political action.
+	9.	It has itself been a plaintiff in federal litigation.
+	10.	Its litigation can be checked against actual federal court records.
+Items 1–6 are readily verifiable from Targeted Justice’s own website.
+Items 7–8 are claims/positions of Targeted Justice.
+Item 9 is independently verifiable through court records.
+Item 10 allows the reader to compare the organisation’s claims with the judicial record.
+ 
+⸻
+ 
+47. WHAT TARGETED JUSTICE DOES NOT ESTABLISH BY ITSELF
+Targeted Justice’s website does not independently establish:
+	•	that every person calling themselves a TI is actually being targeted;
+	•	that every reported gang-stalking incident occurred as described;
+	•	that every person alleged to be involved actually participated;
+	•	that every government agency identified by Targeted Justice participated;
+	•	that fusion centres operate a secret gang-stalking program;
+	•	that the FBI Terrorist Screening Database is used for gang stalking;
+	•	that directed-energy allegations are established;
+	•	that every Targeted Justice legal claim has been judicially validated.
+Those propositions require their own primary evidence.
+ 
+⸻
+ 
+48. GOVERNMENT RECORDS AND TARGETED-INDIVIDUAL TESTIMONY MUST BE KEPT SEPARATE
+The Barran Dodger Archive should therefore maintain three separate evidence streams:
+STREAM A — OFFICIAL RECORD
+Examples:
+	•	IBAC 2020712;
+	•	OAIC CP2102752;
+	•	OAIC 43704714;
+	•	Comcare 1326583;
+	•	ART 2021/7478;
+	•	Ombudsman 2021103546;
+	•	Ombudsman 2021705589;
+	•	FOI-2022-045;
+	•	FOI-22-01-IR;
+	•	MR2200677;
+	•	NDIS FOI 2023-0072;
+	•	PID records;
+	•	AHRC correspondence;
+	•	Victorian records;
+	•	NSW Police correspondence.
+STREAM B — FIRST-PERSON TESTIMONY
+Examples:
+	•	personal statements;
+	•	whistleblower statements;
+	•	correspondence describing events;
+	•	recorded testimony;
+	•	personal archive documents.
+STREAM C — COMPARATIVE EXTERNAL RECORD
+Examples:
+	•	Sheridan & James 2015;
+	•	Sheridan, James & Roth 2020;
+	•	Sarteschi 2018;
+	•	Targeted Justice definitions;
+	•	Targeted Justice public PDFs;
+	•	Targeted Justice legal catalogue;
+	•	actual court judgments.
+This separation strengthens the archive because readers can see exactly which evidence is doing which job.
+ 
+⸻
+ 
+49. PUBLIC SOURCE REGISTER
+Barran Dodger
+The Witness Remains⁠
+Crimes⁠
+Official Documents⁠
+Evidence⁠
+PIDs⁠
+Federal Court / AAT / Comcare⁠
+NDIS / DSS / WorkCover⁠
+Ministerial⁠
+Ombudsman / IGIS⁠
+Legal Aid⁠
+Legal / International⁠
+Primary Sources⁠
+Document Index⁠
+Archive Index⁠
+Significance⁠
+Impartial AI Archive⁠
+Methods⁠
+The Record⁠
+AHRC⁠
+Named Evidence⁠
+Video Exhibit⁠
+Opening Testimony⁠
+Reckoning Paper⁠
+Family Notice⁠
+COAG⁠
+Verification⁠
+Published Sources⁠
+GitHub
+Master Evidence Record⁠
+35-Year Chronology⁠
+Administrative Erasure⁠
+Institutional Response Map⁠
+Contradictions⁠
+Whistleblower Record⁠
+Human Rights and Remedy⁠
+Financial Record⁠
+Serious Allegations⁠
+Repository of Record⁠
+Official Government PDFs⁠
+Official Catalogue⁠
+Sources Register⁠
+Evidence Graph⁠
+Methodology⁠
+Drive Binary Catalogue⁠
+Evidence directory⁠
+Sources directory⁠
+Emails directory⁠
+Papers directory⁠
+Backup
+Government Evidence⁠
+Public Documents⁠
+External comparative sources
+Targeted Justice — What Is a Targeted Individual?⁠
+Targeted Justice — Gangstalking⁠
+Targeted Justice — Legal Information⁠
+Targeted Justice — Flyers / PDFs⁠
+Targeted Justice — Reality of the Targeting Program PDF⁠
+Targeted Justice — Main Site⁠
+Sheridan & James 2015 — Gang Stalking Study⁠
+Sheridan, James & Roth 2020 — Full Open-Access Study⁠
+Sarteschi 2018 — Targeted Individuals and Gang-Stalking⁠
+Fifth Circuit — Targeted Justice v Garland, No. 23-20342⁠
+ 
+⸻
+ 
+50. FINAL FORENSIC FINDINGS
+Finding 1 — DOCUMENTARY PRESERVATION
+The Barran Dodger project has multiple public preservation layers, including public websites, GitHub repositories, a Backup repository, government-document catalogues and direct raw-document links.
+Finding 2 — OFFICIAL IDENTIFIER DENSITY
+The archive contains numerous identifiable government and institutional references, including:
+IBAC 2020712
+IBAC 20233846 / 20231101
+OAIC CP2102752
+OAIC 43704714
+Comcare 1326583
+Comcare filename identifier 13265831
+ART 2021/7478
+Commonwealth Ombudsman 2021103546
+Commonwealth Ombudsman 2021705589
+FOI-2022-045
+FOI-2022-045IC
+FOI-22-01-IR
+MR2200677
+NDIS FOI 2023-0072
+MC20-004770
+MC22-000112
+MC23-026854-1
+and multiple PID and AHRC identifiers.
+Finding 3 — DIRECT PUBLIC VERIFICATION
+The archive provides direct links to many underlying PDFs, enabling a reader to examine the source rather than relying exclusively on narrative description.
+Finding 4 — CROSS-SOURCE TI / GANG-STALKING CORROBORATION
+The Barran Dodger archive’s use of terms such as Targeted Individual, gang stalking, surveillance, harassment, isolation and coordinated targeting has identifiable parallels in:
+	•	Targeted Justice’s published material;
+	•	peer-reviewed research;
+	•	qualitative analysis of 50 reported gang-stalking accounts;
+	•	legal proceedings involving people who describe themselves as Targeted Individuals.
+This constitutes comparative corroboration of the existence of similar testimony, terminology and reported experience.
+Finding 5 — GOVERNMENT-PROGRAM PROPOSITION
+The comparative sources do not, by themselves, establish that the reported experiences across these different sources were caused by one coordinated worldwide government program.
+That proposition remains a separate evidentiary question.
+Finding 6 — TARGETED JUSTICE
+Targeted Justice is an advocacy organisation whose own website makes strong claims concerning government targeting and gang stalking. Those claims should be preserved as Targeted Justice’s claims.
+Its legal catalogue and court litigation can be independently examined.
+The Fifth Circuit judgment is particularly important because it permits the reader to compare the organisation’s allegations with an actual judicial record.
+Finding 7 — ACADEMIC LITERATURE
+Academic literature establishes that people report experiences described as group stalking / gang stalking and that researchers have studied those reports.
+The literature does not provide a single consensus explanation for the cause of those experiences.
+The 2015 study and 2020 study should therefore both be cited, including their methodological limitations and differing interpretive implications.
+ 
+⸻
+ 
+51. THE FORENSIC STANDARD
+The permanent standard of the Barran Dodger Archive should be:
+DOCUMENT WHAT WAS SAID.
+DOCUMENT WHO SAID IT.
+DOCUMENT WHEN IT WAS SAID.
+DOCUMENT THE OFFICIAL REFERENCE NUMBER.
+PUBLISH THE PRIMARY RECORD.
+PRESERVE THE ORIGINAL FILENAME.
+PRESERVE THE REPOSITORY PATH.
+PRESERVE THE HASH WHERE AVAILABLE.
+LINK THE ORIGINAL PUBLIC PDF.
+LINK THE RESPONSE.
+LINK THE DECISION.
+LINK THE CONTRADICTION.
+DISTINGUISH TESTIMONY FROM DOCUMENTARY FACT.
+DISTINGUISH ALLEGATION FROM FINDING.
+DISTINGUISH COMPARATIVE CORROBORATION FROM CAUSAL PROOF.
+PRESERVE WHAT REMAINS UNRESOLVED.
+ 
+⸻
+ 
+52. THE PURPOSE OF THE ARCHIVE
+The resulting public archive is therefore best understood as a:
+DOCUMENTARY PRESERVATION SYSTEM
+SOURCE REGISTER
+OFFICIAL IDENTIFIER REGISTER
+35-YEAR CHRONOLOGY
+INSTITUTIONAL RESPONSE MAP
+CORROBORATION DATABASE
+CONTRADICTION REGISTER
+PROVENANCE RECORD
+PUBLIC VERIFICATION RESOURCE
+rather than as a substitute for a court or independent investigation.
+ 
+⸻
+ 
+53. CLOSING STATEMENT
+THE WITNESS REMAINS
+The archive does not ask the public to accept a conclusion merely because it is asserted.
+It provides the record.
+It provides the identifiers.
+It provides the dates.
+It provides the institutions.
+It provides the correspondence.
+It provides the government documents.
+It provides the tribunal records.
+It provides the complaints.
+It provides the responses.
+It provides the comparative testimony.
+It provides the academic literature.
+It provides the external advocacy record.
+It provides the contradictions.
+It provides the unresolved questions.
+And wherever possible:
+it provides the public PDF.
+The reader can therefore move from:
+claim
+to
+reference number
+to
+primary document
+to
+provenance
+to
+corroboration
+to
+contradiction
+to
+official response
+to
+finding status.
+That is the evidentiary purpose of the Barran Dodger Archive.
+Preserve the evidence.
+Preserve the testimony.
+Preserve the provenance.
+Publish the source.
+Open the document.
+Check the identifier.
+Follow the chronology.
+Read the response.
+Examine the record.
+Let the evidence be examined on its own terms.
+
